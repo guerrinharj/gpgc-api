@@ -1,0 +1,18 @@
+p 'Seeding artists...'
+Artist.find_or_create_by!(name: 'Assadinhos', group: false)
+Artist.find_or_create_by!(name: 'Brasileiro Garantido', group: false)
+Artist.find_or_create_by!(name: 'Cavalcantissimos', group: false)
+Artist.find_or_create_by!(name: 'Dinheiro Infinito Revival', group: false)
+Artist.find_or_create_by!(name: 'Dorgas', group: true)
+Artist.find_or_create_by!(name: 'Epicentro do Bloquinho', group: true)
+Artist.find_or_create_by!(name: 'Extradisciplinar', group: false)
+Artist.find_or_create_by!(name: 'Finalzinho Chegando', group: false)
+Artist.find_or_create_by!(name: 'Garageiros do Abismo', group: true)
+Artist.find_or_create_by!(name: 'Guerrinha', group: false)
+Artist.find_or_create_by!(name: 'O Retiro dos Artistas', group: false)
+Artist.find_or_create_by!(name: 'Relações Públicas', group: true)
+Artist.find_or_create_by!(name: 'Repetentes 2008', group: false)
+Artist.find_or_create_by!(name: 'Séculos Apaixonados', group: true)
+Artist.find_or_create_by!(name: 'Sérgio', group: false)
+Artist.find_or_create_by!(name: 'Vamos Desistir', group: false)
+p 'Finishing artist seeds!!!'
