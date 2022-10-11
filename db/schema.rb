@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_10_11_042613) do
+ActiveRecord::Schema.define(version: 2022_10_11_051302) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(version: 2022_10_11_042613) do
     t.string "name"
     t.string "cover"
     t.string "release_type"
-    t.string "release_date"
+    t.date "release_date"
     t.string "label"
     t.string "catalog_number"
     t.text "tracks", default: [], array: true
