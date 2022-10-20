@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_10_20_010607) do
+ActiveRecord::Schema.define(version: 2022_10_20_055101) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -22,7 +22,6 @@ ActiveRecord::Schema.define(version: 2022_10_20_010607) do
     t.string "release_type"
     t.date "release_date"
     t.text "label", default: [], array: true
-    t.string "catalog_number"
     t.text "tracks", default: [], array: true
     t.text "format", default: [], array: true
     t.text "credits", default: "{}"
