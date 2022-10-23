@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(version: 2022_10_23_194512) do
 
   create_table "artists", force: :cascade do |t|
     t.string "name"
+    t.string "slug"
     t.boolean "group", default: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -38,6 +39,7 @@ ActiveRecord::Schema.define(version: 2022_10_23_194512) do
   create_table "releases", force: :cascade do |t|
     t.bigint "artist_id"
     t.string "name"
+    t.string "slug"
     t.string "cover", default: [], array: true
     t.string "release_type"
     t.date "release_date"
@@ -46,7 +48,7 @@ ActiveRecord::Schema.define(version: 2022_10_23_194512) do
     t.text "format", default: [], array: true
     t.text "credits"
     t.string "notes", default: [], array: true
-    t.string "url"
+    t.string "links"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["artist_id"], name: "index_releases_on_artist_id"

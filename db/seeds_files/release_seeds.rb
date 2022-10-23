@@ -455,7 +455,11 @@ Release.find_or_create_by!(
     "All tracks written by Gabriel Guerra and Thiago Rebello",
     "All tracks recorded by Gabriel Guerra",
     "Previously released as Crusader de Deus"
-  ]
+  ],
+  links: {
+    "Bandcamp": "https://relacoespublicas.bandcamp.com/album/rela-es-p-blicas",
+    "Spotify": "https://open.spotify.com/album/3aPrg29GilHvUfa3kOupnQ"
+  }
 )
 
 
@@ -481,7 +485,11 @@ Release.find_or_create_by!(
   notes: [
     "All tracks produced and recorded by Gabriel Guerra",
     "Previously released as Crusader de Deus"
-  ]
+  ],
+  links: {
+    "Bandcamp": "https://relacoespublicas.bandcamp.com/album/juros-perfeitos",
+    "Spotify": "https://open.spotify.com/album/1Z8zcGWLVTgSWanZ03f98q"
+  }
 )
 
 
@@ -497,7 +505,8 @@ Release.find_or_create_by!(
   tracks: [
     "Relações Publicas",
     "Royalties de Peregrinação",
-    "Milhões de Brasileiros"
+    "Milhões de Brasileiros",
+    "O Abismo"
   ],
     credits: {
     "Gabriel Guerra": "electric guitar, vocals",
@@ -507,7 +516,10 @@ Release.find_or_create_by!(
   notes: [
     "All tracks produced and recorded by Gabriel Guerra",
     "Previously released as Crusader de Deus"
-  ]
+  ],
+    links: {
+    "Bandcamp": "https://relacoespublicas.bandcamp.com/album/cl-ssicos-republicanos"
+  }
 )
 
 
@@ -539,7 +551,11 @@ Release.find_or_create_by!(
   notes: [
     "All tracks produced and recorded by Gabriel Guerra and Thiago Rebello",
     "CD version comes with an extra CD with all tracks previously released as Crusader de Deus"
-  ]
+  ],
+    links: {
+    "Bandcamp": "https://relacoespublicas.bandcamp.com/album/pol-tica-popula-l-gica-estraga",
+    "Spotify": "https://open.spotify.com/album/6XzS114EESxeo6KLCVORPL"
+  }
 )
 
 Release.find_or_create_by!(
@@ -566,7 +582,10 @@ Release.find_or_create_by!(
   },
   notes: [
     "All tracks produced by Gabriel Guerra"
-  ]
+  ],
+    links: {
+    "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/winkadinka"
+  }
 )
 
 
@@ -594,7 +613,10 @@ Release.find_or_create_by!(
   },
   notes: [
     "All tracks produced by Gabriel Guerra"
-  ]
+  ],
+   links: {
+    "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/rocking-rio"
+  }
 )
 
 Release.find_or_create_by!(
@@ -626,7 +648,10 @@ Release.find_or_create_by!(
   },
   notes: [
     "All tracks produced by Gabriel Guerra"
-  ]
+  ],
+  links: {
+    "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/bolinhas-de-queijo"
+  }
 )
 
 
@@ -678,7 +703,10 @@ Release.find_or_create_by!(
   },
   notes: [
     "All tracks produced by Gabriel Guerra"
-  ]
+  ],
+  links: {
+    "Bandcamp": "https://brasileirogarantido.bandcamp.com/album/minipizzas"
+  }
 )
 
 
@@ -719,7 +747,11 @@ Release.find_or_create_by!(
   notes: [
     "All tracks produced by Gabriel Guerra",
     "Originally made as soundtrack to Arp hotel"
-  ]
+  ],
+  links: {
+    "Bandcamp": "https://cavalcantissimos.bandcamp.com/album/os-corredores",
+    "Spotify": "https://open.spotify.com/album/4ldYNXdbrz3L28nIv854YY"
+  }
 )
 
 
@@ -744,10 +776,14 @@ Release.find_or_create_by!(
     credits: {
     "Gabriel Guerra": "acoustic guitar, keyboards, piano, percussion",
   },
-  notes: [
+    notes: [
     "All tracks produced by Gabriel Guerra",
     "Originally made as soundtrack to Supereficiente"
-  ]
+  ],
+    links: {
+    "Bandcamp": "https://cavalcantissimos.bandcamp.com/album/fazendo-do-racionamento-um-esporte",
+    "Spotify": "https://open.spotify.com/album/4kr83325jnJcky80k9DqnA"
+  }
 )
 
 
@@ -780,7 +816,10 @@ Release.find_or_create_by!(
   },
   notes: [
     "All tracks produced by Gabriel Guerra"
-  ]
+  ],
+  links: {
+    "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/faixas-de-ritmo-i",
+  }
 )
 
 
@@ -811,7 +850,10 @@ Release.find_or_create_by!(
   },
   notes: [
     "All tracks produced by Gabriel Guerra"
-  ]
+  ],
+  links: {
+    "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/faixas-de-ritmo-ii",
+  }
 )
 
 
@@ -842,7 +884,10 @@ Release.find_or_create_by!(
   },
   notes: [
     "All tracks produced by Gabriel Guerra"
-  ]
+  ],
+  links: {
+    "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/fator-decisivo",
+  }
 )
 
 
@@ -871,7 +916,10 @@ Release.find_or_create_by!(
   },
   notes: [
     "All tracks produced by Gabriel Guerra"
-  ]
+  ],
+  links: {
+    "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/videoconferencias",
+  }
 )
 
 
@@ -920,7 +968,10 @@ Release.find_or_create_by!(
   },
   notes: [
     "All tracks produced by Gabriel Guerra"
-  ]
+  ],
+  links: {
+    "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/rua-sorocaba"
+  }
 )
 
 
@@ -945,7 +996,10 @@ Release.find_or_create_by!(
   },
   notes: [
     "All tracks produced by Gabriel Guerra"
-  ]
+  ],
+  links: {
+    "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/o-pedigree-historico"
+  }
 )
 
 
@@ -969,7 +1023,10 @@ Release.find_or_create_by!(
   },
   notes: [
     "All tracks produced by Gabriel Guerra"
-  ]
+  ],
+  links: {
+    "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/educa--o-bentes"
+  }
 )
 
 
@@ -997,7 +1054,11 @@ Release.find_or_create_by!(
   },
   notes: [
     "All tracks written, produced and mixed by Gabriel Guerra"
-  ]
+  ],
+  links: {
+    "Bandcamp": "https://guerrinha.bandcamp.com/album/wagner",
+    "Spotify": "https://open.spotify.com/album/3qMRehbSPU0Wt3mF2nMG7f"
+  }
 )
 
 
@@ -1017,7 +1078,10 @@ Release.find_or_create_by!(
   },
   notes: [
     "Track written, produced and mixed by Gabriel Guerra"
-  ]
+  ],
+  links: {
+    "Bandcamp": "https://guerrinha.bandcamp.com/album/apartamento"
+  }
 )
 
 
@@ -1038,7 +1102,11 @@ Release.find_or_create_by!(
   },
   notes: [
     "All tracks written, produced and mixed by Gabriel Guerra"
-  ]
+  ],
+  links: {
+    "Bandcamp": "https://guerrinha.bandcamp.com/album/bodega-docas",
+    "Spotify": "https://open.spotify.com/album/6Y0WucRrznvZFFpEinroeu"
+  }
 )
 
 
@@ -1059,7 +1127,11 @@ Release.find_or_create_by!(
   },
   notes: [
     "Track written, produced and mixed by Gabriel Guerra"
-  ]
+  ],
+  links: {
+    "Bandcamp": "https://guerrinha.bandcamp.com/album/tasca",
+    "Spotify": "https://open.spotify.com/album/1tlLPJsabUK9HwkQOxxpFE"
+  }
 )
 
 
@@ -1084,7 +1156,10 @@ Release.find_or_create_by!(
   },
   notes: [
     "All tracks produced by Gabriel Guerra"
-  ]
+  ],
+  links: {
+    "Bandcamp": "https://guerrinha.bandcamp.com/album/rua-jorge-rudge"
+  }
 )
 
 
@@ -1111,7 +1186,10 @@ Release.find_or_create_by!(
   },
   notes: [
     "All tracks produced by Gabriel Guerra"
-  ]
+  ],
+  links: {
+    "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/formiguinhas-jazz-standards"
+  }
 )
 
 
@@ -1137,7 +1215,10 @@ Release.find_or_create_by!(
   },
   notes: [
     "All tracks produced by Gabriel Guerra"
-  ]
+  ],
+  links: {
+    "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/praia-das-pedrinhas"
+  }
 )
 
 
@@ -1163,7 +1244,10 @@ Release.find_or_create_by!(
   },
   notes: [
     "All tracks produced by Gabriel Guerra"
-  ]
+  ],
+  links: {
+    "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/ida-aos-correios"
+  }
 )
 
 
@@ -1193,7 +1277,10 @@ Release.find_or_create_by!(
   },
   notes: [
     "All tracks produced by Gabriel Guerra"
-  ]
+  ],
+  links: {
+    "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/dimens-o-surpreendente"
+  }
 )
 
 
@@ -1225,7 +1312,10 @@ Release.find_or_create_by!(
   },
   notes: [
     "All tracks produced by Gabriel Guerra"
-  ]
+  ],
+  links: {
+    "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/o-mundo-oferecido"
+  }
 )
 
 
@@ -1254,7 +1344,11 @@ Release.find_or_create_by!(
   },
   notes: [
     "All tracks written, produced and mixed by Gabriel Guerra"
-  ]
+  ],
+  links: {
+    "Bandcamp": "https://pessoalizado.bandcamp.com/album/miseric-rdia",
+    "Spotify": "https://open.spotify.com/album/11I3f6p0xfGb9K5Ql2xdqM"
+  }
 )
 
 
@@ -1279,8 +1373,11 @@ Release.find_or_create_by!(
   notes: [
     "All tracks produced by Gabriel Guerra",
     "Originally released as Japa Habilidoso",
-    "Released in 2014 as 'Funk do Sindicalismo b/w Agronomia Setorial'"
-  ]
+    "Released in 2014 by Future Times as 'Funk do Sindicalismo b/w Agronomia Setorial'"
+  ],
+    links: {
+    "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/habilidades-eu-tenho-2"
+  }
 )
 
 
@@ -1304,7 +1401,10 @@ Release.find_or_create_by!(
   },
   notes: [
     "All tracks produced by Gabriel Guerra"
-  ]
+  ],
+  links: {
+    "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/curriculum-tenebrae"
+  }
 )
 
 
@@ -1330,7 +1430,10 @@ Release.find_or_create_by!(
   },
   notes: [
     "All tracks produced by Gabriel Guerra"
-  ]
+  ],
+  links: {
+    "Bandcamp": "https://futuretimes.bandcamp.com/album/boulevard-internacional"
+  }
 )
 
 
@@ -1359,11 +1462,14 @@ Release.find_or_create_by!(
   ],
     credits: {
     "Gabriel Guerra": "keyboards, sampler, synthesizer, drum machine",
-    "Will Di Maggio": "keyboards (track 1)"
+    "Will Di Maggio": "keyboards (track 4)"
   },
   notes: [
     "All tracks produced by Gabriel Guerra"
-  ]
+  ],
+  links: {
+    "Bandcamp": "https://futuretimes.bandcamp.com/album/boulderball"
+  }
 )
 
 
@@ -1391,7 +1497,10 @@ Release.find_or_create_by!(
   },
   notes: [
     "All tracks produced by Gabriel Guerra"
-  ]
+  ],
+  links: {
+    "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/os-maneiros"
+  }
 )
 
 
@@ -1441,7 +1550,11 @@ Release.find_or_create_by!(
   },
   notes: [
     "All tracks produced by Gabriel Guerra except track 2 produced by Gilb'r"
-  ]
+  ],
+  links: {
+    "Bandcamp": "https://goptun.bandcamp.com/album/gop006-gelo-ger-nimo",
+    "Spotify": "https://open.spotify.com/album/2f6pPc5kDkb5hQFrAJ8C4e"
+  }
 )
 
 
@@ -1466,7 +1579,11 @@ Release.find_or_create_by!(
   },
   notes: [
     "All tracks produced by Gabriel Guerra"
-  ]
+  ],
+  links: {
+    "Bandcamp": "https://superconsciousrecords.bandcamp.com/album/galaxia-fini",
+    "Spotify": "https://open.spotify.com/album/6cljHB8Fe56MhA29dlCsIp"
+  }
 )
 
 
@@ -1493,7 +1610,10 @@ Release.find_or_create_by!(
   },
   notes: [
     "All tracks produced by Gabriel Guerra"
-  ]
+  ],
+  links: {
+    "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/silvio-system"
+  }
 )
 
 
@@ -1521,7 +1641,10 @@ Release.find_or_create_by!(
   },
   notes: [
     "All tracks produced by Gabriel Guerra"
-  ]
+  ],
+    links: {
+    "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/light-lixo"
+  }
 )
 
 
@@ -1548,7 +1671,10 @@ Release.find_or_create_by!(
   },
   notes: [
     "All tracks produced by Gabriel Guerra"
-  ]
+  ],
+    links: {
+    "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/a-trag-dia-de-pete"
+  }
 )
 
 
@@ -1575,7 +1701,10 @@ Release.find_or_create_by!(
   },
   notes: [
     "All tracks produced by Gabriel Guerra"
-  ]
+  ],
+  links: {
+    "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/rapid-o-cometa-highway"
+  }
 )
 
 
@@ -1599,7 +1728,10 @@ Release.find_or_create_by!(
   },
   notes: [
     "All tracks produced by Gabriel Guerra"
-  ]
+  ],
+    links: {
+    "Bandcamp": "https://repetentes2008.bandcamp.com/album/posto-de-gasolina-online"
+  }
 )
 
 
@@ -1623,7 +1755,10 @@ Release.find_or_create_by!(
   },
   notes: [
     "All tracks produced by Gabriel Guerra"
-  ]
+  ],
+  links: {
+    "Bandcamp": "https://repetentes2008.bandcamp.com/album/o-lento-c-u-ralentado"
+  }
 )
 
 
@@ -1652,7 +1787,10 @@ Release.find_or_create_by!(
   },
   notes: [
     "All tracks produced by Gabriel Guerra"
-  ]
+  ],
+  links: {
+    "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/utens-lios-2"
+  }
 )
 
 
@@ -1681,7 +1819,10 @@ Release.find_or_create_by!(
   },
   notes: [
     "All tracks produced by Gabriel Guerra"
-  ]
+  ],
+  links: {
+    "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/mais-utens-lios"
+  }
 )
 
 
@@ -1704,7 +1845,10 @@ Release.find_or_create_by!(
   },
   notes: [
     "All tracks produced by Gabriel Guerra"
-  ]
+  ],
+  links: {
+    "Bandcamp": "https://sergiooscar.bandcamp.com/album/fantabobi-riquititas"
+  }
 )
 
 
@@ -1734,7 +1878,10 @@ Release.find_or_create_by!(
   },
   notes: [
     "All tracks produced by Gabriel Guerra"
-  ]
+  ],
+  links: {
+    "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/perguntas"
+  }
 )
 
 
@@ -1744,6 +1891,7 @@ Release.find_or_create_by!(
 Release.find_or_create_by!(
   artist: Artist.find_by(name: "Vamos Desistir"),
   name: "Respostas",
+  slug: 'respostas',
   cover: ["https://f4.bcbits.com/img/a3847996628_10.jpg"],
   label: ["40% Foda/Maneirissimo"],
   release_type: "Album",
@@ -1766,5 +1914,8 @@ Release.find_or_create_by!(
   },
   notes: [
     "All tracks produced by Gabriel Guerra"
-  ]
+  ],
+  links: {
+    "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/respostas"
+  }
 )

@@ -1,5 +1,5 @@
 class Release < ApplicationRecord
   serialize :credits
-  serialize :url
+  serialize :links
   belongs_to :artist
 end
