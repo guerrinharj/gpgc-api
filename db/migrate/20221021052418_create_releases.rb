@@ -3,6 +3,7 @@ class CreateReleases < ActiveRecord::Migration[6.0]
     create_table :releases do |t|
       t.belongs_to :artist, null: true, foreign_key: true
       t.string :name
+      t.string :slug
       t.string :cover, array: true, default: []
       t.string :release_type
       t.date :release_date
@@ -11,7 +12,7 @@ class CreateReleases < ActiveRecord::Migration[6.0]
       t.text :format, array: true, default: []
       t.text :credits
       t.string :notes, array: true, default: []
-      t.string :url
+      t.string :links
 
       t.timestamps
     end
