@@ -1,0 +1,2 @@
+class Featuring < ApplicationRecord
+end

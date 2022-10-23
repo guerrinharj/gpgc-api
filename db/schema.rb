@@ -10,27 +10,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_10_20_055101) do
+ActiveRecord::Schema.define(version: 2022_10_23_194512) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
-
-  create_table "albums", force: :cascade do |t|
-    t.bigint "artist_id"
-    t.string "name"
-    t.string "cover"
-    t.string "release_type"
-    t.date "release_date"
-    t.text "label", default: [], array: true
-    t.text "tracks", default: [], array: true
-    t.text "format", default: [], array: true
-    t.text "credits", default: "{}"
-    t.text "notes", default: [], array: true
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.string "streaming"
-    t.index ["artist_id"], name: "index_albums_on_artist_id"
-  end
 
   create_table "artists", force: :cascade do |t|
     t.string "name"
@@ -39,5 +22,61 @@ ActiveRecord::Schema.define(version: 2022_10_20_055101) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  add_foreign_key "albums", "artists"
+  create_table "featurings", force: :cascade do |t|
+    t.string "featuring_name"
+    t.boolean "is_album"
+    t.string "artist"
+    t.string "label"
+    t.string "info"
+    t.date "release_date"
+    t.string "credit", default: [], array: true
+    t.string "url"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "releases", force: :cascade do |t|
+    t.bigint "artist_id"
+    t.string "name"
+    t.string "cover", default: [], array: true
+    t.string "release_type"
+    t.date "release_date"
+    t.string "label", default: [], array: true
+    t.text "tracks", default: [], array: true
+    t.text "format", default: [], array: true
+    t.text "credits"
+    t.string "notes", default: [], array: true
+    t.string "url"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["artist_id"], name: "index_releases_on_artist_id"
+  end
+
+  create_table "remixes", force: :cascade do |t|
+    t.string "track_name"
+    t.bigint "artist_id"
+    t.string "remix_name"
+    t.date "release_date"
+    t.string "label"
+    t.string "original_artist"
+    t.string "album"
+    t.string "url"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["artist_id"], name: "index_remixes_on_artist_id"
+  end
+
+  create_table "soundtracks", force: :cascade do |t|
+    t.string "name"
+    t.string "company"
+    t.string "info"
+    t.string "year"
+    t.string "kind"
+    t.text "url"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  add_foreign_key "releases", "artists"
+  add_foreign_key "remixes", "artists"
 end

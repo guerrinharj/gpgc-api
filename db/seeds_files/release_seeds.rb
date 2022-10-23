@@ -1,10 +1,10 @@
-p 'Seeding albums...'
+p 'Seeding releases...'
 
 
-Album.find_or_create_by!(
+Release.find_or_create_by!(
   artist: Artist.find_by(name: "Garageiros do Abismo"),
   name: "Tão Fácil Quanto Ser Poeta",
-  cover: "https://i.discogs.com/oOaAXEto2h5WRCtZqxdjKreljU58uZg-Qfftjw7ErJM/rs:fit/g:sm/q:90/h:500/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI1MjEz/NTMtMTUzOTM5MjIy/MC03Mzc2LnBuZw.jpeg",
+  cover: ["https://i.discogs.com/oOaAXEto2h5WRCtZqxdjKreljU58uZg-Qfftjw7ErJM/rs:fit/g:sm/q:90/h:500/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI1MjEz/NTMtMTUzOTM5MjIy/MC03Mzc2LnBuZw.jpeg"],
   release_type: "EP",
   release_date: Date.new(2008, 4, 22),
   format: ["digital download"],
@@ -27,10 +27,10 @@ Album.find_or_create_by!(
 
 
 
-Album.find_or_create_by!(
+Release.find_or_create_by!(
   artist: Artist.find_by(name: "Garageiros do Abismo"),
   name: "Estamos Sujos / Alvaro é Vélho",
-  cover: "https://i.discogs.com/lw4P82_EGCmkCELlZWXp5E6FnFH9K33kFUoDGJwitHI/rs:fit/g:sm/q:90/h:400/w:399/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI1MjEz/NzMtMTUzOTM5MjI0/MS0zMTgyLnBuZw.jpeg",
+  cover: ["https://i.discogs.com/lw4P82_EGCmkCELlZWXp5E6FnFH9K33kFUoDGJwitHI/rs:fit/g:sm/q:90/h:400/w:399/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI1MjEz/NzMtMTUzOTM5MjI0/MS0zMTgyLnBuZw.jpeg"],
   release_type: "Single",
   release_date: Date.new(2008, 11, 11),
   format: ["digital download"],
@@ -50,10 +50,10 @@ Album.find_or_create_by!(
   ]
 )
 
-Album.find_or_create_by!(
+Release.find_or_create_by!(
   artist: Artist.find_by(name: "Dorgas"),
   name: "Verdeja Music",
-  cover: "https://i.discogs.com/EM3QAbd_2J72apeSFVf5X3n-M4r_tels3OShDgNcDiw/rs:fit/g:sm/q:90/h:362/w:361/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI1MjEz/MTUtMTM3MDI0NzUy/NS0zMzgzLmpwZWc.jpeg",
+  cover: ["https://i.discogs.com/EM3QAbd_2J72apeSFVf5X3n-M4r_tels3OShDgNcDiw/rs:fit/g:sm/q:90/h:362/w:361/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI1MjEz/MTUtMTM3MDI0NzUy/NS0zMzgzLmpwZWc.jpeg"],
   release_type: "EP",
   release_date: Date.new(2010, 3, 10),
   format: ["digital download"],
@@ -75,10 +75,10 @@ Album.find_or_create_by!(
 )
 
 
-Album.find_or_create_by!(
+Release.find_or_create_by!(
   artist: Artist.find_by(name: "Dorgas"),
   name: "Loxhanxha",
-  cover: "https://i.discogs.com/bgQFEm6EbNirbnDRnr9s0GjXatAE-reqSg72qV82994/rs:fit/g:sm/q:90/h:218/w:250/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ2MjMy/MTYtMTM3MDI0Nzky/My02MzU0LmpwZWc.jpeg",
+  cover: ["https://i.discogs.com/bgQFEm6EbNirbnDRnr9s0GjXatAE-reqSg72qV82994/rs:fit/g:sm/q:90/h:218/w:250/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ2MjMy/MTYtMTM3MDI0Nzky/My02MzU0LmpwZWc.jpeg"],
   release_type: "Single",
   release_date: Date.new(2011, 2, 1),
   format: ["digital download"],
@@ -98,10 +98,10 @@ Album.find_or_create_by!(
   ]
 )
 
-Album.find_or_create_by!(
+Release.find_or_create_by!(
   artist: Artist.find_by(name: "Dorgas"),
   name: "Grangongon",
-  cover: "https://i.discogs.com/T6sLEz28VOutFJutjKFSP7Jor1Ko51j9HQyn6EcqsKg/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ2MjMy/MzAtMTM3MDI0ODI1/OS00NjM0LmpwZWc.jpeg",
+  cover: ["https://i.discogs.com/T6sLEz28VOutFJutjKFSP7Jor1Ko51j9HQyn6EcqsKg/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ2MjMy/MzAtMTM3MDI0ODI1/OS00NjM0LmpwZWc.jpeg"],
   release_type: "Single",
   release_date: Date.new(2011, 2, 1),
   format: ["digital download"],
@@ -122,10 +122,10 @@ Album.find_or_create_by!(
 )
 
 
-Album.find_or_create_by!(
+Release.find_or_create_by!(
   artist: Artist.find_by(name: "Dorgas"),
   name: "Dorgas",
-  cover: "https://i.discogs.com/lVE45d9jpzyBRBYg36AzXBFANnbMhwXlrbNblpdA4j0/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ2MjQ4/NjYtMTM3MDM4Njcw/Ni02NjI2LmpwZWc.jpeg",
+  cover: ["https://i.discogs.com/lVE45d9jpzyBRBYg36AzXBFANnbMhwXlrbNblpdA4j0/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ2MjQ4/NjYtMTM3MDM4Njcw/Ni02NjI2LmpwZWc.jpeg"],
   release_type: "Album",
   release_date: Date.new(2013, 5, 15),
   format: ["digital download"],
@@ -140,12 +140,12 @@ Album.find_or_create_by!(
     "Patricinha Ingrata",
     "Viratouro"
   ],
-  credits: [
+  credits: {
     "Gabriel Guerra": "electric guitar (track 7), keyboards, vocals (tracks 2, 3, 6, 8)",
     "Cassius Augusto": "bass guitar, keyboards, vocals (tracks 1, 4, 7, 9)",
     "Eduardo Verdeja": "electric guitar, bass guitar (track 4)",
     "Lucas Freire": "drums"
-  ],
+  },
   notes: [
     "All tracks produced by Gabriel Cyr",
     "All tracks recorded and mixed by Renato Godoy at Audio Rebel and Monaural",
@@ -154,10 +154,10 @@ Album.find_or_create_by!(
 )
 
 
-Album.find_or_create_by!(
+Release.find_or_create_by!(
   artist: Artist.find_by(name: "Dorgas"),
   name: "Semanas Góticas",
-  cover: "https://i.discogs.com/0qeeSm7fYNz1FUiTRx7O1ZrDJrWIj68BHA1L45CJha8/rs:fit/g:sm/q:90/h:335/w:335/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ3MTY2/NTMtMTM3MzIxOTg0/Ny0xNDc2LmpwZWc.jpeg",
+  cover: ["https://i.discogs.com/0qeeSm7fYNz1FUiTRx7O1ZrDJrWIj68BHA1L45CJha8/rs:fit/g:sm/q:90/h:335/w:335/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ3MTY2/NTMtMTM3MzIxOTg0/Ny0xNDc2LmpwZWc.jpeg"],
   release_type: "EP",
   release_date: Date.new(2013, 7, 4),
   format: ["digital download"],
@@ -165,22 +165,22 @@ Album.find_or_create_by!(
     "#1",
     "#2"
   ],
-  credits: [
+  credits: {
     "Gabriel Guerra": "electric guitar",
     "Cassius Augusto": "bass guitar",
     "Eduardo Verdeja": "electric guitar",
     "Lucas Freire": "drums"
-  ],
+  },
   notes: [
     "All tracks recorded and mixed by Pedro Garcia at Estudio Cantos do Trilho",
     "All tracks written by Gabriel Guerra, Cassius Augusto, Eduardo Verdeja and Lucas Freire",
   ]
 )
 
-Album.find_or_create_by!(
+Release.find_or_create_by!(
   artist: Artist.find_by(name: "Finalzinho Chegando"),
   name: "#1",
-  cover: "https://f4.bcbits.com/img/a2368990301_10.jpg",
+  cover: ["https://f4.bcbits.com/img/a2368990301_10.jpg"],
   release_type: "EP",
   release_date: Date.new(2012, 1, 12),
   format: ["digital download"],
@@ -188,18 +188,21 @@ Album.find_or_create_by!(
     "Jojo",
     "Só Tapão"
   ],
-  credits: [
+  credits: {
     "Gabriel Guerra": "keyboards, sampler, drum machine"
-  ],
+  },
   notes: [
     "All tracks produced by Gabriel Guerra"
-  ]
+  ],
+  url: {
+    "Bandcamp": "https://finalzinhochegando.bandcamp.com/album/1"
+  }
 )
 
-Album.find_or_create_by!(
+Release.find_or_create_by!(
   artist: Artist.find_by(name: "Finalzinho Chegando"),
   name: "#4",
-  cover: "https://f4.bcbits.com/img/a0956891699_10.jpg",
+  cover: ["https://f4.bcbits.com/img/a0956891699_10.jpg"],
   release_type: "EP",
   release_date: Date.new(2012, 2, 27),
   format: ["digital download"],
@@ -207,18 +210,21 @@ Album.find_or_create_by!(
     "Volta e Sonda",
     "Em Abell 39"
   ],
-  credits: [
+  credits: {
     "Gabriel Guerra": "keyboards, sampler, drum machine"
-  ],
+  },
   notes: [
     "All tracks produced by Gabriel Guerra"
-  ]
+  ],
+  url: {
+    "Bandcamp": "https://finalzinhochegando.bandcamp.com/album/4"
+  }
 )
 
-Album.find_or_create_by!(
+Release.find_or_create_by!(
   artist: Artist.find_by(name: "Finalzinho Chegando"),
   name: "#6",
-  cover: "https://f4.bcbits.com/img/a2710395536_10.jpg",
+  cover: ["https://f4.bcbits.com/img/a2710395536_10.jpg"],
   release_type: "EP",
   release_date: Date.new(2012, 4, 15),
   format: ["digital download"],
@@ -226,18 +232,21 @@ Album.find_or_create_by!(
     "Folia Dornelles",
     "Cinco Décadas de Inação"
   ],
-  credits: [
+  credits: {
     "Gabriel Guerra": "keyboards, sampler, drum machine"
-  ],
+  },
   notes: [
     "All tracks produced by Gabriel Guerra"
-  ]
+  ],
+  url: {
+    "Bandcamp": "https://finalzinhochegando.bandcamp.com/album/6"
+  }
 )
 
-Album.find_or_create_by!(
+Release.find_or_create_by!(
   artist: Artist.find_by(name: "Finalzinho Chegando"),
   name: "#3",
-  cover: "https://f4.bcbits.com/img/a3905919501_10.jpg",
+  cover: ["https://f4.bcbits.com/img/a3905919501_10.jpg"],
   release_type: "EP",
   release_date: Date.new(2012, 12, 8),
   format: ["digital download"],
@@ -245,19 +254,22 @@ Album.find_or_create_by!(
     "Estruturas Potencializantes, Megalópolis de Desistências",
     "Pesos Teoréticos"
   ],
-  credits: [
+  credits: {
     "Gabriel Guerra": "keyboards, sampler, drum machine"
-  ],
+  },
   notes: [
     "All tracks produced by Gabriel Guerra"
-  ]
+  ],
+  url: {
+    "Bandcamp": "https://finalzinhochegando.bandcamp.com/album/3"
+  }
 )
 
 
-Album.find_or_create_by!(
+Release.find_or_create_by!(
   artist: Artist.find_by(name: "Séculos Apaixonados"),
   name: "Roupa Linda, Figura Fantasmagórica",
-  cover: "https://i.discogs.com/dDyUIVA53TorJ--yFTYZg3eKnaiVf-TgZ4RfjRJIaW0/rs:fit/g:sm/q:90/h:400/w:400/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYzMzg0/MzYtMTQxNjgxMTY0/MC00NzEyLmpwZWc.jpeg",
+  cover: ["https://i.discogs.com/dDyUIVA53TorJ--yFTYZg3eKnaiVf-TgZ4RfjRJIaW0/rs:fit/g:sm/q:90/h:400/w:400/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYzMzg0/MzYtMTQxNjgxMTY0/MC00NzEyLmpwZWc.jpeg"],
   release_type: "Album",
   label: ["Balaclava Records"],
   release_date: Date.new(2014, 11, 18),
@@ -272,7 +284,7 @@ Album.find_or_create_by!(
     "Só No Masoquismo",
     "Campeonato de Recordações"
   ],
-    credits: [
+    credits: {
     "Gabriel Guerra": "electric guitar, keyboards, vocals",
     "Lucas de Paiva": "keyboards, saxophone (track 2)",
     "Arthur Braganti": "keyboards, vocals (track 6)",
@@ -280,7 +292,7 @@ Album.find_or_create_by!(
     "João Pessanha": "drums",
     "Pedro Sucupira": "saxophone (tracks 3 and 7)",
     "Robson Gomes": "narrator (tracks 3, 5 and 6)"
-  ],
+  },
   notes: [
     "All tracks recorded and produced by Gabriel Guerra and Lucas de Paiva",
     "All lyrics by Gabriel Guerra, except track 6 by Arthur Braganti",
@@ -290,10 +302,10 @@ Album.find_or_create_by!(
   ]
 )
 
-Album.find_or_create_by!(
+Release.find_or_create_by!(
   artist: Artist.find_by(name: "Séculos Apaixonados"),
   name: "O Ministério da Colocação",
-  cover: "https://f4.bcbits.com/img/a3912121445_10.jpg",
+  cover: ["https://f4.bcbits.com/img/a3912121445_10.jpg"],
   release_type: "Album",
   label: ["Balaclava Records"],
   release_date: Date.new(2016, 8, 26),
@@ -308,14 +320,14 @@ Album.find_or_create_by!(
     "A Origem das Espécies",
     "Contas Internacionais"
   ],
-    credits: [
+    credits: {
     "Gabriel Guerra": "electric guitar, keyboards, vocals",
     "Lucas de Paiva": "keyboards, saxophone (track 3, 5 and 6), vocals (track 3, 6)",
     "Arthur Braganti": "keyboards, vocals (track 5)",
     "Felipe Vellozo": "bass guitar",
     "Lucas Freire": "drums, narrator (track 4)",
     "Ledjane Motta": "vocals (track 3, 4 and 7)"
-  ],
+  },
   notes: [
     "All tracks recorded and produced by Gabriel Guerra",
     "All lyrics by Gabriel Guerra, except track 5 by Arthur Braganti",
@@ -329,10 +341,10 @@ Album.find_or_create_by!(
 
 
 
-Album.find_or_create_by!(
+Release.find_or_create_by!(
   artist: Artist.find_by(name: "Séculos Apaixonados"),
   name: "Suspenso Graças Ao Principio da Insignificância",
-  cover: "https://i.discogs.com/4sdGsoc-yMYJsEhCI2NKhDO4x_7M7IxT3eAtVEbNEBI/rs:fit/g:sm/q:90/h:600/w:597/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyMzY2/MjAwLTE1MzM4MDYw/NTMtMjUzMy5wbmc.jpeg",
+  cover: ["https://i.discogs.com/4sdGsoc-yMYJsEhCI2NKhDO4x_7M7IxT3eAtVEbNEBI/rs:fit/g:sm/q:90/h:600/w:597/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyMzY2/MjAwLTE1MzM4MDYw/NTMtMjUzMy5wbmc.jpeg"],
   release_type: "Album",
   label:["Balaclava Records"],
   release_date: Date.new(2018, 8, 7),
@@ -347,13 +359,13 @@ Album.find_or_create_by!(
     "O Dramin da Hora do Lobo",
     "A Condição do Coração"
   ],
-    credits: [
+    credits: {
     "Gabriel Guerra": "electric guitar, keyboards, vocals",
     "Lucas de Paiva": "keyboards, saxophone (track 6), vocals (track 3)",
     "Arthur Braganti": "keyboards, vocals (track 6)",
     "Felipe Vellozo": "bass guitar",
     "Lucas Freire": "drums"
-  ],
+  },
   notes: [
     "All tracks recorded and produced by Gabriel Guerra",
     "All lyrics by Gabriel Guerra, except track 6 by Arthur Braganti",
@@ -364,10 +376,10 @@ Album.find_or_create_by!(
 )
 
 
-Album.find_or_create_by!(
+Release.find_or_create_by!(
   artist: Artist.find_by(name: "Epicentro do Bloquinho"),
   name: "Hegelianos de Direita",
-  cover: "https://f4.bcbits.com/img/a3682959887_10.jpg",
+  cover: ["https://f4.bcbits.com/img/a3682959887_10.jpg"],
   release_type: "Album",
   label: ["40% Foda/Maneirissimo"],
   release_date: Date.new(2013, 6, 23),
@@ -380,11 +392,11 @@ Album.find_or_create_by!(
     "Jorge André",
     "Henrique Léo"
   ],
-    credits: [
+    credits: {
     "Gabriel Guerra": "keyboards, drum machine",
     "Lucas de Paiva": "keyboards, drum machine",
     "Savio de Queiroz": "keyboards, drum machine",
-  ],
+  },
   notes: [
     "All tracks recorded and produced by Gabriel Guerra, Lucas de Paiva and Savio de Queiroz",
   ]
@@ -393,24 +405,24 @@ Album.find_or_create_by!(
 
 
 
-Album.find_or_create_by!(
+Release.find_or_create_by!(
   artist: Artist.find_by(name: "Relações Públicas"),
   name: "Relações Públicas",
-  cover: "https://f4.bcbits.com/img/a3776362657_10.jpg",
+  cover: ["https://f4.bcbits.com/img/a3776362657_10.jpg"],
   release_type: "EP",
   label: ["Balaclava Records"],
   release_date: Date.new(2015, 8, 24),
-  format: ["digital download", "streaming"],
+  format: ["digital download, streaming"],
   tracks: [
     "Excelente Manual",
     "Crimes de Mera Conduta",
     "Microempreendedorismo Individual"
   ],
-    credits: [
+    credits: {
     "Gabriel Guerra": "electric guitar, vocals",
     "Thiago Rebello": "bass guitar",
     "Clara Zettel": "drums",
-  ],
+  },
   notes: [
     "All tracks written by Gabriel Guerra and Thiago Rebello",
     "All tracks recorded by Gabriel Guerra",
@@ -419,24 +431,24 @@ Album.find_or_create_by!(
 )
 
 
-Album.find_or_create_by!(
+Release.find_or_create_by!(
   artist: Artist.find_by(name: "Relações Públicas"),
   name: "Juros Perfeitos",
-  cover: "https://f4.bcbits.com/img/a0678382550_10.jpg",
+  cover: ["https://f4.bcbits.com/img/a0678382550_10.jpg"],
   release_type: "EP",
   label: ["Balaclava Records"],
   release_date: Date.new(2016, 4, 20),
-  format: ["digital download", "streaming"],
+  format: ["digital download, streaming"],
   tracks: [
     "Concessões Intermediarias",
     "Limites de Renda Nunca Foram Modernos",
     "O Dicionario Começa Com D de Direito"
   ],
-    credits: [
+    credits: {
     "Gabriel Guerra": "electric guitar, vocals",
     "Thiago Rebello": "bass guitar",
     "Clara Zettel": "drums"
-  ],
+  },
   notes: [
     "All tracks produced and recorded by Gabriel Guerra",
     "Previously released as Crusader de Deus"
@@ -444,24 +456,24 @@ Album.find_or_create_by!(
 )
 
 
-Album.find_or_create_by!(
+Release.find_or_create_by!(
   artist: Artist.find_by(name: "Relações Públicas"),
   name: "Classicos Republicanos",
-  cover: "https://f4.bcbits.com/img/a0678382550_10.jpg",
+  cover: ["https://f4.bcbits.com/img/a0678382550_10.jpg"],
   release_type: "EP",
   label: ["Balaclava Records", "Dama da Noite Discos"],
   release_date: Date.new(2017, 5, 2),
-  format: ["digital download", "streaming", "cassette"],
+  format: ["digital download", "cassette"],
   tracks: [
     "Relações Publicas",
     "Royalties de Peregrinação",
     "Milhões de Brasileiros"
   ],
-    credits: [
+    credits: {
     "Gabriel Guerra": "electric guitar, vocals",
     "Thiago Rebello": "bass guitar",
     "Clara Zettel": "drums"
-  ],
+  },
   notes: [
     "All tracks produced and recorded by Gabriel Guerra",
     "Previously released as Crusader de Deus"
@@ -469,10 +481,10 @@ Album.find_or_create_by!(
 )
 
 
-Album.find_or_create_by!(
+Release.find_or_create_by!(
   artist: Artist.find_by(name: "Relações Públicas"),
   name: "Politica Popula Lógica Estraga",
-  cover: "https://f4.bcbits.com/img/a1482343204_10.jpg",
+  cover: ["https://f4.bcbits.com/img/a1482343204_10.jpg"],
   release_type: "Album",
   release_date: Date.new(2022, 5, 5),
   format: ["CD", "digital download", "streaming"],
@@ -488,21 +500,21 @@ Album.find_or_create_by!(
     "Marvin Pt. 2",
     "Dança de Dois Dígitos"
   ],
-    credits: [
+    credits: {
     "Gabriel Guerra": "bass guitar, electric guitar, keyboards, vocals (tracks 1, 3, 6, 8 and 10)",
     "Thiago Rebello": "bass guitar, electric guitar, keyboards",
     "Clara Zettel": "drums, keyboards, vocals (tracks 2, 4, 5, 7 and 9)"
-  ],
+  },
   notes: [
     "All tracks produced and recorded by Gabriel Guerra and Thiago Rebello",
     "CD version comes with an extra CD with all tracks previously released as Crusader de Deus"
   ]
 )
 
-Album.find_or_create_by!(
+Release.find_or_create_by!(
   artist: Artist.find_by(name: "Assadinhos"),
   name: "Winkadinka",
-  cover: "https://f4.bcbits.com/img/a1573352452_10.jpg",
+  cover: ["https://f4.bcbits.com/img/a1573352452_10.jpg"],
   label: ["40% Foda/Maneirissimo"],
   release_type: "Album",
   release_date: Date.new(2021, 9, 27),
@@ -517,19 +529,19 @@ Album.find_or_create_by!(
     "Passarela",
     "Orca Popoca"
   ],
-    credits: [
+    credits: {
     "Gabriel Guerra": "keyboards, drum machine",
-  ],
+  },
   notes: [
     "All tracks produced by Gabriel Guerra"
   ]
 )
 
 
-Album.find_or_create_by!(
+Release.find_or_create_by!(
   artist: Artist.find_by(name: "Assadinhos"),
   name: "Rocking Rio",
-  cover: "https://f4.bcbits.com/img/a1573352452_10.jpg",
+  cover: ["https://f4.bcbits.com/img/a1573352452_10.jpg"],
   label: ["40% Foda/Maneirissimo"],
   release_type: "Album",
   release_date: Date.new(2022, 7, 29),
@@ -544,18 +556,18 @@ Album.find_or_create_by!(
     "Ricochete Life",
     "Os Ventos Uivantes do Mosteiro"
   ],
-    credits: [
+    credits: {
     "Gabriel Guerra": "keyboards, drum machine",
-  ],
+  },
   notes: [
     "All tracks produced by Gabriel Guerra"
   ]
 )
 
-Album.find_or_create_by!(
+Release.find_or_create_by!(
   artist: Artist.find_by(name: "Brasileiro Garantido"),
   name: "Bolinhas de Queijo",
-  cover: "https://f4.bcbits.com/img/a3771608160_10.jpg",
+  cover: ["https://f4.bcbits.com/img/a3771608160_10.jpg"],
   label: ["40% Foda/Maneirissimo"],
   release_type: "Album",
   release_date: Date.new(2020, 9, 18),
@@ -575,9 +587,9 @@ Album.find_or_create_by!(
     "BDQ002",
     "BDQ006",
   ],
-    credits: [
+    credits: {
     "Gabriel Guerra": "sampler, drum machine",
-  ],
+  },
   notes: [
     "All tracks produced by Gabriel Guerra"
   ]
@@ -585,10 +597,10 @@ Album.find_or_create_by!(
 
 
 
-Album.find_or_create_by!(
+Release.find_or_create_by!(
   artist: Artist.find_by(name: "Brasileiro Garantido"),
   name: "Churros Recheado",
-  cover: "https://f4.bcbits.com/img/a1551275304_10.jpg",
+  cover: ["https://f4.bcbits.com/img/a1551275304_10.jpg"],
   label: ["40% Foda/Maneirissimo"],
   release_type: "Album",
   release_date: Date.new(2022, 5, 21),
@@ -603,18 +615,18 @@ Album.find_or_create_by!(
     "CR003",
     "CR008"
   ],
-    credits: [
+    credits: {
     "Gabriel Guerra": "sampler, drum machine",
-  ],
+  },
   notes: [
     "All tracks produced by Gabriel Guerra"
   ]
 )
 
-Album.find_or_create_by!(
+Release.find_or_create_by!(
   artist: Artist.find_by(name: "Brasileiro Garantido"),
   name: "Minipizzas",
-  cover: "https://f4.bcbits.com/img/a2964115691_10.jpg",
+  cover: ["https://f4.bcbits.com/img/a2964115691_10.jpg"],
   release_type: "EP",
   release_date: Date.new(2021, 1, 12),
   format: ["digital download"],
@@ -625,19 +637,19 @@ Album.find_or_create_by!(
     "oinc oinc",
     "tek tek"
   ],
-    credits: [
+    credits: {
     "Gabriel Guerra": "sampler, drum machine",
-  ],
+  },
   notes: [
     "All tracks produced by Gabriel Guerra"
   ]
 )
 
 
-Album.find_or_create_by!(
+Release.find_or_create_by!(
   artist: Artist.find_by(name: "Cavalcantissimos"),
   name: "Os Corredores",
-  cover: "https://f4.bcbits.com/img/a2092179881_16.jpg",
+  cover: ["https://f4.bcbits.com/img/a2092179881_16.jpg"],
   release_type: "Album",
   release_date: Date.new(2019, 9, 23),
   format: ["CD", "digital download", "streaming"],
@@ -664,9 +676,9 @@ Album.find_or_create_by!(
     "Tempus Rotundum (Sedare)",
     "A Costa Sera Onde Ficaremos Para Todo O Sempre"
   ],
-    credits: [
+    credits: {
     "Gabriel Guerra": "acoustic guitar, keyboards, percussion",
-  ],
+  },
   notes: [
     "All tracks produced by Gabriel Guerra",
     "Originally made as soundtrack to Arp hotel"
@@ -674,10 +686,10 @@ Album.find_or_create_by!(
 )
 
 
-Album.find_or_create_by!(
+Release.find_or_create_by!(
   artist: Artist.find_by(name: "Cavalcantissimos"),
   name: "Fazendo do Racionamento Um Esporte",
-  cover: "https://f4.bcbits.com/img/a2406460871_10.jpg",
+  cover: ["https://f4.bcbits.com/img/a2406460871_10.jpg"],
   release_type: "Album",
   release_date: Date.new(2020, 3, 16),
   format: ["CD", "digital download", "streaming"],
@@ -691,9 +703,9 @@ Album.find_or_create_by!(
     "Barra da Luz",
     "Tema Vitorioso"
   ],
-    credits: [
+    credits: {
     "Gabriel Guerra": "acoustic guitar, keyboards, piano, percussion",
-  ],
+  },
   notes: [
     "All tracks produced by Gabriel Guerra",
     "Originally made as soundtrack to Supereficiente"
@@ -701,11 +713,11 @@ Album.find_or_create_by!(
 )
 
 
-Album.find_or_create_by!(
+Release.find_or_create_by!(
   artist: Artist.find_by(name: "Dinheiro Infinito Revival"),
   name: "Faixas de Ritmo",
   label: ["40% Foda/Maneirissimo"],
-  cover: "https://f4.bcbits.com/img/a3747296290_10.jpg",
+  cover: ["https://f4.bcbits.com/img/a3747296290_10.jpg"],
   release_type: "Album",
   release_date: Date.new(2020, 10, 28),
   format: ["CD", "digital download", "streaming"],
@@ -724,9 +736,9 @@ Album.find_or_create_by!(
     "104 BPM",
     "110 BPM"
   ],
-    credits: [
+    credits: {
     "Gabriel Guerra": "synthesizer, sampler, drum machine",
-  ],
+  },
   notes: [
     "All tracks produced by Gabriel Guerra"
   ]
@@ -734,11 +746,11 @@ Album.find_or_create_by!(
 
 
 
-Album.find_or_create_by!(
+Release.find_or_create_by!(
   artist: Artist.find_by(name: "Dinheiro Infinito Revival"),
   name: "Faixas de Ritmo II",
   label: ["40% Foda/Maneirissimo"],
-  cover: "https://f4.bcbits.com/img/a2780880053_10.jpg",
+  cover: ["https://f4.bcbits.com/img/a2780880053_10.jpg"],
   release_type: "Album",
   release_date: Date.new(2022, 4, 25),
   format: ["CD", "digital download", "streaming"],
@@ -754,9 +766,9 @@ Album.find_or_create_by!(
     "137 BPM",
     "141 BPM"
   ],
-    credits: [
+    credits: {
     "Gabriel Guerra": "synthesizer, sampler, drum machine",
-  ],
+  },
   notes: [
     "All tracks produced by Gabriel Guerra"
   ]
@@ -765,11 +777,11 @@ Album.find_or_create_by!(
 
 
 
-Album.find_or_create_by!(
+Release.find_or_create_by!(
   artist: Artist.find_by(name: "Extradisciplinar"),
   name: "Fator Decisivo",
   label: ["40% Foda/Maneirissimo"],
-  cover: "https://f4.bcbits.com/img/a0110980818_10.jpg",
+  cover: ["https://f4.bcbits.com/img/a0110980818_10.jpg"],
   release_type: "Album",
   release_date: Date.new(2021, 3, 29),
   format: ["CD", "digital download", "streaming"],
@@ -784,9 +796,9 @@ Album.find_or_create_by!(
     "Terror",
     "Bloc Party"
   ],
-    credits: [
+    credits: {
     "Gabriel Guerra": "synthesizer, sampler, drum machine",
-  ],
+  },
   notes: [
     "All tracks produced by Gabriel Guerra"
   ]
@@ -794,11 +806,11 @@ Album.find_or_create_by!(
 
 
 
-Album.find_or_create_by!(
+Release.find_or_create_by!(
   artist: Artist.find_by(name: "Extradisciplinar"),
   name: "Videoconferências",
   label: ["40% Foda/Maneirissimo"],
-  cover: "https://f4.bcbits.com/img/a0656039551_10.jpg",
+  cover: ["https://f4.bcbits.com/img/a0656039551_10.jpg"],
   release_type: "Album",
   release_date: Date.new(2021, 11, 18),
   format: ["CD", "digital download", "streaming"],
@@ -812,9 +824,9 @@ Album.find_or_create_by!(
     "V Mini",
     "Ultimatum Platinum"
   ],
-    credits: [
+    credits: {
     "Gabriel Guerra": "synthesizer, sampler, drum machine",
-  ],
+  },
   notes: [
     "All tracks produced by Gabriel Guerra"
   ]
@@ -823,11 +835,11 @@ Album.find_or_create_by!(
 
 
 
-Album.find_or_create_by!(
+Release.find_or_create_by!(
   artist: Artist.find_by(name: "Extradisciplinar"),
   name: "Fator Decisivo",
   label: ["40% Foda/Maneirissimo"],
-  cover: "https://f4.bcbits.com/img/a0110980818_10.jpg",
+  cover: ["https://f4.bcbits.com/img/a0110980818_10.jpg"],
   release_type: "Album",
   release_date: Date.new(2021, 3, 29),
   format: ["CD", "digital download", "streaming"],
@@ -842,9 +854,9 @@ Album.find_or_create_by!(
     "Terror",
     "Bloc Party"
   ],
-    credits: [
+    credits: {
     "Gabriel Guerra": "synthesizer, sampler, drum machine",
-  ],
+  },
   notes: [
     "All tracks produced by Gabriel Guerra"
   ]
@@ -852,11 +864,11 @@ Album.find_or_create_by!(
 
 
 
-Album.find_or_create_by!(
+Release.find_or_create_by!(
   artist: Artist.find_by(name: "Guerrinha"),
   name: "De Rosinha Falsificado Em Feirinhas Cinzentas",
   label: ["TOC"],
-  cover: "https://f4.bcbits.com/img/a1448044909_10.jpg",
+  cover: ["https://f4.bcbits.com/img/a1448044909_10.jpg"],
   release_type: "EP",
   release_date: Date.new(2012, 10, 10),
   format: ["digital download"],
@@ -864,9 +876,9 @@ Album.find_or_create_by!(
     "O Amadora de Confetees",
     "A Catador de Smodees"
   ],
-    credits: [
+    credits: {
     "Gabriel Guerra": "keyboards, sampler, drum machine",
-  ],
+  },
   notes: [
     "All tracks produced by Gabriel Guerra"
   ]
@@ -875,11 +887,11 @@ Album.find_or_create_by!(
 
 
 
-Album.find_or_create_by!(
+Release.find_or_create_by!(
   artist: Artist.find_by(name: "Guerrinha"),
   name: "Rua Sorocaba",
   label: ["40% Foda/Maneirissimo"],
-  cover: "https://f4.bcbits.com/img/a1562058037_10.jpg",
+  cover: ["https://f4.bcbits.com/img/a1562058037_10.jpg"],
   release_type: "EP",
   release_date: Date.new(2013, 8, 7),
   format: ["CD", "digital download", "streaming"],
@@ -890,9 +902,9 @@ Album.find_or_create_by!(
     "Meditações Sobre A Peregrinação Alfa Bar Até Império D'Amoedo",
     "Como Você Se Remenda Com Um 585 Vazio?"
   ],
-    credits: [
+    credits: {
     "Gabriel Guerra": "keyboards, sampler, drum machine",
-  ],
+  },
   notes: [
     "All tracks produced by Gabriel Guerra"
   ]
@@ -900,11 +912,11 @@ Album.find_or_create_by!(
 
 
 
-Album.find_or_create_by!(
+Release.find_or_create_by!(
   artist: Artist.find_by(name: "Guerrinha"),
   name: "O Pedigree Histórico",
   label: ["40% Foda/Maneirissimo"],
-  cover: "",
+  cover: [""],
   release_type: "EP",
   release_date: Date.new(2013, 8, 7),
   format: ["CD", "cassette", "digital download"],
@@ -914,20 +926,20 @@ Album.find_or_create_by!(
     "Misérias do DJ",
     "? (Villadas Guerras)",
   ],
-    credits: [
+    credits: {
     "Gabriel Guerra": "keyboards, sampler, drum machine",
-  ],
+  },
   notes: [
     "All tracks produced by Gabriel Guerra"
   ]
 )
 
 
-Album.find_or_create_by!(
+Release.find_or_create_by!(
   artist: Artist.find_by(name: "Guerrinha"),
   name: "Educação Bentes",
   label: ["40% Foda/Maneirissimo"],
-  cover: "https://f4.bcbits.com/img/a3186606386_16.jpg",
+  cover: ["https://f4.bcbits.com/img/a3186606386_16.jpg"],
   release_type: "EP",
   release_date: Date.new(2014, 6, 11),
   format: ["CD", "digital download", "streaming"],
@@ -937,9 +949,9 @@ Album.find_or_create_by!(
     "Agropecuária Falcão",
     "Prado Junior (Taxi Safager)"
   ],
-    credits: [
+    credits: {
     "Gabriel Guerra": "keyboards, sampler, drum machine",
-  ],
+  },
   notes: [
     "All tracks produced by Gabriel Guerra"
   ]
@@ -947,10 +959,10 @@ Album.find_or_create_by!(
 
 
 
-Album.find_or_create_by!(
+Release.find_or_create_by!(
   artist: Artist.find_by(name: "Guerrinha"),
   name: "Wagner",
-  cover: "https://f4.bcbits.com/img/a3783932851_10.jpg",
+  cover: ["https://f4.bcbits.com/img/a3783932851_10.jpg"],
   release_type: "Album",
   release_date: Date.new(2018, 4, 25),
   format: ["CD", "digital download", "streaming", "vinyl"],
@@ -964,38 +976,38 @@ Album.find_or_create_by!(
     "Bosque",
     "Pomar"
   ],
-    credits: [
+    credits: {
     "Gabriel Guerra": "electric guitar, keyboards, saxophone, percussion, drums",
-  ],
+  },
   notes: [
     "All tracks written, produced and mixed by Gabriel Guerra"
   ]
 )
 
 
-Album.find_or_create_by!(
+Release.find_or_create_by!(
   artist: Artist.find_by(name: "Guerrinha"),
   name: "Apartamento",
-  cover: "https://f4.bcbits.com/img/a0659063702_16.jpg",
+  cover: ["https://f4.bcbits.com/img/a0659063702_16.jpg"],
   release_type: "Single",
   release_date: Date.new(2019, 4, 3),
   format: ["digital download", "streaming", "vinyl"],
   tracks: [
     "Apartamento"
   ],
-    credits: [
+    credits: {
     "Gabriel Guerra": "keyboards, sampler",
-  ],
+  },
   notes: [
     "Track written, produced and mixed by Gabriel Guerra"
   ]
 )
 
 
-Album.find_or_create_by!(
+Release.find_or_create_by!(
   artist: Artist.find_by(name: "Guerrinha"),
   name: "Bodega / Docas",
-  cover: "https://f4.bcbits.com/img/a0657134090_10.jpg",
+  cover: ["https://f4.bcbits.com/img/a0657134090_10.jpg"],
   release_type: "Single",
   release_date: Date.new(2020, 7, 21),
   format: ["digital download", "streaming", "vinyl"],
@@ -1003,9 +1015,9 @@ Album.find_or_create_by!(
     "Bodega",
     "Docas"
   ],
-    credits: [
+    credits: {
     "Gabriel Guerra": "bass guitar, keyboards, drums, saxophone",
-  ],
+  },
   notes: [
     "All tracks written, produced and mixed by Gabriel Guerra"
   ]
@@ -1013,30 +1025,30 @@ Album.find_or_create_by!(
 
 
 
-Album.find_or_create_by!(
+Release.find_or_create_by!(
   artist: Artist.find_by(name: "Guerrinha"),
   name: "Tasca",
-  cover: "https://f4.bcbits.com/img/a2336861143_16.jpg",
+  cover: ["https://f4.bcbits.com/img/a2336861143_16.jpg"],
   release_type: "Single",
   release_date: Date.new(2021, 6, 17),
   format: ["digital download", "streaming", "vinyl"],
   tracks: [
     "Tasca"
   ],
-    credits: [
+    credits: {
     "Gabriel Guerra": "bass guitar, keyboards, drums, saxophone",
-  ],
+  },
   notes: [
     "Track written, produced and mixed by Gabriel Guerra"
   ]
 )
 
 
-Album.find_or_create_by!(
+Release.find_or_create_by!(
   artist: Artist.find_by(name: "Guerrinha"),
   name: "Rua Jorge Rudge",
   label: ["40% Foda/Maneirissimo"],
-  cover: "https://f4.bcbits.com/img/a3506903221_10.jpg",
+  cover: ["https://f4.bcbits.com/img/a3506903221_10.jpg"],
   release_type: "EP",
   release_date: Date.new(2020, 1, 21),
   format: ["CD", "digital download", "streaming"],
@@ -1047,9 +1059,9 @@ Album.find_or_create_by!(
     "Racionalismo Dezembro",
     "Atrio Oitis"
   ],
-    credits: [
+    credits: {
     "Gabriel Guerra": "keyboards, sampler",
-  ],
+  },
   notes: [
     "All tracks produced by Gabriel Guerra"
   ]
@@ -1057,11 +1069,11 @@ Album.find_or_create_by!(
 
 
 
-Album.find_or_create_by!(
+Release.find_or_create_by!(
   artist: Artist.find_by(name: "Guerrinha"),
   name: "Formiguinha's Jazz Standards",
   label: ["40% Foda/Maneirissimo"],
-  cover: "https://f4.bcbits.com/img/a1137985924_16.jpg",
+  cover: ["https://f4.bcbits.com/img/a1137985924_16.jpg"],
   release_type: "EP",
   release_date: Date.new(2020, 7, 31),
   format: ["CD", "digital download", "streaming"],
@@ -1073,9 +1085,9 @@ Album.find_or_create_by!(
     "Lollo's Lamento",
     "Crokissimo's Delivery"
   ],
-    credits: [
+    credits: {
     "Gabriel Guerra": "keyboards, sampler",
-  ],
+  },
   notes: [
     "All tracks produced by Gabriel Guerra"
   ]
@@ -1083,11 +1095,11 @@ Album.find_or_create_by!(
 
 
 
-Album.find_or_create_by!(
+Release.find_or_create_by!(
   artist: Artist.find_by(name: "Guerrinha"),
   name: "Praia das Pedrinhas",
   label: ["40% Foda/Maneirissimo"],
-  cover: "https://f4.bcbits.com/img/a1271840176_16.jpg",
+  cover: ["https://f4.bcbits.com/img/a1271840176_16.jpg"],
   release_type: "EP",
   release_date: Date.new(2021, 2, 25),
   format: ["CD", "digital download", "streaming"],
@@ -1098,9 +1110,9 @@ Album.find_or_create_by!(
     "Morada das Garças",
     "Pirâmide Chique (Arcoíris)"
   ],
-    credits: [
+    credits: {
     "Gabriel Guerra": "keyboards, sampler",
-  ],
+  },
   notes: [
     "All tracks produced by Gabriel Guerra"
   ]
@@ -1108,11 +1120,11 @@ Album.find_or_create_by!(
 
 
 
-Album.find_or_create_by!(
+Release.find_or_create_by!(
   artist: Artist.find_by(name: "Guerrinha"),
   name: "Ida Aos Correios",
   label: ["40% Foda/Maneirissimo"],
-  cover: "https://f4.bcbits.com/img/a2896031143_10.jpg",
+  cover: ["https://f4.bcbits.com/img/a2896031143_10.jpg"],
   release_type: "EP",
   release_date: Date.new(2022, 2, 22),
   format: ["CD", "digital download", "streaming"],
@@ -1123,20 +1135,20 @@ Album.find_or_create_by!(
     "Avenida Princesa Isabel, 266",
     "Avenida Republica do Chile, 65"
   ],
-    credits: [
+    credits: {
     "Gabriel Guerra": "keyboards, sampler",
-  ],
+  },
   notes: [
     "All tracks produced by Gabriel Guerra"
   ]
 )
 
 
-Album.find_or_create_by!(
+Release.find_or_create_by!(
   artist: Artist.find_by(name: "O Retiro dos Artistas"),
   name: "Dimensão Surpreendente",
   label: ["40% Foda/Maneirissimo"],
-  cover: "https://f4.bcbits.com/img/a1541060779_10.jpg",
+  cover: ["https://f4.bcbits.com/img/a1541060779_10.jpg"],
   release_type: "Album",
   release_date: Date.new(2021, 7, 21),
   format: ["CD", "digital download", "streaming"],
@@ -1152,9 +1164,9 @@ Album.find_or_create_by!(
     "Será Esta A Escolha Definitiva?",
     "Dimensão Hiperpassiva Muitobrigada"
   ],
-    credits: [
+    credits: {
     "Gabriel Guerra": "synthesizer, keyboards, sampler",
-  ],
+  },
   notes: [
     "All tracks produced by Gabriel Guerra"
   ]
@@ -1163,11 +1175,11 @@ Album.find_or_create_by!(
 
 
 
-Album.find_or_create_by!(
+Release.find_or_create_by!(
   artist: Artist.find_by(name: "O Retiro dos Artistas"),
   name: "O Mundo Oferecido",
   label: ["40% Foda/Maneirissimo"],
-  cover: "https://f4.bcbits.com/img/a3941237334_10.jpg",
+  cover: ["https://f4.bcbits.com/img/a3941237334_10.jpg"],
   release_type: "Album",
   release_date: Date.new(2022, 6, 20),
   format: ["CD", "digital download", "streaming"],
@@ -1183,9 +1195,9 @@ Album.find_or_create_by!(
     "Dissensos",
     "Universo Online"
   ],
-    credits: [
+    credits: {
     "Gabriel Guerra": "synthesizer, keyboards, sampler",
-  ],
+  },
   notes: [
     "All tracks produced by Gabriel Guerra"
   ]
@@ -1194,10 +1206,10 @@ Album.find_or_create_by!(
 
 
 
-Album.find_or_create_by!(
+Release.find_or_create_by!(
   artist: Artist.find_by(name: "Pessoalizado"),
   name: "Misericórdia",
-  cover: "https://f4.bcbits.com/img/a1861609952_10.jpg",
+  cover: ["https://f4.bcbits.com/img/a1861609952_10.jpg"],
   release_type: "Album",
   release_date: Date.new(2022, 8, 20),
   format: ["CD", "digital download", "streaming"],
@@ -1211,9 +1223,9 @@ Album.find_or_create_by!(
     "Queria Sentir Aquilo Novamente",
     "Por Uma Nova Perspectiva Em Misericórdia"
   ],
-    credits: [
+    credits: {
     "Gabriel Guerra": "bass guitar, drums, electric guitar, keyboards, trumpet",
-  ],
+  },
   notes: [
     "All tracks written, produced and mixed by Gabriel Guerra"
   ]
@@ -1222,11 +1234,11 @@ Album.find_or_create_by!(
 
 
 
-Album.find_or_create_by!(
+Release.find_or_create_by!(
   artist: Artist.find_by(name: "Repetentes 2008"),
-  name: "Funk do Sindicalismo b/w Agronomia Setorial",
-  cover: "https://f4.bcbits.com/img/a2003851170_16.jpg",
-  label: ["Future Times", "40% Foda/Maneirissimo"],
+  name: "Habilidades Eu Tenho",
+  cover: ["https://f4.bcbits.com/img/a0578619615_10.jpg", "https://f4.bcbits.com/img/a2003851170_16.jpg"],
+  label: ["40% Foda/Maneirissimo", "Future Times"],
   release_type: "Single",
   release_date: Date.new(2014, 5, 4),
   format: ["CD", "digital download", "streaming", "vinyl"],
@@ -1234,22 +1246,22 @@ Album.find_or_create_by!(
     "Funk do Sindicalismo",
     "Agronomia Setorial"
   ],
-    credits: [
+    credits: {
     "Gabriel Guerra": "sampler, synthesizer, drum machine",
-  ],
+  },
   notes: [
     "All tracks produced by Gabriel Guerra",
-    "Originally released in 2013 as 'Habilidades Eu Tenho' by Japa Habilidoso"
+    "Originally released as Japa Habilidoso"
   ]
 )
 
 
 
-Album.find_or_create_by!(
+Release.find_or_create_by!(
   artist: Artist.find_by(name: "Repetentes 2008"),
   name: "Curriculum Tenebrae",
-  cover: "https://f4.bcbits.com/img/a3757464589_16.jpg",
-  label: ["Future Times", "40% Foda/Maneirissimo"],
+  cover: ["https://f4.bcbits.com/img/a3757464589_16.jpg"],
+  label: ["40% Foda/Maneirissimo"],
   release_type: "EP",
   release_date: Date.new(2015, 7, 18),
   format: ["CD", "digital download", "streaming"],
@@ -1257,10 +1269,10 @@ Album.find_or_create_by!(
     "Professor Antonio Carlos",
     "Professora Marta"
   ],
-    credits: [
+    credits: {
     "Gabriel Guerra": "sampler, synthesizer, drum machine",
     "Thiago Rebello": "electric guitar"
-  ],
+  },
   notes: [
     "All tracks produced by Gabriel Guerra"
   ]
@@ -1269,10 +1281,10 @@ Album.find_or_create_by!(
 
 
 
-Album.find_or_create_by!(
+Release.find_or_create_by!(
   artist: Artist.find_by(name: "Repetentes 2008"),
   name: "Boulevard Internacional",
-  cover: "https://f4.bcbits.com/img/a0528835771_16.jpg",
+  cover: ["https://f4.bcbits.com/img/a0528835771_16.jpg"],
   label: ["Future Times"],
   release_type: "EP",
   release_date: Date.new(2017, 6, 28),
@@ -1283,9 +1295,9 @@ Album.find_or_create_by!(
     "Matando Aula, Jogando Jogos",
     "Rede Lazarência"
   ],
-    credits: [
+    credits: {
     "Gabriel Guerra": "keyboards, sampler, synthesizer, drum machine"
-  ],
+  },
   notes: [
     "All tracks produced by Gabriel Guerra"
   ]
@@ -1295,10 +1307,10 @@ Album.find_or_create_by!(
 
 
 
-Album.find_or_create_by!(
+Release.find_or_create_by!(
   artist: Artist.find_by(name: "Repetentes 2008"),
   name: "Boulderball",
-  cover: "https://f4.bcbits.com/img/a4130219038_16.jpg",
+  cover: ["https://f4.bcbits.com/img/a4130219038_16.jpg"],
   label: ["Future Times"],
   release_type: "Album",
   release_date: Date.new(2017, 10, 27),
@@ -1314,10 +1326,10 @@ Album.find_or_create_by!(
     "Fazenda Sacrificio",
     "Unemployment Grand Prix"
   ],
-    credits: [
+    credits: {
     "Gabriel Guerra": "keyboards, sampler, synthesizer, drum machine",
     "Will Di Maggio": "keyboards (track 1)"
-  ],
+  },
   notes: [
     "All tracks produced by Gabriel Guerra"
   ]
@@ -1328,10 +1340,10 @@ Album.find_or_create_by!(
 
 
 
-Album.find_or_create_by!(
+Release.find_or_create_by!(
   artist: Artist.find_by(name: "Repetentes 2008"),
   name: "Os Maneiros",
-  cover: "https://f4.bcbits.com/img/a1094794884_16.jpg",
+  cover: ["https://f4.bcbits.com/img/a1094794884_16.jpg"],
   label: ["40% Foda/Maneirissimo"],
   release_type: "EP",
   release_date: Date.new(2018, 2, 5),
@@ -1342,9 +1354,9 @@ Album.find_or_create_by!(
     "Nova Berserker",
     "Fofo Shuffle"
   ],
-    credits: [
+    credits: {
     "Gabriel Guerra": "electric guitar, keyboards, synthesizer, drum machine",
-  ],
+  },
   notes: [
     "All tracks produced by Gabriel Guerra"
   ]
@@ -1352,10 +1364,10 @@ Album.find_or_create_by!(
 
 
 
-Album.find_or_create_by!(
+Release.find_or_create_by!(
   artist: Artist.find_by(name: "Repetentes 2008"),
   name: "Vasos de Banha",
-  cover: "https://i.discogs.com/Q2sVlPAXT5eWZ3GydKGNWRpdhV-3qHzqS9SAIJZyMc4/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyMjUy/ODUyLTE1MzE0ODQ4/ODUtODQwNC5qcGVn.jpeg",
+  cover: ["https://i.discogs.com/Q2sVlPAXT5eWZ3GydKGNWRpdhV-3qHzqS9SAIJZyMc4/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyMjUy/ODUyLTE1MzE0ODQ4/ODUtODQwNC5qcGVn.jpeg"],
   label: ["LAMA"],
   release_type: "EP",
   release_date: Date.new(2018, 8, 12),
@@ -1364,9 +1376,9 @@ Album.find_or_create_by!(
     "Moreirinha Sai Saindo",
     "Veja Os Fantasminhas"
   ],
-    credits: [
+    credits: {
     "Gabriel Guerra": "keyboards, synthesizer, drum machine",
-  ],
+  },
   notes: [
     "All tracks produced by Gabriel Guerra"
   ]
@@ -1376,10 +1388,10 @@ Album.find_or_create_by!(
 
 
 
-Album.find_or_create_by!(
+Release.find_or_create_by!(
   artist: Artist.find_by(name: "Repetentes 2008"),
   name: "Gelo Gerônimo",
-  cover: "https://f4.bcbits.com/img/a0483802619_10.jpg",
+  cover: ["https://f4.bcbits.com/img/a0483802619_10.jpg"],
   label: ["Gop Tun"],
   release_type: "EP",
   release_date: Date.new(2019, 4, 2),
@@ -1390,9 +1402,9 @@ Album.find_or_create_by!(
     "Missão Misturebar",
     "Judas Priest"
   ],
-    credits: [
+    credits: {
     "Gabriel Guerra": "keyboards, synthesizer, drum machine"
-  ],
+  },
   notes: [
     "All tracks produced by Gabriel Guerra except track 2 produced by Gilb'r"
   ]
@@ -1400,10 +1412,10 @@ Album.find_or_create_by!(
 
 
 
-Album.find_or_create_by!(
+Release.find_or_create_by!(
   artist: Artist.find_by(name: "Repetentes 2008"),
   name: "Galaxia Fini",
-  cover: "https://f4.bcbits.com/img/a0962642215_10.jpg",
+  cover: ["https://f4.bcbits.com/img/a0962642215_10.jpg"],
   label: ["Superconscious Records"],
   release_type: "EP",
   release_date: Date.new(2019, 8, 16),
@@ -1414,9 +1426,9 @@ Album.find_or_create_by!(
     "Acavalcan Ritmos",
     "Jornada dos Faniquitos"
   ],
-    credits: [
+    credits: {
     "Gabriel Guerra": "keyboards, synthesizer, drum machine"
-  ],
+  },
   notes: [
     "All tracks produced by Gabriel Guerra"
   ]
@@ -1424,10 +1436,10 @@ Album.find_or_create_by!(
 
 
 
-Album.find_or_create_by!(
+Release.find_or_create_by!(
   artist: Artist.find_by(name: "Repetentes 2008"),
   name: "Silvio System",
-  cover: "https://f4.bcbits.com/img/a2955970765_16.jpg",
+  cover: ["https://f4.bcbits.com/img/a2955970765_16.jpg"],
   label: ["40% Foda/Maneirissimo"],
   release_type: "EP",
   release_date: Date.new(2020, 2, 18),
@@ -1440,9 +1452,9 @@ Album.find_or_create_by!(
     "Wing Wing",
     "Campeonato Costeiro"
   ],
-    credits: [
+    credits: {
     "Gabriel Guerra": "keyboards, synthesizer, drum machine"
-  ],
+  },
   notes: [
     "All tracks produced by Gabriel Guerra"
   ]
@@ -1451,10 +1463,10 @@ Album.find_or_create_by!(
 
 
 
-Album.find_or_create_by!(
+Release.find_or_create_by!(
   artist: Artist.find_by(name: "Repetentes 2008"),
   name: "Light Lixo",
-  cover: "https://f4.bcbits.com/img/a3705186081_10.jpg",
+  cover: ["https://f4.bcbits.com/img/a3705186081_10.jpg"],
   label: ["40% Foda/Maneirissimo"],
   release_type: "EP",
   release_date: Date.new(2020, 6, 29),
@@ -1467,9 +1479,9 @@ Album.find_or_create_by!(
     "Stilingue",
     "Funtasia Fun Fun"
   ],
-    credits: [
+    credits: {
     "Gabriel Guerra": "keyboards, synthesizer, drum machine"
-  ],
+  },
   notes: [
     "All tracks produced by Gabriel Guerra"
   ]
@@ -1478,10 +1490,10 @@ Album.find_or_create_by!(
 
 
 
-Album.find_or_create_by!(
+Release.find_or_create_by!(
   artist: Artist.find_by(name: "Repetentes 2008"),
   name: "A Tragédia de Pete",
-  cover: "https://f4.bcbits.com/img/a3042732438_10.jpg",
+  cover: ["https://f4.bcbits.com/img/a3042732438_10.jpg"],
   label: ["40% Foda/Maneirissimo"],
   release_type: "EP",
   release_date: Date.new(2021, 4, 28),
@@ -1493,9 +1505,9 @@ Album.find_or_create_by!(
     "Pete Morreu",
     "Quem Sobrou?"
   ],
-    credits: [
+    credits: {
     "Gabriel Guerra": "keyboards, synthesizer, drum machine"
-  ],
+  },
   notes: [
     "All tracks produced by Gabriel Guerra"
   ]
@@ -1504,10 +1516,10 @@ Album.find_or_create_by!(
 
 
 
-Album.find_or_create_by!(
+Release.find_or_create_by!(
   artist: Artist.find_by(name: "Repetentes 2008"),
   name: "Rapidão Cometa Highway",
-  cover: "https://f4.bcbits.com/img/a2517780095_10.jpg",
+  cover: ["https://f4.bcbits.com/img/a2517780095_10.jpg"],
   label: ["40% Foda/Maneirissimo"],
   release_type: "EP",
   release_date: Date.new(2021, 12, 20),
@@ -1519,9 +1531,9 @@ Album.find_or_create_by!(
     "Communication Breakdown Skating",
     "Uma Nova Volta Ao Sol Marcando Uma Nova Era"
   ],
-    credits: [
+    credits: {
     "Gabriel Guerra": "keyboards, synthesizer, drum machine"
-  ],
+  },
   notes: [
     "All tracks produced by Gabriel Guerra"
   ]
@@ -1529,10 +1541,10 @@ Album.find_or_create_by!(
 
 
 
-Album.find_or_create_by!(
+Release.find_or_create_by!(
   artist: Artist.find_by(name: "Repetentes 2008"),
   name: "Posto de Gasolina Online",
-  cover: "https://f4.bcbits.com/img/a3946774771_16.jpg",
+  cover: ["https://f4.bcbits.com/img/a3946774771_16.jpg"],
   release_type: "EP",
   release_date: Date.new(2020, 3, 17),
   format: ["digital download"],
@@ -1542,9 +1554,9 @@ Album.find_or_create_by!(
     "Navio Virtual Bibliográfico",
     "Alerta Para A Urgência Das Configurações Gerais"
   ],
-    credits: [
+    credits: {
     "Gabriel Guerra": "keyboards, synthesizer, drum machine"
-  ],
+  },
   notes: [
     "All tracks produced by Gabriel Guerra"
   ]
@@ -1552,10 +1564,10 @@ Album.find_or_create_by!(
 
 
 
-Album.find_or_create_by!(
+Release.find_or_create_by!(
   artist: Artist.find_by(name: "Repetentes 2008"),
   name: "O Lento Céu Ralentado",
-  cover: "https://f4.bcbits.com/img/a0537177754_10.jpg",
+  cover: ["https://f4.bcbits.com/img/a0537177754_10.jpg"],
   release_type: "EP",
   release_date: Date.new(2021, 8, 22),
   format: ["digital download"],
@@ -1565,9 +1577,9 @@ Album.find_or_create_by!(
     "Adentrando Buraco Incognito",
     "Supercrazy Botão Que Foi Apertado"
   ],
-    credits: [
+    credits: {
     "Gabriel Guerra": "keyboards, synthesizer, drum machine"
-  ],
+  },
   notes: [
     "All tracks produced by Gabriel Guerra"
   ]
@@ -1576,11 +1588,11 @@ Album.find_or_create_by!(
 
 
 
-Album.find_or_create_by!(
+Release.find_or_create_by!(
   artist: Artist.find_by(name: "Sérgio"),
   name: "Utensílios",
   label: ["40% Foda/Maneirissimo"],
-  cover: "https://f4.bcbits.com/img/a2169797335_10.jpg",
+  cover: ["https://f4.bcbits.com/img/a2169797335_10.jpg"],
   release_type: "Album",
   release_date: Date.new(2019, 11, 7),
   format: ["CD", "streaming", "digital download"],
@@ -1593,9 +1605,9 @@ Album.find_or_create_by!(
     "Reconhecimento Facial",
     "Segunda Chance"
   ],
-    credits: [
+    credits: {
     "Gabriel Guerra": "sampler, synthesizer, drum machine"
-  ],
+  },
   notes: [
     "All tracks produced by Gabriel Guerra"
   ]
@@ -1604,10 +1616,10 @@ Album.find_or_create_by!(
 
 
 
-Album.find_or_create_by!(
+Release.find_or_create_by!(
   artist: Artist.find_by(name: "Sérgio"),
   name: "Mais Utensílios",
-  cover: "https://f4.bcbits.com/img/a1804260946_10.jpg",
+  cover: ["https://f4.bcbits.com/img/a1804260946_10.jpg"],
   label: ["40% Foda/Maneirissimo"],
   release_type: "Album",
   release_date: Date.new(2022, 1, 18),
@@ -1621,9 +1633,9 @@ Album.find_or_create_by!(
     "Eee... Nada!",
     "Reticência Insuportável"
   ],
-    credits: [
+    credits: {
     "Gabriel Guerra": "sampler, synthesizer, drum machine"
-  ],
+  },
   notes: [
     "All tracks produced by Gabriel Guerra"
   ]
@@ -1632,10 +1644,10 @@ Album.find_or_create_by!(
 
 
 
-Album.find_or_create_by!(
+Release.find_or_create_by!(
   artist: Artist.find_by(name: "Sérgio"),
   name: "Fantabobi / Riquititas ",
-  cover: "https://f4.bcbits.com/img/a1384452564_16.jpg",
+  cover: ["https://f4.bcbits.com/img/a1384452564_16.jpg"],
   release_type: "Single",
   release_date: Date.new(2022, 7, 11),
   format: ["digital download"],
@@ -1643,9 +1655,9 @@ Album.find_or_create_by!(
     "Fantabobi",
     "Riquititas"
   ],
-    credits: [
+    credits: {
     "Gabriel Guerra": "sampler, synthesizer, drum machine"
-  ],
+  },
   notes: [
     "All tracks produced by Gabriel Guerra"
   ]
@@ -1656,10 +1668,10 @@ Album.find_or_create_by!(
 
 
 
-Album.find_or_create_by!(
+Release.find_or_create_by!(
   artist: Artist.find_by(name: "Vamos Desistir"),
   name: "Perguntas",
-  cover: "https://f4.bcbits.com/img/a3538253207_16.jpg",
+  cover: ["https://f4.bcbits.com/img/a3538253207_16.jpg"],
   label: ["40% Foda/Maneirissimo"],
   release_type: "Album",
   release_date: Date.new(2020, 12, 26),
@@ -1672,9 +1684,9 @@ Album.find_or_create_by!(
     "Podemos?",
     "Será"
   ],
-    credits: [
+    credits: {
     "Gabriel Guerra": "keyboards, synthesizer, drum machine, percussion"
-  ],
+  },
   notes: [
     "All tracks produced by Gabriel Guerra"
   ]
@@ -1684,10 +1696,10 @@ Album.find_or_create_by!(
 
 
 
-Album.find_or_create_by!(
+Release.find_or_create_by!(
   artist: Artist.find_by(name: "Vamos Desistir"),
   name: "Respostas",
-  cover: "https://f4.bcbits.com/img/a3847996628_10.jpg",
+  cover: ["https://f4.bcbits.com/img/a3847996628_10.jpg"],
   label: ["40% Foda/Maneirissimo"],
   release_type: "Album",
   release_date: Date.new(2021, 1, 22),
@@ -1704,9 +1716,9 @@ Album.find_or_create_by!(
     "Tropeçando Nisto Porque Foi Isto Que Sobrou",
     "Um Jardim Esperancitário"
   ],
-    credits: [
+    credits: {
     "Gabriel Guerra": "keyboards, synthesizer, drum machine, percussion"
-  ],
+  },
   notes: [
     "All tracks produced by Gabriel Guerra"
   ]
