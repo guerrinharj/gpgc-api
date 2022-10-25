@@ -14,5 +14,4 @@ class Api::V1::ReleasesController < Api::V1::BaseController
     @release = Release.find(params[:id])
     render json: @release
   end
-
 end
