@@ -11,7 +11,7 @@ class Api::V1::ReleasesController < Api::V1::BaseController
   private
 
   def set_release
-    @release = Release.find(params[:id])
+    @release = Release.find_by(slug: params[:slug])
     render json: @release
   end
 end
