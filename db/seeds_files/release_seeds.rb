@@ -3,6 +3,7 @@ p 'Seeding releases...'
 
 Release.find_or_create_by!(
   artist: Artist.find_by(name: "Garageiros do Abismo"),
+  artist_name: Artist.find_by(name: "Garageiros do Abismo").name,
   name: "Tão Fácil Quanto Ser Poeta",
   slug: 'tao-facil-quanto-ser-poeta',
   cover: ["https://i.discogs.com/oOaAXEto2h5WRCtZqxdjKreljU58uZg-Qfftjw7ErJM/rs:fit/g:sm/q:90/h:500/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI1MjEz/NTMtMTUzOTM5MjIy/MC03Mzc2LnBuZw.jpeg"],
@@ -30,6 +31,7 @@ Release.find_or_create_by!(
 
 Release.find_or_create_by!(
   artist: Artist.find_by(name: "Garageiros do Abismo"),
+  artist_name: Artist.find_by(name: "Garageiros do Abismo").name,
   name: "Estamos Sujos / Alvaro é Vélho",
   slug: 'estamos-sujos-alvaro-e-velho',
   cover: ["https://i.discogs.com/lw4P82_EGCmkCELlZWXp5E6FnFH9K33kFUoDGJwitHI/rs:fit/g:sm/q:90/h:400/w:399/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI1MjEz/NzMtMTUzOTM5MjI0/MS0zMTgyLnBuZw.jpeg"],
@@ -54,6 +56,7 @@ Release.find_or_create_by!(
 
 Release.find_or_create_by!(
   artist: Artist.find_by(name: "Dorgas"),
+  artist_name: Artist.find_by(name: "Dorgas").name,
   name: "Verdeja Music",
   slug: 'verdeja-music',
   cover: ["https://i.discogs.com/EM3QAbd_2J72apeSFVf5X3n-M4r_tels3OShDgNcDiw/rs:fit/g:sm/q:90/h:362/w:361/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI1MjEz/MTUtMTM3MDI0NzUy/NS0zMzgzLmpwZWc.jpeg"],
@@ -80,6 +83,7 @@ Release.find_or_create_by!(
 
 Release.find_or_create_by!(
   artist: Artist.find_by(name: "Dorgas"),
+  artist_name: Artist.find_by(name: "Dorgas").name,
   name: "Loxhanxha",
   slug: 'loxhanxha',
   cover: ["https://i.discogs.com/bgQFEm6EbNirbnDRnr9s0GjXatAE-reqSg72qV82994/rs:fit/g:sm/q:90/h:218/w:250/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ2MjMy/MTYtMTM3MDI0Nzky/My02MzU0LmpwZWc.jpeg"],
@@ -104,6 +108,7 @@ Release.find_or_create_by!(
 
 Release.find_or_create_by!(
   artist: Artist.find_by(name: "Dorgas"),
+  artist_name: Artist.find_by(name: "Dorgas").name,
   name: "Grangongon",
   slug: 'grangongon',
   cover: ["https://i.discogs.com/T6sLEz28VOutFJutjKFSP7Jor1Ko51j9HQyn6EcqsKg/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ2MjMy/MzAtMTM3MDI0ODI1/OS00NjM0LmpwZWc.jpeg"],
@@ -129,6 +134,7 @@ Release.find_or_create_by!(
 
 Release.find_or_create_by!(
   artist: Artist.find_by(name: "Dorgas"),
+  artist_name: Artist.find_by(name: "Dorgas").name,
   name: "Dorgas",
   slug: 'dorgas-album',
   cover: ["https://i.discogs.com/lVE45d9jpzyBRBYg36AzXBFANnbMhwXlrbNblpdA4j0/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ2MjQ4/NjYtMTM3MDM4Njcw/Ni02NjI2LmpwZWc.jpeg"],
@@ -162,6 +168,7 @@ Release.find_or_create_by!(
 
 Release.find_or_create_by!(
   artist: Artist.find_by(name: "Dorgas"),
+  artist_name: Artist.find_by(name: "Dorgas").name,
   name: "Semanas Góticas",
   slug: 'semanas-goticas',
   cover: ["https://i.discogs.com/0qeeSm7fYNz1FUiTRx7O1ZrDJrWIj68BHA1L45CJha8/rs:fit/g:sm/q:90/h:335/w:335/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ3MTY2/NTMtMTM3MzIxOTg0/Ny0xNDc2LmpwZWc.jpeg"],
@@ -186,6 +193,7 @@ Release.find_or_create_by!(
 
 Release.find_or_create_by!(
   artist: Artist.find_by(name: "Finalzinho Chegando"),
+  artist_name: Artist.find_by(name: "Finalzinho Chegando").name,
   name: "#1",
   slug: 'finalzinho-chegando-1',
   cover: ["https://f4.bcbits.com/img/a2368990301_10.jpg"],
@@ -209,6 +217,7 @@ Release.find_or_create_by!(
 
 Release.find_or_create_by!(
   artist: Artist.find_by(name: "Finalzinho Chegando"),
+  artist_name: Artist.find_by(name: "Finalzinho Chegando").name,
   name: "#4",
   slug: 'finalzinho-chegando-4',
   cover: ["https://f4.bcbits.com/img/a0956891699_10.jpg"],
@@ -232,6 +241,7 @@ Release.find_or_create_by!(
 
 Release.find_or_create_by!(
   artist: Artist.find_by(name: "Finalzinho Chegando"),
+  artist_name: Artist.find_by(name: "Finalzinho Chegando").name,
   name: "#6",
   slug: 'finalzinho-chegando-6',
   cover: ["https://f4.bcbits.com/img/a2710395536_10.jpg"],
@@ -255,6 +265,7 @@ Release.find_or_create_by!(
 
 Release.find_or_create_by!(
   artist: Artist.find_by(name: "Finalzinho Chegando"),
+  artist_name: Artist.find_by(name: "Finalzinho Chegando").name,
   name: "#3",
   slug: 'finalzinho-chegando-3',
   cover: ["https://f4.bcbits.com/img/a3905919501_10.jpg"],
@@ -279,6 +290,7 @@ Release.find_or_create_by!(
 
 Release.find_or_create_by!(
   artist: Artist.find_by(name: "Séculos Apaixonados"),
+  artist_name: Artist.find_by(name: "Séculos Apaixonados").name,
   name: "Roupa Linda, Figura Fantasmagórica",
   slug: 'roupa-linda-figura-fantasmagorica',
   cover: ["https://i.discogs.com/dDyUIVA53TorJ--yFTYZg3eKnaiVf-TgZ4RfjRJIaW0/rs:fit/g:sm/q:90/h:400/w:400/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYzMzg0/MzYtMTQxNjgxMTY0/MC00NzEyLmpwZWc.jpeg"],
@@ -319,6 +331,7 @@ Release.find_or_create_by!(
 
 Release.find_or_create_by!(
   artist: Artist.find_by(name: "Séculos Apaixonados"),
+  artist_name: Artist.find_by(name: "Séculos Apaixonados").name,
   name: "O Ministério da Colocação",
   slug: 'o-ministerio-da-colocacao',
   cover: ["https://f4.bcbits.com/img/a3912121445_10.jpg"],
@@ -362,6 +375,7 @@ Release.find_or_create_by!(
 
 Release.find_or_create_by!(
   artist: Artist.find_by(name: "Séculos Apaixonados"),
+  artist_name: Artist.find_by(name: "Séculos Apaixonados").name,
   name: "Suspenso Graças Ao Principio da Insignificância",
   slug: 'suspenco-gracas-ao-principio-da-insignificancia',
   cover: ["https://i.discogs.com/4sdGsoc-yMYJsEhCI2NKhDO4x_7M7IxT3eAtVEbNEBI/rs:fit/g:sm/q:90/h:600/w:597/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyMzY2/MjAwLTE1MzM4MDYw/NTMtMjUzMy5wbmc.jpeg"],
@@ -401,6 +415,7 @@ Release.find_or_create_by!(
 
 Release.find_or_create_by!(
   artist: Artist.find_by(name: "Epicentro do Bloquinho"),
+  artist_name: Artist.find_by(name: "Epicentro do Bloquinho").name,
   name: "Hegelianos de Direita",
   slug: 'hegelianos-de-direita',
   cover: ["https://f4.bcbits.com/img/a3682959887_10.jpg"],
@@ -434,6 +449,7 @@ Release.find_or_create_by!(
 
 Release.find_or_create_by!(
   artist: Artist.find_by(name: "Relações Públicas"),
+  artist_name: Artist.find_by(name: "Relações Públicas").name,
   name: "Relações Públicas",
   slug: 'relacoes-publicas-ep',
   cover: ["https://f4.bcbits.com/img/a3776362657_10.jpg"],
@@ -465,6 +481,7 @@ Release.find_or_create_by!(
 
 Release.find_or_create_by!(
   artist: Artist.find_by(name: "Relações Públicas"),
+  artist_name: Artist.find_by(name: "Relações Públicas").name,
   name: "Juros Perfeitos",
   slug: 'juros-perfeitos',
   cover: ["https://f4.bcbits.com/img/a0678382550_10.jpg"],
@@ -495,6 +512,7 @@ Release.find_or_create_by!(
 
 Release.find_or_create_by!(
   artist: Artist.find_by(name: "Relações Públicas"),
+  artist_name: Artist.find_by(name: "Relações Públicas").name,
   name: "Classicos Republicanos",
   slug: 'classicos-republicanos',
   cover: ["https://f4.bcbits.com/img/a0678382550_10.jpg"],
@@ -525,6 +543,7 @@ Release.find_or_create_by!(
 
 Release.find_or_create_by!(
   artist: Artist.find_by(name: "Relações Públicas"),
+  artist_name: Artist.find_by(name: "Relações Públicas").name,
   name: "Politica Popula Lógica Estraga",
   slug: 'politica-popula-logica-estraga',
   cover: ["https://f4.bcbits.com/img/a1482343204_10.jpg"],
@@ -560,6 +579,7 @@ Release.find_or_create_by!(
 
 Release.find_or_create_by!(
   artist: Artist.find_by(name: "Assadinhos"),
+  artist_name: Artist.find_by(name: "Assadinhos").name,
   name: "Winkadinka",
   slug: 'winkadinka',
   cover: ["https://f4.bcbits.com/img/a1573352452_10.jpg"],
@@ -591,6 +611,7 @@ Release.find_or_create_by!(
 
 Release.find_or_create_by!(
   artist: Artist.find_by(name: "Assadinhos"),
+  artist_name: Artist.find_by(name: "Assadinhos").name,
   name: "Rocking Rio",
   slug: 'rocking-rio',
   cover: ["https://f4.bcbits.com/img/a1573352452_10.jpg"],
@@ -621,6 +642,7 @@ Release.find_or_create_by!(
 
 Release.find_or_create_by!(
   artist: Artist.find_by(name: "Brasileiro Garantido"),
+  artist_name: Artist.find_by(name: "Brasileiro Garantido").name,
   name: "Bolinhas de Queijo",
   slug: 'bolinhas-de-queijo',
   cover: ["https://f4.bcbits.com/img/a3771608160_10.jpg"],
@@ -658,6 +680,7 @@ Release.find_or_create_by!(
 
 Release.find_or_create_by!(
   artist: Artist.find_by(name: "Brasileiro Garantido"),
+  artist_name: Artist.find_by(name: "Brasileiro Garantido").name,
   name: "Churros Recheado",
   slug: 'churros-recheado',
   cover: ["https://f4.bcbits.com/img/a1551275304_10.jpg"],
@@ -685,6 +708,7 @@ Release.find_or_create_by!(
 
 Release.find_or_create_by!(
   artist: Artist.find_by(name: "Brasileiro Garantido"),
+  artist_name: Artist.find_by(name: "Brasileiro Garantido").name,
   name: "Minipizzas",
   slug: 'minipizzas',
   cover: ["https://f4.bcbits.com/img/a2964115691_10.jpg"],
@@ -712,6 +736,7 @@ Release.find_or_create_by!(
 
 Release.find_or_create_by!(
   artist: Artist.find_by(name: "Cavalcantissimos"),
+  artist_name: Artist.find_by(name: "Cavalcantissimos").name,
   name: "Os Corredores",
   slug: 'os-corredores',
   cover: ["https://f4.bcbits.com/img/a2092179881_16.jpg"],
@@ -757,6 +782,7 @@ Release.find_or_create_by!(
 
 Release.find_or_create_by!(
   artist: Artist.find_by(name: "Cavalcantissimos"),
+  artist_name: Artist.find_by(name: "Cavalcantissimos").name,
   name: "Fazendo do Racionamento Um Esporte",
   slug: 'fazendo-do-racionamento-um-esporte',
   cover: ["https://f4.bcbits.com/img/a2406460871_10.jpg"],
@@ -789,6 +815,7 @@ Release.find_or_create_by!(
 
 Release.find_or_create_by!(
   artist: Artist.find_by(name: "Dinheiro Infinito Revival"),
+  artist_name: Artist.find_by(name: "Dinheiro Infinito Revival").name,
   name: "Faixas de Ritmo",
   slug: 'faixas-de-ritmo',
   label: ["40% Foda/Maneirissimo"],
@@ -826,6 +853,7 @@ Release.find_or_create_by!(
 
 Release.find_or_create_by!(
   artist: Artist.find_by(name: "Dinheiro Infinito Revival"),
+  artist_name: Artist.find_by(name: "Dinheiro Infinito Revival").name,
   name: "Faixas de Ritmo II",
   slug: 'faixas-de-ritmo-ii',
   label: ["40% Foda/Maneirissimo"],
@@ -861,6 +889,7 @@ Release.find_or_create_by!(
 
 Release.find_or_create_by!(
   artist: Artist.find_by(name: "Extradisciplinar"),
+  artist_name: Artist.find_by(name: "Extradisciplinar").name,
   name: "Fator Decisivo",
   slug: 'fator-decisivo',
   label: ["40% Foda/Maneirissimo"],
@@ -894,6 +923,7 @@ Release.find_or_create_by!(
 
 Release.find_or_create_by!(
   artist: Artist.find_by(name: "Extradisciplinar"),
+  artist_name: Artist.find_by(name: "Extradisciplinar").name,
   name: "Videoconferências",
   slug: 'videoconferencias',
   label: ["40% Foda/Maneirissimo"],
@@ -925,6 +955,7 @@ Release.find_or_create_by!(
 
 Release.find_or_create_by!(
   artist: Artist.find_by(name: "Guerrinha"),
+  artist_name: Artist.find_by(name: "Guerrinha").name,
   name: "De Rosinha Falsificado Em Feirinhas Cinzentas",
   slug: 'de-rosinha-falsificado-em-feirinhas-cinzentas',
   label: ["TOC"],
@@ -949,6 +980,7 @@ Release.find_or_create_by!(
 
 Release.find_or_create_by!(
   artist: Artist.find_by(name: "Guerrinha"),
+  artist_name: Artist.find_by(name: "Guerrinha").name,
   name: "Rua Sorocaba",
   slug: 'rua-sorocaba',
   label: ["40% Foda/Maneirissimo"],
@@ -978,6 +1010,7 @@ Release.find_or_create_by!(
 
 Release.find_or_create_by!(
   artist: Artist.find_by(name: "Guerrinha"),
+  artist_name: Artist.find_by(name: "Guerrinha").name,
   name: "O Pedigree Histórico",
   slug: 'o-pedigree-historico',
   label: ["40% Foda/Maneirissimo"],
@@ -1005,6 +1038,7 @@ Release.find_or_create_by!(
 
 Release.find_or_create_by!(
   artist: Artist.find_by(name: "Guerrinha"),
+  artist_name: Artist.find_by(name: "Guerrinha").name,
   name: "Educação Bentes",
   slug: 'educacao-bentes',
   label: ["40% Foda/Maneirissimo"],
@@ -1033,6 +1067,7 @@ Release.find_or_create_by!(
 
 Release.find_or_create_by!(
   artist: Artist.find_by(name: "Guerrinha"),
+  artist_name: Artist.find_by(name: "Guerrinha").name,
   name: "Wagner",
   slug: 'wagner',
   cover: ["https://f4.bcbits.com/img/a3783932851_10.jpg"],
@@ -1064,6 +1099,7 @@ Release.find_or_create_by!(
 
 Release.find_or_create_by!(
   artist: Artist.find_by(name: "Guerrinha"),
+  artist_name: Artist.find_by(name: "Guerrinha").name,
   name: "Apartamento",
   slug: 'apartamento',
   cover: ["https://f4.bcbits.com/img/a0659063702_16.jpg"],
@@ -1087,6 +1123,7 @@ Release.find_or_create_by!(
 
 Release.find_or_create_by!(
   artist: Artist.find_by(name: "Guerrinha"),
+  artist_name: Artist.find_by(name: "Guerrinha").name,
   name: "Bodega / Docas",
   slug: 'bodega-docas',
   cover: ["https://f4.bcbits.com/img/a0657134090_10.jpg"],
@@ -1113,6 +1150,7 @@ Release.find_or_create_by!(
 
 Release.find_or_create_by!(
   artist: Artist.find_by(name: "Guerrinha"),
+  artist_name: Artist.find_by(name: "Guerrinha").name,
   name: "Tasca",
   slug: 'tasca',
   cover: ["https://f4.bcbits.com/img/a2336861143_16.jpg"],
@@ -1137,6 +1175,7 @@ Release.find_or_create_by!(
 
 Release.find_or_create_by!(
   artist: Artist.find_by(name: "Guerrinha"),
+  artist_name: Artist.find_by(name: "Guerrinha").name,
   name: "Rua Jorge Rudge",
   slug: 'rua-jorge-rudge',
   label: ["40% Foda/Maneirissimo"],
@@ -1166,6 +1205,7 @@ Release.find_or_create_by!(
 
 Release.find_or_create_by!(
   artist: Artist.find_by(name: "Guerrinha"),
+  artist_name: Artist.find_by(name: "Guerrinha").name,
   name: "Formiguinha's Jazz Standards",
   slug: 'formiguinhas-jazz-standards',
   label: ["40% Foda/Maneirissimo"],
@@ -1196,6 +1236,7 @@ Release.find_or_create_by!(
 
 Release.find_or_create_by!(
   artist: Artist.find_by(name: "Guerrinha"),
+  artist_name: Artist.find_by(name: "Guerrinha").name,
   name: "Praia das Pedrinhas",
   slug: 'praia-das-pedrinhas',
   label: ["40% Foda/Maneirissimo"],
@@ -1225,6 +1266,7 @@ Release.find_or_create_by!(
 
 Release.find_or_create_by!(
   artist: Artist.find_by(name: "Guerrinha"),
+  artist_name: Artist.find_by(name: "Guerrinha").name,
   name: "Ida Aos Correios",
   slug: 'ida-aos-correios',
   label: ["40% Foda/Maneirissimo"],
@@ -1252,7 +1294,40 @@ Release.find_or_create_by!(
 
 
 Release.find_or_create_by!(
+  artist: Artist.find_by(name: "Guerrinha"),
+  artist_name: Artist.find_by(name: "Guerrinha").name,
+  name: "Cidade Grande",
+  slug: 'cidade-grande',
+  label: ["Confuso Editions"],
+  cover: ["https://f4.bcbits.com/img/a3262521823_10.jpg", "https://f4.bcbits.com/img/a3698584494_10.jpg", ],
+  release_type: "Album",
+  release_date: Date.new(2022, 10, 26),
+  format: ["CD", "digital download", "streaming", "vinyl"],
+  tracks: [
+    "José, Pt. I",
+    "Adulto Na Cidade Grande",
+    "Galeria Obsoleta",
+    "Noite Cartunesca",
+    "Venda Casada Village",
+    "Uma Piada Engraçada",
+    "Kafta Hoje",
+    "José, Pt. II"
+  ],
+  credits: {
+    "Gabriel Guerra": "bass guitar, drums, keyboards",
+  },
+  notes: [
+    "All tracks produced by Gabriel Guerra"
+  ],
+  links: {
+    "Bandcamp": "https://guerrinha.bandcamp.com/album/cidade-grande-2"
+  }
+)
+
+
+Release.find_or_create_by!(
   artist: Artist.find_by(name: "O Retiro dos Artistas"),
+  artist_name: Artist.find_by(name: "O Retiro dos Artistas").name,
   name: "Dimensão Surpreendente",
   slug: 'dimensao-surpreendente',
   label: ["40% Foda/Maneirissimo"],
@@ -1288,6 +1363,7 @@ Release.find_or_create_by!(
 
 Release.find_or_create_by!(
   artist: Artist.find_by(name: "O Retiro dos Artistas"),
+  artist_name: Artist.find_by(name: "O Retiro dos Artistas").name,
   name: "O Mundo Oferecido",
   slug: 'o-mundo-oferecido',
   label: ["40% Foda/Maneirissimo"],
@@ -1323,6 +1399,7 @@ Release.find_or_create_by!(
 
 Release.find_or_create_by!(
   artist: Artist.find_by(name: "Pessoalizado"),
+  artist_name: Artist.find_by(name: "Pessoalizado").name,
   name: "Misericórdia",
   slug: 'misericordia',
   cover: ["https://f4.bcbits.com/img/a1861609952_10.jpg"],
@@ -1356,6 +1433,7 @@ Release.find_or_create_by!(
 
 Release.find_or_create_by!(
   artist: Artist.find_by(name: "Repetentes 2008"),
+  artist_name: Artist.find_by(name: "Repetentes 2008").name,
   name: "Habilidades Eu Tenho",
   slug: 'habilidades-eu-tenho',
   cover: ["https://f4.bcbits.com/img/a0578619615_10.jpg", "https://f4.bcbits.com/img/a2003851170_16.jpg"],
@@ -1384,6 +1462,7 @@ Release.find_or_create_by!(
 
 Release.find_or_create_by!(
   artist: Artist.find_by(name: "Repetentes 2008"),
+  artist_name: Artist.find_by(name: "Repetentes 2008").name,
   name: "Curriculum Tenebrae",
   slug: 'curriculum-tenebrae',
   cover: ["https://f4.bcbits.com/img/a3757464589_16.jpg"],
@@ -1412,6 +1491,7 @@ Release.find_or_create_by!(
 
 Release.find_or_create_by!(
   artist: Artist.find_by(name: "Repetentes 2008"),
+  artist_name: Artist.find_by(name: "Repetentes 2008").name,
   name: "Boulevard Internacional",
   slug: 'boulevard-internacional',
   cover: ["https://f4.bcbits.com/img/a0528835771_16.jpg"],
@@ -1442,6 +1522,7 @@ Release.find_or_create_by!(
 
 Release.find_or_create_by!(
   artist: Artist.find_by(name: "Repetentes 2008"),
+  artist_name: Artist.find_by(name: "Repetentes 2008").name,
   name: "Boulderball",
   slug: 'boulderball',
   cover: ["https://f4.bcbits.com/img/a4130219038_16.jpg"],
@@ -1479,6 +1560,7 @@ Release.find_or_create_by!(
 
 Release.find_or_create_by!(
   artist: Artist.find_by(name: "Repetentes 2008"),
+  artist_name: Artist.find_by(name: "Repetentes 2008").name,
   name: "Os Maneiros",
   slug: 'os-maneiros',
   cover: ["https://f4.bcbits.com/img/a1094794884_16.jpg"],
@@ -1507,6 +1589,7 @@ Release.find_or_create_by!(
 
 Release.find_or_create_by!(
   artist: Artist.find_by(name: "Repetentes 2008"),
+  artist_name: Artist.find_by(name: "Repetentes 2008").name,
   name: "Vasos de Banha",
   slug: 'vasos-de-banha',
   cover: ["https://i.discogs.com/Q2sVlPAXT5eWZ3GydKGNWRpdhV-3qHzqS9SAIJZyMc4/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyMjUy/ODUyLTE1MzE0ODQ4/ODUtODQwNC5qcGVn.jpeg"],
@@ -1532,6 +1615,7 @@ Release.find_or_create_by!(
 
 Release.find_or_create_by!(
   artist: Artist.find_by(name: "Repetentes 2008"),
+  artist_name: Artist.find_by(name: "Repetentes 2008").name,
   name: "Gelo Gerônimo",
   slug: 'gelo-geronimo',
   cover: ["https://f4.bcbits.com/img/a0483802619_10.jpg"],
@@ -1561,6 +1645,7 @@ Release.find_or_create_by!(
 
 Release.find_or_create_by!(
   artist: Artist.find_by(name: "Repetentes 2008"),
+  artist_name: Artist.find_by(name: "Repetentes 2008").name,
   name: "Galaxia Fini",
   slug: 'galaxia-fini',
   cover: ["https://f4.bcbits.com/img/a0962642215_10.jpg"],
@@ -1590,6 +1675,7 @@ Release.find_or_create_by!(
 
 Release.find_or_create_by!(
   artist: Artist.find_by(name: "Repetentes 2008"),
+  artist_name: Artist.find_by(name: "Repetentes 2008").name,
   name: "Silvio System",
   slug: 'silvio-system',
   cover: ["https://f4.bcbits.com/img/a2955970765_16.jpg"],
@@ -1621,6 +1707,7 @@ Release.find_or_create_by!(
 
 Release.find_or_create_by!(
   artist: Artist.find_by(name: "Repetentes 2008"),
+  artist_name: Artist.find_by(name: "Repetentes 2008").name,
   name: "Light Lixo",
   slug: 'light-lixo',
   cover: ["https://f4.bcbits.com/img/a3705186081_10.jpg"],
@@ -1652,6 +1739,7 @@ Release.find_or_create_by!(
 
 Release.find_or_create_by!(
   artist: Artist.find_by(name: "Repetentes 2008"),
+  artist_name: Artist.find_by(name: "Repetentes 2008").name,
   name: "A Tragédia de Pete",
   slug: 'a-tragedia-de-pete',
   cover: ["https://f4.bcbits.com/img/a3042732438_10.jpg"],
@@ -1682,6 +1770,7 @@ Release.find_or_create_by!(
 
 Release.find_or_create_by!(
   artist: Artist.find_by(name: "Repetentes 2008"),
+  artist_name: Artist.find_by(name: "Repetentes 2008").name,
   name: "Rapidão Cometa Highway",
   slug: 'rapidao-cometa-highway',
   cover: ["https://f4.bcbits.com/img/a2517780095_10.jpg"],
@@ -1711,6 +1800,7 @@ Release.find_or_create_by!(
 
 Release.find_or_create_by!(
   artist: Artist.find_by(name: "Repetentes 2008"),
+  artist_name: Artist.find_by(name: "Repetentes 2008").name,
   name: "Posto de Gasolina Online",
   slug: 'posto-de-gasolina-online',
   cover: ["https://f4.bcbits.com/img/a3946774771_16.jpg"],
@@ -1738,6 +1828,7 @@ Release.find_or_create_by!(
 
 Release.find_or_create_by!(
   artist: Artist.find_by(name: "Repetentes 2008"),
+  artist_name: Artist.find_by(name: "Repetentes 2008").name,
   name: "O Lento Céu Ralentado",
   slug: 'o-lento-ceu-ralentado',
   cover: ["https://f4.bcbits.com/img/a0537177754_10.jpg"],
@@ -1766,6 +1857,7 @@ Release.find_or_create_by!(
 
 Release.find_or_create_by!(
   artist: Artist.find_by(name: "Sérgio"),
+  artist_name: Artist.find_by(name: "Sérgio").name,
   name: "Utensílios",
   slug: 'utensilios',
   label: ["40% Foda/Maneirissimo"],
@@ -1798,6 +1890,7 @@ Release.find_or_create_by!(
 
 Release.find_or_create_by!(
   artist: Artist.find_by(name: "Sérgio"),
+  artist_name: Artist.find_by(name: "Sérgio").name,
   name: "Mais Utensílios",
   slug: 'mais-utensilios',
   cover: ["https://f4.bcbits.com/img/a1804260946_10.jpg"],
@@ -1830,6 +1923,7 @@ Release.find_or_create_by!(
 
 Release.find_or_create_by!(
   artist: Artist.find_by(name: "Sérgio"),
+  artist_name: Artist.find_by(name: "Sérgio").name,
   name: "Fantabobi / Riquititas ",
   slug: 'fantabobi-riquititas',
   cover: ["https://f4.bcbits.com/img/a1384452564_16.jpg"],
@@ -1858,6 +1952,7 @@ Release.find_or_create_by!(
 
 Release.find_or_create_by!(
   artist: Artist.find_by(name: "Vamos Desistir"),
+  artist_name: Artist.find_by(name: "Vamos Desistir").name,
   name: "Perguntas",
   slug: 'perguntas',
   cover: ["https://f4.bcbits.com/img/a3538253207_16.jpg"],
@@ -1890,6 +1985,7 @@ Release.find_or_create_by!(
 
 Release.find_or_create_by!(
   artist: Artist.find_by(name: "Vamos Desistir"),
+  artist_name: Artist.find_by(name: "Vamos Desistir").name,
   name: "Respostas",
   slug: 'respostas',
   cover: ["https://f4.bcbits.com/img/a3847996628_10.jpg"],

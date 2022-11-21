@@ -38,6 +38,7 @@ ActiveRecord::Schema.define(version: 2022_10_23_194512) do
 
   create_table "releases", force: :cascade do |t|
     t.bigint "artist_id"
+    t.string "artist_name"
     t.string "name"
     t.string "slug"
     t.string "cover", default: [], array: true
