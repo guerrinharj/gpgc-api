@@ -850,6 +850,37 @@ Release.find_or_create_by!(
 )
 
 
+Release.find_or_create_by!(
+  artist: Artist.find_by(name: "Detran Boys"),
+  artist_name: Artist.find_by(name: "Detran Boys").name,
+  name: "Dicas de Transito",
+  slug: 'dicas-de-transito',
+  label: ["40% Foda/Maneirissimo"],
+  cover: ["https://f4.bcbits.com/img/a2204739650_10.jpg"],
+  release_type: "Album",
+  release_date: Date.new(2022, 12, 5),
+  format: ["CD", "digital download", "streaming"],
+  tracks: [
+    "Sinalizando Corretamente",
+    "Revise Freios e Pneus",
+    "Não Responda a Provocações",
+    "Compre Uma Flanela",
+    "Veiculos Maiores Cuidam Dos Menores",
+    "Evite Locais Com Alagamento",
+    "Vidros Sempre Desembaçados",
+    "Confira As Condições do Motor"
+  ],
+    credits: {
+    "Gabriel Guerra": "synthesizer, sampler, drum machine",
+  },
+  notes: [
+    "All tracks produced by Gabriel Guerra"
+  ],
+  links: {
+    "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/dicas-de-transito",
+  }
+)
+
 
 Release.find_or_create_by!(
   artist: Artist.find_by(name: "Dinheiro Infinito Revival"),
@@ -1946,6 +1977,36 @@ Release.find_or_create_by!(
 )
 
 
+
+Release.find_or_create_by!(
+  artist: Artist.find_by(name: "Sérgio"),
+  artist_name: Artist.find_by(name: "Sérgio").name,
+  name: "Pelo da Churréia",
+  slug: 'pelo-da-churreia',
+  label: ["Discos Extendes"],
+  cover: [],
+  release_type: "EP",
+  release_date: Date.new(2022, 11, 13),
+  format: ["digital download"],
+  tracks: [
+    "Desista da Cidade",
+    "Rola Uns",
+    "Keisuke",
+    "Flashposérgio",
+    "Kenan & Kergio"
+
+  ],
+    credits: {
+    "Gabriel Guerra": "sampler, synthesizer, drum machine"
+  },
+  notes: [
+    "Tracks 1, 2, 3 produced by Gabriel Guerra",
+    "Track 4 is an edit of 'Flash Pose' by Pabblo Vittar & Charli XCX",
+    "Track 5 is an edit of 'Aw Here It Goes (Kenan & Kel Theme)' by Coolio"
+  ],
+  links: {
+  }
+)
 
 
 
