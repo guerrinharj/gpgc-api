@@ -24,6 +24,10 @@ Release.find_or_create_by!(
   notes: [
     "All tracks recorded, mixed and mastered by Pedro Garcia.",
     "All tracks written by Gabriel Guerra and João Bentes."
+  ],
+  links: [
+    "Bandcamp": "",
+    "Spotify": ""
   ]
 )
 
@@ -51,6 +55,10 @@ Release.find_or_create_by!(
   notes: [
     "All tracks recorded, mixed and mastered by Pedro Garcia at Estudio Superfuzz",
     "All tracks written by Gabriel Guerra, Arthur Aguillar and João Bentes"
+  ],
+  links: [
+    "Bandcamp": "",
+    "Spotify": ""
   ]
 )
 
@@ -77,6 +85,10 @@ Release.find_or_create_by!(
   notes: [
     "All tracks recorded, mixed and mastered by Pedro Garcia",
     "All tracks written by Gabriel Guerra, Cassius Augusto, Eduardo Verdeja and Lucas Freire"
+  ],
+  links: [
+    "Bandcamp": "",
+    "Spotify": ""
   ]
 )
 
@@ -103,6 +115,10 @@ Release.find_or_create_by!(
   notes: [
     "All tracks recorded, mixed and mastered by Pedro Garcia at Estudio Cantos do Trilho",
     "All tracks written by Gabriel Guerra, Cassius Augusto, Eduardo Verdeja and Lucas Freire"
+  ],
+  links: [
+    "Bandcamp": "",
+    "Spotify": ""
   ]
 )
 
@@ -128,6 +144,10 @@ Release.find_or_create_by!(
   notes: [
     "All tracks recorded, mixed and mastered by Pedro Garcia at Estudio Cantos do Trilho",
     "All tracks written by Gabriel Guerra, Cassius Augusto, Eduardo Verdeja and Lucas Freire"
+  ],
+  links: [
+    "Bandcamp": "",
+    "Spotify": ""
   ]
 )
 
@@ -162,6 +182,9 @@ Release.find_or_create_by!(
     "All tracks produced by Gabriel Cyr",
     "All tracks recorded and mixed by Renato Godoy at Audio Rebel and Monaural",
     "All tracks written by Gabriel Guerra, Cassius Augusto, Eduardo Verdeja and Lucas Freire",
+  ], links: [
+    "Bandcamp": "",
+    "Spotify": ""
   ]
 )
 
@@ -188,6 +211,10 @@ Release.find_or_create_by!(
   notes: [
     "All tracks recorded and mixed by Pedro Garcia at Estudio Cantos do Trilho",
     "All tracks written by Gabriel Guerra, Cassius Augusto, Eduardo Verdeja and Lucas Freire",
+  ],
+  links: [
+    "Bandcamp": "",
+    "Spotify": ""
   ]
 )
 
@@ -211,7 +238,8 @@ Release.find_or_create_by!(
     "All tracks produced by Gabriel Guerra"
   ],
   links: {
-    "Bandcamp": "https://finalzinhochegando.bandcamp.com/album/1"
+    "Bandcamp": "https://finalzinhochegando.bandcamp.com/album/1",
+    "Spotify": ""
   }
 )
 
@@ -235,7 +263,8 @@ Release.find_or_create_by!(
     "All tracks produced by Gabriel Guerra"
   ],
   links: {
-    "Bandcamp": "https://finalzinhochegando.bandcamp.com/album/4"
+    "Bandcamp": "https://finalzinhochegando.bandcamp.com/album/4",
+    "Spotify": ""
   }
 )
 
@@ -259,7 +288,8 @@ Release.find_or_create_by!(
     "All tracks produced by Gabriel Guerra"
   ],
   links: {
-    "Bandcamp": "https://finalzinhochegando.bandcamp.com/album/6"
+    "Bandcamp": "https://finalzinhochegando.bandcamp.com/album/6",
+    "Spotify": ""
   }
 )
 
@@ -283,7 +313,8 @@ Release.find_or_create_by!(
     "All tracks produced by Gabriel Guerra"
   ],
   links: {
-    "Bandcamp": "https://finalzinhochegando.bandcamp.com/album/3"
+    "Bandcamp": "https://finalzinhochegando.bandcamp.com/album/3",
+    "Spotify": ""
   }
 )
 
@@ -325,6 +356,7 @@ Release.find_or_create_by!(
     "Track 5 by Arthur Braganti"
   ],
   links: {
+    "Bandcamp": "",
     "Spotify": "https://open.spotify.com/album/49mbsneb0n3r5aezH3YkMV"
   }
 )
@@ -367,6 +399,7 @@ Release.find_or_create_by!(
     "Track 8 by Gabriel Guerra and Lucas de Paiva"
   ],
   links: {
+    "Bandcamp": "",
     "Spotify": "https://open.spotify.com/album/52pxDLClkynlDCRe7YXlDg"
   }
 )
@@ -408,6 +441,7 @@ Release.find_or_create_by!(
     "Track 6 by Arthur Braganti"
   ],
   links: {
+    "Bandcamp": "",
     "Spotify": "https://open.spotify.com/album/3tfBMkNufPMrAVKGBZBXgO"
   }
 )
@@ -440,7 +474,8 @@ Release.find_or_create_by!(
     "All tracks recorded and produced by Gabriel Guerra, Lucas de Paiva and Savio de Queiroz",
   ],
   links: {
-    "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/hegelianos-de-direita"
+    "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/hegelianos-de-direita",
+    "Spotify": "https://open.spotify.com/album/3MhugK5gjDnis6kVp9a0K3?si=JWWUWwH-T76c3kjST49ZOg"
   }
 )
 
@@ -536,7 +571,8 @@ Release.find_or_create_by!(
     "Previously released as Crusader de Deus"
   ],
     links: {
-    "Bandcamp": "https://relacoespublicas.bandcamp.com/album/cl-ssicos-republicanos"
+    "Bandcamp": "https://relacoespublicas.bandcamp.com/album/cl-ssicos-republicanos",
+    "Spotify": ""
   }
 )
 
@@ -604,7 +640,8 @@ Release.find_or_create_by!(
     "All tracks produced by Gabriel Guerra"
   ],
     links: {
-    "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/winkadinka"
+    "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/winkadinka",
+    "Spotify": ""
   }
 )
 
@@ -636,7 +673,8 @@ Release.find_or_create_by!(
     "All tracks produced by Gabriel Guerra"
   ],
    links: {
-    "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/rocking-rio"
+    "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/rocking-rio",
+    "Spotify": ""
   }
 )
 
@@ -672,7 +710,8 @@ Release.find_or_create_by!(
     "All tracks produced by Gabriel Guerra"
   ],
   links: {
-    "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/bolinhas-de-queijo"
+    "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/bolinhas-de-queijo",
+    "Spotify": "https://open.spotify.com/album/2kRjnzdGTCsnxSf8x5SLXS?si=f5b84ad239534716"
   }
 )
 
@@ -703,6 +742,10 @@ Release.find_or_create_by!(
   },
   notes: [
     "All tracks produced by Gabriel Guerra"
+  ],
+  links: [
+    "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/bolinhas-de-queijo",
+    "Spotify": "https://open.spotify.com/album/2kRjnzdGTCsnxSf8x5SLXS?si=f1b60a2d204f4d64",
   ]
 )
 
@@ -729,7 +772,8 @@ Release.find_or_create_by!(
     "All tracks produced by Gabriel Guerra"
   ],
   links: {
-    "Bandcamp": "https://brasileirogarantido.bandcamp.com/album/minipizzas"
+    "Bandcamp": "https://brasileirogarantido.bandcamp.com/album/minipizzas",
+    "Spotify": ""
   }
 )
 
@@ -813,6 +857,40 @@ Release.find_or_create_by!(
 )
 
 
+
+Release.find_or_create_by!(
+  artist: Artist.find_by(name: "Detran Boys"),
+  artist_name: Artist.find_by(name: "Detran Boys").name,
+  name: "Dicas de Transito",
+  slug: 'dicas-de-transito',
+  label: ["40% Foda/Maneirissimo"],
+  cover: ["https://f4.bcbits.com/img/a2204739650_10.jpg"],
+  release_type: "Album",
+  release_date: Date.new(2022, 12, 5),
+  format: ["CD", "digital download", "streaming"],
+  tracks: [
+    "Sinalizando Corretamente",
+    "Revise Freios e Pneus",
+    "Não Responda a Provocações",
+    "Compre Uma Flanela",
+    "Veiculos Maiores Cuidam Dos Menores",
+    "Evite Locais Com Alagamento",
+    "Vidros Sempre Desembaçados",
+    "Confira As Condições do Motor"
+  ],
+    credits: {
+    "Gabriel Guerra": "synthesizer, sampler, drum machine",
+  },
+  notes: [
+    "All tracks produced by Gabriel Guerra"
+  ],
+  links: {
+    "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/dicas-de-transito",
+    "Spotify": "https://open.spotify.com/album/4rhwmOBaAmRFTPYNZm7Exd?si=fed6yyILT86b_0HOrHVURg"
+  }
+)
+
+
 Release.find_or_create_by!(
   artist: Artist.find_by(name: "Dinheiro Infinito Revival"),
   artist_name: Artist.find_by(name: "Dinheiro Infinito Revival").name,
@@ -846,38 +924,7 @@ Release.find_or_create_by!(
   ],
   links: {
     "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/faixas-de-ritmo-i",
-  }
-)
-
-
-Release.find_or_create_by!(
-  artist: Artist.find_by(name: "Detran Boys"),
-  artist_name: Artist.find_by(name: "Detran Boys").name,
-  name: "Dicas de Transito",
-  slug: 'dicas-de-transito',
-  label: ["40% Foda/Maneirissimo"],
-  cover: ["https://f4.bcbits.com/img/a2204739650_10.jpg"],
-  release_type: "Album",
-  release_date: Date.new(2022, 12, 5),
-  format: ["CD", "digital download", "streaming"],
-  tracks: [
-    "Sinalizando Corretamente",
-    "Revise Freios e Pneus",
-    "Não Responda a Provocações",
-    "Compre Uma Flanela",
-    "Veiculos Maiores Cuidam Dos Menores",
-    "Evite Locais Com Alagamento",
-    "Vidros Sempre Desembaçados",
-    "Confira As Condições do Motor"
-  ],
-    credits: {
-    "Gabriel Guerra": "synthesizer, sampler, drum machine",
-  },
-  notes: [
-    "All tracks produced by Gabriel Guerra"
-  ],
-  links: {
-    "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/dicas-de-transito",
+    "Spotify": "https://open.spotify.com/album/4SqpmcoJ0S1aq0hiYtlXan?si=068beb93749f47bb"
   }
 )
 
@@ -912,6 +959,7 @@ Release.find_or_create_by!(
   ],
   links: {
     "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/faixas-de-ritmo-ii",
+    "Spotify": "https://open.spotify.com/album/4wPsufwMwc976ci9BgXvN7?si=2e6aace5a17e49ae"
   }
 )
 
@@ -947,6 +995,7 @@ Release.find_or_create_by!(
   ],
   links: {
     "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/fator-decisivo",
+    "Spotify": "https://open.spotify.com/album/1JChWdwOF4JIWbfQ8REkCT?si=6d3b5542be3141b2"
   }
 )
 
@@ -980,6 +1029,7 @@ Release.find_or_create_by!(
   ],
   links: {
     "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/videoconferencias",
+    "Spotify": "https://open.spotify.com/album/5rpyUGT3iYDzRcRhZfSILX?si=4ac50420ec154e09"
   }
 )
 
@@ -1003,6 +1053,10 @@ Release.find_or_create_by!(
   },
   notes: [
     "All tracks produced by Gabriel Guerra"
+  ],
+  links: [
+    "Bandcamp": "",
+    "Spotify": ""
   ]
 )
 
@@ -1033,7 +1087,8 @@ Release.find_or_create_by!(
     "All tracks produced by Gabriel Guerra"
   ],
   links: {
-    "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/rua-sorocaba"
+    "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/rua-sorocaba",
+    "Spotify": "https://open.spotify.com/album/0SXzcBCgrFwGE7GMVP4GIb?si=s1RbVZidT9e6l2Vl2jMf3Q"
   }
 )
 
@@ -1062,7 +1117,8 @@ Release.find_or_create_by!(
     "All tracks produced by Gabriel Guerra"
   ],
   links: {
-    "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/o-pedigree-historico"
+    "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/o-pedigree-historico",
+    "Spotify": ""
   }
 )
 
@@ -1090,7 +1146,8 @@ Release.find_or_create_by!(
     "All tracks produced by Gabriel Guerra"
   ],
   links: {
-    "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/educa--o-bentes"
+    "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/educa--o-bentes",
+    "Spotify": "https://open.spotify.com/album/1LOrYvHyonJqMjADkvSqEG?si=446e0f3ed33b4b8c"
   }
 )
 
@@ -1147,7 +1204,8 @@ Release.find_or_create_by!(
     "Track written, produced and mixed by Gabriel Guerra"
   ],
   links: {
-    "Bandcamp": "https://guerrinha.bandcamp.com/album/apartamento"
+    "Bandcamp": "https://guerrinha.bandcamp.com/album/apartamento",
+    "Spotify": "https://open.spotify.com/track/1XL4N7hh2ULGzHn66ytV1R?si=f8f0d294baaf4d98"
   }
 )
 
@@ -1228,7 +1286,8 @@ Release.find_or_create_by!(
     "All tracks produced by Gabriel Guerra"
   ],
   links: {
-    "Bandcamp": "https://guerrinha.bandcamp.com/album/rua-jorge-rudge"
+    "Bandcamp": "https://guerrinha.bandcamp.com/album/rua-jorge-rudge",
+    "Spotify": "https://open.spotify.com/album/19d5b5S8TuZnqSTj68PO9E?si=a550e65b2d20447b"
   }
 )
 
@@ -1259,7 +1318,8 @@ Release.find_or_create_by!(
     "All tracks produced by Gabriel Guerra"
   ],
   links: {
-    "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/formiguinhas-jazz-standards"
+    "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/formiguinhas-jazz-standards",
+    "Spotify": "https://open.spotify.com/album/05h1GoK2f6RiLPvrMnocH3?si=784e72d0451648b9"
   }
 )
 
@@ -1289,7 +1349,8 @@ Release.find_or_create_by!(
     "All tracks produced by Gabriel Guerra"
   ],
   links: {
-    "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/praia-das-pedrinhas"
+    "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/praia-das-pedrinhas",
+    "Spotify": "https://open.spotify.com/album/2Bz1TO5PIA3fk9jIrY7MRI?si=04e96488ab314f28"
   }
 )
 
@@ -1319,7 +1380,8 @@ Release.find_or_create_by!(
     "All tracks produced by Gabriel Guerra"
   ],
   links: {
-    "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/ida-aos-correios"
+    "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/ida-aos-correios",
+    "Spotify": "https://open.spotify.com/album/34PkFa3c2nXJNBQqZZjkpR?si=b22a689dec4d4745"
   }
 )
 
@@ -1351,7 +1413,8 @@ Release.find_or_create_by!(
     "All tracks produced by Gabriel Guerra"
   ],
   links: {
-    "Bandcamp": "https://guerrinha.bandcamp.com/album/cidade-grande-2"
+    "Bandcamp": "https://guerrinha.bandcamp.com/album/cidade-grande-2",
+    "Spotify": "https://open.spotify.com/album/21ZQzzxSDYRABzC1RVahfm?si=d475a0f21e4742d9"
   }
 )
 
@@ -1385,7 +1448,8 @@ Release.find_or_create_by!(
     "All tracks produced by Gabriel Guerra"
   ],
   links: {
-    "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/dimens-o-surpreendente"
+    "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/dimens-o-surpreendente",
+    "Spotify": "https://open.spotify.com/album/3lGwOaHzyrQnR65UMpuedu?si=53b0915bcca840b5"
   }
 )
 
@@ -1421,7 +1485,8 @@ Release.find_or_create_by!(
     "All tracks produced by Gabriel Guerra"
   ],
   links: {
-    "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/o-mundo-oferecido"
+    "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/o-mundo-oferecido",
+    "Spotify": "https://open.spotify.com/album/19jkXnEVF01Eqbkxz3AeHt?si=a868ac770fb3444a"
   }
 )
 
@@ -1485,7 +1550,8 @@ Release.find_or_create_by!(
     "Released in 2014 by Future Times as 'Funk do Sindicalismo b/w Agronomia Setorial'"
   ],
     links: {
-    "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/habilidades-eu-tenho-2"
+    "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/habilidades-eu-tenho-2",
+    "Spotify": "https://open.spotify.com/album/0TKIoMGJXvBrl35fdgt8wi?si=50aa429316b54d9b"
   }
 )
 
@@ -1513,7 +1579,8 @@ Release.find_or_create_by!(
     "All tracks produced by Gabriel Guerra"
   ],
   links: {
-    "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/curriculum-tenebrae"
+    "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/curriculum-tenebrae",
+    "Spotify": "https://open.spotify.com/album/0TKIoMGJXvBrl35fdgt8wi?si=50aa429316b54d9b"
   }
 )
 
@@ -1543,7 +1610,8 @@ Release.find_or_create_by!(
     "All tracks produced by Gabriel Guerra"
   ],
   links: {
-    "Bandcamp": "https://futuretimes.bandcamp.com/album/boulevard-internacional"
+    "Bandcamp": "https://futuretimes.bandcamp.com/album/boulevard-internacional",
+    "Spotify": ""
   }
 )
 
@@ -1580,7 +1648,8 @@ Release.find_or_create_by!(
     "All tracks produced by Gabriel Guerra"
   ],
   links: {
-    "Bandcamp": "https://futuretimes.bandcamp.com/album/boulderball"
+    "Bandcamp": "https://futuretimes.bandcamp.com/album/boulderball",
+    "Spotify": "https://open.spotify.com/album/7xza7ZdIrMJLXYu6uoPChE?si=366466ecd5c6416f"
   }
 )
 
@@ -1612,7 +1681,8 @@ Release.find_or_create_by!(
     "All tracks produced by Gabriel Guerra"
   ],
   links: {
-    "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/os-maneiros"
+    "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/os-maneiros",
+    "Spotify": "https://open.spotify.com/album/6jjjqJVg1xBNVYAk08ubrC?si=dbe38e60964149d6"
   }
 )
 
@@ -1637,6 +1707,10 @@ Release.find_or_create_by!(
   },
   notes: [
     "All tracks produced by Gabriel Guerra"
+  ],
+  links: [
+    "Bandcamp": "",
+    "Spotify": ""
   ]
 )
 
@@ -1729,7 +1803,8 @@ Release.find_or_create_by!(
     "All tracks produced by Gabriel Guerra"
   ],
   links: {
-    "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/silvio-system"
+    "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/silvio-system",
+    "Spotify": "https://open.spotify.com/album/1R2Z5g8TdDVf1ZSzJbPYLv?si=40b7f0f0b6dc4527"
   }
 )
 
@@ -1761,7 +1836,8 @@ Release.find_or_create_by!(
     "All tracks produced by Gabriel Guerra"
   ],
     links: {
-    "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/light-lixo"
+    "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/light-lixo",
+    "Spotify": "https://open.spotify.com/album/5Vn5dgig80NiEYF75PTQEu?si=705dbe1a3bec411d"
   }
 )
 
@@ -1792,7 +1868,8 @@ Release.find_or_create_by!(
     "All tracks produced by Gabriel Guerra"
   ],
     links: {
-    "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/a-trag-dia-de-pete"
+    "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/a-trag-dia-de-pete",
+    "Spotify": "https://open.spotify.com/album/3YBmH2FZDHvnPM49FiyUGe?si=21a73905117b4b61"
   }
 )
 
@@ -1823,7 +1900,8 @@ Release.find_or_create_by!(
     "All tracks produced by Gabriel Guerra"
   ],
   links: {
-    "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/rapid-o-cometa-highway"
+    "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/rapid-o-cometa-highway",
+    "Spotify": "https://open.spotify.com/album/1t2XM75mIHXJEKNJCxPunE?si=14cda459c728452e"
   }
 )
 
@@ -1851,7 +1929,8 @@ Release.find_or_create_by!(
     "All tracks produced by Gabriel Guerra"
   ],
     links: {
-    "Bandcamp": "https://repetentes2008.bandcamp.com/album/posto-de-gasolina-online"
+    "Bandcamp": "https://repetentes2008.bandcamp.com/album/posto-de-gasolina-online",
+    "Spotify": ""
   }
 )
 
@@ -1879,7 +1958,8 @@ Release.find_or_create_by!(
     "All tracks produced by Gabriel Guerra"
   ],
   links: {
-    "Bandcamp": "https://repetentes2008.bandcamp.com/album/o-lento-c-u-ralentado"
+    "Bandcamp": "https://repetentes2008.bandcamp.com/album/o-lento-c-u-ralentado",
+    "Spotify": ""
   }
 )
 
@@ -1912,7 +1992,8 @@ Release.find_or_create_by!(
     "All tracks produced by Gabriel Guerra"
   ],
   links: {
-    "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/utens-lios-2"
+    "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/utens-lios-2",
+    "Spotify": "https://open.spotify.com/album/56OaNyQeWfQ25aM0jjAIGi?si=HCFf1VU6QwejM5adsoYf1g"
   }
 )
 
@@ -1945,7 +2026,8 @@ Release.find_or_create_by!(
     "All tracks produced by Gabriel Guerra"
   ],
   links: {
-    "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/mais-utens-lios"
+    "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/mais-utens-lios",
+    "Spotify": "https://open.spotify.com/album/1BXZUZtzE3SWKaSOCbQ4YB?si=8FjBUHiwTVyQF2L-2_KEpg"
   }
 )
 
@@ -1972,7 +2054,8 @@ Release.find_or_create_by!(
     "All tracks produced by Gabriel Guerra"
   ],
   links: {
-    "Bandcamp": "https://sergiooscar.bandcamp.com/album/fantabobi-riquititas"
+    "Bandcamp": "https://sergiooscar.bandcamp.com/album/fantabobi-riquititas",
+    "Spotify": ""
   }
 )
 
@@ -2005,6 +2088,8 @@ Release.find_or_create_by!(
     "Track 5 is an edit of 'Aw Here It Goes (Kenan & Kel Theme)' by Coolio"
   ],
   links: {
+    "Bandcamp": "",
+    "Spotify": ""
   }
 )
 
@@ -2036,7 +2121,8 @@ Release.find_or_create_by!(
     "All tracks produced by Gabriel Guerra"
   ],
   links: {
-    "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/perguntas"
+    "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/perguntas",
+    "Spotify": "https://open.spotify.com/album/7bd5VAaQjfSNq4P8Wgs5Em?si=eKF-QunsRmeI3u33jiNcNA"
   }
 )
 
@@ -2073,6 +2159,7 @@ Release.find_or_create_by!(
     "All tracks produced by Gabriel Guerra"
   ],
   links: {
-    "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/respostas"
+    "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/respostas",
+    "Spotify": "https://open.spotify.com/album/0pSqmNCRi6DaKSyyLLAiMS?si=J59ptLNzQpuB2IzA_fO0sg"
   }
 )

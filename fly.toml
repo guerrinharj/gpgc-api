@@ -1,4 +1,4 @@
-# fly.toml file generated for gpgc-api on 2022-12-14T18:52:45-03:00
+# fly.toml file generated for gpgc-api on 2022-12-14T22:22:35-03:00
 
 app = "gpgc-api"
 kill_signal = "SIGINT"
