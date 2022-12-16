@@ -26,8 +26,8 @@ Release.find_or_create_by!(
     "All tracks written by Gabriel Guerra and João Bentes."
   ],
   links: [
-    "Bandcamp": "",
-    "Spotify": ""
+    "Bandcamp": nil,
+    "Spotify": nil
   ]
 )
 
@@ -57,8 +57,8 @@ Release.find_or_create_by!(
     "All tracks written by Gabriel Guerra, Arthur Aguillar and João Bentes"
   ],
   links: [
-    "Bandcamp": "",
-    "Spotify": ""
+    "Bandcamp": nil,
+    "Spotify": nil
   ]
 )
 
@@ -87,8 +87,8 @@ Release.find_or_create_by!(
     "All tracks written by Gabriel Guerra, Cassius Augusto, Eduardo Verdeja and Lucas Freire"
   ],
   links: [
-    "Bandcamp": "",
-    "Spotify": ""
+    "Bandcamp": nil,
+    "Spotify": nil
   ]
 )
 
@@ -117,8 +117,8 @@ Release.find_or_create_by!(
     "All tracks written by Gabriel Guerra, Cassius Augusto, Eduardo Verdeja and Lucas Freire"
   ],
   links: [
-    "Bandcamp": "",
-    "Spotify": ""
+    "Bandcamp": nil,
+    "Spotify": nil
   ]
 )
 
@@ -146,8 +146,8 @@ Release.find_or_create_by!(
     "All tracks written by Gabriel Guerra, Cassius Augusto, Eduardo Verdeja and Lucas Freire"
   ],
   links: [
-    "Bandcamp": "",
-    "Spotify": ""
+    "Bandcamp": nil,
+    "Spotify": nil
   ]
 )
 
@@ -183,8 +183,8 @@ Release.find_or_create_by!(
     "All tracks recorded and mixed by Renato Godoy at Audio Rebel and Monaural",
     "All tracks written by Gabriel Guerra, Cassius Augusto, Eduardo Verdeja and Lucas Freire",
   ], links: [
-    "Bandcamp": "",
-    "Spotify": ""
+    "Bandcamp": nil,
+    "Spotify": nil
   ]
 )
 
@@ -213,8 +213,8 @@ Release.find_or_create_by!(
     "All tracks written by Gabriel Guerra, Cassius Augusto, Eduardo Verdeja and Lucas Freire",
   ],
   links: [
-    "Bandcamp": "",
-    "Spotify": ""
+    "Bandcamp": nil,
+    "Spotify": nil
   ]
 )
 
@@ -239,7 +239,7 @@ Release.find_or_create_by!(
   ],
   links: {
     "Bandcamp": "https://finalzinhochegando.bandcamp.com/album/1",
-    "Spotify": ""
+    "Spotify": nil
   }
 )
 
@@ -264,7 +264,7 @@ Release.find_or_create_by!(
   ],
   links: {
     "Bandcamp": "https://finalzinhochegando.bandcamp.com/album/4",
-    "Spotify": ""
+    "Spotify": nil
   }
 )
 
@@ -289,7 +289,7 @@ Release.find_or_create_by!(
   ],
   links: {
     "Bandcamp": "https://finalzinhochegando.bandcamp.com/album/6",
-    "Spotify": ""
+    "Spotify": nil
   }
 )
 
@@ -314,7 +314,7 @@ Release.find_or_create_by!(
   ],
   links: {
     "Bandcamp": "https://finalzinhochegando.bandcamp.com/album/3",
-    "Spotify": ""
+    "Spotify": nil
   }
 )
 
@@ -356,7 +356,7 @@ Release.find_or_create_by!(
     "Track 5 by Arthur Braganti"
   ],
   links: {
-    "Bandcamp": "",
+    "Bandcamp": nil,
     "Spotify": "https://open.spotify.com/album/49mbsneb0n3r5aezH3YkMV"
   }
 )
@@ -399,7 +399,7 @@ Release.find_or_create_by!(
     "Track 8 by Gabriel Guerra and Lucas de Paiva"
   ],
   links: {
-    "Bandcamp": "",
+    "Bandcamp": nil,
     "Spotify": "https://open.spotify.com/album/52pxDLClkynlDCRe7YXlDg"
   }
 )
@@ -441,7 +441,7 @@ Release.find_or_create_by!(
     "Track 6 by Arthur Braganti"
   ],
   links: {
-    "Bandcamp": "",
+    "Bandcamp": nil,
     "Spotify": "https://open.spotify.com/album/3tfBMkNufPMrAVKGBZBXgO"
   }
 )
@@ -572,7 +572,7 @@ Release.find_or_create_by!(
   ],
     links: {
     "Bandcamp": "https://relacoespublicas.bandcamp.com/album/cl-ssicos-republicanos",
-    "Spotify": ""
+    "Spotify": nil
   }
 )
 
@@ -641,7 +641,7 @@ Release.find_or_create_by!(
   ],
     links: {
     "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/winkadinka",
-    "Spotify": ""
+    "Spotify": nil
   }
 )
 
@@ -674,7 +674,7 @@ Release.find_or_create_by!(
   ],
    links: {
     "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/rocking-rio",
-    "Spotify": ""
+    "Spotify": nil
   }
 )
 
@@ -773,7 +773,7 @@ Release.find_or_create_by!(
   ],
   links: {
     "Bandcamp": "https://brasileirogarantido.bandcamp.com/album/minipizzas",
-    "Spotify": ""
+    "Spotify": nil
   }
 )
 
@@ -1055,8 +1055,8 @@ Release.find_or_create_by!(
     "All tracks produced by Gabriel Guerra"
   ],
   links: [
-    "Bandcamp": "",
-    "Spotify": ""
+    "Bandcamp": nil,
+    "Spotify": nil
   ]
 )
 
@@ -1118,7 +1118,7 @@ Release.find_or_create_by!(
   ],
   links: {
     "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/o-pedigree-historico",
-    "Spotify": ""
+    "Spotify": nil
   }
 )
 
@@ -1611,7 +1611,7 @@ Release.find_or_create_by!(
   ],
   links: {
     "Bandcamp": "https://futuretimes.bandcamp.com/album/boulevard-internacional",
-    "Spotify": ""
+    "Spotify": nil
   }
 )
 
@@ -1709,8 +1709,8 @@ Release.find_or_create_by!(
     "All tracks produced by Gabriel Guerra"
   ],
   links: [
-    "Bandcamp": "",
-    "Spotify": ""
+    "Bandcamp": nil,
+    "Spotify": nil
   ]
 )
 
@@ -1930,7 +1930,7 @@ Release.find_or_create_by!(
   ],
     links: {
     "Bandcamp": "https://repetentes2008.bandcamp.com/album/posto-de-gasolina-online",
-    "Spotify": ""
+    "Spotify": nil
   }
 )
 
@@ -1959,7 +1959,7 @@ Release.find_or_create_by!(
   ],
   links: {
     "Bandcamp": "https://repetentes2008.bandcamp.com/album/o-lento-c-u-ralentado",
-    "Spotify": ""
+    "Spotify": nil
   }
 )
 
@@ -2055,7 +2055,7 @@ Release.find_or_create_by!(
   ],
   links: {
     "Bandcamp": "https://sergiooscar.bandcamp.com/album/fantabobi-riquititas",
-    "Spotify": ""
+    "Spotify": nil
   }
 )
 
@@ -2088,8 +2088,8 @@ Release.find_or_create_by!(
     "Track 5 is an edit of 'Aw Here It Goes (Kenan & Kel Theme)' by Coolio"
   ],
   links: {
-    "Bandcamp": "",
-    "Spotify": ""
+    "Bandcamp": nil,
+    "Spotify": nil
   }
 )
 
