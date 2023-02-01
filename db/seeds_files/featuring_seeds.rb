@@ -46,7 +46,7 @@ Featuring.find_or_create_by!(
   release_date: Date.new(2018, 11,  7),
   is_album:  true,
   label: "40% Foda/Maneirissimo",
-  artist: "Rebello"
+  artist: "Rebello",
   url: "https://open.spotify.com/album/59ZS4m2tTSYjgjRJvCPvVu?si=f324191c42ec49dd"
 )
 
@@ -111,7 +111,7 @@ Featuring.find_or_create_by!(
   release_date: Date.new(2019, 6,  13),
   is_album:  true,
   artist: "Clarice Falcão",
-  link: "https://open.spotify.com/album/0R9iQyyNp2vTvP9OFFgJfx?si=9716439536aa4cc3"
+  url: "https://open.spotify.com/album/0R9iQyyNp2vTvP9OFFgJfx?si=9716439536aa4cc3"
 )
 
 Featuring.find_or_create_by!(

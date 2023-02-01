@@ -1355,6 +1355,35 @@ Release.find_or_create_by!(
 )
 
 
+Release.find_or_create_by!(
+  artist: Artist.find_by(name: "Guerrinha"),
+  artist_name: Artist.find_by(name: "Guerrinha").name,
+  name: "Estações Esquerdinhas",
+  slug: 'estacoes-esquerdinhas',
+  label: ["40% Foda/Maneirissimo"],
+  cover: ["https://f4.bcbits.com/img/a0150792606_10.jpg"],
+  release_type: "EP",
+  release_date: Date.new(2019, 7, 7),
+  format: ["Digital download", "streaming", "vinil"],
+  tracks: [
+    "Estação Praça Onze",
+    "Estação Cinelândia",
+    "Estação Cidade Nova",
+    "Estação Uruguaiana",
+  ],
+    credits: {
+    "Gabriel Guerra": "keyboards, sampler",
+  },
+  notes: [
+    "All tracks produced by Gabriel Guerra"
+  ],
+  links: {
+    "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/esta-es-esquerdinhas",
+    "Spotify": "https://open.spotify.com/album/1rRNJWxUWUn8L42rckrZWy"
+  }
+)
+
+
 
 Release.find_or_create_by!(
   artist: Artist.find_by(name: "Guerrinha"),

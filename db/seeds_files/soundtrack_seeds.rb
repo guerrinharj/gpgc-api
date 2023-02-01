@@ -67,7 +67,7 @@ Soundtrack.find_or_create_by!(
 
 Soundtrack.find_or_create_by!(
   name: "Desinfluenciador Digital",
-  company: "Desinfluenciador Digital"
+  company: "Desinfluenciador Digital",
   year: "2017",
   info: "Confecção de tema original.",
   kind: "Ad",
@@ -126,7 +126,7 @@ Soundtrack.find_or_create_by!(
 
 Soundtrack.find_or_create_by!(
   name: "Gato Vivo",
-  company: "Nicolas Thome Zeitune"
+  company: "Nicolas Thome Zeitune",
   year: "2020",
   info: "Confecção de trilha original para curta-metragem. Filme por Nicolas Thome Zeitune",
   kind: "Game",
