@@ -892,6 +892,39 @@ Release.find_or_create_by!(
 
 
 Release.find_or_create_by!(
+  artist: Artist.find_by(name: "Detran Boys"),
+  artist_name: Artist.find_by(name: "Detran Boys").name,
+  name: "Infrações Levissimas",
+  slug: 'infracoes-levissimas',
+  label: ["40% Foda/Maneirissimo"],
+  cover: ["https://f4.bcbits.com/img/a1697296314_16.jpg"],
+  release_type: "Album",
+  release_date: Date.new(2023, 2, 28),
+  format: ["CD", "digital download", "streaming"],
+  tracks: [
+    "Apresentar Habilitação Apodrecida",
+    "Enfeiar O Meio Fio",
+    "Dar Sinal Dando O Dedo",
+    "Assistir Assistente Automotivo",
+    "Vasculhar A Velocidade Alheia",
+    "Locomover-se Lendo A Lei",
+    "Estacionar Enquanto Estiver Estressado",
+    "Ojerizar O Código Hoje"
+  ],
+    credits: {
+    "Gabriel Guerra": "synthesizer, sampler, drum machine",
+  },
+  notes: [
+    "All tracks produced by Gabriel Guerra"
+  ],
+  links: {
+    "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/infra-es-lev-ssimas",
+    "Spotify": "https://open.spotify.com/album/2S6tiqaQiWUVTBA0W4CyLS"
+  }
+)
+
+
+Release.find_or_create_by!(
   artist: Artist.find_by(name: "Dinheiro Infinito Revival"),
   artist_name: Artist.find_by(name: "Dinheiro Infinito Revival").name,
   name: "Faixas de Ritmo",
