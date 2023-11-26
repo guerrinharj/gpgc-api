@@ -2,6 +2,7 @@ p 'Seeding artists...'
 Artist.find_or_create_by!(name: 'Assadinhos', slug: 'assadinhos', group: false)
 Artist.find_or_create_by!(name: 'Brasileiro Garantido', slug: 'brasileiro-garantido', group: false)
 Artist.find_or_create_by!(name: 'Cavalcantissimos', slug: 'cavalcantissimos', group: false)
+Artist.find_or_create_by!(name: 'Comes & Bebes', slug: 'comes-e-bebes', group: true)
 Artist.find_or_create_by!(name: 'Detran Boys', slug: 'detran-boys', group: false)
 Artist.find_or_create_by!(name: 'Dinheiro Infinito Revival', slug: 'dinheiro-infinito-revival', group: false)
 Artist.find_or_create_by!(name: 'Dorgas', slug: 'dorgas', group: true)
