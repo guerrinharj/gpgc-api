@@ -410,3 +410,35 @@ Release.find_or_create_by!(
     "Spotify": "https://open.spotify.com/album/21ZQzzxSDYRABzC1RVahfm?si=d475a0f21e4742d9"
   }
 )
+
+Release.find_or_create_by!(
+  artist: Artist.find_by(name: "Guerrinha"),
+  artist_name: Artist.find_by(name: "Guerrinha").name,
+  name: "Exposição Popular",
+  slug: 'exposicao-popular',
+  label: ["2 Headed Deer"],
+  cover: ["https://f4.bcbits.com/img/a2477603982_10.jpg"],
+  release_type: "Album",
+  release_date: Date.new(2024, 1, 8),
+  format: ["Digital download", "streaming", "vinyl"],
+  tracks: [
+    "Tempo Engordado",
+    "Boa Definição",
+    "A Sétima Doninha",
+    "Zombeta",
+    "Edificio Argentina",
+    "Sala de Espera",
+    "Madrugadas",
+    "Fantasmas do Destino"
+  ],
+  credits: {
+    "Gabriel Guerra": "electric guitar, bass guitar, drums, keyboards",
+  },
+  notes: [
+    "All tracks produced by Gabriel Guerra"
+  ],
+  links: {
+    "Bandcamp": "https://guerrinha.bandcamp.com/album/exposi-o-popular",
+    "Spotify": "https://open.spotify.com/album/4TymEgPdwzM0nbGuMbN4Lm"
+  }
+)
