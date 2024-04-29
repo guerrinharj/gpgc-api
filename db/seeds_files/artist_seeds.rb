@@ -13,6 +13,7 @@ Artist.find_or_create_by!(name: 'Finalzinho Chegando', slug: 'finalzinho-chegand
 Artist.find_or_create_by!(name: 'Garageiros do Abismo', slug: 'garageiros-do-abismo', group: true)
 Artist.find_or_create_by!(name: 'Guerrinha', slug: 'guerrinha', group: false)
 Artist.find_or_create_by!(name: 'Horacio', slug: 'horacio', group: false)
+Artist.find_or_create_by!(name: 'Lotéricas RJ', slug: 'lotericas-rj', group: false)
 Artist.find_or_create_by!(name: 'O Retiro dos Artistas', slug: 'o-retiro-dos-artistas', group: false)
 Artist.find_or_create_by!(name: 'Pessoalizado', slug: 'pessoalizado', group: false)
 Artist.find_or_create_by!(name: 'Relações Públicas', slug: 'relacoes-publicas', group: true)
