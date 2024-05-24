@@ -1,5 +1,6 @@
 p 'Seeding artists...'
 Artist.find_or_create_by!(name: 'Assadinhos', slug: 'assadinhos', group: false)
+Artist.find_or_create_by!(name: 'Bibiquinha Junior', slug: 'bibiquinha-junior', group: false)
 Artist.find_or_create_by!(name: 'Brasileiro Garantido', slug: 'brasileiro-garantido', group: false)
 Artist.find_or_create_by!(name: 'Cavalcantissimos', slug: 'cavalcantissimos', group: false)
 Artist.find_or_create_by!(name: 'Comes & Bebes', slug: 'comes-e-bebes', group: true)

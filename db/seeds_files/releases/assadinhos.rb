@@ -1,5 +1,4 @@
 
-
 Release.find_or_create_by!(
   artist: Artist.find_by(name: "Assadinhos"),
   artist_name: Artist.find_by(name: "Assadinhos").name,
