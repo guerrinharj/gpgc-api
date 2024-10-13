@@ -19,7 +19,38 @@ Release.find_or_create_by!(
     "All tracks produced by Gabriel Guerra"
   ],
   links: {
-    "Bandcamp": "https://f4.bcbits.com/img/a2617781942_10.jpg",
+    "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/gagacico-ferreblombalu",
     "Spotify": "https://open.spotify.com/album/4zp2EK0IrVzXydsC6tOt1u"
+  }
+)
+
+
+Release.find_or_create_by!(
+  artist: Artist.find_by(name: "Horacio"),
+  artist_name: Artist.find_by(name: "Horacio").name,
+  name: "Modos",
+  slug: 'modos',
+  label: ["40% Foda/Maneirissimo"],
+  cover: ["https://f4.bcbits.com/img/a2442738496_16.jpg"],
+  release_type: "Album",
+  release_date: Date.new(2024, 6, 20),
+  format: ["CD", "digital download", "streaming"],
+  tracks: [
+    "Mofado",
+    "Seqhortado",
+    "Moderado",
+    "Enviesado",
+    "Bocado",
+    "Zoperantizado"
+  ],
+    credits: {
+    "Gabriel Guerra": "synthesizer, sampler, drum machine",
+  },
+  notes: [
+    "All tracks produced by Gabriel Guerra"
+  ],
+  links: {
+    "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/modos",
+    "Spotify": "https://open.spotify.com/album/1tBCKCArl5o6Xe1Qw8NDbv"
   }
 )
