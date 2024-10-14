@@ -3,9 +3,9 @@ services:
   db:
     image: postgres:13
     environment:
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: password
-      POSTGRES_DB: myapp_development
+      POSTGRES_USER: gpgc_api
+      POSTGRES_PASSWORD: ${GPGC_API_DATABASE_PASSWORD}
+      POSTGRES_DB: gpgc_api_development
     volumes:
       - db-data:/var/lib/postgresql/data
     ports:
@@ -21,7 +21,7 @@ services:
     depends_on:
       - db
     environment:
-      DATABASE_URL: postgres://postgres:password@db:5432/myapp_development
+      DATABASE_URL: postgres://gpgc_api:${GPGC_API_DATABASE_PASSWORD}@db:5432/gpgc_api_development
 
 volumes:
   db-data:
