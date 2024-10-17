@@ -1,0 +1,27 @@
+version: '3.8'
+services:
+  db:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: gpgc_api
+      POSTGRES_PASSWORD: ${GPGC_API_DATABASE_PASSWORD}
+      POSTGRES_DB: gpgc_api_development
+    volumes:
+      - db-data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+  web:
+    build: .
+    command: bash -c "rm -f tmp/pids/server.pid && bundle exec rails s -b '0.0.0.0'"
+    volumes:
+      - ".:/app"
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db
+    environment:
+      DATABASE_URL: postgres://gpgc_api:${GPGC_API_DATABASE_PASSWORD}@db:5432/gpgc_api_development
+
+volumes:
+  db-data:
