@@ -1,3 +1,5 @@
+p "Seeding Guerrinha"
+
 Release.find_or_create_by!(
   artist: Artist.find_by(name: "Guerrinha"),
   artist_name: Artist.find_by(name: "Guerrinha").name,

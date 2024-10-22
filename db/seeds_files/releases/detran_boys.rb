@@ -1,3 +1,5 @@
+p "Seeding Detran Boys"
+
 Release.find_or_create_by!(
   artist: Artist.find_by(name: "Detran Boys"),
   artist_name: Artist.find_by(name: "Detran Boys").name,

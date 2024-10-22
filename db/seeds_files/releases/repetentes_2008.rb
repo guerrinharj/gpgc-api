@@ -1,3 +1,5 @@
+p "Seeding Repetentes 2008"
+
 Release.find_or_create_by!(
   artist: Artist.find_by(name: "Repetentes 2008"),
   artist_name: Artist.find_by(name: "Repetentes 2008").name,

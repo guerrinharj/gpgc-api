@@ -1,4 +1,4 @@
-
+p "Seeding Epicentro do Bloquinho"
 
 Release.find_or_create_by!(
   artist: Artist.find_by(name: "Epicentro do Bloquinho"),
