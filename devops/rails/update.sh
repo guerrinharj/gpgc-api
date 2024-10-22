@@ -5,3 +5,4 @@ docker compose run web bundle install
 docker compose run web rails db:migrate db:seed
 
 docker compose run web rails db:migrate RAILS_ENV=test
+docker compose run web rspec   
