@@ -1,3 +1,5 @@
+p "Seeding Relações Publicas"
+
 Release.find_or_create_by!(
   artist: Artist.find_by(name: "Relações Públicas"),
   artist_name: Artist.find_by(name: "Relações Públicas").name,

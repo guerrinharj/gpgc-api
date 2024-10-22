@@ -1,3 +1,5 @@
+p "Seeding Contrahouse"
+
 Release.find_or_create_by!(
   artist: Artist.find_by(name: "Contrahouse"),
   artist_name: Artist.find_by(name: "Contrahouse").name,
@@ -14,7 +16,7 @@ Release.find_or_create_by!(
     "Streetcorn "
   ],
     credits: {
-    "Bruce Hornsby": "piano"
+    "Bruce Hornsby": "piano",
     "Gabriel Guerra": "keyboards, programming",
     "Lucas de Paiva": "keyboards, programming",
     "Jenny Konradsen": "vocals"

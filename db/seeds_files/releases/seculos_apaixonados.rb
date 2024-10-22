@@ -1,3 +1,5 @@
+p "Seeding Séculos Apaixonados"
+
 
 Release.find_or_create_by!(
   artist: Artist.find_by(name: "Séculos Apaixonados"),

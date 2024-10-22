@@ -1,3 +1,5 @@
+p "Seeding Lotéricas RJ"
+
 Release.find_or_create_by!(
   artist: Artist.find_by(name: "Lotéricas RJ"),
   artist_name: Artist.find_by(name: "Lotéricas RJ").name,

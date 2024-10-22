@@ -1,5 +1,5 @@
 
-
+p "Seeding Finalzinho Chegando"
 
 Release.find_or_create_by!(
   artist: Artist.find_by(name: "Finalzinho Chegando"),

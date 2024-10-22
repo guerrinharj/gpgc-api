@@ -1,3 +1,5 @@
+p "Seeding Bibiquinha Junior"
+
 Release.find_or_create_by!(
   artist: Artist.find_by(name: "Bibiquinha Junior"),
   artist_name: Artist.find_by(name: "Bibiquinha Junior").name,

@@ -1,3 +1,5 @@
+p "Seeding Dinheiro Infinito Revival"
+
 Release.find_or_create_by!(
   artist: Artist.find_by(name: "Dinheiro Infinito Revival"),
   artist_name: Artist.find_by(name: "Dinheiro Infinito Revival").name,

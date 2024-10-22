@@ -1,3 +1,5 @@
+p "Seeding Brasileiro Garantido"
+
 Release.find_or_create_by!(
   artist: Artist.find_by(name: "Brasileiro Garantido"),
   artist_name: Artist.find_by(name: "Brasileiro Garantido").name,

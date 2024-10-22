@@ -1,3 +1,5 @@
+p "Seeding O Retiro dos Artistas"
+
 Release.find_or_create_by!(
   artist: Artist.find_by(name: "O Retiro dos Artistas"),
   artist_name: Artist.find_by(name: "O Retiro dos Artistas").name,
