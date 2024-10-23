@@ -15,7 +15,7 @@
 
 #### Install Docker for Mac
 <ul>
-    <li>* Install Docker Desktop: https://docs.docker.com/desktop/install/mac-install </li>
+    <li>Install Docker Desktop: https://docs.docker.com/desktop/install/mac-install </li>
 </ul>
 
 #### Install Docker for Linux
@@ -27,7 +27,7 @@
 </ul>
 
 #### Install Docker for Linux
-<p>Do you use Windows? I'm sorry, docker doesn't work well on Windows. </p>
+<p>* Do you use Windows? I'm sorry, docker doesn't work well on Windows. </p>
 
 
 ### Build the container and start the DB
