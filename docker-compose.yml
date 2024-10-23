@@ -27,7 +27,7 @@ services:
 
   rspec:
     build: .
-    command: bundle exec rspec
+    command: bash -c "rails db:environment:set RAILS_ENV=test && bundle exec rspec"
     volumes:
       - .:/myapp
     depends_on:
