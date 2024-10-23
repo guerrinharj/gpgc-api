@@ -9,7 +9,7 @@
 * **Ruby:** 3.1.0
 * **Rails:** 6.0.3
 
-## Docker
+## Docker :whale:
 
 <h2>This is a 100% dockerized application!</h2>
 
@@ -95,4 +95,4 @@ cd gpgc-api
   exit
 ```
 
-<h2>That's it. Happy coding</h2>  :computer:
+<h2>That's it. Happy coding :computer:</h2> 
