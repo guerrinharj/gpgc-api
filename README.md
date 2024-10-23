@@ -32,6 +32,8 @@
 
 ### Build the container and start the DB
 
+- Start terminal
+
 ```bash
 cd gpgc-api
   sh devops/chmod.sh
@@ -47,8 +49,9 @@ cd gpgc-api
 ```
 
 ### Install swagger dependencies
+- Start terminal
 ```bash
-cd nobordist-integrations-api
+cd gpgc-api
   ./devops/compose/up.sh
   ./devops/swagger/install.sh
   exit
@@ -82,6 +85,8 @@ cd gpgc-api
 
 ### Uninstall
 
+- Start terminal
+
 ```bash
 cd gpgc-api
   ./devops/compose/down.sh
@@ -89,4 +94,4 @@ cd gpgc-api
   exit
 ```
 
-That's it. Happy coding!  :computer:
+<h2>That's it. Happy coding</h2>  :computer:
