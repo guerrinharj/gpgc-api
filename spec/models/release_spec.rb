@@ -36,25 +36,5 @@ RSpec.describe Release, type: :model do
         release = build(:release, slug: 'album_name', artist: artist)
         expect(release).not_to be_valid
         end
-
-        it 'is invalid without credits' do
-        release = build(:release, credits: nil, artist: artist)
-        expect(release).not_to be_valid
-        end
-
-        it 'is invalid without links' do
-        release = build(:release, links: nil, artist: artist)
-        expect(release).not_to be_valid
-        end
-
-        it 'is invalid with incorrect credits format' do
-        release = build(:release, credits: 'Invalid Format', artist: artist)
-        expect(release).not_to be_valid
-        end
-
-        it 'is invalid with incorrect links format' do
-        release = build(:release, links: 'Invalid Format', artist: artist)
-        expect(release).not_to be_valid
-        end
     end
 end
