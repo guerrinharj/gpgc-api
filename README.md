@@ -10,7 +10,7 @@
 #### Setup the API :monorail:
 
 1. Run `bundle install` to install all the dependencies of the project;
-2. Rename `config/database.yml.example` to `config/database.yml` and add your database credentials at lines 22 and 23;
+2. Rename `config/database.yml.example` to `config/database.yml` and add your database credentials;
 3. Run `rake db:setup` to create the database and apply the migrations and seeds;
 4. Run `rspec` to check for tests;
 
