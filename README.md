@@ -13,16 +13,20 @@
 
 <h2>This is a 100% dockerized application!</h2>
 
-### Install Docker for Mac
-<p> Install Docker Desktop: https://docs.docker.com/desktop/install/mac-install </p>
+#### Install Docker for Mac
+<ul>
+    <li>* Install Docker Desktop: https://docs.docker.com/desktop/install/mac-install </li>
+</ul>
 
-### Instal Docker for Linux
-<p>Uninstall docker engine: https://docs.docker.com/engine/install/ubuntu/#uninstall-docker-engine</p>
-<p>Install docker engine: https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository</p>
-<p>Config docker as a non-root user: https://docs.docker.com/engine/install/linux-postinstall/#manage-docker-as-a-non-root-user</p>
-<p>Config docker to start on boot: https://docs.docker.com/engine/install/linux-postinstall/#configure-docker-to-start-on-boot</p>
+#### Install Docker for Linux
+<ul>
+    <li>Uninstall docker engine: https://docs.docker.com/engine/install/ubuntu/#uninstall-docker-engine</li>
+    <li>Install docker engine: https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository</li>
+    <li>Config docker as a non-root user: https://docs.docker.com/engine/install/linux-postinstall/#manage-docker-as-a-non-root-user</li>
+    <li>Config docker to start on boot: https://docs.docker.com/engine/install/linux-postinstall/#configure-docker-to-start-on-boot</li>
+</ul>
 
-### Install Docker for Linux
+#### Install Docker for Linux
 <p>Do you use Windows? I'm sorry, docker doesn't work well on Windows. </p>
 
 
@@ -50,7 +54,7 @@ cd nobordist-integrations-api
   exit
 ```
 
-### Run Rails Server
+### Run Rails server
 
 - Start terminal
 
