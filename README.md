@@ -27,8 +27,9 @@
 </ul>
 
 #### Install Docker for Linux
-<p>* Do you use Windows? I'm sorry, docker doesn't work well on Windows. </p>
-
+<ul>
+    <li>Do you use Windows? I'm sorry, docker doesn't work well on Windows. </li>
+</ul>
 
 ### Build the container and start the DB
 
