@@ -3,7 +3,7 @@ require 'uri'
 
 namespace :release do
     desc 'Check if cover is returning a 404'
-        task releases: :environment do
+        task update_covers: :environment do
             Release.find_each do |release|
                 release.cover.each_with_index do |cover_url, index|
                 begin
