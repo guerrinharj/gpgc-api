@@ -1,7 +1,5 @@
 # GPGC API
 
-# README
-
 <p>This is a straightforward Rails API that allows you to retrieve all music contributions made by me, Gabriel Pessoa Guerra Cavalcanti. You can access all albums, aliases (artists), songs, collaborations, and soundtracks I've worked on. No credentials are required!</p>
 
 
