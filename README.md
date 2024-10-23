@@ -11,7 +11,7 @@
 
 ## Docker :whale:
 
-<h2>This is a 100% dockerized application!</h2>
+<p>This is a 100% dockerized application!</p>
 
 #### Install Docker for Mac
 <ul>
