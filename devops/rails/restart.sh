@@ -12,3 +12,4 @@ docker compose run web rake release:create_songs RAILS_ENV=development
 docker compose run web rake release:update_covers RAILS_ENV=development
 
 docker compose run web rspec   
+docker container prune -f
