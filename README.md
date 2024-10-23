@@ -7,6 +7,13 @@
 * **Ruby:** 3.1.0
 * **Rails:** 6.0.3
 
+#### Setup the API :monorail:
+
+1. Run `bundle install` to install all the dependencies of the project;
+2. Rename `config/database.yml.example` to `config/database.yml` and add your database credentials at lines 22 and 23;
+3. Run `rake db:setup` to create the database and apply the migrations and seeds;
+4. Run `rspec` to check for tests;
+
 ## Docker :whale:
 
 <p>This is a 100% dockerized application!</p>
