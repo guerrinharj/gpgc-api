@@ -25,6 +25,9 @@ gem 'net-pop', require: false
 gem 'psych', '< 4'
 gem 'rack-cors'
 
+gem  'rswag-api'
+gem  'rswag-ui'
+
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
 
@@ -36,6 +39,7 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'factory_bot_rails'
   gem 'faker'
+  gem 'rswag-specs'
 end
 
 group :development do
