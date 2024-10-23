@@ -1,24 +1,76 @@
+# GPGC API
+
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+<p>This is a straightforward Rails API that allows you to retrieve all music contributions made by me, Gabriel Pessoa Guerra Cavalcanti. You can access all albums, aliases (artists), songs, collaborations, and soundtracks I've worked on. No credentials are required!</p>
 
-Things you may want to cover:
 
-* Ruby version
+## Versions :gem:
+* **Ruby:** 3.1.0
+* **Rails:** 6.0.3
 
-* System dependencies
+### Docker
 
-* Configuration
+This is a 100% dockerized application!
 
-* Database creation
+- Do you use Linux or Mac? Configure your host: https://github.com/juniormesquitadandao/gerlessver
+- Do you use Windows? I'm sorry, docker doesn't work well on Windows.
 
-* Database initialization
+```bash
+cd gpgc-api
+  sh devops/chmod.sh
+  ./devops/compose/build.sh --no-cache
+  ./devops/compose/up.sh
+  ./devops/rails/restart.sh
+  ./devops/compose/exec.sh
+        bundle
+        rspec
+        exit
+  ./devops/compose/down.sh
+  exit
+```
 
-* How to run the test suite
+### Install swagger dependencies
+```bash
+cd nobordist-integrations-api
+  ./devops/compose/up.sh
+  ./devops/swagger/install.sh
+  exit
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+### Run Rails Server
 
-* Deployment instructions
+- Start terminal
 
-* ...
+```bash
+cd gpgc-api
+    ./devops/compose/up.sh
+    ./devops/rails/server.sh
+    # browser: http://localhost:3000
+    # CTRL + C
+    ./devops/compose/down.sh
+  exit
+```
+
+### Update DB and Rails
+
+- Start terminal
+
+```bash
+cd gpgc-api
+    ./devops/compose/up.sh
+    ./devops/rails/update.sh
+    ./devops/compose/down.sh
+  exit
+```
+
+### Uninstall
+
+```bash
+cd gpgc-api
+  ./devops/compose/down.sh
+  ./devops/compose/delete.sh
+  exit
+```
+
+That's it. Happy coding!  :computer:
