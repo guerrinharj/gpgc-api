@@ -1,4 +1,5 @@
 require 'rails_helper'
+require 'net/http'
 
 RSpec.describe Release, type: :model do
     let(:artist) { create(:artist) } 
@@ -35,6 +36,18 @@ RSpec.describe Release, type: :model do
         create(:release, slug: 'album_name')
         release = build(:release, slug: 'album_name', artist: artist)
         expect(release).not_to be_valid
+        end
+    end
+
+    describe 'cover' do
+        it 'must be a valid link' do
+            release = create(:release)
+
+            release.cover.each do |cover_url|
+                uri = URI.parse(cover_url)
+                response = Net::HTTP.get_response(uri)
+                expect(response.code).not_to eq('404'), "Cover URL #{cover_url} returned a 404"
+            end
         end
     end
 end

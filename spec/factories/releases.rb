@@ -4,7 +4,7 @@ FactoryBot.define do
         artist_name { "John Doe" }
         name { "Album Name" }
         slug { "album_name" }
-        cover { ["https://f4.bcbits.com/img/a1573352452_10.jpg"] }
+        cover { ["https://f4.bcbits.com/img/a2215041243_16.jpg"] }
         release_type { "Album" }
         release_date { "2021-09-27" }
         label { ["Label"] }
