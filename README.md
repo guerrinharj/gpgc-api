@@ -9,12 +9,24 @@
 * **Ruby:** 3.1.0
 * **Rails:** 6.0.3
 
-### Docker
+## Docker
 
-This is a 100% dockerized application!
+<h2>This is a 100% dockerized application!</h2>
 
-- Do you use Linux or Mac? Configure your host: https://github.com/juniormesquitadandao/gerlessver
-- Do you use Windows? I'm sorry, docker doesn't work well on Windows.
+### Install Docker for Mac
+<p> Install Docker Desktop: https://docs.docker.com/desktop/install/mac-install </p>
+
+### Instal Docker for Linux
+<p>Uninstall docker engine: https://docs.docker.com/engine/install/ubuntu/#uninstall-docker-engine</p>
+<p>Install docker engine: https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository</p>
+<p>Config docker as a non-root user: https://docs.docker.com/engine/install/linux-postinstall/#manage-docker-as-a-non-root-user</p>
+<p>Config docker to start on boot: https://docs.docker.com/engine/install/linux-postinstall/#configure-docker-to-start-on-boot</p>
+
+### Install Docker for Linux
+<p>Do you use Windows? I'm sorry, docker doesn't work well on Windows. </p>
+
+
+### Build the container and start the DB
 
 ```bash
 cd gpgc-api
