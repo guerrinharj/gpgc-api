@@ -26,4 +26,4 @@ EXPOSE 8080
 ENV PORT=8080
 
 # Set the entrypoint for the container
-CMD ["bundle", "exec", "rails", "server", "-b", "0.0.0.0", "-p", "$PORT"]
+CMD ["bundle", "exec", "rails", "server", "-b", "0.0.0.0", "-p", "8080"]
