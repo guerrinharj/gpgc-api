@@ -5,6 +5,8 @@ class Song < ApplicationRecord
     validates :slug, uniqueness: true
     validates :title, uniqueness: true
 
+    has_one_attached :audio_file
+
     def to_param
         "#{slug}"
     end

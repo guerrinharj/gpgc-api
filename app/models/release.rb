@@ -13,6 +13,8 @@ class Release < ApplicationRecord
 
   belongs_to :artist
 
+  has_many_attached :cover_image
+
   def to_param
     "#{slug}"
   end
