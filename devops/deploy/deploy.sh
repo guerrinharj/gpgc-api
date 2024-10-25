@@ -16,6 +16,6 @@ docker buildx build --platform linux/amd64 -t gcr.io/gpgc-api/gpgc-api-rspec --p
 
 
 
-gcloud run deploy gpgc-api-web --image gcr.io/gpgc-api/gpgc-api-web --platform managed --region uscentral1 --allow-unauthenticated
-gcloud run deploy gpgc-api-db --image gcr.io/gpgc-api/gpgc-api-db --platform managed --region uscentral1 --allow-unauthenticated
-gcloud run deploy gpgc-api-rspec --image gcr.io/gpgc-api/gpgc-api-rspec --platform managed --region uscentral1 --allow-unauthenticated
+gcloud run deploy gpgc-api-web --image gcr.io/gpgc-api/gpgc-api-web --platform managed --region us-central1 --allow-unauthenticated --timeout=900
+gcloud run deploy gpgc-api-db --image gcr.io/gpgc-api/gpgc-api-db --platform managed --region us-central1 --allow-unauthenticated --timeout=900
+gcloud run deploy gpgc-api-rspec --image gcr.io/gpgc-api/gpgc-api-rspec --platform managed --region us-central1 --allow-unauthenticated --timeout=900
