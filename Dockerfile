@@ -20,7 +20,10 @@ COPY . .
 RUN bundle exec rake assets:precompile
 
 # Expose port 3000 to the outside world
-EXPOSE 3000
+EXPOSE 8080
+
+# Set the environment variable for PORT
+ENV PORT=8080
 
 # Set the entrypoint for the container
-CMD ["bundle", "exec", "rails", "server", "-b", "0.0.0.0"]
+CMD ["bundle", "exec", "rails", "server", "-b", "0.0.0.0", "-p", "$PORT"]
