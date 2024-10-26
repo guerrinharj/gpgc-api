@@ -8,10 +8,10 @@ class Release < ApplicationRecord
 
   validates :artist, presence: true
   validates :artist_name, :name, :slug, presence: true
-  validates :slug, uniqueness: true
   validates :format, :notes, presence: true
 
   belongs_to :artist
+  has_many :songs, dependent: :destroy
 
   has_many_attached :cover_image
 

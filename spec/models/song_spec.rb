@@ -16,14 +16,6 @@ RSpec.describe Song, type: :model do
     end
 
     describe 'validations' do
-        it 'validates uniqueness of slug' do
-            song = Song.create(title: 'Unique Title', slug: 'unique-slug', artist: artist, release: release)
-            duplicate_song = Song.new(title: 'Another Title', slug: 'unique-slug', artist: artist, release: release)
-            
-            expect(duplicate_song).not_to be_valid
-            expect(duplicate_song.errors[:slug]).to include('has already been taken')
-        end
-
         it 'validates uniqueness of title' do
             song = Song.create(title: 'Unique Title', slug: 'unique-slug', artist: artist, release: release)
             duplicate_song = Song.new(title: 'Unique Title', slug: 'another-slug', artist: artist, release: release)

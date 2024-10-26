@@ -31,12 +31,6 @@ RSpec.describe Release, type: :model do
         release = build(:release, slug: nil, artist: artist)
         expect(release).not_to be_valid
         end
-
-        it 'is invalid with a duplicate slug' do
-        create(:release, slug: 'album_name')
-        release = build(:release, slug: 'album_name', artist: artist)
-        expect(release).not_to be_valid
-        end
     end
 
     describe 'cover' do
