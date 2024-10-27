@@ -11,14 +11,14 @@ Release.find_or_create_by!(
   release_date: Date.new(2021, 9, 27),
   format: ["CD", "digital download", "streaming"],
   tracks: [
-    "Smoke With The Water",
-    "Sepsi Time",
-    "Hercomanso",
-    "Corra de Blogs",
-    "Discagens Feitas Ao Lido",
-    "A Lei e O Loiro",
-    "Passarela",
-    "Orca Popoca"
+    { title: "Smoke With The Water", url: "" },
+    { title: "Sepsi Time", url: "" },
+    { title: "Hercomanso", url: "" },
+    { title: "Corra de Blogs", url: "" },
+    { title: "Discagens Feitas Ao Lido", url: "" },
+    { title: "A Lei e O Loiro", url: "" },
+    { title: "Passarela", url: "" },
+    { title: "Orca Popoca", url: "" }
   ],
     credits: {
     "Gabriel Guerra": "keyboards, drum machine",
@@ -44,14 +44,14 @@ Release.find_or_create_by!(
   release_date: Date.new(2022, 7, 29),
   format: ["CD", "digital download", "streaming"],
   tracks: [
-    "Travessa do Mosqueira",
-    "Andarilho Shuffle",
-    "Legalizando Ricardo Silveira",
-    "Deveríamos Ser Iguais",
-    "Tragédia no Mortadella's",
-    "Cool Steve Boogie",
-    "Ricochete Life",
-    "Os Ventos Uivantes do Mosteiro"
+    { title: "Travessa do Mosqueira", url: "" },
+    { title: "Andarilho Shuffle", url: "" },
+    { title: "Legalizando Ricardo Silveira", url: "" },
+    { title: "Deveriamos Ser Iguais", url: "" },
+    { title: "Tragédia No Mortadella's", url: "" },
+    { title: "Cool Steve Boogie", url: "" },
+    { title: "Ricochete Life", url: "" },
+    { title: "Os Ventos Uivantes do Mosteiro", url: "" }
   ],
     credits: {
     "Gabriel Guerra": "keyboards, drum machine",
@@ -59,8 +59,8 @@ Release.find_or_create_by!(
   notes: [
     "All tracks produced by Gabriel Guerra"
   ],
-   links: {
-    "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/rocking-rio",
-    "Spotify": "https://open.spotify.com/album/4KLdmNAslIMCxsSkBvV1xp"
+    links: {
+      "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/rocking-rio",
+      "Spotify": "https://open.spotify.com/album/4KLdmNAslIMCxsSkBvV1xp"
   }
 )
