@@ -8,7 +8,7 @@ Release.find_or_create_by!(
   cover: ["https://f4.bcbits.com/img/a2498817730_10.jpg"],
   release_type: "Album",
   release_date: Date.new(2024, 2, 28),
-  format: ["Vinil", "digital download", "streaming"],
+  format: ["Vinyl", "digital download", "streaming"],
   tracks: [
     { title: "Big Time Sensuality 2", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/CONTRAHOUSE/Guerra%20-%20de%20Paiva%20-%20Hornsby%20-%20Konradsen%20-%20A1.%20Big%20Time%20Sensuality%202.mp3" },
     { title: "Jellyfish", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/CONTRAHOUSE/Guerra%20-%20de%20Paiva%20-%20Hornsby%20-%20Konradsen%20-%20A2.%20Jellyfish.mp3" },
