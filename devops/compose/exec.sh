@@ -10,3 +10,4 @@
 #DOCKER_DEFAULT_PLATFORM=$DOCKER_DEFAULT_PLATFORM \
 chmod +x ./devops/compose/exec.sh
 docker compose exec web bash $@
+docker compose exec web bash bundle install

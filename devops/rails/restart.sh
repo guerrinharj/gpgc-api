@@ -1,6 +1,7 @@
 #!/bin/zsh
 
 chmod +x ./devops/rails/restart.sh
+bundle install
 docker compose run web bundle install
 
 docker compose run web rails db:environment:set
