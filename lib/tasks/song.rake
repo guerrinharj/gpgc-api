@@ -12,7 +12,7 @@ namespace :release do
                     title = track[:title]
                     url = track[:url]
         
-                    slug = title.parameterize
+                    slug = "#{release.id}-#{title.parameterize}"
         
                     song = Song.create(
                         title: title,

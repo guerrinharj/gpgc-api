@@ -6,26 +6,26 @@ Release.find_or_create_by!(
   name: "Faixas de Ritmo",
   slug: 'faixas-de-ritmo',
   label: ["40% Foda/Maneirissimo"],
-  cover: ["https://f4.bcbits.com/img/a3747296290_10.jpg"],
+  cover: ["https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/DINHEIRO%20INFINITO%20REVIVAL/Faixas%20de%20Ritmo/cover.jpg"],
   release_type: "Album",
   release_date: Date.new(2020, 10, 28),
   format: ["CD", "digital download", "streaming"],
   tracks: [
-    "118 BPM",
-    "108 BPM",
-    "126 BPM",
-    "119 BPM",
-    "114 BPM",
-    "103 BPM",
-    "121 BPM",
-    "113 BPM",
-    "101 BPM",
-    "107 BPM",
-    "105 BPM",
-    "104 BPM",
-    "110 BPM"
+    { title: "118 BPM", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/DINHEIRO%20INFINITO%20REVIVAL/Faixas%20de%20Ritmo/Dinheiro%20Infinito%20Revival%20-%20Faixas%20de%20Ritmo%20-%2001%20118%20BPM.mp3" },
+    { title: "108 BPM", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/DINHEIRO%20INFINITO%20REVIVAL/Faixas%20de%20Ritmo/Dinheiro%20Infinito%20Revival%20-%20Faixas%20de%20Ritmo%20-%2001%20108%20BPM.mp3" },
+    { title: "126 BPM", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/DINHEIRO%20INFINITO%20REVIVAL/Faixas%20de%20Ritmo/Dinheiro%20Infinito%20Revival%20-%20Faixas%20de%20Ritmo%20-%2001%20126%20BPM.mp3" },
+    { title: "119 BPM", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/DINHEIRO%20INFINITO%20REVIVAL/Faixas%20de%20Ritmo/Dinheiro%20Infinito%20Revival%20-%20Faixas%20de%20Ritmo%20-%2001%20119%20BPM.mp3" },
+    { title: "114 BPM", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/DINHEIRO%20INFINITO%20REVIVAL/Faixas%20de%20Ritmo/Dinheiro%20Infinito%20Revival%20-%20Faixas%20de%20Ritmo%20-%2001%20114%20BPM.mp3" },
+    { title: "103 BPM", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/DINHEIRO%20INFINITO%20REVIVAL/Faixas%20de%20Ritmo/Dinheiro%20Infinito%20Revival%20-%20Faixas%20de%20Ritmo%20-%2001%20103%20BPM.mp3" },
+    { title: "121 BPM", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/DINHEIRO%20INFINITO%20REVIVAL/Faixas%20de%20Ritmo/Dinheiro%20Infinito%20Revival%20-%20Faixas%20de%20Ritmo%20-%2001%20121%20BPM.mp3" },
+    { title: "113 BPM", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/DINHEIRO%20INFINITO%20REVIVAL/Faixas%20de%20Ritmo/Dinheiro%20Infinito%20Revival%20-%20Faixas%20de%20Ritmo%20-%2001%20113%20BPM.mp3" },
+    { title: "101 BPM", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/DINHEIRO%20INFINITO%20REVIVAL/Faixas%20de%20Ritmo/Dinheiro%20Infinito%20Revival%20-%20Faixas%20de%20Ritmo%20-%2001%20101%20BPM.mp3" },
+    { title: "107 BPM", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/DINHEIRO%20INFINITO%20REVIVAL/Faixas%20de%20Ritmo/Dinheiro%20Infinito%20Revival%20-%20Faixas%20de%20Ritmo%20-%2001%20107%20BPM.mp3" },
+    { title: "105 BPM", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/DINHEIRO%20INFINITO%20REVIVAL/Faixas%20de%20Ritmo/Dinheiro%20Infinito%20Revival%20-%20Faixas%20de%20Ritmo%20-%2001%20105%20BPM.mp3" },
+    { title: "104 BPM", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/DINHEIRO%20INFINITO%20REVIVAL/Faixas%20de%20Ritmo/Dinheiro%20Infinito%20Revival%20-%20Faixas%20de%20Ritmo%20-%2001%20104%20BPM.mp3" },
+    { title: "110 BPM", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/DINHEIRO%20INFINITO%20REVIVAL/Faixas%20de%20Ritmo/Dinheiro%20Infinito%20Revival%20-%20Faixas%20de%20Ritmo%20-%2001%20110%20BPM.mp3" }
   ],
-    credits: {
+  credits: {
     "Gabriel Guerra": "synthesizer, sampler, drum machine",
   },
   notes: [
@@ -37,30 +37,29 @@ Release.find_or_create_by!(
   }
 )
 
-
 Release.find_or_create_by!(
   artist: Artist.find_by(name: "Dinheiro Infinito Revival"),
   artist_name: Artist.find_by(name: "Dinheiro Infinito Revival").name,
   name: "Faixas de Ritmo II",
   slug: 'faixas-de-ritmo-ii',
   label: ["40% Foda/Maneirissimo"],
-  cover: ["https://f4.bcbits.com/img/a2780880053_10.jpg"],
+  cover: ["https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/DINHEIRO%20INFINITO%20REVIVAL/Faixas%20de%20Ritmo%20II/cover.jpg"],
   release_type: "Album",
   release_date: Date.new(2022, 4, 25),
   format: ["CD", "digital download", "streaming"],
   tracks: [
-    "138 BPM",
-    "132 BPM",
-    "129 BPM",
-    "122 BPM",
-    "131 BPM",
-    "135 BPM",
-    "136 BPM",
-    "140 BPM",
-    "137 BPM",
-    "141 BPM"
+    { title: "138 BPM", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/DINHEIRO%20INFINITO%20REVIVAL/Faixas%20de%20Ritmo%20II/Dinheiro%20Infinito%20Revival%20-%20Faixas%20de%20Ritmo%20II%20-%2001%20138%20BPM.mp3" },
+    { title: "132 BPM", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/DINHEIRO%20INFINITO%20REVIVAL/Faixas%20de%20Ritmo%20II/Dinheiro%20Infinito%20Revival%20-%20Faixas%20de%20Ritmo%20II%20-%2002%20132%20BPM.mp3" },
+    { title: "129 BPM", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/DINHEIRO%20INFINITO%20REVIVAL/Faixas%20de%20Ritmo%20II/Dinheiro%20Infinito%20Revival%20-%20Faixas%20de%20Ritmo%20II%20-%2003%20129%20BPM.mp3" },
+    { title: "122 BPM", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/DINHEIRO%20INFINITO%20REVIVAL/Faixas%20de%20Ritmo%20II/Dinheiro%20Infinito%20Revival%20-%20Faixas%20de%20Ritmo%20II%20-%2004%20122%20BPM.mp3" },
+    { title: "131 BPM", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/DINHEIRO%20INFINITO%20REVIVAL/Faixas%20de%20Ritmo%20II/Dinheiro%20Infinito%20Revival%20-%20Faixas%20de%20Ritmo%20II%20-%2005%20131%20BPM.mp3" },
+    { title: "135 BPM", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/DINHEIRO%20INFINITO%20REVIVAL/Faixas%20de%20Ritmo%20II/Dinheiro%20Infinito%20Revival%20-%20Faixas%20de%20Ritmo%20II%20-%2006%20135%20BPM.mp3" },
+    { title: "136 BPM", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/DINHEIRO%20INFINITO%20REVIVAL/Faixas%20de%20Ritmo%20II/Dinheiro%20Infinito%20Revival%20-%20Faixas%20de%20Ritmo%20II%20-%2007%20136%20BPM.mp3" },
+    { title: "140 BPM", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/DINHEIRO%20INFINITO%20REVIVAL/Faixas%20de%20Ritmo%20II/Dinheiro%20Infinito%20Revival%20-%20Faixas%20de%20Ritmo%20II%20-%2008%20140%20BPM.mp3" },
+    { title: "137 BPM", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/DINHEIRO%20INFINITO%20REVIVAL/Faixas%20de%20Ritmo%20II/Dinheiro%20Infinito%20Revival%20-%20Faixas%20de%20Ritmo%20II%20-%2009%20137%20BPM.mp3" },
+    { title: "141 BPM", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/DINHEIRO%20INFINITO%20REVIVAL/Faixas%20de%20Ritmo%20II/Dinheiro%20Infinito%20Revival%20-%20Faixas%20de%20Ritmo%20II%20-%2010%20141%20BPM.mp3" }
   ],
-    credits: {
+  credits: {
     "Gabriel Guerra": "synthesizer, sampler, drum machine",
   },
   notes: [
@@ -71,5 +70,3 @@ Release.find_or_create_by!(
     "Spotify": "https://open.spotify.com/album/4wPsufwMwc976ci9BgXvN7?si=2e6aace5a17e49ae"
   }
 )
-
-

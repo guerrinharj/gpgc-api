@@ -8,14 +8,14 @@ Release.find_or_create_by!(
   cover: ["https://f4.bcbits.com/img/a2498817730_10.jpg"],
   release_type: "Album",
   release_date: Date.new(2024, 2, 28),
-  format: ["Streaming"],
+  format: ["Vinil", "digital download", "streaming"],
   tracks: [
-    "Big Time Sensuality 2",
-    "Jellyfish",
-    "American Bottoms",
-    "Streetcorn "
+    { title: "Big Time Sensuality 2", url: "" },
+    { title: "Jellyfish", url: "" },
+    { title: "American Bottoms", url: "" },
+    { title: "Streetcorn", url: "" }
   ],
-    credits: {
+  credits: {
     "Bruce Hornsby": "piano",
     "Gabriel Guerra": "keyboards, programming",
     "Lucas de Paiva": "keyboards, programming",

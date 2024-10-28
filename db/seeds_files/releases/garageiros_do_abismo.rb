@@ -1,62 +1,61 @@
 p "Seeding Garageiros do Abismo"
 
-Release.find_or_create_by!(
-  artist: Artist.find_by(name: "Garageiros do Abismo"),
-  artist_name: Artist.find_by(name: "Garageiros do Abismo").name,
-  name: "Tão Fácil Quanto Ser Poeta",
-  slug: 'tao-facil-quanto-ser-poeta',
-  cover: ["https://i.discogs.com/oOaAXEto2h5WRCtZqxdjKreljU58uZg-Qfftjw7ErJM/rs:fit/g:sm/q:90/h:500/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI1MjEz/NTMtMTUzOTM5MjIy/MC03Mzc2LnBuZw.jpeg"],
-  release_type: "EP",
-  release_date: Date.new(2008, 4, 22),
-  format: ["digital download"],
-  tracks: [
-    "A Nova Incerteza",
-    "Canção Alegre Para Ódio Psicótico (Nunca Foi Tão Fácil Sorrir)",
-    "Tenebroso"
-  ],
-  credits: {
-    "Gabriel Guerra": "electric guitar",
-    "João Bentes": "vocals",
-    "Luca Cantini": "bass guitar",
-    "Gustavo Krieger": "drums"
-  },
-  notes: [
-    "All tracks recorded, mixed and mastered by Pedro Garcia.",
-    "All tracks written by Gabriel Guerra and João Bentes."
-  ],
-  links: [
-    "Bandcamp": nil,
-    "Spotify": nil
-  ]
-)
-
-
-
-Release.find_or_create_by!(
-  artist: Artist.find_by(name: "Garageiros do Abismo"),
-  artist_name: Artist.find_by(name: "Garageiros do Abismo").name,
-  name: "Estamos Sujos / Alvaro é Vélho",
-  slug: 'estamos-sujos-alvaro-e-velho',
-  cover: ["https://i.discogs.com/lw4P82_EGCmkCELlZWXp5E6FnFH9K33kFUoDGJwitHI/rs:fit/g:sm/q:90/h:400/w:399/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI1MjEz/NzMtMTUzOTM5MjI0/MS0zMTgyLnBuZw.jpeg"],
-  release_type: "Single",
-  release_date: Date.new(2008, 11, 11),
-  format: ["digital download"],
-  tracks: [
-    "Estamos Sujos",
-    "Alvaro É Velho",
-  ],
-  credits: {
-    "Gabriel Guerra": "electric guitar, keyboards",
-    "João Bentes": "vocals",
-    "Luca Cantini": "bass guitar",
-    "Arthur Aguillar": "drums"
-  },
-  notes: [
-    "All tracks recorded, mixed and mastered by Pedro Garcia at Estudio Superfuzz",
-    "All tracks written by Gabriel Guerra, Arthur Aguillar and João Bentes"
-  ],
-  links: [
-    "Bandcamp": nil,
-    "Spotify": nil
-  ]
-)
+  Release.find_or_create_by!(
+    artist: Artist.find_by(name: "Garageiros do Abismo"),
+    artist_name: Artist.find_by(name: "Garageiros do Abismo").name,
+    name: "Tão Fácil Quanto Ser Poeta",
+    slug: 'tao-facil-quanto-ser-poeta',
+    cover: ["https://i.discogs.com/oOaAXEto2h5WRCtZqxdjKreljU58uZg-Qfftjw7ErJM/rs:fit/g:sm/q:90/h:500/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI1MjEz/NTMtMTUzOTM5MjIy/MC03Mzc2LnBuZw.jpeg"],
+    release_type: "EP",
+    release_date: Date.new(2008, 4, 22),
+    format: ["digital download"],
+    tracks: [
+      { title: "A Nova Incerteza", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GARAGEIROS%20DO%20ABISMO/Ta%CC%83o%20Facil%20Quanto%20Ser%20Poeta/Ta%CC%83o%20Facil%20Quanto%20Ser%20Poeta/A%20Nova%20Incerteza.mp3" },
+      { title: "Canção Alegre Para Ódio Psicótico (Nunca Foi Tão Fácil Sorrir)", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GARAGEIROS%20DO%20ABISMO/Ta%CC%83o%20Facil%20Quanto%20Ser%20Poeta/Ta%CC%83o%20Facil%20Quanto%20Ser%20Poeta/Canc%CC%A7a%CC%83o%20Alegre%20Para%20O%CC%81dio%20Psico%CC%81tico%20(Nunca%20Foi%20Ta%CC%83o%20Facil%20Sorrir).mp3" },
+      { title: "Tenebroso", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GARAGEIROS%20DO%20ABISMO/Ta%CC%83o%20Facil%20Quanto%20Ser%20Poeta/Ta%CC%83o%20Facil%20Quanto%20Ser%20Poeta/Tenebroso.mp3" }
+    ],
+    credits: {
+      "Gabriel Guerra": "electric guitar",
+      "João Bentes": "vocals",
+      "Luca Cantini": "bass guitar",
+      "Gustavo Krieger": "drums"
+    },
+    notes: [
+      "All tracks recorded, mixed and mastered by Pedro Garcia.",
+      "All tracks written by Gabriel Guerra and João Bentes."
+    ],
+    links: {
+      "Bandcamp": nil,
+      "Spotify": nil
+    }
+  )
+  
+  Release.find_or_create_by!(
+    artist: Artist.find_by(name: "Garageiros do Abismo"),
+    artist_name: Artist.find_by(name: "Garageiros do Abismo").name,
+    name: "Estamos Sujos / Alvaro é Vélho",
+    slug: 'estamos-sujos-alvaro-e-velho',
+    cover: ["https://i.discogs.com/lw4P82_EGCmkCELlZWXp5E6FnFH9K33kFUoDGJwitHI/rs:fit/g:sm/q:90/h:400/w:399/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI1MjEz/NzMtMTUzOTM5MjI0/MS0zMTgyLnBuZw.jpeg"],
+    release_type: "Single",
+    release_date: Date.new(2008, 11, 11),
+    format: ["digital download"],
+    tracks: [
+      { title: "Estamos Sujos", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GARAGEIROS%20DO%20ABISMO/Estamos%20Sujos%20-%20Alvaro%20e%CC%81%20Velho/Estamos%20Sujos%20_%20Alvaro%20E%CC%81%20Velho/01%20Estamos%20Sujos.mp3" },
+      { title: "Alvaro É Velho", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GARAGEIROS%20DO%20ABISMO/Estamos%20Sujos%20-%20Alvaro%20e%CC%81%20Velho/Estamos%20Sujos%20_%20Alvaro%20E%CC%81%20Velho/02%20Alvaro%20e%CC%81%20Velho.wav" }
+    ],
+    credits: {
+      "Gabriel Guerra": "electric guitar, keyboards",
+      "João Bentes": "vocals",
+      "Luca Cantini": "bass guitar",
+      "Arthur Aguillar": "drums"
+    },
+    notes: [
+      "All tracks recorded, mixed and mastered by Pedro Garcia at Estudio Superfuzz",
+      "All tracks written by Gabriel Guerra, Arthur Aguillar and João Bentes"
+    ],
+    links: {
+      "Bandcamp": nil,
+      "Spotify": nil
+    }
+  )
+  
