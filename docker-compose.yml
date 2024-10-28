@@ -23,7 +23,8 @@ services:
     depends_on:
       - db
     environment:
-      DATABASE_URL: postgres://gpgc_api:${GPGC_API_DATABASE_PASSWORD}@db:5432/gpgc_api_development
+      - RAILS_ENV=development
+      - DATABASE_URL=postgresql://gpgc_api:1310gpgc@db:5432/gpgc_api_development
 
   rspec:
     build: .
