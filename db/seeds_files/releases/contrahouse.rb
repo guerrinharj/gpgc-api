@@ -10,10 +10,10 @@ Release.find_or_create_by!(
   release_date: Date.new(2024, 2, 28),
   format: ["Vinil", "digital download", "streaming"],
   tracks: [
-    { title: "Big Time Sensuality 2", url: "" },
-    { title: "Jellyfish", url: "" },
-    { title: "American Bottoms", url: "" },
-    { title: "Streetcorn", url: "" }
+    { title: "Big Time Sensuality 2", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/CONTRAHOUSE/Guerra%20-%20de%20Paiva%20-%20Hornsby%20-%20Konradsen%20-%20A1.%20Big%20Time%20Sensuality%202.mp3" },
+    { title: "Jellyfish", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/CONTRAHOUSE/Guerra%20-%20de%20Paiva%20-%20Hornsby%20-%20Konradsen%20-%20A2.%20Jellyfish.mp3" },
+    { title: "American Bottoms", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/CONTRAHOUSE/Guerra%20-%20de%20Paiva%20-%20Hornsby%20-%20Konradsen%20-%20B1.%20American%20Bottoms.mp3" },
+    { title: "Streetcorn", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/CONTRAHOUSE/Guerra%20-%20de%20Paiva%20-%20Hornsby%20-%20Konradsen%20-%20B2.%20Streetcorn.mp3" }
   ],
   credits: {
     "Bruce Hornsby": "piano",
@@ -22,8 +22,7 @@ Release.find_or_create_by!(
     "Jenny Konradsen": "vocals"
   },
   notes: [
-    "Track 1 written by Arthur Braganti",
-    "Track 2 written by Léo Jaime"
+    "All tracks produced by Gabriel Guerra and Lucas de Paiva, mixed by Gabriel Guerra."
   ],
   links: {
     "Spotify": "https://open.spotify.com/album/06C0IX5juKbWePER7mNrYY",
