@@ -11,6 +11,7 @@ docker compose run web rails db:migrate RAILS_ENV=development
 docker compose run web rails db:seed RAILS_ENV=development
 docker compose run web rake release:create_songs RAILS_ENV=development
 docker compose run web rake release:update_covers RAILS_ENV=development
+docker compose run web rake songs:check_empty_urls RAILS_ENV=development
 
 docker compose run web rspec   
 docker container prune -f

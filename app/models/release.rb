@@ -5,6 +5,8 @@ class Release < ApplicationRecord
   attribute :notes, :string, array: true, default: []
   attribute :credits, :json, default: {}
   attribute :links, :json, default: {}
+  
+  serialize :tracks, Array
 
   validates :artist, presence: true
   validates :artist_name, :name, :slug, presence: true
@@ -12,6 +14,7 @@ class Release < ApplicationRecord
   validates :format, :notes, presence: true
 
   belongs_to :artist
+  has_many :songs, dependent: :destroy
 
   has_many_attached :cover_image
 
@@ -19,4 +22,7 @@ class Release < ApplicationRecord
     "#{slug}"
   end
 
+  def associated_songs
+    Song.where(id: songs)
+  end
 end

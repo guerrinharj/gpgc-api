@@ -9,13 +9,14 @@ class CreateReleases < ActiveRecord::Migration[6.0]
       t.string :release_type
       t.date :release_date
       t.string :label, array: true, default: []
-      t.text :tracks, array: true, default: []
-      t.text :format, array: true, default: []
-      t.text :credits
+      t.jsonb :tracks, default: []
+      t.string :format, array: true, default: []
+      t.jsonb :credits, default: {}
       t.string :notes, array: true, default: []
-      t.string :links
+      t.jsonb :links, default: {}
 
       t.timestamps
     end
   end
 end
+

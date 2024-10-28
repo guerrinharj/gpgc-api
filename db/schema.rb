@@ -66,11 +66,11 @@ ActiveRecord::Schema.define(version: 2024_10_25_190752) do
     t.string "release_type"
     t.date "release_date"
     t.string "label", default: [], array: true
-    t.text "tracks", default: [], array: true
-    t.text "format", default: [], array: true
-    t.text "credits"
+    t.jsonb "tracks", default: []
+    t.string "format", default: [], array: true
+    t.jsonb "credits", default: {}
     t.string "notes", default: [], array: true
-    t.string "links"
+    t.jsonb "links", default: {}
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["artist_id"], name: "index_releases_on_artist_id"
