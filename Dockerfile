@@ -19,11 +19,11 @@ COPY . .
 # Precompile assets and set up the entrypoint
 RUN bundle exec rake assets:precompile
 
-# Expose port to the outside world
-EXPOSE 3000
+# Expose the port to the outside world
+EXPOSE ${GPGC_API_DATABASE_PORT:-3000}
 
 # Set the environment variable for PORT
-ENV PORT=3000
+ENV PORT=${GPGC_API_DATABASE_PORT:-3000}
 
 # Set the entrypoint for the container
-CMD ["bundle", "exec", "rails", "server", "-b", "0.0.0.0", "-p", "3000"]
+CMD ["bundle", "exec", "rails", "server", "-b", "0.0.0.0", "-p", "${GPGC_API_DATABASE_PORT}"]
