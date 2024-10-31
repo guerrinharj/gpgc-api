@@ -5,11 +5,7 @@ info:
   version: 1.0.0
 servers:
   - url: http://localhost:3000
-<<<<<<< HEAD
-    description: Local development server
-=======
     description: Development server
->>>>>>> main
 
 paths:
 

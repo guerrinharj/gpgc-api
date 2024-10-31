@@ -1,19 +1,19 @@
 # lib/tasks/setup.rake
 
 namespace :rake do
-    desc "Setup the Rails environment for production"
+    desc "Setup the Rails environment for development"
         task setup: :environment do
-            puts "Setting Rails environment to production..."
+            puts "Setting Rails environment to development..."
     
             # Run the commands in sequence
             commands = [
-                "rails db:environment:set RAILS_ENV=production",
+                "rails db:environment:set RAILS_ENV=development",
                 "rails db:drop",
                 "rails db:create",
-                "rails db:migrate RAILS_ENV=production",
-                "rails db:seed RAILS_ENV=production",
-                "rake release:create_songs RAILS_ENV=production",
-                "rake release:update_covers RAILS_ENV=production"
+                "rails db:migrate RAILS_ENV=development",
+                "rails db:seed RAILS_ENV=development",
+                "rake release:create_songs RAILS_ENV=development",
+                "rake release:update_covers RAILS_ENV=development"
             ]
         
             commands.each do |command|
