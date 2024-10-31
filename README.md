@@ -13,7 +13,7 @@
 2. Rename `config/database.yml.example` to `config/database.yml` and add your database credentials;
 3. Run `rake db:setup` to create the database and apply the migrations and seeds;
 4. Run `rspec` to check for tests;
-5. Run `rails s` and go for your `http://localhost:3000`
+5. Run `rails s` and go for your localhost
 
 ## Docker :whale:
 
@@ -72,7 +72,6 @@ cd gpgc-api
 cd gpgc-api
     ./devops/compose/up.sh
     ./devops/rails/server.sh
-    # browser: http://localhost:3000
     # CTRL + C
     ./devops/compose/down.sh
   exit

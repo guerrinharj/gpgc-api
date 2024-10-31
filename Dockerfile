@@ -19,7 +19,7 @@ COPY . .
 # Precompile assets and set up the entrypoint
 RUN bundle exec rake assets:precompile
 
-# Expose port 3000 to the outside world
+# Expose port to the outside world
 EXPOSE 8080
 
 # Set the environment variable for PORT
