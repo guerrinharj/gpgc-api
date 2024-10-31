@@ -5,7 +5,7 @@ services:
     environment:
       POSTGRES_USER: ${GPGC_API_DATABASE_USERNAME}
       POSTGRES_PASSWORD: ${GPGC_API_DATABASE_PASSWORD}
-      POSTGRES_DB: ${GPGC_API_DATABASE_HOST:-gpgc_api_development}
+      POSTGRES_DB: ${GPGC_API_DATABASE_HOST}
     volumes:
       - db-data:/var/lib/postgresql/data
     ports:
@@ -23,7 +23,7 @@ services:
       - db
     environment:
       RAILS_ENV: ${RAILS_ENV:-development}
-      DATABASE_URL: "postgresql://${GPGC_API_DATABASE_USERNAME}:${GPGC_API_DATABASE_PASSWORD}@${GPGC_API_DATABASE_HOST}:5432/${POSTGRES_DB:-gpgc_api_development}"
+      DATABASE_URL: "postgresql://${GPGC_API_DATABASE_USERNAME}:${GPGC_API_DATABASE_PASSWORD}@${GPGC_API_DATABASE_HOST}:5432/${GPGC_API_DATABASE_NAME:-gpgc_api_development}"
       PORT: ${GPGC_API_DATABASE_PORT:-3000}  # Set PORT environment variable
 
   rspec:
