@@ -10,11 +10,7 @@ threads min_threads_count, max_threads_count
 
 # Specifies the `port` that Puma will listen on to receive requests;
 #
-<<<<<<< HEAD
-port        ENV.fetch("PORT") { 3000 }
-=======
 port        ENV.fetch("GPGC_API_DATABASE_PORT") { 3000 }
->>>>>>> main
 
 # Specifies the `environment` that Puma will run in.
 #
