@@ -4,8 +4,8 @@ info:
   description: This is the API documentation for GPGC API
   version: 1.0.0
 servers:
-  - url: http://localhost:8080
-    description: Production server
+  - url: http://localhost:3000
+    description: Development server
 
 paths:
 
