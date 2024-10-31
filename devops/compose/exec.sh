@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/local/bin/ruby
 
 #set -e
 
