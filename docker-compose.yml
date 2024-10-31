@@ -24,7 +24,7 @@ services:
     environment:
       RAILS_ENV: ${RAILS_ENV:-development}
       DATABASE_URL: "postgresql://${GPGC_API_DATABASE_USERNAME}:${GPGC_API_DATABASE_PASSWORD}@${GPGC_API_DATABASE_HOST}:5432/${GPGC_API_DATABASE_NAME:-gpgc_api_development}"
-      PORT: ${GPGC_API_DATABASE_PORT:-3000}  # Set PORT environment variable
+      PORT: ${GPGC_API_DATABASE_PORT:-3000}
 
   rspec:
     build: .
