@@ -3,15 +3,14 @@ services:
   db:
     image: postgres:13
     environment:
-      POSTGRES_USER: gpgc_api
+      POSTGRES_USER: ${GPGC_API_DATABASE_USERNAME}
       POSTGRES_PASSWORD: ${GPGC_API_DATABASE_PASSWORD}
-      POSTGRES_DB: gpgc_api_development
+      POSTGRES_DB: ${POSTGRES_DB:-gpgc_api_development}
     volumes:
       - db-data:/var/lib/postgresql/data
     ports:
       - "5432:5432"
     restart: always
-  
 
   web:
     build: .
@@ -23,7 +22,8 @@ services:
     depends_on:
       - db
     environment:
-      DATABASE_URL: postgres://gpgc_api:${GPGC_API_DATABASE_PASSWORD}@db:5432/gpgc_api_development
+      RAILS_ENV: ${RAILS_ENV:-development}
+      DATABASE_URL: "postgresql://${GPGC_API_DATABASE_USERNAME}:${GPGC_API_DATABASE_PASSWORD}@${GPGC_API_DATABASE_HOST}:5432/${POSTGRES_DB:-gpgc_api_development}"
 
   rspec:
     build: .
