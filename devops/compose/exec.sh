@@ -10,11 +10,11 @@ else
     ENV_FILE="./.env.development"
 fi
 
-# Load environment variables from the selected .env file
-echo "Loading environment from $ENV_FILE"
 set -a
 . "$ENV_FILE"
 set +a
+
+echo "Running in $RAILS_ENV environment."
 
 # Ensure the exec script is executable
 chmod +x ./devops/compose/exec.sh
