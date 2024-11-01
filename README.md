@@ -38,13 +38,16 @@
     <li>Do you use Windows? I'm sorry, docker doesn't work well on Windows. </li>
 </ul>
 
-#### Install Docker for Linux
+#### Docker reminders
+
+- Start terminal
+- Make sure of permissions of your OS and terminal system are on point. (Don't be afraid to change the shebang in case you need)
+- Make sure each of your `.env` host is set as `db`
+- If you're loading your environment variable from `.env.production` you can always write "production" after the shell scripts. 
 
 
 ### Build the container and start the DB
 
-- Start terminal
-- If you're loading your environment variable from `.env.production` you can always write "production" after the shell scripts.
 
 ```bash
 cd gpgc-api
@@ -62,9 +65,6 @@ cd gpgc-api
 
 ### Install swagger dependencies
 
-- Start terminal
-- If you're loading your environment variable from `.env.production` you can always write "production" after the shell scripts.
-
 ```bash
 cd gpgc-api
   ./devops/compose/up.sh
@@ -73,9 +73,6 @@ cd gpgc-api
 ```
 
 ### Run Rails server
-
-- Start terminal
-- If you're loading your environment variable from `.env.production` you can always write "production" after the shell scripts.
 
 ```bash
 cd gpgc-api
@@ -88,9 +85,6 @@ cd gpgc-api
 
 ### Update DB and Rails
 
-- Start terminal
-- If you're loading your environment variable from `.env.production` you can always write "production" after the shell scripts.
-
 ```bash
 cd gpgc-api
     ./devops/compose/up.sh
@@ -101,14 +95,16 @@ cd gpgc-api
 
 ### Uninstall
 
-- Start terminal
-- If you're loading your environment variable from `.env.production` you can always write "production" after the shell scripts.
-
 ```bash
 cd gpgc-api
   ./devops/compose/down.sh
   ./devops/compose/delete.sh
   exit
 ```
+
+## DB editors
+
+- If you're having trouble when opening on a DB management system (like Beekeeper, DBeaver, PG Admin), don't forget that you need to run the container and use `localhost` as your host. 
+- If any role issues appear Don't be afraid to `pkill postgres` and `brew services stop postgresql`.
 
 <h2>That's it. Happy coding :computer:</h2> 
