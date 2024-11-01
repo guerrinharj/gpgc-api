@@ -17,6 +17,11 @@ set -a
 . "$ENV_FILE"
 set +a
 
-# Grant execute permissions and bring down the Docker Compose setup
+# Ensure the down script is executable
 chmod +x ./devops/compose/down.sh
+
+# Bring down the Docker Compose services
+echo "Stopping and removing Docker containers..."
 docker compose down --remove-orphans
+
+echo "All services have been stopped and removed."

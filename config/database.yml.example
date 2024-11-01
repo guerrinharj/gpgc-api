@@ -22,6 +22,6 @@ test:
 production:
   <<: *default
   database: gpgc_api_production
-  host: <%= ENV.fetch("GPGC_API_DATABASE_HOST" %>
+  host: <%= ENV.fetch("GPGC_API_DATABASE_HOST") %>
   username: <%= ENV.fetch("GPGC_API_DATABASE_USERNAME") %>
   password: <%= ENV.fetch("GPGC_API_DATABASE_PASSWORD") %>

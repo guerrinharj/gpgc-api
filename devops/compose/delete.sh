@@ -17,6 +17,11 @@ set -a
 . "$ENV_FILE"
 set +a
 
-# Commands
+# Ensure the delete script is executable
 chmod +x ./devops/compose/delete.sh
+
+# Bring down the Docker Compose services
+echo "Stopping and removing Docker containers..."
 docker compose down --remove-orphans --volumes --rmi=all
+
+echo "All services have been stopped and removed."

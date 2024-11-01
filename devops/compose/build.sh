@@ -17,8 +17,17 @@ set -a
 . "$ENV_FILE"
 set +a
 
-# Commands
+# Ensure the devops/compose directory has executable scripts
 chmod +x ./devops/compose/build.sh
-docker compose build $@
+
+# Build the Docker Compose services
+echo "Building Docker images..."
+docker compose build
+
+# Run bundle install in the web service
+echo "Running bundle install in the web service..."
 docker compose run web bundle install
+
+# Generate RSpec configuration
+echo "Generating RSpec configuration..."
 docker compose run web rails generate rspec:install

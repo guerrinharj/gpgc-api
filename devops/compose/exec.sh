@@ -10,14 +10,20 @@ else
     ENV_FILE="./.env.development"
 fi
 
-echo "Loading environment from $ENV_FILE"
-
 # Load environment variables from the selected .env file
+echo "Loading environment from $ENV_FILE"
 set -a
 . "$ENV_FILE"
 set +a
 
-# Commands
+# Ensure the exec script is executable
 chmod +x ./devops/compose/exec.sh
-docker compose exec web bash $@
-docker compose exec web bash bundle install
+
+# Starts the web container
+echo "Starting an interactive shell in the web container."
+docker compose exec web bash
+
+# Run bundle install in the web container
+echo "Installing gems in the web container..."
+docker compose exec web bash -c "bundle install"
+
