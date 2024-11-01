@@ -40,6 +40,7 @@
 ### Build the container and start the DB
 
 - Start terminal
+- All those shell scripts are environment dynamic, in case you're running production just add "production" argument after the shell scripts.
 
 ```bash
 cd gpgc-api
