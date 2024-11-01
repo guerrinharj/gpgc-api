@@ -1,6 +1,6 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
-  config.hosts << "gpgc-api-web-385488284844.us-central1.run.app"
+  config.hosts << "localhost"
   # Code is not reloaded between requests.
   config.cache_classes = true
 

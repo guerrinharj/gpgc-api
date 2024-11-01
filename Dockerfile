@@ -1,8 +1,8 @@
 # Use the official Ruby image
 FROM ruby:3.1.0
 
-# Install necessary packages
-RUN apt-get update -qq && apt-get install -y build-essential libpq-dev nodejs yarn
+# Install necessary packages, including PostgreSQL client
+RUN apt-get update -qq && apt-get install -y build-essential libpq-dev nodejs yarn postgresql-client
 
 # Set the working directory inside the container
 WORKDIR /app
@@ -19,11 +19,8 @@ COPY . .
 # Precompile assets and set up the entrypoint
 RUN bundle exec rake assets:precompile
 
-# Expose port to the outside world
-EXPOSE 3000
-
-# Set the environment variable for PORT
-ENV PORT=3000
+# Expose the port defined by the environment variable (or default to 3000)
+EXPOSE ${GPGC_API_DATABASE_PORT:-3000}
 
 # Set the entrypoint for the container
-CMD ["bundle", "exec", "rails", "server", "-b", "0.0.0.0", "-p", "3000"]
+CMD ["bash", "-c", "bundle exec rails server -b '0.0.0.0' -p ${GPGC_API_DATABASE_PORT:-3000}"]

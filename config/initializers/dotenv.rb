@@ -1,0 +1,1 @@
+Dotenv.load(".env.#{Rails.env}") if defined?(Dotenv)
