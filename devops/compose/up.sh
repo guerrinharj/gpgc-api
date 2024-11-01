@@ -28,4 +28,4 @@ docker container prune -f
 echo "Starting Docker containers..."
 docker compose up -d
 
-echo "Docker containers are up and running with the environment from $ENV_FILE."
+echo "Docker containers are up and running with the environment from $ENV_FILE and running on port ${GPGC_API_DATABASE_PORT}."

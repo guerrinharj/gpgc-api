@@ -44,6 +44,7 @@
 - Make sure of permissions of your OS and terminal system are on point. (Don't be afraid to change the shebang in case you need)
 - Make sure each of your `.env` host is set as `db`
 - If you're loading your environment variable from `.env.production` you can always write "production" after the shell scripts. 
+- If you're not installing for the first time, don't overwrite archives
 
 
 ### Build the container and start the DB
@@ -95,6 +96,8 @@ cd gpgc-api
 
 ### Uninstall
 
+- These scripts aren't environment sensitive, so there's no need for `production` argument, although you mind find environment variables defined in the code to avoid warn messages.
+
 ```bash
 cd gpgc-api
   ./devops/compose/down.sh
@@ -102,9 +105,10 @@ cd gpgc-api
   exit
 ```
 
-## DB editors
+## DB reminders
 
-- If you're having trouble when opening on a DB management system (like Beekeeper, DBeaver, PG Admin), don't forget that you need to run the container and use `localhost` as your host. 
+- If you're having trouble when opening on a DB management system (like Beekeeper, DBeaver, PG Admin, etc.), don't forget that you need to run the container and use `localhost` as your host. 
 - If any role issues appear Don't be afraid to `pkill postgres` and `brew services stop postgresql`.
+- If you are having trouble with users accessing the DB, rebuild the container.
 
 <h2>That's it. Happy coding :computer:</h2> 

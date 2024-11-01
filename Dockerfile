@@ -1,8 +1,8 @@
 # Use the official Ruby image
 FROM ruby:3.1.0
 
-# Install necessary packages
-RUN apt-get update -qq && apt-get install -y build-essential libpq-dev nodejs yarn
+# Install necessary packages, including PostgreSQL client
+RUN apt-get update -qq && apt-get install -y build-essential libpq-dev nodejs yarn postgresql-client
 
 # Set the working directory inside the container
 WORKDIR /app
