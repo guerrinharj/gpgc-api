@@ -2,15 +2,26 @@ default: &default
   adapter: postgresql
   encoding: unicode
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  host: localhost
   port: 5432
-  username: your_username
-  password: your_password
 
 development:
   <<: *default
   database: gpgc_api_development
+  host: <%= ENV.fetch("GPGC_API_DATABASE_HOST") %>
+  username: <%= ENV.fetch("GPGC_API_DATABASE_USERNAME") %>
+  password: <%= ENV.fetch("GPGC_API_DATABASE_PASSWORD") %>
 
 test:
   <<: *default
   database: gpgc_api_test
+  host: <%= ENV.fetch("GPGC_API_DATABASE_HOST") %>
+  username: <%= ENV.fetch("GPGC_API_DATABASE_USERNAME") %>
+  password: <%= ENV.fetch("GPGC_API_DATABASE_PASSWORD") %>
+
+
+production:
+  <<: *default
+  database: gpgc_api_production
+  host: <%= ENV.fetch("GPGC_API_DATABASE_HOST" %>
+  username: <%= ENV.fetch("GPGC_API_DATABASE_USERNAME") %>
+  password: <%= ENV.fetch("GPGC_API_DATABASE_PASSWORD") %>
