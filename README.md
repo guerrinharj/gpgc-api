@@ -11,6 +11,7 @@
 
 1. Run `bundle install` to install all the dependencies of the project;
 2. Rename `config/database.yml.example` to `config/database.yml` and add your database credentials;
+3. Set up `.env.development` and your `.env.production` (in case you're trying to deploy) accordingly to your `config/database.yml` file.
 3. Run `rake db:setup` to create the database and apply the migrations and seeds;
 4. Run `rspec` to check for tests;
 5. Run `rails s` and go for your localhost
@@ -37,10 +38,13 @@
     <li>Do you use Windows? I'm sorry, docker doesn't work well on Windows. </li>
 </ul>
 
+#### Install Docker for Linux
+
+
 ### Build the container and start the DB
 
 - Start terminal
-- All those shell scripts are environment dynamic, in case you're running production just add "production" argument after the shell scripts.
+- If you're loading your environment variable from `.env.production` you can always write "production" after the shell scripts.
 
 ```bash
 cd gpgc-api
@@ -57,7 +61,10 @@ cd gpgc-api
 ```
 
 ### Install swagger dependencies
+
 - Start terminal
+- If you're loading your environment variable from `.env.production` you can always write "production" after the shell scripts.
+
 ```bash
 cd gpgc-api
   ./devops/compose/up.sh
@@ -68,6 +75,7 @@ cd gpgc-api
 ### Run Rails server
 
 - Start terminal
+- If you're loading your environment variable from `.env.production` you can always write "production" after the shell scripts.
 
 ```bash
 cd gpgc-api
@@ -81,6 +89,7 @@ cd gpgc-api
 ### Update DB and Rails
 
 - Start terminal
+- If you're loading your environment variable from `.env.production` you can always write "production" after the shell scripts.
 
 ```bash
 cd gpgc-api
@@ -93,6 +102,7 @@ cd gpgc-api
 ### Uninstall
 
 - Start terminal
+- If you're loading your environment variable from `.env.production` you can always write "production" after the shell scripts.
 
 ```bash
 cd gpgc-api
