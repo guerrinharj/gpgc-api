@@ -25,7 +25,7 @@ namespace :release do
                     if song.persisted?
                         puts "Created song: '#{song.title}' with slug '#{song.slug}' for release '#{release.name}'"
                     else
-                        puts "Failed to create song for track: '#{title}'"
+                        puts "Song already exists: '#{title}'"
                     end
                 end
             end

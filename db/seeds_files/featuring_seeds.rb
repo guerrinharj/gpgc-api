@@ -215,4 +215,70 @@ Featuring.find_or_create_by!(
   url: "https://open.spotify.com/track/3OhDzMPuEQArNHRD4ZODXk?si=eab4f255941948a9"
 )
 
+Featuring.find_or_create_by!(
+  featuring_name: "Más Linguas",
+  credit: ["Producer"],
+  release_date: Date.new(2023, 7, 14),
+  is_album:  true,
+  artist: "Holger",
+  url: "https://open.spotify.com/album/0PRKUbWTY6GxYSEexWXEcQ"
+)
+
+Featuring.find_or_create_by!(
+  featuring_name: "Dimensão",
+  credit: ["Producer"],
+  release_date: Date.new(2023, 8, 4),
+  is_album:  false,
+  artist: "Clarice Falcão",
+  url: "https://open.spotify.com/track/2oaslKJAsph4OgV5jYmi7D"
+)
+
+Featuring.find_or_create_by!(
+  featuring_name: "Rio de Janeiro Gotham City",
+  credit: ["Keyboard", "Bass"],
+  release_date: Date.new(2024, 1, 4),
+  is_album:  false,
+  artist: "Vitor Brauer",
+  url: "https://open.spotify.com/track/1G5sJk02m5Cw9XtNN2GlV0"
+)
+
+Featuring.find_or_create_by!(
+  featuring_name: "Mistério",
+  credit: ["Mixing Engineer"],
+  release_date: Date.new(2024, 1, 19),
+  is_album:  false,
+  artist: "Henrique Ludgério",
+  url: "https://open.spotify.com/track/74IbnJ2DaOh4ZNnWZlm6xI?si=ad17c2a05a0f4793"
+)
+
+
+Featuring.find_or_create_by!(
+  featuring_name: "Resquicios de Uma Era",
+  credit: ["Producer", "Mixing Engineer", "Keyboards"],
+  release_date: Date.new(2024, 8, 24),
+  is_album:  true,
+  artist: "Alma Solar",
+  url: "https://open.spotify.com/album/034pu5mG1k3dVNKQ1341sL"
+)
+
+
+Featuring.find_or_create_by!(
+  featuring_name: "12",
+  credit: ["Mixing Engineer"],
+  release_date: Date.new(2024, 11, 1),
+  is_album:  false,
+  artist: "Hannah Maria Montenegro",
+  url: "https://open.spotify.com/track/0FAZYGssV0m9yW6x2mRLBN?si=dd970c056ce34359"
+)
+
+Featuring.find_or_create_by!(
+  featuring_name: "Como Eu Me Sinto As Vezes",
+  credit: ["Mixing Engineer"],
+  release_date: Date.new(2024, 11, 1),
+  is_album:  false,
+  artist: "Hannah Maria Montenegro",
+  url: "https://open.spotify.com/track/1QYDiic1mK7xZBjsnXxl9n?si=08df853eba4c4996"
+)
+
+
 p "finished Featuring seeds!"
