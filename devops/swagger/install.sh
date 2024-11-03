@@ -27,25 +27,22 @@ chmod +x ./devops/swagger/install.sh
 # Bring down existing containers and remove orphans
 docker compose down --remove-orphans
 
-# Build and start the containers
-docker compose up --build -d
+# Bring up existing
+docker compose up -d
 
 # Install gems
 docker compose run web bundle install
 
 # Install dependencies and set up Rswag based on the environment
-if [ "$RAILS_ENV" = "development" ]; then
-    echo "Running setup for development environment..."
-    docker compose run web rails g rswag:api:install RAILS_ENV=$RAILS_ENV
-    docker compose run web rails g rswag:ui:install RAILS_ENV=$RAILS_ENV
-    docker compose run web rails g rswag:specs:install RAILS_ENV=test
-    docker compose run web rails generate rspec:swagger Api::V1::ArtistsController RAILS_ENV=$RAILS_ENV
-    docker compose run web rails rswag RAILS_ENV=test
-elif [ "$RAILS_ENV" = "production" ]; then
-    echo "Running setup for production environment..."
-    docker compose run web rails g rswag:api:install RAILS_ENV=$RAILS_ENV
-    docker compose run web rails g rswag:ui:install RAILS_ENV=$RAILS_ENV
-fi
+echo "Running setup for production environment..."
+docker compose run web rails g rswag:api:install
+docker compose run web rails g rswag:ui:install
+docker compose run web rails g rswag:specs:install RAILS_ENV=test
+docker compose run web rails generate rspec:swagger Api::V1::ArtistsController
+docker compose run -e DISABLE_DATABASE_ENVIRONMENT_CHECK=1 web rails rswag RAILS_ENV=test
+
+# Close container
+docker compose down
 
 # Cleanup
 docker container prune -f
