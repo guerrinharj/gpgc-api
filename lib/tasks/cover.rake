@@ -13,15 +13,15 @@ namespace :release do
                     response = Net::HTTP.get_response(uri)
 
                     if response.code == '404'
-                        puts "- One of the covers URL for '#{release.artist.name} - #{release.name}' returned a 404 and it will be emptied."
+                        puts "- Cover URL for '#{release.artist.name} - #{release.name}' returned a 404 and it will be emptied."
                         cover_url = ''
                         release.cover[index] = ''
                         release.save!
                     else
-                        puts "- All covers URL for '#{release.artist.name} - #{release.name}' are valid."
+                        puts "- Cover URL for '#{release.artist.name} - #{release.name}' is valid."
                     end
                 else
-                    puts "- One of the covers URL for '#{release.artist.name} - #{release.name}' is invalid (missing HTTP/HTTPS) and it will be emptied."
+                    puts "- Cover URL for '#{release.artist.name} - #{release.name}' is invalid (missing HTTP/HTTPS) and it will be emptied."
                     cover_url = ''
                     release.cover[index] = ''
                     release.save!

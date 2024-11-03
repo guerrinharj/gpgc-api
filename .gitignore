@@ -32,3 +32,4 @@ gpgc-api-09d024f2a116.json
 ./devops/deploy
 .env.development
 .env.production
+.env.test
