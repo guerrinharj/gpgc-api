@@ -197,7 +197,7 @@ Soundtrack.find_or_create_by!(
 
 Soundtrack.find_or_create_by!(
   name: "Sagrada Geometria",
-  company: "MAM Rio",
+  company: "Alix Duvernoy",
   year: "2022",
   info: "Uso da faixa “Noite Cartunesca” de Guerrinha para a marca Alix Duvernoy.",
   kind: "Ad",
@@ -210,6 +210,24 @@ Soundtrack.find_or_create_by!(
   company: "Blue Man",
   year: "2022",
   info: "Confecção de trilha para especial “50 Anos” da Blue Man.",
+  kind: "Ad",
+  url: nil
+)
+
+Soundtrack.find_or_create_by!(
+  name: "Contraplano",
+  company: "Haight",
+  year: "2022",
+  info: "Uso da faixa 'Salão dos Infraordinarios' de O Retiro dos Artistas",
+  kind: "Ad",
+  url: nil
+)
+
+Soundtrack.find_or_create_by!(
+  name: "Alix + Farm",
+  company: "Farm",
+  year: "2024",
+  info: "Confecção de trilha.",
   kind: "Ad",
   url: nil
 )
