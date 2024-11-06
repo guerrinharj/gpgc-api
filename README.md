@@ -1,6 +1,8 @@
 # GPGC API
 
-<p>This is a straightforward Rails API that allows you to retrieve all music contributions made by me, Gabriel Pessoa Guerra Cavalcanti. You can access all albums, aliases (artists), songs, collaborations, and soundtracks I've worked on. No credentials are required!</p>
+<p>This is a Rails API that allows you to retrieve all music contributions made by me, Gabriel Pessoa Guerra Cavalcanti. You can access all albums, aliases (artists), songs, collaborations, and soundtracks I've worked on.</p>
+
+<p> It also works as a Discogs-esque API for those who want to create a catalog too (You may skip the seeds in case you want to make it on your own) </p>
 
 
 ## Versions :gem:
@@ -13,8 +15,9 @@
 2. Rename `config/database.yml.example` to `config/database.yml` and add your database credentials;
 3. Set up `.env.development`, `.env.test` and your `.env.production` (in case you're trying to deploy) accordingly to your `config/database.yml` file.
 3. Run `rake db:setup` to create the database and apply the migrations and seeds;
-4. Run `rspec` to check for tests;
-5. Run `rails s` and go for your localhost
+4. You will be asked to created an `user` with an username and password.
+5. Run `rspec` to check for tests;
+6. Run `rails s` and go for your localhost
 
 ## Docker :whale:
 
@@ -38,11 +41,12 @@
     <li>Do you use Windows? I'm sorry, docker doesn't work well on Windows. </li>
 </ul>
 
-#### Docker reminders
+#### Docker steps reminders
 
 - Start terminal
 - Make sure of permissions of your OS and terminal system are on point. (Don't be afraid to change the shebang in case you need)
 - Make sure each of your `.env` host is set as `db`
+- You will be asked to created an `user` with an username and password.
 - If you're loading your environment variable from `.env.production` you can always write "production" after the shell scripts. 
 - If you're not installing for the first time, don't overwrite archives
 - If you're installing a new gem, be always sure to rebuild.
@@ -111,5 +115,10 @@ cd gpgc-api
 - If you're having trouble when opening on a DB management system (like Beekeeper, DBeaver, PG Admin, etc.), don't forget that you need to run the container and use `localhost` as your host. 
 - If any role issues appear Don't be afraid to `pkill postgres` and `brew services stop postgresql`.
 - If you are having trouble with users accessing the DB, rebuild the container.
+
+
+## Request cURLs
+
+- Use `discovery` folder to get example of cURLs for requests.
 
 <h2>That's it. Happy coding :computer:</h2> 
