@@ -12,6 +12,7 @@ class Api::V1::ReleasesController < ApplicationController
   end
 
   def create
+    #byebug
     @release = Release.new(release_params)
     @release.user = current_user
     if @release.save
