@@ -1,6 +1,6 @@
 class Api::V1::ReleasesController < ApplicationController
   before_action :set_release, only: [:show, :update, :destroy]
-  #before_action :authorize_user, only: [:create, :update, :destroy, :show]
+  before_action :authorize_user, only: [:create, :update, :destroy]
 
   def index
     @releases = Release.all
@@ -14,7 +14,7 @@ class Api::V1::ReleasesController < ApplicationController
   def create
     release_attributes = release_params.to_h.deep_symbolize_keys
 
-    @release = Release.new(release_attributes)
+    @release = Release.new(release_attributes.merge(user: current_user))
     if @release.save
       render json: @release, status: :created
     else
@@ -48,7 +48,6 @@ class Api::V1::ReleasesController < ApplicationController
       :artist_name,
       :release_type,
       :release_date,
-      :user_id,
       cover: [],
       label: [],
       format: [],
@@ -61,6 +60,16 @@ class Api::V1::ReleasesController < ApplicationController
   
 
   def authorize_user
-    render json: { error: 'Forbidden' }, status: :forbidden unless @release.user == current_user
+    username = request.headers['Username']
+    password = request.headers['Password']
+    
+    user = User.find_by(username: username)
+  
+    unless user&.authenticate(password)
+      render json: { error: 'Unauthorized' }, status: :unauthorized
+      return
+    end
+  
+    render json: { error: 'Forbidden' }, status: :forbidden unless current_user == user
   end
 end
