@@ -5,6 +5,8 @@ class Release < ApplicationRecord
   attribute :notes, :string, array: true, default: []
   attribute :credits, :json, default: {}
   attribute :links, :json, default: {}
+
+  after_initialize :set_default_user, if: :new_record?
   
   serialize :tracks, Array
 
@@ -16,6 +18,7 @@ class Release < ApplicationRecord
   validates :format, :notes, presence: true
 
   belongs_to :artist
+  belongs_to :user
   has_many :songs, dependent: :destroy
 
   has_many_attached :cover_image
@@ -29,6 +32,10 @@ class Release < ApplicationRecord
   end
 
   private
+
+  def set_default_user
+    self.user ||= $seed_user if defined?($seed_user)
+  end
 
   def add_id_to_slug
     if id.present?

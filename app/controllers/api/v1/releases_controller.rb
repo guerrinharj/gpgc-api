@@ -13,6 +13,7 @@ class ReleasesController < ApplicationController
 
   def create
     @release = Release.new(release_params)
+    @release.user = current_user
     if @release.save
       render json: @release, status: :created
     else
@@ -41,6 +42,7 @@ class ReleasesController < ApplicationController
 
   def release_params
     params.require(:release).permit(
+      :user,
       :name, 
       :artist_id,
       :artist_name, 
