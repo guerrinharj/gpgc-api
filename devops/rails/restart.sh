@@ -27,7 +27,6 @@ echo "Installing gems..."
 bundle install
 docker compose run web bundle install
 
-# Conditional database operations
 echo "Running database commands for $RAILS_ENV..."
 docker compose run -e DISABLE_DATABASE_ENVIRONMENT_CHECK=1 web rails db:drop RAILS_ENV=$RAILS_ENV 
 docker compose run web rails db:create RAILS_ENV=$RAILS_ENV
@@ -36,10 +35,9 @@ docker compose run web rails db:migrate RAILS_ENV=$RAILS_ENV
 docker compose run web rake user:create RAILS_ENV=$RAILS_ENV
 docker compose run web rails db:seed RAILS_ENV=$RAILS_ENV
 
-# Running rakes
 echo "Running rakes for $RAILS_ENV..."
 docker compose run web rake release:create_songs RAILS_ENV=$RAILS_ENV
-#docker compose run web rake release:update_covers RAILS_ENV=$RAILS_ENV
+docker compose run web rake release:update_covers RAILS_ENV=$RAILS_ENV
 
 
 # Run RSpec tests
