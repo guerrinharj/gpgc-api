@@ -1,0 +1,43 @@
+#### REQUEST
+
+
+curl --location 'http://localhost:3000/api/v1/releases' \
+--header 'Username: admin' \
+--header 'Password: blablabla' \
+--header 'Content-Type: application/json' \
+--data '{
+  "artist_id": 23,
+  "artist_name": "TESTE",
+  "name": "TESTE",
+  "cover": [
+    "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/TESTE/cover.jpg"
+  ],
+  "release_type": "Album",
+  "release_date": "2021-01-22",
+  "label": [
+    "40% Foda/Maneirissimo"
+  ],
+  "tracks": [
+    {
+      "title": "Track One",
+      "url": "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/TESTE/Track%20One.mp3"
+    },
+    {
+      "title": "Track Two",
+      "url": "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/TESTE/Track%20Two.mp3"
+    }
+  ],
+  "format": ["CD", "streaming", "digital download"],
+  "credits": {
+    "Gabriel Guerra": "keyboards, synthesizer, drum machine, percussion"
+  },
+  "notes": [
+    "All tracks produced by Gabriel Guerra"
+  ],
+  "links": {
+    "Spotify": "https://open.spotify.com/album/0pSqmNCRi6DaKSyyLLAiMS?si=J59ptLNzQpuB2IzA_fO0sg",
+    "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/teste"
+  }
+}
+
+'
