@@ -6,16 +6,13 @@ class Release < ApplicationRecord
   attribute :credits, :json, default: {}
   attribute :links, :json, default: {}
 
-  after_initialize :set_default_user, if: :new_record?
-  
+  after_create :generate_slug
+
   serialize :tracks, Array
 
-  before_create :add_id_to_slug
-
   validates :artist, presence: true
-  validates :artist_name, :name, :slug, presence: true
-  validates :slug, uniqueness: true
-  validates :format, :notes, presence: true
+  validates :artist_name, :name, presence: true
+  validates :format, presence: true
 
   belongs_to :artist
   belongs_to :user
@@ -24,7 +21,7 @@ class Release < ApplicationRecord
   has_many_attached :cover_image
 
   def to_param
-    "#{slug}"
+    slug
   end
 
   def associated_songs
@@ -33,13 +30,7 @@ class Release < ApplicationRecord
 
   private
 
-  def set_default_user
-    self.user ||= $seed_user if defined?($seed_user)
-  end
-
-  def add_id_to_slug
-    if id.present?
-      self.slug = "#{id}-#{slug}"
-    end
+  def generate_slug
+    update(slug: "#{id}-#{artist_name.parameterize}")
   end
 end

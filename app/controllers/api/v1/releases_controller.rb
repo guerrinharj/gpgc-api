@@ -1,6 +1,6 @@
-class ReleasesController < ApplicationController
+class Api::V1::ReleasesController < ApplicationController
   before_action :set_release, only: [:show, :update, :destroy]
-  before_action :authorize_user, only: [:create, :update, :destroy, :show]
+  #before_action :authorize_user, only: [:create, :update, :destroy, :show]
 
   def index
     @releases = Release.all
@@ -42,19 +42,17 @@ class ReleasesController < ApplicationController
 
   def release_params
     params.require(:release).permit(
-      :user,
       :name, 
       :artist_id,
       :artist_name, 
-      :slug,
-      cover: [], 
+      :cover,
       :release_type, 
-      label: [], 
-      tracks: [:title, :url],
-      format: [], 
-      credits: {}, 
-      notes: [], 
-      links: {}
+      :label, 
+      :tracks,
+      :format, 
+      :credits, 
+      :notes, 
+      :links
     )
   end
 
