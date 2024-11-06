@@ -1,9 +1,10 @@
 class Release < ApplicationRecord
   attribute :cover, :string, array: true, default: []
   attribute :label, :string, array: true, default: []
+  attribute :tracks, :json, default: []
   attribute :format, :string, array: true, default: []
-  attribute :notes, :string, array: true, default: []
   attribute :credits, :json, default: {}
+  attribute :notes, :string, array: true, default: []
   attribute :links, :json, default: {}
 
   after_create :generate_slug
@@ -12,7 +13,7 @@ class Release < ApplicationRecord
 
   validates :artist, presence: true
   validates :artist_name, :name, presence: true
-  validates :format, presence: true
+  #validates :format, presence: true
 
   belongs_to :artist
   belongs_to :user
