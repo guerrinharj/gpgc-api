@@ -5,7 +5,7 @@ info:
   version: 1.0.0
 servers:
   - url: http://localhost:3000
-    description: Develop server
+    description: Development server
 
 paths:
 
@@ -38,7 +38,6 @@ paths:
                     group:
                       type: boolean
                       example: true
-
 
   /api/v1/releases:
     get:
@@ -108,7 +107,164 @@ paths:
                           Musician Name:
                           - "Instrument Name"
                           - "Instrument Name 2"
-                          
+
+    post:
+      summary: Create a new release
+      description: Add a new release to the database
+      operationId: createRelease
+      tags:
+        - Releases
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                artist_id:
+                  type: integer
+                  example: 2
+                artist_name:
+                  type: string
+                  example: "Artist Name"
+                name:
+                  type: string
+                  example: "Release Title"
+                cover:
+                  type: array
+                  items:
+                    type: string
+                  example:
+                    - "https://f4.bcbits.com/img/a1636189703_10.jpg"
+                release_type:
+                  type: string
+                  example: "Album"
+                release_date:
+                  type: string
+                  format: date
+                  example: "2024-01-01"
+                label:
+                  type: array
+                  items:
+                    type: string
+                  example:
+                    - "Label Name"
+                tracks:
+                  type: array
+                  items:
+                    type: string
+                  example:
+                    - "Track 1"
+                    - "Track 2"
+                format:
+                  type: array
+                  items:
+                    type: string
+                  example:
+                    - "Format 1"
+                    - "Format 2"
+                credits:
+                  type: array
+                  items:
+                    type: object
+                  example:
+                    - name: "Musician Name"
+                      instruments:
+                        - "Instrument Name"
+                        - "Instrument Name 2"
+                notes:
+                  type: array
+                  items:
+                    type: string
+                  example:
+                    - "Note 1"
+                    - "Note 2"
+                links:
+                  type: object
+                  additionalProperties:
+                    type: string
+                  example:
+                    Spotify: "https://spotify.com/link"
+                    AppleMusic: "https://apple.com/link"
+      responses:
+        '201':
+          description: Release created successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: integer
+                    example: 1
+                  artist_id:
+                    type: integer
+                    example: 2
+                  artist_name:
+                    type: string
+                    example: "Artist Name"
+                  name:
+                    type: string
+                    example: "Release Title"
+                  cover:
+                    type: array
+                    items:
+                      type: string
+                    example:
+                      - "https://f4.bcbits.com/img/a1636189703_10.jpg"
+                  release_type:
+                    type: string
+                    example: "Album"
+                  release_date:
+                    type: string
+                    format: date
+                    example: "2024-01-01"
+                  label:
+                    type: array
+                    items:
+                      type: string
+                    example:
+                      - "Label Name"
+                  tracks:
+                    type: array
+                    items:
+                      type: string
+                    example:
+                      - "Track 1"
+                      - "Track 2"
+                  format:
+                    type: array
+                    items:
+                      type: string
+                    example:
+                      - "Format 1"
+                      - "Format 2"
+                  credits:
+                    type: array
+                    items:
+                      type: object
+                    example:
+                      - name: "Musician Name"
+                        instruments:
+                          - "Instrument Name"
+                          - "Instrument Name 2"
+                  notes:
+                    type: array
+                    items:
+                      type: string
+                    example:
+                      - "Note 1"
+                      - "Note 2"
+                  links:
+                    type: object
+                    additionalProperties:
+                      type: string
+                    example:
+                      Spotify: "https://spotify.com/link"
+                      AppleMusic: "https://apple.com/link"
+        '400':
+          description: Bad Request - Invalid parameters
+
 
   /api/v1/songs:
     get:
@@ -231,4 +387,5 @@ paths:
                     url:
                       type: string
                       example: "https://link.com"
+
 
