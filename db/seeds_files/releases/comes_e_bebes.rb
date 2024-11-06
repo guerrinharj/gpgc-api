@@ -1,6 +1,7 @@
 p "Seeding Comes & Bebes"
 
 Release.find_or_create_by!(
+  user: User.first,
   artist: Artist.find_by(name: "Comes & Bebes"),
   artist_name: Artist.find_by(name: "Comes & Bebes").name,
   name: "Choque Térmico",

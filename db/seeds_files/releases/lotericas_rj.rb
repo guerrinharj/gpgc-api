@@ -1,6 +1,7 @@
 p "Seeding Lotéricas RJ"
 
 Release.find_or_create_by!(
+  user: User.first,
   artist: Artist.find_by(name: "Lotéricas RJ"),
   artist_name: Artist.find_by(name: "Lotéricas RJ").name,
   name: "Jogos de Azar",
@@ -29,6 +30,7 @@ Release.find_or_create_by!(
 )
 
 Release.find_or_create_by!(
+  user: User.first,
   artist: Artist.find_by(name: "Lotéricas RJ"),
   artist_name: Artist.find_by(name: "Lotéricas RJ").name,
   name: "Esportes da Sorte",

@@ -1,6 +1,7 @@
 p "Seeding Brasileiro Garantido"
 
 Release.find_or_create_by!(
+  user: User.first,
   artist: Artist.find_by(name: "Brasileiro Garantido"),
   artist_name: Artist.find_by(name: "Brasileiro Garantido").name,
   name: "Bolinhas de Queijo",
@@ -37,6 +38,7 @@ Release.find_or_create_by!(
 )
 
 Release.find_or_create_by!(
+  user: User.first,
   artist: Artist.find_by(name: "Brasileiro Garantido"),
   artist_name: Artist.find_by(name: "Brasileiro Garantido").name,
   name: "Churros Recheado",
@@ -69,6 +71,7 @@ Release.find_or_create_by!(
 )
 
 Release.find_or_create_by!(
+  user: User.first,
   artist: Artist.find_by(name: "Brasileiro Garantido"),
   artist_name: Artist.find_by(name: "Brasileiro Garantido").name,
   name: "Minipizzas",

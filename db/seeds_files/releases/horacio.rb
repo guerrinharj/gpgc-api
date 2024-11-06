@@ -1,6 +1,7 @@
 p "Seeding Horacio"
 
 Release.find_or_create_by!(
+  user: User.first,
   artist: Artist.find_by(name: "Horacio"),
   artist_name: Artist.find_by(name: "Horacio").name,
   name: "Gagacico / Ferreblombalu",
@@ -27,6 +28,7 @@ Release.find_or_create_by!(
 )
 
 Release.find_or_create_by!(
+  user: User.first,
   artist: Artist.find_by(name: "Horacio"),
   artist_name: Artist.find_by(name: "Horacio").name,
   name: "Modos",

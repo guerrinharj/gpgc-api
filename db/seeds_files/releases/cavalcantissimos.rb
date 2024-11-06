@@ -1,6 +1,7 @@
 p "Seeding Cavalcantissimos"
 
 Release.find_or_create_by!(
+  user: User.first,
   artist: Artist.find_by(name: "Cavalcantissimos"),
   artist_name: Artist.find_by(name: "Cavalcantissimos").name,
   name: "Os Corredores",
@@ -46,6 +47,7 @@ Release.find_or_create_by!(
 )
 
 Release.find_or_create_by!(
+  user: User.first,
   artist: Artist.find_by(name: "Cavalcantissimos"),
   artist_name: Artist.find_by(name: "Cavalcantissimos").name,
   name: "Fazendo do Racionamento Um Esporte",

@@ -1,6 +1,7 @@
 p "Seeding Repetentes 2008"
 
 Release.find_or_create_by!(
+  user: User.first,
   artist: Artist.find_by(name: "Repetentes 2008"),
   artist_name: Artist.find_by(name: "Repetentes 2008").name,
   name: "Habilidades Eu Tenho",
@@ -29,6 +30,7 @@ Release.find_or_create_by!(
 
 
 Release.find_or_create_by!(
+  user: User.first,
   artist: Artist.find_by(name: "Repetentes 2008"),
   artist_name: Artist.find_by(name: "Repetentes 2008").name,
   name: "Curriculum Tenebrae",
@@ -59,6 +61,7 @@ Release.find_or_create_by!(
 
 
 Release.find_or_create_by!(
+  user: User.first,
   artist: Artist.find_by(name: "Repetentes 2008"),
   artist_name: Artist.find_by(name: "Repetentes 2008").name,
   name: "Boulevard Internacional",
@@ -91,6 +94,7 @@ Release.find_or_create_by!(
 
 
 Release.find_or_create_by!(
+  user: User.first,
   artist: Artist.find_by(name: "Repetentes 2008"),
   artist_name: Artist.find_by(name: "Repetentes 2008").name,
   name: "Boulderball",
@@ -130,6 +134,7 @@ Release.find_or_create_by!(
 
 
 Release.find_or_create_by!(
+  user: User.first,
   artist: Artist.find_by(name: "Repetentes 2008"),
   artist_name: Artist.find_by(name: "Repetentes 2008").name,
   name: "Os Maneiros",
@@ -160,6 +165,7 @@ Release.find_or_create_by!(
 
 
 Release.find_or_create_by!(
+  user: User.first,
   artist: Artist.find_by(name: "Repetentes 2008"),
   artist_name: Artist.find_by(name: "Repetentes 2008").name,
   name: "Vasos de Banha",
@@ -191,6 +197,7 @@ Release.find_or_create_by!(
 
 
 Release.find_or_create_by!(
+  user: User.first,
   artist: Artist.find_by(name: "Repetentes 2008"),
   artist_name: Artist.find_by(name: "Repetentes 2008").name,
   name: "Gelo Gerônimo",
@@ -221,6 +228,7 @@ Release.find_or_create_by!(
 
 
 Release.find_or_create_by!(
+  user: User.first,
   artist: Artist.find_by(name: "Repetentes 2008"),
   artist_name: Artist.find_by(name: "Repetentes 2008").name,
   name: "Galaxia Fini",
@@ -251,6 +259,7 @@ Release.find_or_create_by!(
 
 
 Release.find_or_create_by!(
+  user: User.first,
   artist: Artist.find_by(name: "Repetentes 2008"),
   artist_name: Artist.find_by(name: "Repetentes 2008").name,
   name: "Silvio System",
@@ -284,6 +293,7 @@ Release.find_or_create_by!(
 
 
 Release.find_or_create_by!(
+  user: User.first,
   artist: Artist.find_by(name: "Repetentes 2008"),
   artist_name: Artist.find_by(name: "Repetentes 2008").name,
   name: "Light Lixo",
@@ -317,6 +327,7 @@ Release.find_or_create_by!(
 
 
 Release.find_or_create_by!(
+  user: User.first,
   artist: Artist.find_by(name: "Repetentes 2008"),
   artist_name: Artist.find_by(name: "Repetentes 2008").name,
   name: "A Tragédia de Pete",
@@ -349,6 +360,7 @@ Release.find_or_create_by!(
 
 
 Release.find_or_create_by!(
+  user: User.first,
   artist: Artist.find_by(name: "Repetentes 2008"),
   artist_name: Artist.find_by(name: "Repetentes 2008").name,
   name: "Rapidão Cometa Highway",
@@ -380,6 +392,7 @@ Release.find_or_create_by!(
 
 
 Release.find_or_create_by!(
+  user: User.first,
   artist: Artist.find_by(name: "Repetentes 2008"),
   artist_name: Artist.find_by(name: "Repetentes 2008").name,
   name: "Posto de Gasolina Online",
@@ -409,6 +422,7 @@ Release.find_or_create_by!(
 
 
 Release.find_or_create_by!(
+  user: User.first,
   artist: Artist.find_by(name: "Repetentes 2008"),
   artist_name: Artist.find_by(name: "Repetentes 2008").name,
   name: "O Lento Céu Ralentado",

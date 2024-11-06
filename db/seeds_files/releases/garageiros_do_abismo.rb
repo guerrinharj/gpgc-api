@@ -1,6 +1,7 @@
 p "Seeding Garageiros do Abismo"
 
   Release.find_or_create_by!(
+    user: User.first,
     artist: Artist.find_by(name: "Garageiros do Abismo"),
     artist_name: Artist.find_by(name: "Garageiros do Abismo").name,
     name: "Tão Fácil Quanto Ser Poeta",
@@ -31,6 +32,7 @@ p "Seeding Garageiros do Abismo"
   )
   
   Release.find_or_create_by!(
+    user: User.first,
     artist: Artist.find_by(name: "Garageiros do Abismo"),
     artist_name: Artist.find_by(name: "Garageiros do Abismo").name,
     name: "Estamos Sujos / Alvaro é Vélho",

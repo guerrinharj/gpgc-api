@@ -1,6 +1,7 @@
 p "Seeding Sérgio"
 
 Release.find_or_create_by!(
+  user: User.first,
   artist: Artist.find_by(name: "Sérgio"),
   artist_name: Artist.find_by(name: "Sérgio").name,
   name: "Utensílios",
@@ -32,6 +33,7 @@ Release.find_or_create_by!(
 )
 
 Release.find_or_create_by!(
+  user: User.first,
   artist: Artist.find_by(name: "Sérgio"),
   artist_name: Artist.find_by(name: "Sérgio").name,
   name: "Mais Utensílios",
@@ -63,6 +65,7 @@ Release.find_or_create_by!(
 )
 
 Release.find_or_create_by!(
+  user: User.first,
   artist: Artist.find_by(name: "Sérgio"),
   artist_name: Artist.find_by(name: "Sérgio").name,
   name: "Fantabobi / Riquititas ",
@@ -88,6 +91,7 @@ Release.find_or_create_by!(
 )
 
 Release.find_or_create_by!(
+  user: User.first,
   artist: Artist.find_by(name: "Sérgio"),
   artist_name: Artist.find_by(name: "Sérgio").name,
   name: "Pelo da Churréia",

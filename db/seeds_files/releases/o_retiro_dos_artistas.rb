@@ -1,6 +1,7 @@
 p "Seeding O Retiro dos Artistas"
 
 Release.find_or_create_by!(
+  user: User.first,
   artist: Artist.find_by(name: "O Retiro dos Artistas"),
   artist_name: Artist.find_by(name: "O Retiro dos Artistas").name,
   name: "Dimensão Surpreendente",
@@ -35,6 +36,7 @@ Release.find_or_create_by!(
 )
 
 Release.find_or_create_by!(
+  user: User.first,
   artist: Artist.find_by(name: "O Retiro dos Artistas"),
   artist_name: Artist.find_by(name: "O Retiro dos Artistas").name,
   name: "O Mundo Oferecido",

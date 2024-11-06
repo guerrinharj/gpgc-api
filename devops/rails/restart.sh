@@ -33,11 +33,11 @@ docker compose run -e DISABLE_DATABASE_ENVIRONMENT_CHECK=1 web rails db:drop RAI
 docker compose run web rails db:create RAILS_ENV=$RAILS_ENV
 docker compose run web rails active_storage:install
 docker compose run web rails db:migrate RAILS_ENV=$RAILS_ENV
+docker compose run web rake user:create RAILS_ENV=$RAILS_ENV
 docker compose run web rails db:seed RAILS_ENV=$RAILS_ENV
 
 # Running rakes
 echo "Running rakes for $RAILS_ENV..."
-docker compose run web rake user:create RAILS_ENV=$RAILS_ENV
 docker compose run web rake release:create_songs RAILS_ENV=$RAILS_ENV
 #docker compose run web rake release:update_covers RAILS_ENV=$RAILS_ENV
 

@@ -1,6 +1,7 @@
 p "Seeding Extradisciplinar"
 
 Release.find_or_create_by!(
+  user: User.first,
   artist: Artist.find_by(name: "Extradisciplinar"),
   artist_name: Artist.find_by(name: "Extradisciplinar").name,
   name: "Fator Decisivo",
@@ -34,6 +35,7 @@ Release.find_or_create_by!(
 )
 
 Release.find_or_create_by!(
+  user: User.first,
   artist: Artist.find_by(name: "Extradisciplinar"),
   artist_name: Artist.find_by(name: "Extradisciplinar").name,
   name: "Videoconferências",

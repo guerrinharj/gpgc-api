@@ -1,6 +1,7 @@
 p "Seeding Contrahouse"
 
 Release.find_or_create_by!(
+  user: User.first,
   artist: Artist.find_by(name: "Contrahouse"),
   artist_name: Artist.find_by(name: "Contrahouse").name,
   name: "Contrahouse",

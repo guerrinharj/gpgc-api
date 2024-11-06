@@ -1,6 +1,7 @@
 p "Seeding Epicentro do Bloquinho"
 
   Release.find_or_create_by!(
+    user: User.first,
     artist: Artist.find_by(name: "Epicentro do Bloquinho"),
     artist_name: Artist.find_by(name: "Epicentro do Bloquinho").name,
     name: "Hegelianos de Direita",

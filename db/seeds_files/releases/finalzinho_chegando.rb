@@ -1,6 +1,7 @@
 p "Seeding Finalzinho Chegando"
 
 Release.find_or_create_by!(
+  user: User.first,
   artist: Artist.find_by(name: "Finalzinho Chegando"),
   artist_name: Artist.find_by(name: "Finalzinho Chegando").name,
   name: "#1",
@@ -26,6 +27,7 @@ Release.find_or_create_by!(
 )
 
 Release.find_or_create_by!(
+  user: User.first,
   artist: Artist.find_by(name: "Finalzinho Chegando"),
   artist_name: Artist.find_by(name: "Finalzinho Chegando").name,
   name: "#4",
@@ -51,6 +53,7 @@ Release.find_or_create_by!(
 )
 
 Release.find_or_create_by!(
+  user: User.first,
   artist: Artist.find_by(name: "Finalzinho Chegando"),
   artist_name: Artist.find_by(name: "Finalzinho Chegando").name,
   name: "#6",
@@ -76,6 +79,7 @@ Release.find_or_create_by!(
 )
 
 Release.find_or_create_by!(
+  user: User.first,
   artist: Artist.find_by(name: "Finalzinho Chegando"),
   artist_name: Artist.find_by(name: "Finalzinho Chegando").name,
   name: "#3",
@@ -104,6 +108,7 @@ Release.find_or_create_by!(
 
 
 Release.find_or_create_by!(
+  user: User.first,
   artist: Artist.find_by(name: "Finalzinho Chegando"),
   artist_name: Artist.find_by(name: "Finalzinho Chegando").name,
   name: "2012",

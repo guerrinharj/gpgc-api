@@ -1,6 +1,7 @@
 p "Seeding Relações Públicas"
 
 Release.find_or_create_by!(
+  user: User.first,
   artist: Artist.find_by(name: "Relações Públicas"),
   artist_name: Artist.find_by(name: "Relações Públicas").name,
   name: "Relações Públicas",
@@ -32,6 +33,7 @@ Release.find_or_create_by!(
 )
 
 Release.find_or_create_by!(
+  user: User.first,
   artist: Artist.find_by(name: "Relações Públicas"),
   artist_name: Artist.find_by(name: "Relações Públicas").name,
   name: "Juros Perfeitos",
@@ -62,6 +64,7 @@ Release.find_or_create_by!(
 )
 
 Release.find_or_create_by!(
+  user: User.first,
   artist: Artist.find_by(name: "Relações Públicas"),
   artist_name: Artist.find_by(name: "Relações Públicas").name,
   name: "Classicos Republicanos",
@@ -93,6 +96,7 @@ Release.find_or_create_by!(
 )
 
 Release.find_or_create_by!(
+  user: User.first,
   artist: Artist.find_by(name: "Relações Públicas"),
   artist_name: Artist.find_by(name: "Relações Públicas").name,
   name: "Politica Popula Lógica Estraga",
