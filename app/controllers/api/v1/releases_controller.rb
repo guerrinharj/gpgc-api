@@ -12,9 +12,9 @@ class Api::V1::ReleasesController < ApplicationController
   end
 
   def create
-    #byebug
-    @release = Release.new(release_params)
-    @release.user = current_user
+    release_attributes = release_params.to_h.deep_symbolize_keys
+
+    @release = Release.new(release_attributes)
     if @release.save
       render json: @release, status: :created
     else
@@ -43,19 +43,22 @@ class Api::V1::ReleasesController < ApplicationController
 
   def release_params
     params.require(:release).permit(
-      :name, 
+      :name,
       :artist_id,
-      :artist_name, 
+      :artist_name,
       :release_type,
-      :cover,
-      :label, 
-      :tracks,
-      :format, 
-      :credits, 
-      :notes, 
-      :links
+      :release_date,
+      :user_id,
+      cover: [],
+      label: [],
+      format: [],
+      notes: [],
+      tracks: [:title, :url],
+      credits: {},
+      links: {}
     )
   end
+  
 
   def authorize_user
     render json: { error: 'Forbidden' }, status: :forbidden unless @release.user == current_user
