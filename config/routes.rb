@@ -7,11 +7,11 @@ Rails.application.routes.draw do
   
   namespace :api, defaults: { format: :json } do
     namespace :v1 do
-      resources :artists, only: [ :index, :show ]
-      resources :releases, param: :slug, only: [ :index, :show ]
-      resources :songs, only: [ :index, :show ]
-      resources :soundtracks, only: [ :index, :show ]
-      resources :featurings, only: [ :index, :show ]
+      resources :artists, only: [ :index, :show, :create, :update, :destroy ]
+      resources :releases, param: :slug, only: [ :index, :show, :create, :update, :destroy ]
+      resources :songs, only: [ :index, :show, :create, :update, :destroy ]
+      resources :soundtracks, only: [ :index, :show, :create, :update, :destroy ]
+      resources :featurings, only: [ :index, :show, :create, :update, :destroy ]
     end
   end
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
