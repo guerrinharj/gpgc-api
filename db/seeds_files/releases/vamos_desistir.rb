@@ -1,6 +1,7 @@
 p "Seeding Vamos Desistir"
 
 Release.find_or_create_by!(
+  user: User.first,
   artist: Artist.find_by(name: "Vamos Desistir"),
   artist_name: Artist.find_by(name: "Vamos Desistir").name,
   name: "Perguntas",
@@ -32,6 +33,7 @@ Release.find_or_create_by!(
 
 
 Release.find_or_create_by!(
+  user: User.first,
   artist: Artist.find_by(name: "Vamos Desistir"),
   artist_name: Artist.find_by(name: "Vamos Desistir").name,
   name: "Respostas",

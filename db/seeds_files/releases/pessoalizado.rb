@@ -1,6 +1,7 @@
 p "Seeding Pessoalizado"
 
 Release.find_or_create_by!(
+    user: User.first,
     artist: Artist.find_by(name: "Pessoalizado"),
     artist_name: Artist.find_by(name: "Pessoalizado").name,
     name: "Misericórdia",

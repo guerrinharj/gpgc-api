@@ -1,6 +1,7 @@
 p "Seeding Dinheiro Infinito Revival"
 
 Release.find_or_create_by!(
+  user: User.first,
   artist: Artist.find_by(name: "Dinheiro Infinito Revival"),
   artist_name: Artist.find_by(name: "Dinheiro Infinito Revival").name,
   name: "Faixas de Ritmo",
@@ -38,6 +39,7 @@ Release.find_or_create_by!(
 )
 
 Release.find_or_create_by!(
+  user: User.first,
   artist: Artist.find_by(name: "Dinheiro Infinito Revival"),
   artist_name: Artist.find_by(name: "Dinheiro Infinito Revival").name,
   name: "Faixas de Ritmo II",

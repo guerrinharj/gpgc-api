@@ -1,6 +1,7 @@
 p "Seeding Bibiquinha Junior"
 
 Release.find_or_create_by!(
+  user: User.first,
   artist: Artist.find_by(name: "Bibiquinha Junior"),
   artist_name: Artist.find_by(name: "Bibiquinha Junior").name,
   name: "Essenciais",
@@ -33,6 +34,7 @@ Release.find_or_create_by!(
 )
 
 Release.find_or_create_by!(
+  user: User.first,
   artist: Artist.find_by(name: "Bibiquinha Junior"),
   artist_name: Artist.find_by(name: "Bibiquinha Junior").name,
   name: "Tristementos",

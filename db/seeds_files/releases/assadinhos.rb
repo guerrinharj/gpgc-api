@@ -1,6 +1,7 @@
 p "Seeding Assadinhos"
 
 Release.find_or_create_by!(
+  user: User.first,
   artist: Artist.find_by(name: "Assadinhos"),
   artist_name: Artist.find_by(name: "Assadinhos").name,
   name: "Winkadinka",
@@ -34,6 +35,7 @@ Release.find_or_create_by!(
 
 
 Release.find_or_create_by!(
+  user: User.first,
   artist: Artist.find_by(name: "Assadinhos"),
   artist_name: Artist.find_by(name: "Assadinhos").name,
   name: "Rocking Rio",

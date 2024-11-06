@@ -2,6 +2,7 @@ p "Seeding Séculos Apaixonados"
 
 
 Release.find_or_create_by!(
+  user: User.first,
   artist: Artist.find_by(name: "Séculos Apaixonados"),
   artist_name: Artist.find_by(name: "Séculos Apaixonados").name,
   name: "Roupa Linda, Figura Fantasmagórica",
@@ -44,6 +45,7 @@ Release.find_or_create_by!(
 )
 
 Release.find_or_create_by!(
+  user: User.first,
   artist: Artist.find_by(name: "Séculos Apaixonados"),
   artist_name: Artist.find_by(name: "Séculos Apaixonados").name,
   name: "O Ministério da Colocação",
@@ -89,6 +91,7 @@ Release.find_or_create_by!(
 
 
 Release.find_or_create_by!(
+  user: User.first,
   artist: Artist.find_by(name: "Séculos Apaixonados"),
   artist_name: Artist.find_by(name: "Séculos Apaixonados").name,
   name: "Suspenso Graças Ao Principio da Insignificância",

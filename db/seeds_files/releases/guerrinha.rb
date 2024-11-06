@@ -1,6 +1,7 @@
 p "Seeding Guerrinha"
 
 Release.find_or_create_by!(
+  user: User.first,
   artist: Artist.find_by(name: "Guerrinha"),
   artist_name: Artist.find_by(name: "Guerrinha").name,
   name: "De Rosinha Falsificado Em Feirinhas Cinzentas",
@@ -30,6 +31,7 @@ Release.find_or_create_by!(
 
 
 Release.find_or_create_by!(
+  user: User.first,
   artist: Artist.find_by(name: "Guerrinha"),
   artist_name: Artist.find_by(name: "Guerrinha").name,
   name: "Rua Sorocaba",
@@ -61,6 +63,7 @@ Release.find_or_create_by!(
 
 
 Release.find_or_create_by!(
+  user: User.first,
   artist: Artist.find_by(name: "Guerrinha"),
   artist_name: Artist.find_by(name: "Guerrinha").name,
   name: "O Pedigree Histórico",
@@ -90,6 +93,7 @@ Release.find_or_create_by!(
 
 
 Release.find_or_create_by!(
+  user: User.first,
   artist: Artist.find_by(name: "Guerrinha"),
   artist_name: Artist.find_by(name: "Guerrinha").name,
   name: "Educação Bentes",
@@ -120,6 +124,7 @@ Release.find_or_create_by!(
 
 
 Release.find_or_create_by!(
+  user: User.first,
   artist: Artist.find_by(name: "Guerrinha"),
   artist_name: Artist.find_by(name: "Guerrinha").name,
   name: "Wagner",
@@ -152,6 +157,7 @@ Release.find_or_create_by!(
 
 
 Release.find_or_create_by!(
+  user: User.first,
   artist: Artist.find_by(name: "Guerrinha"),
   artist_name: Artist.find_by(name: "Guerrinha").name,
   name: "Apartamento",
@@ -177,6 +183,7 @@ Release.find_or_create_by!(
 
 
 Release.find_or_create_by!(
+  user: User.first,
   artist: Artist.find_by(name: "Guerrinha"),
   artist_name: Artist.find_by(name: "Guerrinha").name,
   name: "Bodega / Docas",
@@ -204,6 +211,7 @@ Release.find_or_create_by!(
 
 
 Release.find_or_create_by!(
+  user: User.first,
   artist: Artist.find_by(name: "Guerrinha"),
   artist_name: Artist.find_by(name: "Guerrinha").name,
   name: "Tasca",
@@ -229,6 +237,7 @@ Release.find_or_create_by!(
 
 
 Release.find_or_create_by!(
+  user: User.first,
   artist: Artist.find_by(name: "Guerrinha"),
   artist_name: Artist.find_by(name: "Guerrinha").name,
   name: "Rua Jorge Rudge",
@@ -260,6 +269,7 @@ Release.find_or_create_by!(
 
 
 Release.find_or_create_by!(
+  user: User.first,
   artist: Artist.find_by(name: "Guerrinha"),
   artist_name: Artist.find_by(name: "Guerrinha").name,
   name: "Formiguinha's Jazz Standards",
@@ -292,6 +302,7 @@ Release.find_or_create_by!(
 
 
 Release.find_or_create_by!(
+  user: User.first,
   artist: Artist.find_by(name: "Guerrinha"),
   artist_name: Artist.find_by(name: "Guerrinha").name,
   name: "Praia das Pedrinhas",
@@ -322,6 +333,7 @@ Release.find_or_create_by!(
 
 
 Release.find_or_create_by!(
+  user: User.first,
   artist: Artist.find_by(name: "Guerrinha"),
   artist_name: Artist.find_by(name: "Guerrinha").name,
   name: "Estações Esquerdinhas",
@@ -352,6 +364,7 @@ Release.find_or_create_by!(
 
 
 Release.find_or_create_by!(
+  user: User.first,
   artist: Artist.find_by(name: "Guerrinha"),
   artist_name: Artist.find_by(name: "Guerrinha").name,
   name: "Ida Aos Correios",
@@ -382,6 +395,7 @@ Release.find_or_create_by!(
 
 
 Release.find_or_create_by!(
+  user: User.first,
   artist: Artist.find_by(name: "Guerrinha"),
   artist_name: Artist.find_by(name: "Guerrinha").name,
   name: "Cidade Grande",
@@ -414,6 +428,7 @@ Release.find_or_create_by!(
 )
 
 Release.find_or_create_by!(
+  user: User.first,
   artist: Artist.find_by(name: "Guerrinha"),
   artist_name: Artist.find_by(name: "Guerrinha").name,
   name: "Exposição Popular",
@@ -447,6 +462,7 @@ Release.find_or_create_by!(
 
 
 Release.find_or_create_by!(
+  user: User.first,
   artist: Artist.find_by(name: "Guerrinha"),
   artist_name: Artist.find_by(name: "Guerrinha").name,
   name: "Prédio Avenida Central",
