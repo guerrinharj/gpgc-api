@@ -5,4 +5,5 @@ class User < ApplicationRecord
     has_many :releases, dependent: :destroy
     has_many :artists, dependent: :destroy
     has_many :featurings, dependent: :destroy
+    has_many :soundtracks, dependent: :destroy
 end  

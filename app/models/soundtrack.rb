@@ -4,4 +4,6 @@ class Soundtrack < ApplicationRecord
     validates :info, presence: true
     validates :year, presence: true
     validates :kind, presence: true
+
+    belongs_to :user
 end
