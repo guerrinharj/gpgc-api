@@ -6,7 +6,8 @@ Soundtrack.find_or_create_by!(
   year: "2012",
   info: "Autoria de trilha original para DVD promocional.",
   kind: "Ad",
-  url: nil
+  url: nil,
+  user: User.first
 )
 
 Soundtrack.find_or_create_by!(
@@ -15,7 +16,8 @@ Soundtrack.find_or_create_by!(
   year: "2012",
   info: "Autoria de trilha original para DVD promocional.",
   kind: "Ad",
-  url: "https://vimeo.com/218399740"
+  url: "https://vimeo.com/218399740",
+  user: User.first
 )
 
 Soundtrack.find_or_create_by!(
@@ -24,7 +26,8 @@ Soundtrack.find_or_create_by!(
   year: "2013",
   info: "Autoria da trilha original da primeira temporada junto ao estúdio Maravilha8 de Berna Ceppas.",
   kind: "Film",
-  url: "https://vimeo.com/65848510"
+  url: "https://vimeo.com/65848510",
+  user: User.first
 )
 
 Soundtrack.find_or_create_by!(
@@ -33,7 +36,8 @@ Soundtrack.find_or_create_by!(
   year: "2014",
   info: "Autoria da trilha original junto ao estúdio Maravilha8 de Berna Ceppas. Filme de Anna Muylaert",
   kind: "Film",
-  url: nil
+  url: nil,
+  user: User.first
 )
 
 Soundtrack.find_or_create_by!(
@@ -42,7 +46,8 @@ Soundtrack.find_or_create_by!(
   year: "2015",
   info: "Vinhetas de 5, 10 e 15 segundos em slots comerciais.",
   kind: "Ad",
-  url: "https://vimeo.com/211229654"
+  url: "https://vimeo.com/211229654",
+  user: User.first
 )
 
 Soundtrack.find_or_create_by!(
@@ -51,7 +56,8 @@ Soundtrack.find_or_create_by!(
   year: "2017",
   info: "Confecção de tema original, mixagem e finalização.",
   kind: "Ad",
-  url: "https://vimeo.com/262300770"
+  url: "https://vimeo.com/262300770",
+  user: User.first
 )
 
 
@@ -61,7 +67,8 @@ Soundtrack.find_or_create_by!(
   year: "2017",
   info: "Confecção de tema original, mixagem e finalização.",
   kind: "Ad",
-  url: "https://vimeo.com/262298052"
+  url: "https://vimeo.com/262298052",
+  user: User.first
 )
 
 
@@ -71,7 +78,8 @@ Soundtrack.find_or_create_by!(
   year: "2017",
   info: "Confecção de tema original.",
   kind: "Ad",
-  url: "https://vimeo.com/293246358"
+  url: "https://vimeo.com/293246358",
+  user: User.first
 )
 
 
@@ -81,7 +89,8 @@ Soundtrack.find_or_create_by!(
   year: "2018",
   info: "Confecção de 2 temas originais e efeitos sonoros.",
   kind: "Game",
-  url: nil
+  url: nil,
+  user: User.first
 )
 
 
@@ -91,7 +100,8 @@ Soundtrack.find_or_create_by!(
   year: "2018",
   info: "Confecção de tema original, mixagem e finalização.",
   kind: "Ad",
-  url: "https://vimeo.com/293246598"
+  url: "https://vimeo.com/293246598",
+  user: User.first
 )
 
 
@@ -101,7 +111,8 @@ Soundtrack.find_or_create_by!(
   year: "2019",
   info: 'Confecção de 10 horas de trilha original para os corredores dos andares do hotel Arpoador Inn. Parte da trilha fora lançada no projeto Cavalcantissimos como “Os Corredores”.',
   kind: "Event",
-  url: nil
+  url: nil,
+  user: User.first
 )
 
 
@@ -111,7 +122,8 @@ Soundtrack.find_or_create_by!(
   year: "2019",
   info: 'Confecção de trilha original (diagética e não diagética) de todos os 13 episódios da primeira temporada.',
   kind: "Film",
-  url: "https://vimeo.com/402176702"
+  url: "https://vimeo.com/402176702",
+  user: User.first
 )
 
 Soundtrack.find_or_create_by!(
@@ -120,7 +132,8 @@ Soundtrack.find_or_create_by!(
   year: "2019",
   info: "Confecção de 6 temas originais. Parte dos temas lançado em Cavalcantissimos “Fazendo do Racionamento Um Esporte”",
   kind: "Game",
-  url: ""
+  url: "",
+  user: User.first
 )
 
 
@@ -130,7 +143,8 @@ Soundtrack.find_or_create_by!(
   year: "2020",
   info: "Confecção de trilha original para curta-metragem. Filme por Nicolas Thome Zeitune",
   kind: "Game",
-  url: nil
+  url: nil,
+  user: User.first
 )
 
 
@@ -141,7 +155,8 @@ Soundtrack.find_or_create_by!(
   year: "2020",
   info: "Confecção de 2 temas originais, mixagem e finalização.",
   kind: "Ad",
-  url: nil
+  url: nil,
+  user: User.first
 )
 
 Soundtrack.find_or_create_by!(
@@ -150,7 +165,8 @@ Soundtrack.find_or_create_by!(
   year: "2020",
   info: "Participação e confecção de trilha sonora para url do espaço cultural Refresco no EEI ArtRio 2020.",
   kind: "Film",
-  url: nil
+  url: nil,
+  user: User.first
 )
 
 
@@ -160,7 +176,8 @@ Soundtrack.find_or_create_by!(
   year: "2020",
   info: "Confecção de 2 temas originais, mixagem e finalização.",
   kind: "Ad",
-  url: nil
+  url: nil,
+  user: User.first
 )
 
 
@@ -170,7 +187,8 @@ Soundtrack.find_or_create_by!(
   year: "2021",
   info: "Confeçcão de trilha sonora e mixagem de audio para url institucional da Rede Globo.",
   kind: "Ad",
-  url: nil
+  url: nil,
+  user: User.first
 )
 
 
@@ -180,7 +198,8 @@ Soundtrack.find_or_create_by!(
   year: "2021",
   info: "Confecção de trilha sonora, edição e desenho de som de url do espaço Refresco exibido na feira ArtRio 2021.",
   kind: "Film",
-  url: nil
+  url: nil,
+  user: User.first
 )
 
 
@@ -191,7 +210,8 @@ Soundtrack.find_or_create_by!(
   year: "2021",
   info: "Confecção de trilha sonora para urls de apresentação da exposição Supernova, com as artistas Ana Clara Tito, Salissa Rosa, Militina Garcia Serejo e Uyra Sodoma.",
   kind: "Film",
-  url: nil
+  url: nil,
+  user: User.first
 )
 
 
@@ -201,7 +221,8 @@ Soundtrack.find_or_create_by!(
   year: "2022",
   info: "Uso da faixa “Noite Cartunesca” de Guerrinha para a marca Alix Duvernoy.",
   kind: "Ad",
-  url: nil
+  url: nil,
+  user: User.first
 )
 
 
@@ -211,7 +232,8 @@ Soundtrack.find_or_create_by!(
   year: "2022",
   info: "Confecção de trilha para especial “50 Anos” da Blue Man.",
   kind: "Ad",
-  url: nil
+  url: nil,
+  user: User.first
 )
 
 Soundtrack.find_or_create_by!(
@@ -220,7 +242,8 @@ Soundtrack.find_or_create_by!(
   year: "2022",
   info: "Uso da faixa 'Salão dos Infraordinarios' de O Retiro dos Artistas",
   kind: "Ad",
-  url: nil
+  url: nil,
+  user: User.first
 )
 
 Soundtrack.find_or_create_by!(
@@ -229,7 +252,8 @@ Soundtrack.find_or_create_by!(
   year: "2024",
   info: "Confecção de trilha.",
   kind: "Ad",
-  url: nil
+  url: nil,
+  user: User.first
 )
 
 p "finished Soundtracks seeds!"

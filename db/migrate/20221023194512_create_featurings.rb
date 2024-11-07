@@ -9,6 +9,7 @@ class CreateFeaturings < ActiveRecord::Migration[6.0]
       t.date :release_date
       t.string :credit, array: true, default: []
       t.string :url
+      t.string :slug
       t.timestamps
     end
   end
