@@ -1,3 +1,13 @@
+#### ALL RELEASES (GET)
+
+curl --location 'http://localhost:3000/api/v1/releases' \
+--header 'Username: admin' \
+--header 'Password: 123' \
+--data ''
+
+
+
+
 #### CREATE RELEASE (POST)
 
 
