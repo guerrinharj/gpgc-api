@@ -1,8 +1,10 @@
 require 'rails_helper'
 
 RSpec.describe Soundtrack, type: :model do
+    let(:user) { create(:user) }
+
     it "is valid with valid attributes" do
-        soundtrack = create(:soundtrack)
+        soundtrack = build(:soundtrack, user: user)
         expect(soundtrack).to be_valid
     end
 

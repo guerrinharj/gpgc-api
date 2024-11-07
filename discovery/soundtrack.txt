@@ -1,0 +1,59 @@
+###### READ ALL SOUNDTRACKS (GET) ######
+
+curl --location 'http://localhost:3000/api/v1/soundtracks' \
+--header 'Username: admin' \
+--header 'Password: 123' \
+--data ''
+
+
+###### READ SOUNDTRACK (GET) #########
+
+
+curl --location 'http://localhost:3000/api/v1/soundtracks/7' \
+--header 'Username: admin' \
+--header 'Password: 123' \
+--data ''
+
+
+
+##### CREATE SOUNDTRACK (POST)  #######
+
+curl --location 'http://localhost:3000/api/v1/soundtracks' \
+--header 'Username: admin' \
+--header 'Password: 123' \
+--header 'Content-Type: application/json' \
+--data '{
+    "name": "TESTE",
+    "company": "Globo",
+    "info": "Lalalla.",
+    "year": "2014",
+    "kind": "Ad",
+    "url": "https://vimeo.com/262298052"
+}'
+
+
+
+####### EDIT SOUNDTRACK (PUT) ######
+
+
+
+curl --location --request PUT 'http://localhost:3000/api/v1/soundtracks/40' \
+--header 'Username: admin' \
+--header 'Password: 123' \
+--header 'Content-Type: application/json' \
+--data '{
+
+    "name": "TESTE EDIT"
+
+}'
+
+
+
+
+####### DELETE SOUNDTRACK (DELETE) ########
+
+
+curl --location --request DELETE 'http://localhost:3000/api/v1/soundtracks/40' \
+--header 'Username: admin' \
+--header 'Password: 123' \
+--data ''
