@@ -7,6 +7,8 @@ class Soundtrack < ApplicationRecord
 
     belongs_to :user
 
+    after_create :generate_slug
+
     private
 
     def generate_slug
