@@ -7,6 +7,7 @@ class CreateSoundtracks < ActiveRecord::Migration[6.0]
       t.string :year
       t.string :kind
       t.text :url
+      t.string :slug
       t.timestamps
     end
   end

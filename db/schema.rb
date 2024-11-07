@@ -55,6 +55,7 @@ ActiveRecord::Schema.define(version: 2024_11_07_044029) do
     t.date "release_date"
     t.string "credit", default: [], array: true
     t.string "url"
+    t.string "slug"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.bigint "user_id"
@@ -100,6 +101,7 @@ ActiveRecord::Schema.define(version: 2024_11_07_044029) do
     t.string "year"
     t.string "kind"
     t.text "url"
+    t.string "slug"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.bigint "user_id"
