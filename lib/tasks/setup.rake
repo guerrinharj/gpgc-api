@@ -11,6 +11,7 @@ namespace :rake do
                 "rails db:drop",
                 "rails db:create",
                 "rails db:migrate RAILS_ENV=development",
+                "rake user:create",
                 "rails db:seed RAILS_ENV=development",
                 "rake release:create_songs RAILS_ENV=development",
                 "rake release:update_covers RAILS_ENV=development"

@@ -3,4 +3,5 @@ class User < ApplicationRecord
     validates :username, presence: true, uniqueness: true
 
     has_many :releases, dependent: :destroy
+    has_many :artists, dependent: :destroy
 end  

@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe Song, type: :model do
     let(:user) { create(:user) }
-    let(:artist) { create(:artist) }
+    let(:artist) { create(:artist, user: user) }
     let(:release) { create(:release, artist: artist, user: user) }
     let(:song) { create(:song, artist: artist, release: release) }
 

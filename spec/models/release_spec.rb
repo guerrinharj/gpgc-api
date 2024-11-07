@@ -2,8 +2,8 @@ require 'rails_helper'
 require 'net/http'
 
 RSpec.describe Release, type: :model do
-    let(:artist) { create(:artist) } 
     let(:user) { create(:user) }
+    let(:artist) { create(:artist, user: user) }
 
     describe 'associations' do
         it 'belongs to an artist' do
@@ -31,7 +31,7 @@ RSpec.describe Release, type: :model do
 
     describe 'cover' do
         it 'must be a valid link' do
-            release = create(:release, user: user)
+            release = create(:release, artist: artist, user: user)
 
             release.cover.each do |cover_url|
                 uri = URI.parse(cover_url)

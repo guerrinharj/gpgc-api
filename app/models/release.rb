@@ -32,6 +32,6 @@ class Release < ApplicationRecord
   private
 
   def generate_slug
-    update(slug: "#{id}-#{artist_name.parameterize}")
+    update(slug: "#{id}-#{name.parameterize}")
   end
 end
