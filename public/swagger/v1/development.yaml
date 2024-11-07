@@ -265,39 +265,167 @@ paths:
         '400':
           description: Bad Request - Invalid parameters
 
-
-  /api/v1/songs:
+  /api/v1/releases/{slug}:
     get:
-      summary: Get all songs
-      description: Fetch a list of all songs
-      operationId: getSongs
+      summary: Get a release by slug
+      description: Retrieve a specific release using its slug
+      operationId: getReleaseBySlug
       tags:
-        - Songs
+        - Releases
+      parameters:
+        - name: slug
+          in: path
+          required: true
+          description: Slug of the release to retrieve
+          schema:
+            type: string
       responses:
         '200':
-          description: A list of songs
+          description: A specific release
           content:
             application/json:
               schema:
-                type: array
-                items:
-                  type: object
-                  properties:
-                    id:
-                      type: integer
-                      example: 3
-                    title:
+                type: object
+                properties:
+                  id:
+                    type: integer
+                    example: 1
+                  artist_id:
+                    type: integer
+                    example: 2
+                  artist_name:
+                    type: string
+                    example: "Artist Name"
+                  name:
+                    type: string
+                    example: "Release Title"
+                  cover:
+                    type: array
+                    items:
                       type: string
-                      example: Song Name
-                    slug:
+                    example:
+                      - "https://f4.bcbits.com/img/a1636189703_10.jpg"
+                  release_type:
+                    type: string
+                    example: "Album"
+                  release_date:
+                    type: string
+                    format: date
+                    example: "2024-01-01"
+                  label:
+                    type: array
+                    items:
                       type: string
-                      example: song-name
-                    duration:
+                    example:
+                      - "Label Name"
+                  tracks:
+                    type: array
+                    items:
                       type: string
-                      example: "3:37"
-                    url:
+                    example:
+                      - "Track 1"
+                      - "Track 2"
+                  format:
+                    type: array
+                    items:
                       type: string
-                      example: "https://link.com"
+                    example:
+                      - "Format 1"
+                      - "Format 2"
+                  credits:
+                    type: array
+                    items:
+                      type: object
+                    example:
+                      - name: "Musician Name"
+                        instruments:
+                          - "Instrument Name"
+                          - "Instrument Name 2"
+                  notes:
+                    type: array
+                    items:
+                      type: string
+                    example:
+                      - "Note 1"
+                      - "Note 2"
+                  links:
+                    type: object
+                    additionalProperties:
+                      type: string
+                    example:
+                      Spotify: "https://spotify.com/link"
+                      AppleMusic: "https://apple.com/link"
+        '404':
+          description: Release not found
+        '400':
+          description: Bad Request - Invalid parameters
+
+    put:
+      summary: Update a release by slug
+      description: Update an existing release using its slug
+      operationId: updateReleaseBySlug
+      tags:
+        - Releases
+      parameters:
+        - name: slug
+          in: path
+          required: true
+          description: Slug of the release to update
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  example: "TESTE_EDITADO"
+      responses:
+        '200':
+          description: Release updated successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: integer
+                    example: 1
+                  name:
+                    type: string
+                    example: "TESTE_EDITADO"
+                  slug:
+                    type: string
+                    example: "92-teste"
+        '404':
+          description: Release not found
+        '400':
+          description: Bad Request - Invalid parameters
+
+    delete:
+      summary: Delete a release by slug
+      description: Delete a specific release using its slug
+      operationId: deleteReleaseBySlug
+      tags:
+        - Releases
+      parameters:
+        - name: slug
+          in: path
+          required: true
+          description: Slug of the release to delete
+          schema:
+            type: string
+      responses:
+        '204':
+          description: Release deleted successfully
+        '404':
+          description: Release not found
+        '400':
+          description: Bad Request - Invalid parameters
+
 
 
   /api/v1/featurings:

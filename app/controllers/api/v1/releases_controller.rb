@@ -23,13 +23,14 @@ class Api::V1::ReleasesController < ApplicationController
   end
 
   def update
-    if @release.update(release_params)
+    release_attributes = release_params.to_h.deep_symbolize_keys
+  
+    if @release.update(release_attributes)
       render json: @release
     else
       render json: @release.errors, status: :unprocessable_entity
     end
   end
-
   def destroy
     @release.destroy
     head :no_content
@@ -37,10 +38,12 @@ class Api::V1::ReleasesController < ApplicationController
 
   private
 
-  def set_release
-    @release = Release.find(params[:id])
-  end
 
+  def set_release
+    @release = Release.find_by(id: params[:id]) || Release.find_by(slug: params[:slug])
+    render json: { error: 'Release not found' }, status: :not_found unless @release
+  end
+  
   def release_params
     params.require(:release).permit(
       :name,

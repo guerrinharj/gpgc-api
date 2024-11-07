@@ -1,9 +1,9 @@
-#### REQUEST
+#### CREATE RELEASE (POST)
 
 
 curl --location 'http://localhost:3000/api/v1/releases' \
 --header 'Username: admin' \
---header 'Password: blablabla' \
+--header 'Password: 123' \
 --header 'Content-Type: application/json' \
 --data '{
   "artist_id": 23,
@@ -41,3 +41,41 @@ curl --location 'http://localhost:3000/api/v1/releases' \
 }
 
 '
+
+
+
+#### READ RELEASE (GET)
+
+curl --location 'http://localhost:3000/api/v1/releases/92-teste' \
+--header 'Username: admin' \
+--header 'Password: 123' \
+--data ''
+
+
+
+
+
+
+#### UPDATE RELEASE (PUT)
+
+
+
+curl --location --request PUT 'http://localhost:3000/api/v1/releases/92-teste' \
+--header 'Username: admin' \
+--header 'Password: 123' \
+--header 'Content-Type: application/json' \
+--data '{
+  "name": "TESTE_EDITADO"
+}
+
+'
+
+
+
+#### DELETE RELEASE (DELETE)
+
+
+curl --location --request DELETE 'http://localhost:3000/api/v1/releases/92-teste' \
+--header 'Username: admin' \
+--header 'Password: 123' \
+--data ''
