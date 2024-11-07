@@ -1,0 +1,72 @@
+##### ALL FEATURINGS (GET) ######
+
+curl --location --request GET 'http://localhost:3000/api/v1/featurings' \
+--header 'Username: admin' \
+--header 'Password: 123' \
+--header 'Content-Type: application/json' \
+--data '{
+    "name": "TESTE EDIT", 
+    "group": true
+}'
+
+
+
+####### READ FEATURING (GET) ######
+
+curl --location --request GET 'http://localhost:3000/api/v1/featurings/6' \
+--header 'Username: admin' \
+--header 'Password: 123' \
+--header 'Content-Type: application/json' \
+--data '{
+    "name": "TESTE EDIT", 
+    "group": true
+}'
+
+
+
+
+
+###### CREATE FEATURING  (POST) ######
+
+
+
+curl --location 'http://localhost:3000/api/v1/featurings' \
+--header 'Username: admin' \
+--header 'Password: 123' \
+--header 'Content-Type: application/json' \
+--data '{
+    "featuring_name": "TESTE",
+    "is_album": true,
+    "artist": "TESTE",
+    "label": "Pug Records",
+    "info": null,
+    "release_date": "2018-11-07",
+    "credit": [
+        "Producer"
+    ]
+}'
+
+
+
+
+
+##### UPDATE FEATURING (PUT) ########
+
+
+curl --location --request PUT 'http://localhost:3000/api/v1/featurings/6' \
+--header 'Username: admin' \
+--header 'Password: 123' \
+--header 'Content-Type: application/json' \
+--data '{
+    "label": "LABEL TESTE BLA",
+}'
+
+
+
+##### DELETE FEATURING (DELETE)  #########
+
+
+curl --location --request DELETE 'http://localhost:3000/api/v1/featurings/6' \
+--header 'Username: admin' \
+--header 'Password: 123' \
+--data ''
