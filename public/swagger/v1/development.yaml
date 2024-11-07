@@ -7,8 +7,8 @@ servers:
   - url: http://localhost:3000
     description: Development server
 
-paths:
 
+paths:
   /api/v1/artists:
     get:
       summary: Get all artists
@@ -16,6 +16,19 @@ paths:
       operationId: getArtists
       tags:
         - Artists
+      parameters:
+        - name: Username
+          in: header
+          required: true
+          schema:
+            type: string
+          example: admin
+        - name: Password
+          in: header
+          required: true
+          schema:
+            type: string
+          example: 123
       responses:
         '200':
           description: A list of artists
@@ -38,6 +51,207 @@ paths:
                     group:
                       type: boolean
                       example: true
+
+    post:
+      summary: Create a new artist
+      description: Add a new artist to the collection
+      operationId: createArtist
+      tags:
+        - Artists
+      parameters:
+        - name: Username
+          in: header
+          required: true
+          schema:
+            type: string
+          example: admin
+        - name: Password
+          in: header
+          required: true
+          schema:
+            type: string
+          example: 123
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  example: TESTE
+                group:
+                  type: boolean
+                  example: false
+      responses:
+        '201':
+          description: Artist created successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: integer
+                    example: 1
+                  name:
+                    type: string
+                    example: TESTE
+                  slug:
+                    type: string
+                    example: teste
+                  group:
+                    type: boolean
+                    example: false
+        '401':
+          description: Unauthorized
+
+  /api/v1/artists/{slug}:
+    get:
+      summary: Get artist by slug
+      description: Retrieve a single artist using their slug
+      operationId: getArtistBySlug
+      tags:
+        - Artists
+      parameters:
+        - name: slug
+          in: path
+          required: true
+          schema:
+            type: string
+          example: assadinhos
+        - name: Username
+          in: header
+          required: true
+          schema:
+            type: string
+          example: admin
+        - name: Password
+          in: header
+          required: true
+          schema:
+            type: string
+          example: 123
+      responses:
+        '200':
+          description: Artist retrieved successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: integer
+                    example: 1
+                  name:
+                    type: string
+                    example: Assadinhos
+                  slug:
+                    type: string
+                    example: assadinhos
+                  group:
+                    type: boolean
+                    example: true
+        '404':
+          description: Artist not found
+
+    put:
+      summary: Update an artist by slug
+      description: Update an existing artist's information
+      operationId: updateArtistBySlug
+      tags:
+        - Artists
+      parameters:
+        - name: slug
+          in: path
+          required: true
+          schema:
+            type: string
+          example: teste
+        - name: Username
+          in: header
+          required: true
+          schema:
+            type: string
+          example: admin
+        - name: Password
+          in: header
+          required: true
+          schema:
+            type: string
+          example: 123
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  example: TESTE EDIT
+                group:
+                  type: boolean
+                  example: true
+      responses:
+        '200':
+          description: Artist updated successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: integer
+                    example: 1
+                  name:
+                    type: string
+                    example: TESTE EDIT
+                  slug:
+                    type: string
+                    example: teste
+                  group:
+                    type: boolean
+                    example: true
+        '404':
+          description: Artist not found
+        '401':
+          description: Unauthorized
+
+    delete:
+      summary: Delete an artist by slug
+      description: Remove an artist from the collection
+      operationId: deleteArtistBySlug
+      tags:
+        - Artists
+      parameters:
+        - name: slug
+          in: path
+          required: true
+          schema:
+            type: string
+          example: teste
+        - name: Username
+          in: header
+          required: true
+          schema:
+            type: string
+          example: admin
+        - name: Password
+          in: header
+          required: true
+          schema:
+            type: string
+          example: 123
+      responses:
+        '204':
+          description: Artist deleted successfully
+        '404':
+          description: Artist not found
+        '401':
+          description: Unauthorized
+
 
   /api/v1/releases:
     get:

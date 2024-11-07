@@ -8,9 +8,26 @@ curl --location 'http://localhost:3000/api/v1/artists' \
 
 ##### CREATE ARTISTS (POST) #####
 
+curl --location 'http://localhost:3000/api/v1/artists/' \
+--header 'Username: admin' \
+--header 'Password: 123' \
+--header 'Content-Type: application/json' \
+--data '{
+    "name": "TESTE", 
+    "group": false
+}'
 
 
+##### UPDATE ARTIST (PUT) ######
 
+curl --location --request PUT 'http://localhost:3000/api/v1/artists/teste' \
+--header 'Username: admin' \
+--header 'Password: 123' \
+--header 'Content-Type: application/json' \
+--data '{
+    "name": "TESTE EDIT", 
+    "group": true
+}'
 
 
 ###### READ ARTIST (GET) #######
@@ -20,3 +37,18 @@ curl --location 'http://localhost:3000/api/v1/artists/assadinhos' \
 --header 'Username: admin' \
 --header 'Password: 123' \
 --data ''
+
+
+
+
+#### DELETE ARTIST (DELETE) #####
+
+
+curl --location --request DELETE 'http://localhost:3000/api/v1/artists/teste' \
+--header 'Username: admin' \
+--header 'Password: 123' \
+--header 'Content-Type: application/json' \
+--data '{
+    "name": "TESTE EDIT", 
+    "group": true
+}'
