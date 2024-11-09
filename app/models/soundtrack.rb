@@ -7,11 +7,11 @@ class Soundtrack < ApplicationRecord
 
     belongs_to :user
 
-    after_create :generate_slug
+    before_create :generate_slug
 
     private
 
     def generate_slug
-        update(slug: "#{name.parameterize}")
+        self.slug = name.parameterize
     end
 end
