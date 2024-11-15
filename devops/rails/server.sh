@@ -25,4 +25,4 @@ chmod +x ./devops/rails/server.sh
 rm -rf tmp/pids
 
 # Start the Rails server in the Docker container
-docker compose exec web bundle exec rails s -b '0.0.0.0' -p ${GPGC_API_DATABASE_PORT:-3000}
+docker compose exec web bundle exec rails s -b '0.0.0.0' -p ${GPGC_API_APP_PORT:-3000}
