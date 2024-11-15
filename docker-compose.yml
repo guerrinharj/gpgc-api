@@ -19,7 +19,7 @@ services:
     volumes:
       - ".:/app"
     ports:
-      - "3000:3000"
+      - "${GPGC_API_APP_PORT:-3000}:${GPGC_API_APP_PORT:-3000}"
     depends_on:
       - db
     environment:

@@ -20,7 +20,7 @@ COPY . .
 RUN bundle exec rake assets:precompile
 
 # Expose the port defined by the environment variable (or default to 3000)
-EXPOSE ${GPGC_API_DATABASE_PORT:-3000}
+EXPOSE ${GPGC_API_APP_PORT:-3000}
 
 # Set the entrypoint for the container
-CMD ["bash", "-c", "bundle exec rails server -b '0.0.0.0' -p ${GPGC_API_DATABASE_PORT:-3000}"]
+CMD ["bash", "-c", "bundle exec rails server -b '0.0.0.0' -p ${GPGC_API_APP_PORT:-3000}"]
