@@ -14,7 +14,7 @@
 1. Run `bundle install` to install all the dependencies of the project;
 2. Rename `config/database.yml.example` to `config/database.yml` and add your database credentials;
 3. Set up `.env.development`, `.env.test` and your `.env.production` (in case you're trying to deploy) accordingly to your `config/database.yml` file.
-3. Run `rake db:setup` to create the database and apply the migrations and seeds;
+3. Run `rake setup` to create the database and apply the migrations and seeds;
 4. You will be asked to created an `user` with an username and password.
 5. Run `rspec` to check for tests;
 6. Run `rails s` and go for your localhost
@@ -113,7 +113,7 @@ cd gpgc-api
 ## DB reminders
 
 - If you're having trouble when opening on a DB management system (like Beekeeper, DBeaver, PG Admin, etc.), don't forget that you need to run the container and use `localhost` as your host. 
-- If any role issues appear Don't be afraid to `pkill postgres` and `brew services stop postgresql`.
+- If any role issues appear Don't be afraid to `pkill postgres` and `brew services stop postgresql` (If you're running in homebrew).
 - If you are having trouble with users accessing the DB, rebuild the container.
 
 
