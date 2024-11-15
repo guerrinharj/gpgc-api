@@ -68,7 +68,7 @@ class Api::V1::ReleasesController < ApplicationController
     
     user = User.find_by(username: username)
   
-    unless user&.authenticate(password)
+    if user.nil? || !user.authenticate(password)
       render json: { error: 'Unauthorized' }, status: :unauthorized
       return
     end
