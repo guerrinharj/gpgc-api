@@ -1,6 +1,6 @@
 FactoryBot.define do
   factory :user do
     username { "username" }
-    password_digest { "password" }
+    password { "password" }
   end
 end
