@@ -56,12 +56,12 @@ class Api::V1::ArtistsController < ApplicationController
     password = request.headers['Password']
     
     user = User.find_by(username: username)
-
-    unless user&.authenticate(password)
+  
+    if user.nil? || !user.authenticate(password)
       render json: { error: 'Unauthorized' }, status: :unauthorized
       return
     end
-
+  
     render json: { error: 'Forbidden' }, status: :forbidden unless current_user == user
   end
 end
