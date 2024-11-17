@@ -100,7 +100,7 @@ RSpec.describe Api::V1::ReleasesController, type: :controller do
         end
 
         it 'returns a not_found status if record is not found' do
-            delete :show, params: { slug: "non-existent-slug"  }
+            delete :destroy, params: { slug: "non-existent-slug"  }
             expect(response).to have_http_status(:not_found)
         end
     end
