@@ -1,0 +1,10 @@
+### ALL SONGS (GET) ###
+
+curl --location 'http://localhost:3000/api/v1/songs' \
+--data ''
+
+
+### SONG (GET) ####
+
+curl --location 'http://localhost:3000/api/v1/assadinhos/smoke-with-the-water' \
+--data ''
