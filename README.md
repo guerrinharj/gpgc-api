@@ -1,6 +1,6 @@
 # GPGC API
 
-This is a Rails API that allows you to retrieve all music contributions made by me, <h4><b>G</b>abriel <b>P</b>essoa <b>G</b>uerra <b>C</b>avalcanti</h4>. You can access all albums, aliases (artists), songs, collaborations (aka featurings), and soundtracks I've worked on.
+This is a Rails API that allows you to retrieve all music contributions made by me, <b>G</b>abriel <b>P</b>essoa <b>G</b>uerra <b>C</b>avalcanti. You can access all albums, aliases (artists), songs, collaborations (aka featurings), and soundtracks I've worked on.
 
 It also functions as a Discogs-like API. You can create `artists`, `releases`, `featurings`, and `soundtracks` in a CRUD (<b>C</b>reate, <b>R</b>ead, <b>U</b>pdate, <b>D</b>elete) manner. There are also `songs` too, but songs are created through a `tracks` array inside `releases`, so they are read-only.
 
