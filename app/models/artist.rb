@@ -1,5 +1,6 @@
 class Artist < ApplicationRecord
   has_many :releases
+  has_many :songs
   belongs_to :user
 
   before_save :generate_slug
