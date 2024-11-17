@@ -7,7 +7,7 @@ class Release < ApplicationRecord
   attribute :notes, :string, array: true, default: []
   attribute :links, :json, default: {}
 
-  after_create :generate_slug
+  before_save :generate_slug
 
   serialize :tracks, Array
 
@@ -21,10 +21,6 @@ class Release < ApplicationRecord
 
   has_many_attached :cover_image
 
-  def to_param
-    slug
-  end
-
   def associated_songs
     Song.where(id: songs)
   end
@@ -32,6 +28,6 @@ class Release < ApplicationRecord
   private
 
   def generate_slug
-    update(slug: "#{id}-#{name.parameterize}")
+    self.slug = name.parameterize if name.present?
   end
 end

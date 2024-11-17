@@ -47,7 +47,7 @@ ActiveRecord::Schema.define(version: 2024_11_07_044029) do
   end
 
   create_table "featurings", force: :cascade do |t|
-    t.string "featuring_name"
+    t.string "name"
     t.boolean "is_album"
     t.string "artist"
     t.string "label"
@@ -86,7 +86,7 @@ ActiveRecord::Schema.define(version: 2024_11_07_044029) do
   create_table "songs", force: :cascade do |t|
     t.bigint "artist_id"
     t.bigint "release_id"
-    t.string "title"
+    t.string "name"
     t.string "slug"
     t.string "duration"
     t.string "url"

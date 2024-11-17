@@ -26,7 +26,7 @@ class Api::V1::SoundtracksController < ApplicationController
     soundtrack_attributes = soundtrack_params.to_h.deep_symbolize_keys
 
     if @soundtrack.update(soundtrack_attributes.merge(user: current_user))
-      render json: @soundtrack
+      render json: @soundtrack, status: :ok
     else
       render json: @soundtrack.errors, status: :unprocessable_entity
     end
@@ -40,7 +40,7 @@ class Api::V1::SoundtracksController < ApplicationController
   private
 
   def set_soundtrack
-    @soundtrack = Soundtrack.find_by(id: params[:id]) || Soundtrack.find_by(slug: params[:id])
+    @soundtrack = Soundtrack.find_by(id: params[:id]) || Soundtrack.find_by(slug: params[:slug])
     render json: { error: 'Soundtrack not found' }, status: :not_found unless @soundtrack
   end
 
@@ -61,7 +61,7 @@ class Api::V1::SoundtracksController < ApplicationController
     
     user = User.find_by(username: username)
 
-    unless user&.authenticate(password)
+    if user.nil? || !user.authenticate(password)
       render json: { error: 'Unauthorized' }, status: :unauthorized
       return
     end

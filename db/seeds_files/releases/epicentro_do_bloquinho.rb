@@ -12,12 +12,12 @@ p "Seeding Epicentro do Bloquinho"
     release_date: Date.new(2013, 6, 23),
     format: ["CD", "digital download", "streaming"],
     tracks: [
-      { title: "João Filipe", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/EPICENTRO%20DO%20BLOQUINHO/Hegelianos%20de%20Direita/Epicentro%20do%20Bloquinho%20-%20Hegelianos%20de%20Direita%20-%2001%20Jo%C3%A3o%20Filipe.mp3" },
-      { title: "Eduardo Zeller", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/EPICENTRO%20DO%20BLOQUINHO/Hegelianos%20de%20Direita/Epicentro%20do%20Bloquinho%20-%20Hegelianos%20de%20Direita%20-%2002%20Eduardo%20Zeller.mp3" },
-      { title: "Karlos Dub", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/EPICENTRO%20DO%20BLOQUINHO/Hegelianos%20de%20Direita/Epicentro%20do%20Bloquinho%20-%20Hegelianos%20de%20Direita%20-%2003%20Karlos%20Dub.mp3" },
-      { title: "Eduardo Ganso", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/EPICENTRO%20DO%20BLOQUINHO/Hegelianos%20de%20Direita/Epicentro%20do%20Bloquinho%20-%20Hegelianos%20de%20Direita%20-%2004%20Eduardo%20Ganso.mp3" },
-      { title: "Jorge André", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/EPICENTRO%20DO%20BLOQUINHO/Hegelianos%20de%20Direita/Epicentro%20do%20Bloquinho%20-%20Hegelianos%20de%20Direita%20-%2005%20Jorge%20Andr%C3%A9.mp3" },
-      { title: "Henrique Léo", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/EPICENTRO%20DO%20BLOQUINHO/Hegelianos%20de%20Direita/Epicentro%20do%20Bloquinho%20-%20Hegelianos%20de%20Direita%20-%2006%20Henrique%20L%C3%A9o.mp3" }
+      { name: "João Filipe", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/EPICENTRO%20DO%20BLOQUINHO/Hegelianos%20de%20Direita/Epicentro%20do%20Bloquinho%20-%20Hegelianos%20de%20Direita%20-%2001%20Jo%C3%A3o%20Filipe.mp3" },
+      { name: "Eduardo Zeller", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/EPICENTRO%20DO%20BLOQUINHO/Hegelianos%20de%20Direita/Epicentro%20do%20Bloquinho%20-%20Hegelianos%20de%20Direita%20-%2002%20Eduardo%20Zeller.mp3" },
+      { name: "Karlos Dub", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/EPICENTRO%20DO%20BLOQUINHO/Hegelianos%20de%20Direita/Epicentro%20do%20Bloquinho%20-%20Hegelianos%20de%20Direita%20-%2003%20Karlos%20Dub.mp3" },
+      { name: "Eduardo Ganso", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/EPICENTRO%20DO%20BLOQUINHO/Hegelianos%20de%20Direita/Epicentro%20do%20Bloquinho%20-%20Hegelianos%20de%20Direita%20-%2004%20Eduardo%20Ganso.mp3" },
+      { name: "Jorge André", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/EPICENTRO%20DO%20BLOQUINHO/Hegelianos%20de%20Direita/Epicentro%20do%20Bloquinho%20-%20Hegelianos%20de%20Direita%20-%2005%20Jorge%20Andr%C3%A9.mp3" },
+      { name: "Henrique Léo", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/EPICENTRO%20DO%20BLOQUINHO/Hegelianos%20de%20Direita/Epicentro%20do%20Bloquinho%20-%20Hegelianos%20de%20Direita%20-%2006%20Henrique%20L%C3%A9o.mp3" }
     ],
     credits: {
       "Gabriel Guerra": "keyboards, drum machine",

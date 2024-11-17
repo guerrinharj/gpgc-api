@@ -55,7 +55,7 @@ class Api::V1::ReleasesController < ApplicationController
       label: [],
       format: [],
       notes: [],
-      tracks: [:title, :url],
+      tracks: [:name, :url],
       credits: {},
       links: {}
     )

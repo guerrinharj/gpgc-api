@@ -9,13 +9,13 @@ namespace :release do
     
             if tracks.present?
                 tracks.each do |track|
-                    title = track[:title]
+                    name = track[:name]
                     url = track[:url]
         
-                    slug = "#{release.id}-#{title.parameterize}"
+                    slug = "#{name.parameterize}"
         
                     song = Song.create(
-                        title: title,
+                        name: name,
                         slug: slug,
                         release: release, 
                         artist: artist,
@@ -23,9 +23,9 @@ namespace :release do
                     )
     
                     if song.persisted?
-                        puts "Created song: '#{song.title}' with slug '#{song.slug}' for release '#{release.name}'"
+                        puts "Created song: '#{song.name}' with slug '#{song.slug}' for release '#{release.name}'"
                     else
-                        puts "Song already exists: '#{title}'"
+                        puts "Song already exists: '#{name}'"
                     end
                 end
             end

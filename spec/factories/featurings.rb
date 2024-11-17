@@ -1,6 +1,6 @@
 FactoryBot.define do
     factory :featuring do
-        featuring_name { "John Doe" }
+        name { "John Doe" }
         is_album { false }
         artist { "Larry Doe" }
         label { "Label" }

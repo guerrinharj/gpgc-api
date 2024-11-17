@@ -12,15 +12,15 @@ Release.find_or_create_by!(
   release_date: Date.new(2021, 3, 29),
   format: ["CD", "digital download", "streaming"],
   tracks: [
-    { title: "Abertura dos Portos", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/EXTRADISCIPLINAR/Fator%20Decisivo/Extradisciplinar%20-%20Fator%20Decisivo%20-%2001%20Abertura%20dos%20Portos.mp3" },
-    { title: "Vacuo Fítido", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/EXTRADISCIPLINAR/Fator%20Decisivo/Extradisciplinar%20-%20Fator%20Decisivo%20-%2002%20Vacuo%20F%C3%ADtido.mp3" },
-    { title: "Dungo", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/EXTRADISCIPLINAR/Fator%20Decisivo/Extradisciplinar%20-%20Fator%20Decisivo%20-%2003%20Dungo.mp3" },
-    { title: "Azagarte Dub", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/EXTRADISCIPLINAR/Fator%20Decisivo/Extradisciplinar%20-%20Fator%20Decisivo%20-%2004%20Azagarte%20Dub.mp3" },
-    { title: "Pintin", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/EXTRADISCIPLINAR/Fator%20Decisivo/Extradisciplinar%20-%20Fator%20Decisivo%20-%2005%20Pintin.mp3" },
-    { title: "Limego", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/EXTRADISCIPLINAR/Fator%20Decisivo/Extradisciplinar%20-%20Fator%20Decisivo%20-%2006%20Limego.mp3" },
-    { title: "Winzip Dub", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/EXTRADISCIPLINAR/Fator%20Decisivo/Extradisciplinar%20-%20Fator%20Decisivo%20-%2007%20Winzip%20Dub.mp3" },
-    { title: "Terror", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/EXTRADISCIPLINAR/Fator%20Decisivo/Extradisciplinar%20-%20Fator%20Decisivo%20-%2008%20Terror.mp3" },
-    { title: "Bloc Party", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/EXTRADISCIPLINAR/Fator%20Decisivo/Extradisciplinar%20-%20Fator%20Decisivo%20-%2009%20Bloc%20Party.mp3" }
+    { name: "Abertura dos Portos", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/EXTRADISCIPLINAR/Fator%20Decisivo/Extradisciplinar%20-%20Fator%20Decisivo%20-%2001%20Abertura%20dos%20Portos.mp3" },
+    { name: "Vacuo Fítido", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/EXTRADISCIPLINAR/Fator%20Decisivo/Extradisciplinar%20-%20Fator%20Decisivo%20-%2002%20Vacuo%20F%C3%ADtido.mp3" },
+    { name: "Dungo", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/EXTRADISCIPLINAR/Fator%20Decisivo/Extradisciplinar%20-%20Fator%20Decisivo%20-%2003%20Dungo.mp3" },
+    { name: "Azagarte Dub", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/EXTRADISCIPLINAR/Fator%20Decisivo/Extradisciplinar%20-%20Fator%20Decisivo%20-%2004%20Azagarte%20Dub.mp3" },
+    { name: "Pintin", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/EXTRADISCIPLINAR/Fator%20Decisivo/Extradisciplinar%20-%20Fator%20Decisivo%20-%2005%20Pintin.mp3" },
+    { name: "Limego", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/EXTRADISCIPLINAR/Fator%20Decisivo/Extradisciplinar%20-%20Fator%20Decisivo%20-%2006%20Limego.mp3" },
+    { name: "Winzip Dub", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/EXTRADISCIPLINAR/Fator%20Decisivo/Extradisciplinar%20-%20Fator%20Decisivo%20-%2007%20Winzip%20Dub.mp3" },
+    { name: "Terror", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/EXTRADISCIPLINAR/Fator%20Decisivo/Extradisciplinar%20-%20Fator%20Decisivo%20-%2008%20Terror.mp3" },
+    { name: "Bloc Party", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/EXTRADISCIPLINAR/Fator%20Decisivo/Extradisciplinar%20-%20Fator%20Decisivo%20-%2009%20Bloc%20Party.mp3" }
   ],
   credits: {
     "Gabriel Guerra": "synthesizer, sampler, drum machine"
@@ -46,14 +46,14 @@ Release.find_or_create_by!(
   release_date: Date.new(2021, 11, 18),
   format: ["CD", "digital download", "streaming"],
   tracks: [
-    { title: "Zzzdb", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/EXTRADISCIPLINAR/Videoconfere%CC%82ncias/Extradisciplinar%20-%20Videoconfer%C3%AAncias%20-%2001%20Zzzdb.mp3" },
-    { title: "Trchods", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/EXTRADISCIPLINAR/Videoconfere%CC%82ncias/Extradisciplinar%20-%20Videoconfer%C3%AAncias%20-%2002%20Trchods.mp3" },
-    { title: "Hls 123", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/EXTRADISCIPLINAR/Videoconfere%CC%82ncias/Extradisciplinar%20-%20Videoconfer%C3%AAncias%20-%2003%20Hls%20123.mp3" },
-    { title: "Flácido Nut", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/EXTRADISCIPLINAR/Videoconfere%CC%82ncias/Extradisciplinar%20-%20Videoconfer%C3%AAncias%20-%2004%20Fl%C3%A1cido%20Nut.mp3" },
-    { title: "Transmis", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/EXTRADISCIPLINAR/Videoconfere%CC%82ncias/Extradisciplinar%20-%20Videoconfer%C3%AAncias%20-%2005%20Transmis.mp3" },
-    { title: "Incricrib", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/EXTRADISCIPLINAR/Videoconfere%CC%82ncias/Extradisciplinar%20-%20Videoconfer%C3%AAncias%20-%2006%20Incricrib.mp3" },
-    { title: "V Mini", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/EXTRADISCIPLINAR/Videoconfere%CC%82ncias/Extradisciplinar%20-%20Videoconfer%C3%AAncias%20-%2007%20V%20Mini.mp3" },
-    { title: "Ultimatum Platinum", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/EXTRADISCIPLINAR/Videoconfere%CC%82ncias/Extradisciplinar%20-%20Videoconfer%C3%AAncias%20-%2008%20Ultimatum%20Platinum.mp3" }
+    { name: "Zzzdb", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/EXTRADISCIPLINAR/Videoconfere%CC%82ncias/Extradisciplinar%20-%20Videoconfer%C3%AAncias%20-%2001%20Zzzdb.mp3" },
+    { name: "Trchods", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/EXTRADISCIPLINAR/Videoconfere%CC%82ncias/Extradisciplinar%20-%20Videoconfer%C3%AAncias%20-%2002%20Trchods.mp3" },
+    { name: "Hls 123", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/EXTRADISCIPLINAR/Videoconfere%CC%82ncias/Extradisciplinar%20-%20Videoconfer%C3%AAncias%20-%2003%20Hls%20123.mp3" },
+    { name: "Flácido Nut", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/EXTRADISCIPLINAR/Videoconfere%CC%82ncias/Extradisciplinar%20-%20Videoconfer%C3%AAncias%20-%2004%20Fl%C3%A1cido%20Nut.mp3" },
+    { name: "Transmis", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/EXTRADISCIPLINAR/Videoconfere%CC%82ncias/Extradisciplinar%20-%20Videoconfer%C3%AAncias%20-%2005%20Transmis.mp3" },
+    { name: "Incricrib", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/EXTRADISCIPLINAR/Videoconfere%CC%82ncias/Extradisciplinar%20-%20Videoconfer%C3%AAncias%20-%2006%20Incricrib.mp3" },
+    { name: "V Mini", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/EXTRADISCIPLINAR/Videoconfere%CC%82ncias/Extradisciplinar%20-%20Videoconfer%C3%AAncias%20-%2007%20V%20Mini.mp3" },
+    { name: "Ultimatum Platinum", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/EXTRADISCIPLINAR/Videoconfere%CC%82ncias/Extradisciplinar%20-%20Videoconfer%C3%AAncias%20-%2008%20Ultimatum%20Platinum.mp3" }
   ],
   credits: {
     "Gabriel Guerra": "synthesizer, sampler, drum machine"

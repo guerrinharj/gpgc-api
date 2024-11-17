@@ -12,10 +12,10 @@ Release.find_or_create_by!(
   release_date: Date.new(2024, 4, 29),
   format: ["CD", "digital download", "streaming"],
   tracks: [
-    { title: "Dessa Vez Vai", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/LOTERICAS%20RJ/Jogos%20de%20Azar/Lot%C3%A9ricas%20RJ%20-%20Jogos%20de%20Azar%20-%2001%20Dessa%20Vez%20Vai.mp3" },
-    { title: "Nunca Errei", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/LOTERICAS%20RJ/Jogos%20de%20Azar/Lot%C3%A9ricas%20RJ%20-%20Jogos%20de%20Azar%20-%2002%20Nunca%20Errei.mp3" },
-    { title: "Hoje É O Meu Dia", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/LOTERICAS%20RJ/Jogos%20de%20Azar/Lot%C3%A9ricas%20RJ%20-%20Jogos%20de%20Azar%20-%2003%20Hoje%20%C3%89%20O%20Meu%20Dia.mp3" },
-    { title: "Estou Sentindo", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/LOTERICAS%20RJ/Jogos%20de%20Azar/Lot%C3%A9ricas%20RJ%20-%20Jogos%20de%20Azar%20-%2004%20Estou%20Sentindo.mp3" }
+    { name: "Dessa Vez Vai", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/LOTERICAS%20RJ/Jogos%20de%20Azar/Lot%C3%A9ricas%20RJ%20-%20Jogos%20de%20Azar%20-%2001%20Dessa%20Vez%20Vai.mp3" },
+    { name: "Nunca Errei", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/LOTERICAS%20RJ/Jogos%20de%20Azar/Lot%C3%A9ricas%20RJ%20-%20Jogos%20de%20Azar%20-%2002%20Nunca%20Errei.mp3" },
+    { name: "Hoje É O Meu Dia", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/LOTERICAS%20RJ/Jogos%20de%20Azar/Lot%C3%A9ricas%20RJ%20-%20Jogos%20de%20Azar%20-%2003%20Hoje%20%C3%89%20O%20Meu%20Dia.mp3" },
+    { name: "Estou Sentindo", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/LOTERICAS%20RJ/Jogos%20de%20Azar/Lot%C3%A9ricas%20RJ%20-%20Jogos%20de%20Azar%20-%2004%20Estou%20Sentindo.mp3" }
   ],
   credits: {
     "Gabriel Guerra": "synthesizer, sampler, drum machine"
@@ -41,9 +41,9 @@ Release.find_or_create_by!(
   release_date: Date.new(2024, 6, 13),
   format: ["CD", "digital download", "streaming"],
   tracks: [
-    { title: "Talvez Dê", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/LOTERICAS%20RJ/Esportes%20da%20Sorte/Lot%C3%A9ricas%20RJ%20-%20Esportes%20da%20Sorte%20-%2001%20Talvez%20D%C3%AA.mp3" },
-    { title: "Por Que Não?", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/LOTERICAS%20RJ/Esportes%20da%20Sorte/Lot%C3%A9ricas%20RJ%20-%20Esportes%20da%20Sorte%20-%2002%20Por%20Que%20N%C3%A3o-.mp3" },
-    { title: "Nunca Custou Nada!", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/LOTERICAS%20RJ/Esportes%20da%20Sorte/Lot%C3%A9ricas%20RJ%20-%20Esportes%20da%20Sorte%20-%2003%20Nunca%20Custou%20Nada!.mp3" }
+    { name: "Talvez Dê", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/LOTERICAS%20RJ/Esportes%20da%20Sorte/Lot%C3%A9ricas%20RJ%20-%20Esportes%20da%20Sorte%20-%2001%20Talvez%20D%C3%AA.mp3" },
+    { name: "Por Que Não?", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/LOTERICAS%20RJ/Esportes%20da%20Sorte/Lot%C3%A9ricas%20RJ%20-%20Esportes%20da%20Sorte%20-%2002%20Por%20Que%20N%C3%A3o-.mp3" },
+    { name: "Nunca Custou Nada!", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/LOTERICAS%20RJ/Esportes%20da%20Sorte/Lot%C3%A9ricas%20RJ%20-%20Esportes%20da%20Sorte%20-%2003%20Nunca%20Custou%20Nada!.mp3" }
   ],
   credits: {
     "Gabriel Guerra": "synthesizer, sampler, drum machine"

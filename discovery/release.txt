@@ -29,11 +29,11 @@ curl --location 'http://localhost:3000/api/v1/releases' \
   ],
   "tracks": [
     {
-      "title": "Track One",
+      "name": "Track One",
       "url": "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/TESTE/Track%20One.mp3"
     },
     {
-      "title": "Track Two",
+      "name": "Track Two",
       "url": "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/TESTE/Track%20Two.mp3"
     }
   ],

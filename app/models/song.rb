@@ -2,11 +2,13 @@ class Song < ApplicationRecord
     belongs_to :artist
     belongs_to :release
 
-    validates :slug, uniqueness: true
+    validates :name, presence: true
+
+    before_save :generate_slug
 
     has_one_attached :audio_file
 
-    def to_param
-        "#{slug}"
+    def generate_slug
+        self.slug = name.parameterize
     end
 end

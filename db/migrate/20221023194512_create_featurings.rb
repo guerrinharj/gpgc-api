@@ -1,7 +1,7 @@
 class CreateFeaturings < ActiveRecord::Migration[6.0]
   def change
     create_table :featurings do |t|
-      t.string :featuring_name
+      t.string :name
       t.boolean :is_album
       t.string :artist
       t.string :label

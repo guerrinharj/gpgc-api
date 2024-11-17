@@ -6,6 +6,7 @@ class Api::V1::SongsController < Api::V1::BaseController
     end
     
     def show
+        render json: @song
     end
     
     private
