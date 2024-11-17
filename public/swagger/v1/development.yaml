@@ -758,7 +758,7 @@ paths:
         '400':
           description: Invalid input
 
-  /api/v1/featurings/{id}:
+  /api/v1/featurings/{slug}:
     get:
       summary: Get a featuring by ID
       description: Fetch details of a specific featuring
@@ -987,7 +987,7 @@ paths:
         '400':
           description: Invalid input
 
-  /api/v1/soundtracks/{id}:
+  /api/v1/soundtracks/{slug}:
     get:
       summary: Get a soundtrack by ID
       description: Fetch details of a specific soundtrack
@@ -1176,3 +1176,34 @@ paths:
                     url:
                       type: string
                       example: "https://link.com"
+
+  /api/v1/{artist}/{song}:
+    get:
+      summary: Get a song by slug
+      description: Fetch a song
+      operationId: getSong
+      tags:
+        - Song
+      responses:
+        '200':
+          description: A list of songs
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: integer
+                    example: 3
+                  name:
+                    type: string
+                    example: Song Name
+                  slug:
+                    type: string
+                    example: song-name
+                  duration:
+                    type: string
+                    example: "3:37"
+                  url:
+                    type: string
+                    example: "https://link.com"
