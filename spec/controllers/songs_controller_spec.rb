@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe Api::V1::ReleasesController, type: :controller do
+RSpec.describe Api::V1::SongsController, type: :controller do
     let(:user) { create(:user) }
     let(:artist) { create(:artist, user: user) }
     let(:release) { create(:release, artist: artist, user: user) }
