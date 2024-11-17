@@ -12,6 +12,6 @@ class Api::V1::SongsController < Api::V1::BaseController
     
     def set_song
         @song = Song.find_by(slug: params[:slug])
-        render json: @song
+        render json: { error: 'Song not found' }, status: :not_found unless @song
     end
 end
