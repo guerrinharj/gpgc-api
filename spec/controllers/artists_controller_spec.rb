@@ -11,6 +11,13 @@ RSpec.describe Api::V1::ArtistsController, type: :controller do
         allow(controller).to receive(:current_user).and_return(user)
     end
 
+    describe 'GET #show' do
+        it 'returns a not_found status if artist is not found' do
+            get :show, params: { slug: "non-existent-slug"  }
+            expect(response).to have_http_status(:not_found)
+        end
+    end
+
     describe 'POST #create' do
         it 'returns success if artist is created' do
             post :create, params: { artist: attributes_for(:artist).merge(artist_id: artist.id) }
