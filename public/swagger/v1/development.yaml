@@ -1183,7 +1183,7 @@ paths:
       description: Fetch a song
       operationId: getSong
       tags:
-        - Song
+        - Songs
       responses:
         '200':
           description: A list of songs
