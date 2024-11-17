@@ -12,6 +12,13 @@ RSpec.describe Api::V1::ReleasesController, type: :controller do
         allow(controller).to receive(:current_user).and_return(user)
     end
 
+    describe 'GET #show' do
+        it 'returns a not_found status if record is not found' do
+            get :show, params: { slug: "non-existent-slug"  }
+            expect(response).to have_http_status(:not_found)
+        end
+    end
+
     describe 'POST #create' do
         it 'returns success if release is created' do
             post :create, params: { release: attributes_for(:release).merge(artist_id: artist.id) }
