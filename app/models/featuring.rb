@@ -1,12 +1,12 @@
 class Featuring < ApplicationRecord
-    validates :featuring_name, presence: true
-    after_create :generate_slug
+    validates :name, presence: true
+    before_save :generate_slug
 
     belongs_to :user
 
     private
 
     def generate_slug
-        update(slug: "#{featuring_name.parameterize}")
+        self.slug = name.parameterize if name.present?
     end
 end

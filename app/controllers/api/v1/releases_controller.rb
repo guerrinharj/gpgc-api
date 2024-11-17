@@ -26,7 +26,7 @@ class Api::V1::ReleasesController < ApplicationController
     release_attributes = release_params.to_h.deep_symbolize_keys
   
     if @release.update(release_attributes)
-      render json: @release
+      render json: @release, status: :ok
     else
       render json: @release.errors, status: :unprocessable_entity
     end
@@ -55,7 +55,7 @@ class Api::V1::ReleasesController < ApplicationController
       label: [],
       format: [],
       notes: [],
-      tracks: [:title, :url],
+      tracks: [:name, :url],
       credits: {},
       links: {}
     )

@@ -26,7 +26,7 @@ class Api::V1::FeaturingsController < ApplicationController
     featuring_attributes = featuring_params.to_h.deep_symbolize_keys
 
     if @featuring.update(featuring_attributes.merge(user: current_user))
-      render json: @featuring
+      render json: @featuring, status: :ok
     else
       render json: @featuring.errors, status: :unprocessable_entity
     end
@@ -40,13 +40,13 @@ class Api::V1::FeaturingsController < ApplicationController
   private
 
   def set_featuring
-    @featuring = Featuring.find_by(id: params[:id]) || Featuring.find_by(slug: params[:id])
+    @featuring = Featuring.find_by(id: params[:id]) || Featuring.find_by(slug: params[:slug])
     render json: { error: 'Featuring not found' }, status: :not_found unless @featuring
   end
 
   def featuring_params
     params.require(:featuring).permit(
-      :featuring_name,
+      :name,
       :is_album,
       :artist,
       :label,
@@ -64,7 +64,7 @@ class Api::V1::FeaturingsController < ApplicationController
     
     user = User.find_by(username: username)
 
-    unless user&.authenticate(password)
+    if user.nil? || !user.authenticate(password)
       render json: { error: 'Unauthorized' }, status: :unauthorized
       return
     end

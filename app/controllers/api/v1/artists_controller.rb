@@ -26,7 +26,7 @@ class Api::V1::ArtistsController < ApplicationController
     artist_attributes = artist_params.to_h.deep_symbolize_keys
 
     if @artist.update(artist_attributes)
-      render json: @artist
+      render json: @artist, status: :ok
     else
       render json: @artist.errors, status: :unprocessable_entity
     end
@@ -40,7 +40,7 @@ class Api::V1::ArtistsController < ApplicationController
   private
 
   def set_artist
-    @artist = Artist.find_by(id: params[:id]) || Artist.find_by(slug: params[:id])
+    @artist = Artist.find_by(id: params[:id]) || Artist.find_by(slug: params[:slug])
     render json: { error: 'Artist not found' }, status: :not_found unless @artist
   end
 

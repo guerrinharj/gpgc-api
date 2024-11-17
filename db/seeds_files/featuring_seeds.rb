@@ -1,7 +1,7 @@
 p "Seeding Featurings..."
 
 Featuring.find_or_create_by!(
-  featuring_name: "Se Um Dia Lembrar",
+  name: "Se Um Dia Lembrar",
   credit: ["Backing Vocals"],
   release_date: Date.new(2011, 1, 1),
   is_album:  false,
@@ -11,7 +11,7 @@ Featuring.find_or_create_by!(
 )
 
 Featuring.find_or_create_by!(
-  featuring_name: "Par Ou Impar",
+  name: "Par Ou Impar",
   credit: ["Assistant Engineer"],
   release_date: Date.new(2011, 11, 19),
   is_album:  true,
@@ -23,7 +23,7 @@ Featuring.find_or_create_by!(
 )
 
 Featuring.find_or_create_by!(
-  featuring_name: "Stop Waiting For Me Now (Versão Guerra)",
+  name: "Stop Waiting For Me Now (Versão Guerra)",
   credit: ["Remixer"],
   release_date: Date.new(2012, 2, 19),
   is_album:  false,
@@ -34,7 +34,7 @@ Featuring.find_or_create_by!(
 )
 
 Featuring.find_or_create_by!(
-  featuring_name: "Full Of Life (R.B.G)",
+  name: "Full Of Life (R.B.G)",
   credit: ["Remixer"],
   release_date: Date.new(2012, 9, 12),
   is_album:  false,
@@ -45,7 +45,7 @@ Featuring.find_or_create_by!(
 )
 
 Featuring.find_or_create_by!(
-  featuring_name: "Speedrun",
+  name: "Speedrun",
   credit: ["Mixing engineer"],
   release_date: Date.new(2018, 11,  7),
   is_album:  true,
@@ -56,7 +56,7 @@ Featuring.find_or_create_by!(
 )
 
 Featuring.find_or_create_by!(
-  featuring_name: "Tudo Pode Acontecer",
+  name: "Tudo Pode Acontecer",
   credit: ["Producer"],
   release_date: Date.new(2018, 11,  7),
   is_album:  true,
@@ -67,7 +67,7 @@ Featuring.find_or_create_by!(
 )
 
 Featuring.find_or_create_by!(
-  featuring_name: "Proibidão (Repetentes 2008 Remix)",
+  name: "Proibidão (Repetentes 2008 Remix)",
   credit: ["Remixer"],
   release_date: Date.new(2019, 4, 23),
   is_album:  false,
@@ -79,7 +79,7 @@ Featuring.find_or_create_by!(
 )
 
 Featuring.find_or_create_by!(
-  featuring_name: "As Velas da Cantareira (DJ Guerrinha Mix)",
+  name: "As Velas da Cantareira (DJ Guerrinha Mix)",
   credit: ["Remixer"],
   release_date: Date.new(2019, 5, 1),
   is_album:  false,
@@ -91,7 +91,7 @@ Featuring.find_or_create_by!(
 )
 
 Featuring.find_or_create_by!(
-  featuring_name: "2",
+  name: "2",
   credit: ["Musician"],
   release_date: Date.new(2019, 6,  7),
   is_album:  true,
@@ -103,7 +103,7 @@ Featuring.find_or_create_by!(
 
 
 Featuring.find_or_create_by!(
-  featuring_name: "Sexy Savannah (Repetentes 2008 Remix)",
+  name: "Sexy Savannah (Repetentes 2008 Remix)",
   credit: ["Remixer"],
   release_date: Date.new(2019, 9, 20),
   is_album:  false,
@@ -116,7 +116,7 @@ Featuring.find_or_create_by!(
 
 
 Featuring.find_or_create_by!(
-  featuring_name: "Tem Conserto",
+  name: "Tem Conserto",
   credit: ["Mixing Engineer"],
   release_date: Date.new(2019, 6,  13),
   is_album:  true,
@@ -126,7 +126,7 @@ Featuring.find_or_create_by!(
 )
 
 Featuring.find_or_create_by!(
-  featuring_name: "Eu Me Lembro",
+  name: "Eu Me Lembro",
   credit: ["Mixing Engineer"],
   release_date: Date.new(2020, 3,  20),
   is_album:  true,
@@ -136,7 +136,7 @@ Featuring.find_or_create_by!(
 )
 
 Featuring.find_or_create_by!(
-  featuring_name: "BFF (D.I.R. 119 BPM Dub)",
+  name: "BFF (D.I.R. 119 BPM Dub)",
   credit: ["Remixer"],
   release_date: Date.new(2020, 5, 22),
   is_album:  false,
@@ -148,7 +148,7 @@ Featuring.find_or_create_by!(
 )
 
 Featuring.find_or_create_by!(
-  featuring_name: "Flying Nine (Dara) (Repetentes 2008 Remix)",
+  name: "Flying Nine (Dara) (Repetentes 2008 Remix)",
   credit: ["Remixer"],
   release_date: Date.new(2020, 7, 2),
   is_album:  false,
@@ -160,7 +160,7 @@ Featuring.find_or_create_by!(
 )
 
 Featuring.find_or_create_by!(
-  featuring_name: "Circuit Break",
+  name: "Circuit Break",
   credit: ["Mixing Engineer"],
   release_date: Date.new(2020, 11, 27),
   is_album:  false,
@@ -170,7 +170,7 @@ Featuring.find_or_create_by!(
 )
 
 Featuring.find_or_create_by!(
-  featuring_name: "Monsters In The Dark (Repetentes 2008 Remix)",
+  name: "Monsters In The Dark (Repetentes 2008 Remix)",
   credit: ["Remixer"],
   release_date: Date.new(2020, 11, 22),
   is_album:  false,
@@ -182,7 +182,7 @@ Featuring.find_or_create_by!(
 )
 
 Featuring.find_or_create_by!(
-  featuring_name: "Deixa Tudo Fluir (Guerrinha's Deixa o Orgão Solar Mix)",
+  name: "Deixa Tudo Fluir (Guerrinha's Deixa o Orgão Solar Mix)",
   credit: ["Remixer"],
   release_date: Date.new(2021, 1, 27),
   is_album:  false,
@@ -194,7 +194,7 @@ Featuring.find_or_create_by!(
 )
 
 Featuring.find_or_create_by!(
-  featuring_name: "Sim",
+  name: "Sim",
   credit: ["Mixing engineer"],
   release_date: Date.new(2021, 4, 16),
   is_album:  false,
@@ -204,7 +204,7 @@ Featuring.find_or_create_by!(
 )
 
 Featuring.find_or_create_by!(
-  featuring_name: "Purplelight Beat",
+  name: "Purplelight Beat",
   credit: ["Musician"],
   release_date: Date.new(2021, 5, 21),
   is_album:  false,
@@ -217,7 +217,7 @@ Featuring.find_or_create_by!(
 
 
 Featuring.find_or_create_by!(
-  featuring_name: "Em Coro",
+  name: "Em Coro",
   credit: ["Producer", "Mixing engineer"],
   release_date: Date.new(2022, 3, 10),
   is_album:  true,
@@ -227,7 +227,7 @@ Featuring.find_or_create_by!(
 )
 
 Featuring.find_or_create_by!(
-  featuring_name: "Linha do Tempo",
+  name: "Linha do Tempo",
   credit: ["Producer", "Mixing Engineer"],
   release_date: Date.new(2022, 3, 10),
   is_album:  false,
@@ -237,7 +237,7 @@ Featuring.find_or_create_by!(
 )
 
 Featuring.find_or_create_by!(
-  featuring_name: "Más Linguas",
+  name: "Más Linguas",
   credit: ["Producer"],
   release_date: Date.new(2023, 7, 14),
   is_album:  true,
@@ -247,7 +247,7 @@ Featuring.find_or_create_by!(
 )
 
 Featuring.find_or_create_by!(
-  featuring_name: "Dimensão",
+  name: "Dimensão",
   credit: ["Producer"],
   release_date: Date.new(2023, 8, 4),
   is_album:  false,
@@ -257,7 +257,7 @@ Featuring.find_or_create_by!(
 )
 
 Featuring.find_or_create_by!(
-  featuring_name: "Rio de Janeiro Gotham City",
+  name: "Rio de Janeiro Gotham City",
   credit: ["Keyboard", "Bass"],
   release_date: Date.new(2024, 1, 4),
   is_album:  false,
@@ -267,7 +267,7 @@ Featuring.find_or_create_by!(
 )
 
 Featuring.find_or_create_by!(
-  featuring_name: "Mistério",
+  name: "Mistério",
   credit: ["Mixing Engineer"],
   release_date: Date.new(2024, 1, 19),
   is_album:  false,
@@ -278,7 +278,7 @@ Featuring.find_or_create_by!(
 
 
 Featuring.find_or_create_by!(
-  featuring_name: "Resquicios de Uma Era",
+  name: "Resquicios de Uma Era",
   credit: ["Producer", "Mixing Engineer", "Keyboards"],
   release_date: Date.new(2024, 8, 24),
   is_album:  true,
@@ -289,7 +289,7 @@ Featuring.find_or_create_by!(
 
 
 Featuring.find_or_create_by!(
-  featuring_name: "12",
+  name: "12",
   credit: ["Mixing Engineer"],
   release_date: Date.new(2024, 11, 1),
   is_album:  false,
@@ -299,7 +299,7 @@ Featuring.find_or_create_by!(
 )
 
 Featuring.find_or_create_by!(
-  featuring_name: "Como Eu Me Sinto As Vezes",
+  name: "Como Eu Me Sinto As Vezes",
   credit: ["Mixing Engineer"],
   release_date: Date.new(2024, 11, 1),
   is_album:  false,

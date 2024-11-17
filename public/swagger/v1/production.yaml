@@ -281,7 +281,7 @@ paths:
                       example: "Artist Name"
                     name:
                       type: string
-                      example: "Release Title"
+                      example: "Release Name"
                     cover:
                       type: array
                       items:
@@ -343,7 +343,7 @@ paths:
                   example: "Artist Name"
                 name:
                   type: string
-                  example: "Release Title"
+                  example: "Release Name"
                 cover:
                   type: array
                   items:
@@ -419,7 +419,7 @@ paths:
                     example: "Artist Name"
                   name:
                     type: string
-                    example: "Release Title"
+                    example: "Release Name"
                   cover:
                     type: array
                     items:
@@ -512,7 +512,7 @@ paths:
                     example: "Artist Name"
                   name:
                     type: string
-                    example: "Release Title"
+                    example: "Release Name"
                   cover:
                     type: array
                     items:
@@ -673,7 +673,7 @@ paths:
                     id:
                       type: integer
                       example: 3
-                    featuring_name:
+                    name:
                       type: string
                       example: Featuring Name
                     is_album:
@@ -727,7 +727,7 @@ paths:
             schema:
               type: object
               properties:
-                featuring_name:
+                name:
                   type: string
                   example: TESTE
                 is_album:
@@ -792,7 +792,7 @@ paths:
                   id:
                     type: integer
                     example: 6
-                  featuring_name:
+                  name:
                     type: string
                     example: TESTE
                   is_album:
@@ -1130,7 +1130,7 @@ paths:
                       id:
                         type: integer
                         example: 3
-                      title:
+                      name:
                         type: string
                         example: Song Name
                       slug:
@@ -1164,7 +1164,7 @@ paths:
                     id:
                       type: integer
                       example: 3
-                    title:
+                    name:
                       type: string
                       example: Song Name
                     slug:

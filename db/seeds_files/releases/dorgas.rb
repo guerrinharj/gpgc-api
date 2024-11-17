@@ -11,9 +11,9 @@ Release.find_or_create_by!(
   release_date: Date.new(2010, 3, 10),
   format: ["digital download"],
   tracks: [
-    { title: "Bruff", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/DORGAS/Verdeja%20Music/Verdeja%20Music/01%20Bruff.mp3" },
-    { title: "Salisme", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/DORGAS/Verdeja%20Music/Verdeja%20Music/02%20Salisme.mp3" },
-    { title: "Ostoquix", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/DORGAS/Verdeja%20Music/Verdeja%20Music/03%20Osto%CC%81quix.mp3" }
+    { name: "Bruff", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/DORGAS/Verdeja%20Music/Verdeja%20Music/01%20Bruff.mp3" },
+    { name: "Salisme", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/DORGAS/Verdeja%20Music/Verdeja%20Music/02%20Salisme.mp3" },
+    { name: "Ostoquix", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/DORGAS/Verdeja%20Music/Verdeja%20Music/03%20Osto%CC%81quix.mp3" }
   ],
   credits: {
     "Gabriel Guerra": "electric guitar, keyboards",
@@ -42,8 +42,8 @@ Release.find_or_create_by!(
   release_date: Date.new(2011, 2, 1),
   format: ["digital download"],
   tracks: [
-    { title: "Loxhanxha", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/DORGAS/Loxhanxha/Loxhanxha/01%20Loxhanxha.mp3" },
-    { title: "Dito Antes", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/DORGAS/Loxhanxha/Loxhanxha/02%20Dito%20Antes.mp3" }
+    { name: "Loxhanxha", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/DORGAS/Loxhanxha/Loxhanxha/01%20Loxhanxha.mp3" },
+    { name: "Dito Antes", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/DORGAS/Loxhanxha/Loxhanxha/02%20Dito%20Antes.mp3" }
   ],
   credits: {
     "Gabriel Guerra": "electric guitar, keyboards, vocals",
@@ -72,8 +72,8 @@ Release.find_or_create_by!(
   release_date: Date.new(2011, 2, 1),
   format: ["digital download"],
   tracks: [
-    { title: "Grangongon", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/DORGAS/Grangongon/Grangongon/01%20Grangongon.mp3" },
-    { title: "Fez-se Cristo", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/DORGAS/Grangongon/Grangongon/02%20Fez-se%20Cristo.mp3" }
+    { name: "Grangongon", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/DORGAS/Grangongon/Grangongon/01%20Grangongon.mp3" },
+    { name: "Fez-se Cristo", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/DORGAS/Grangongon/Grangongon/02%20Fez-se%20Cristo.mp3" }
   ],
   credits: {
     "Gabriel Guerra": "electric guitar, vocals",
@@ -102,15 +102,15 @@ Release.find_or_create_by!(
   release_date: Date.new(2013, 5, 15),
   format: ["digital download"],
   tracks: [
-    { title: "Vice-Homem", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/DORGAS/Dorgas/Dorgas/01%20Vice-Homem.mp3" },
-    { title: "Faisão Dourado (Tendência e Cor)", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/DORGAS/Dorgas/Dorgas/02%20Faisa%CC%83o%20Dourado%20(Tende%CC%82ncia%20e%20Cor).mp3" },
-    { title: "Egocêntrica", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/DORGAS/Dorgas/Dorgas/03%20Egoce%CC%82ntrica.mp3" },
-    { title: "Bósforo", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/DORGAS/Dorgas/Dorgas/04%20Bo%CC%81sforo.mp3" },
-    { title: "Campus Elysium", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/DORGAS/Dorgas/Dorgas/05%20Campus%20Elysium.mp3" },
-    { title: "Hortência", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/DORGAS/Dorgas/Dorgas/06%20Horte%CC%82ncia.mp3" },
-    { title: "Vander", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/DORGAS/Dorgas/Dorgas/07%20Vander.mp3" },
-    { title: "Patricinha Ingrata", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/DORGAS/Dorgas/Dorgas/08%20Patricinha%20Ingrata.mp3" },
-    { title: "Viratouro", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/DORGAS/Dorgas/Dorgas/09%20Viratouro.mp3" }
+    { name: "Vice-Homem", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/DORGAS/Dorgas/Dorgas/01%20Vice-Homem.mp3" },
+    { name: "Faisão Dourado (Tendência e Cor)", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/DORGAS/Dorgas/Dorgas/02%20Faisa%CC%83o%20Dourado%20(Tende%CC%82ncia%20e%20Cor).mp3" },
+    { name: "Egocêntrica", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/DORGAS/Dorgas/Dorgas/03%20Egoce%CC%82ntrica.mp3" },
+    { name: "Bósforo", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/DORGAS/Dorgas/Dorgas/04%20Bo%CC%81sforo.mp3" },
+    { name: "Campus Elysium", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/DORGAS/Dorgas/Dorgas/05%20Campus%20Elysium.mp3" },
+    { name: "Hortência", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/DORGAS/Dorgas/Dorgas/06%20Horte%CC%82ncia.mp3" },
+    { name: "Vander", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/DORGAS/Dorgas/Dorgas/07%20Vander.mp3" },
+    { name: "Patricinha Ingrata", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/DORGAS/Dorgas/Dorgas/08%20Patricinha%20Ingrata.mp3" },
+    { name: "Viratouro", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/DORGAS/Dorgas/Dorgas/09%20Viratouro.mp3" }
   ],
   credits: {
     "Gabriel Guerra": "electric guitar (track 7), keyboards, vocals (tracks 2, 3, 6, 8)",
@@ -140,8 +140,8 @@ Release.find_or_create_by!(
   release_date: Date.new(2013, 7, 4),
   format: ["digital download"],
   tracks: [
-    { title: "#1", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/DORGAS/Semanas%20Goticas/Semanas%20Go%CC%81ticas/01%20%231.mp3" },
-    { title: "#2", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/DORGAS/Semanas%20Goticas/Semanas%20Go%CC%81ticas/02%20%232.mp3" }
+    { name: "#1", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/DORGAS/Semanas%20Goticas/Semanas%20Go%CC%81ticas/01%20%231.mp3" },
+    { name: "#2", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/DORGAS/Semanas%20Goticas/Semanas%20Go%CC%81ticas/02%20%232.mp3" }
   ],
   credits: {
     "Gabriel Guerra": "electric guitar",

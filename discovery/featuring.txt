@@ -35,7 +35,7 @@ curl --location 'http://localhost:3000/api/v1/featurings' \
 --header 'Password: 123' \
 --header 'Content-Type: application/json' \
 --data '{
-    "featuring_name": "TESTE",
+    "name": "TESTE",
     "is_album": true,
     "artist": "TESTE",
     "label": "Pug Records",
