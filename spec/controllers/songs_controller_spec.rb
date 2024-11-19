@@ -42,18 +42,18 @@ RSpec.describe Api::V1::SongsController, type: :controller do
             expect(response).to have_http_status(:not_found)
         end
 
-        it 'returns a song if artist_name and song_name are correct' do
-            get :show, params: { artist_name: artist.name, song_name: song.name }
+        it 'returns a song if artist_slug and song_slug are correct' do
+            get :show, params: { artist_slug: artist.slug, song_slug: song.slug }
             expect(response).to have_http_status(:ok)
         end
 
         it 'returns a not_found status if artist is not found' do
-            get :show, params: { artist_name: 'non-existent-artist', song_name: song.name }
+            get :show, params: { artist_slug: 'non-existent-artist', song_slug: song.slug }
             expect(response).to have_http_status(:not_found)
         end
 
         it 'returns a not_found status if song is not found for the given artist' do
-            get :show, params: { artist_name: artist.name, song_name: 'non-existent-song' }
+            get :show, params: { artist_slug: artist.slug, song_slug: 'non-existent-song' }
             expect(response).to have_http_status(:not_found)
         end
     end
