@@ -27,7 +27,7 @@
 /config/master.key
 
 .env
-config/database.yml
+#config/database.yml
 gpgc-api-09d024f2a116.json
 ./devops/deploy
 .env.development
