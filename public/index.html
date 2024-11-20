@@ -16,15 +16,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/4.1.0/swagger-ui-standalone-preset.js"></script>
 
     <script>
-    let yamlUrl;
-    if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
-        yamlUrl = "/swagger/v1/development.yaml";
-    } else {
-        yamlUrl = "/swagger/v1/production.yaml";  
-    }
-
     const ui = SwaggerUIBundle({
-        url: yamlUrl, 
+        url:  "/swagger/v1/development.yaml", 
         dom_id: '#swagger-ui',
         presets: [
         SwaggerUIBundle.presets.apis,
