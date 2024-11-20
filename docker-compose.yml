@@ -25,6 +25,7 @@ services:
     environment:
       RAILS_ENV: ${RAILS_ENV:-development}  # Default to development if not set
       DATABASE_URL: "postgresql://${GPGC_API_DATABASE_USERNAME}:${GPGC_API_DATABASE_PASSWORD}@${GPGC_API_DATABASE_HOST}:5432/${GPGC_API_DATABASE_NAME}"
+      SECRET_KEY_BASE: ${SECRET_KEY_BASE}
 
   rspec:
     build: .
