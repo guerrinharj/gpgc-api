@@ -46,7 +46,7 @@ It also functions as a Discogs-like API. You can create `artists`, `releases`, `
 - Start terminal
 - Make sure of permissions of your OS and terminal system are on point. (Don't be afraid to change the shebang in case you need)
 - Make sure each of your `.env` host is set as `db`
-- You will be asked to created an `user` with an username and password.
+- Your `user` and `password` will come from the .env variables.
 - If you're loading your environment variable from `.env.production` you can always write "production" after the shell scripts. 
 - If you're not installing for the first time, don't overwrite archives
 - If you're installing a new gem, be always sure to rebuild.
