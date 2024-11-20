@@ -1,23 +1,25 @@
-# lib/tasks/create_user.rake
-
 namespace :user do
-    desc "Create a new user with a username and password"
+    desc "Create a new user with a username and password from .env"
     task create: :environment do
-        puts "Enter username:"
-        username = STDIN.gets.chomp
-
-        puts "Enter password:"
-        password = STDIN.noecho(&:gets).chomp # Hides password input for security
-
-        # Validate that username and password are not empty
-        if username.empty? || password.empty?
-            puts "Username and password cannot be empty. Please try again."
+    require 'dotenv'
+    
+        # Load the appropriate .env file based on the Rails environment
+        dotenv_file = Rails.env.production? ? '.env.production' : '.env.development'
+        Dotenv.load(dotenv_file)
+    
+        # Fetch username and password from environment variables
+        username = ENV['GPGC_API_DATABASE_USERNAME']
+        password = ENV['GPGC_API_DATABASE_PASSWORD']
+    
+        # Validate that username and password are present
+        if username.nil? || password.nil? || username.empty? || password.empty?
+            puts "Error: GPGC_API_DATABASE_USERNAME and GPGC_API_DATABASE_PASSWORD must be set in #{dotenv_file}."
             exit
         end
-
-    # Create user and save to the database
+    
+        # Create user and save to the database
         user = User.create(username: username, password: password)
-
+    
         if user.persisted?
             puts "User '#{user.username}' created successfully."
         else
