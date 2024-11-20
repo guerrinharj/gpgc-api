@@ -15,7 +15,7 @@ It also functions as a Discogs-like API. You can create `artists`, `releases`, `
 2. Rename `config/database.yml.example` to `config/database.yml` and add your database credentials;
 3. Set up `.env.development`, `.env.test` and your `.env.production` (in case you're trying to deploy) accordingly to your `config/database.yml` file.
 3. Run `rake setup` to create the database and apply the migrations and seeds;
-4. You will be asked to created an `user` with an username and password.
+4. Your `user` and `password` will come from the .env variables.
 5. Run `rspec` to check for tests;
 6. Run `rails s` and go for your localhost
 
