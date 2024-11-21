@@ -36,15 +36,14 @@ jobs:
     - name: Set up Ruby
       uses: ruby/setup-ruby@v1
       with:
-        ruby-version: 3.1.0 # Adjust for your app's Ruby version
+        ruby-version: 3.1 # Adjust for your app's Ruby version
         bundler-cache: true
 
-    # Set environment variables
+    # Set up Environment Variables
     - name: Set Environment Variables
-      run: echo "RAILS_ENV=development" >> $GITHUB_ENV
-    - name: Set App Configuration
       env:
-        GPGC_API_DATABASE_HOST: db
+        RAILS_ENV: development
+        GPGC_API_DATABASE_HOST: localhost
         GPGC_API_DATABASE_NAME: gpgc_api_development
         GPGC_API_DATABASE_USERNAME: gpgc_api
         GPGC_API_DATABASE_PASSWORD: 1310gpgc
@@ -59,11 +58,21 @@ jobs:
     # Set up Database
     - name: Set up Database
       env:
-        DATABASE_URL: postgres://gpgc_api:1310gpgc@db:5432/gpgc_api_development
+        RAILS_ENV: development
+        GPGC_API_DATABASE_HOST: localhost
+        GPGC_API_DATABASE_NAME: gpgc_api_development
+        GPGC_API_DATABASE_USERNAME: gpgc_api
+        GPGC_API_DATABASE_PASSWORD: 1310gpgc
       run: |
-        bin/rails db:create RAILS_ENV=development
-        bin/rails db:migrate RAILS_ENV=development
+        bin/rails db:create
+        bin/rails db:migrate
 
     # Run Tests
     - name: Run Tests
+      env:
+        RAILS_ENV: development
+        GPGC_API_DATABASE_HOST: localhost
+        GPGC_API_DATABASE_NAME: gpgc_api_development
+        GPGC_API_DATABASE_USERNAME: gpgc_api
+        GPGC_API_DATABASE_PASSWORD: 1310gpgc
       run: bin/rails test
