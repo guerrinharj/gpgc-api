@@ -29,8 +29,10 @@ jobs:
         docker compose build          # Build all services
 
     # Step 3: Debug Networking
+    # Debug Networking
     - name: Debug Networking
-      run: docker compose run rspec ping -c 4 db
+      run: docker compose run rspec curl -s db || echo "Unable to connect to db"
+
 
     # Step 4: Wait for Database
     - name: Wait for Database
