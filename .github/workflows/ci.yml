@@ -12,21 +12,6 @@ jobs:
   test:
     runs-on: ubuntu-latest
 
-    services:
-      db:
-        image: postgres:13
-        ports:
-          - 5432:5432
-        env:
-          POSTGRES_USER: gpgc_api
-          POSTGRES_PASSWORD: 1310gpgc
-          POSTGRES_DB: gpgc_api_test
-        options: >-
-          --health-cmd="pg_isready -U gpgc_api"
-          --health-interval=10s
-          --health-timeout=5s
-          --health-retries=5
-
     steps:
     # Step 1: Check out the repository
     - name: Checkout Code
@@ -35,22 +20,18 @@ jobs:
     # Step 2: Set up Docker Compose
     - name: Set up Docker
       run: |
-        docker compose down --volumes # Clean up any existing containers
-        docker compose build          # Build the Docker images
+        docker compose down --volumes 
+        docker compose build         
 
-    # Step 3: Set up the database
+    # Step 3: Prepare Test Database
     - name: Prepare Test Database
-      env:
-        DATABASE_URL: "postgresql://gpgc_api:1310gpgc@localhost:5432/gpgc_api_test" # Ensure proper formatting
       run: |
-        docker compose run web rails db:environment:set RAILS_ENV=test
-        docker compose run web rails db:create
-        docker compose run web rails db:migrate
+        docker compose run rspec rails db:environment:set RAILS_ENV=test
+        docker compose run rspec rails db:create
+        docker compose run rspec rails db:migrate
 
     # Step 4: Run Tests
     - name: Run Tests
-      env:
-        DATABASE_URL: "postgresql://gpgc_api:1310gpgc@localhost:5432/gpgc_api_test" # Ensure proper formatting
       run: docker compose run rspec
 
     # Step 5: Tear Down Docker
