@@ -19,23 +19,29 @@ jobs:
 
     # Step 2: Set up Docker Compose
     - name: Set up Docker
-      env: # Ensure required environment variables are set for Docker Compose
+      env:
         GPGC_API_DATABASE_USERNAME: gpgc_api
         GPGC_API_DATABASE_PASSWORD: 1310gpgc
         GPGC_API_DATABASE_NAME: gpgc_api_test
         GPGC_API_DATABASE_HOST: db
-        SECRET_KEY_BASE: dfb57b91345c6b300b543418ee1710feac0d4e68405032d39926b3bc4433b68c7f20ab8b17338449e4cb5d51e4b6761438711ed7f4ceec67762700256970fd44
       run: |
-        docker compose down --volumes 
-        docker compose build        
+        docker compose down --volumes # Clean up any stale containers
+        docker compose build          # Build all services
 
-    # Step 3: Wait for the Database to Be Ready
+    # Step 3: Debug Networking
+    - name: Debug Networking
+      run: docker compose run rspec ping -c 4 db
+
+    # Step 4: Wait for Database
     - name: Wait for Database
+      env:
+        GPGC_API_DATABASE_USERNAME: gpgc_api
+        GPGC_API_DATABASE_HOST: db
       run: |
-        echo "Waiting for database to be ready..."
-        docker compose run rspec bash -c "until pg_isready -h db -U $GPGC_API_DATABASE_USERNAME; do sleep 1; done"
+        echo "Waiting for the database to be ready..."
+        docker compose run rspec bash -c "until pg_isready -h $GPGC_API_DATABASE_HOST -U $GPGC_API_DATABASE_USERNAME --timeout=5; do sleep 5; done"
 
-    # Step 4: Prepare Test Database
+    # Step 5: Prepare Test Database
     - name: Prepare Test Database
       env:
         GPGC_API_DATABASE_USERNAME: gpgc_api
@@ -47,7 +53,7 @@ jobs:
         docker compose run rspec rails db:create
         docker compose run rspec rails db:migrate
 
-    # Step 5: Run Tests
+    # Step 6: Run Tests
     - name: Run Tests
       env:
         GPGC_API_DATABASE_USERNAME: gpgc_api
@@ -56,7 +62,7 @@ jobs:
         GPGC_API_DATABASE_HOST: db
       run: docker compose run rspec
 
-    # Step 6: Tear Down Docker
+    # Step 7: Tear Down Docker
     - name: Tear Down
       if: always()
       run: docker compose down --volumes
