@@ -28,8 +28,9 @@ jobs:
         docker compose down --volumes
         docker compose build          
 
-
-
+    # Extra Step: print GPGC_API variables
+    - name: Debug Environment Variables
+      run: docker compose run rspec bash -c "printenv | grep GPGC_API"
 
     # Step 3: Prepare Test Database
     - name: Prepare Test Database
