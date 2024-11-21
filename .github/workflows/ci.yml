@@ -18,11 +18,11 @@ jobs:
         ports:
           - 5432:5432
         env:
-          POSTGRES_USER: postgres
-          POSTGRES_PASSWORD: password
-          POSTGRES_DB: test_db
+          POSTGRES_USER: gpgc_api
+          POSTGRES_PASSWORD: 1310gpgc
+          POSTGRES_DB: gpgc_api_development
         options: >-
-          --health-cmd="pg_isready -U postgres"
+          --health-cmd="pg_isready -U gpgc_api"
           --health-interval=10s
           --health-timeout=5s
           --health-retries=5
@@ -39,6 +39,19 @@ jobs:
         ruby-version: 3.1.0 # Adjust for your app's Ruby version
         bundler-cache: true
 
+    # Set environment variables
+    - name: Set Environment Variables
+      run: echo "RAILS_ENV=development" >> $GITHUB_ENV
+    - name: Set App Configuration
+      env:
+        GPGC_API_DATABASE_HOST: db
+        GPGC_API_DATABASE_NAME: gpgc_api_development
+        GPGC_API_DATABASE_USERNAME: gpgc_api
+        GPGC_API_DATABASE_PASSWORD: 1310gpgc
+        GPGC_API_APP_PORT: 3000
+        SECRET_KEY_BASE: dfb57b91345c6b300b543418ee1710feac0d4e68405032d39926b3bc4433b68c7f20ab8b17338449e4cb5d51e4b6761438711ed7f4ceec67762700256970fd44
+      run: echo "Environment variables set"
+
     # Install dependencies
     - name: Install Gems
       run: bundle install
@@ -46,10 +59,10 @@ jobs:
     # Set up Database
     - name: Set up Database
       env:
-        DATABASE_URL: postgres://postgres:password@localhost:5432/test_db
+        DATABASE_URL: postgres://gpgc_api:1310gpgc@db:5432/gpgc_api_development
       run: |
-        bin/rails db:create RAILS_ENV=test
-        bin/rails db:migrate RAILS_ENV=test
+        bin/rails db:create RAILS_ENV=development
+        bin/rails db:migrate RAILS_ENV=development
 
     # Run Tests
     - name: Run Tests
