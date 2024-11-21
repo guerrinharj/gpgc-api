@@ -1,0 +1,56 @@
+name: Continuous Integration
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    services:
+      db:
+        image: postgres:13
+        ports:
+          - 5432:5432
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: password
+          POSTGRES_DB: test_db
+        options: >-
+          --health-cmd="pg_isready -U postgres"
+          --health-interval=10s
+          --health-timeout=5s
+          --health-retries=5
+
+    steps:
+    # Check out the repository
+    - name: Checkout Code
+      uses: actions/checkout@v3
+
+    # Set up Ruby
+    - name: Set up Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: 3.1 # Adjust for your app's Ruby version
+        bundler-cache: true
+
+    # Install dependencies
+    - name: Install Gems
+      run: bundle install
+
+    # Set up Database
+    - name: Set up Database
+      env:
+        DATABASE_URL: postgres://postgres:password@localhost:5432/test_db
+      run: |
+        bin/rails db:create RAILS_ENV=test
+        bin/rails db:migrate RAILS_ENV=test
+
+    # Run Tests
+    - name: Run Tests
+      run: bin/rails test
