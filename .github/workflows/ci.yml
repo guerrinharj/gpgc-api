@@ -41,7 +41,7 @@ jobs:
     # Step 3: Set up the database
     - name: Prepare Test Database
       env:
-        DATABASE_URL: "postgresql://gpgc_api:1310gpgc@localhost:5433/gpgc_api_test" # Match the updated port
+        DATABASE_URL: "postgresql://gpgc_api:1310gpgc@localhost:5433/gpgc_api_test" # Ensure proper formatting
       run: |
         docker compose run web rails db:environment:set RAILS_ENV=test
         docker compose run web rails db:create
@@ -50,10 +50,10 @@ jobs:
     # Step 4: Run Tests
     - name: Run Tests
       env:
-        DATABASE_URL: "postgresql://gpgc_api:1310gpgc@localhost:5433/gpgc_api_test" # Match the updated port
+        DATABASE_URL: "postgresql://gpgc_api:1310gpgc@localhost:5433/gpgc_api_test" # Ensure proper formatting
       run: docker compose run rspec
 
     # Step 5: Tear Down Docker
     - name: Tear Down
       if: always()
-      run: docker-compose down --volumes
+      run: docker compose down --volumes
