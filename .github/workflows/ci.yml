@@ -20,7 +20,7 @@ jobs:
         env:
           POSTGRES_USER: gpgc_api
           POSTGRES_PASSWORD: 1310gpgc
-          POSTGRES_DB: gpgc_api_development
+          POSTGRES_DB: gpgc_api_test
         options: >-
           --health-cmd="pg_isready -U gpgc_api"
           --health-interval=10s
@@ -28,63 +28,28 @@ jobs:
           --health-retries=5
 
     steps:
-    # Check out the repository
+    # Step 1: Check out the repository
     - name: Checkout Code
       uses: actions/checkout@v3
 
-    # Set up Ruby
-    - name: Set up Ruby
-      uses: ruby/setup-ruby@v1
-      with:
-        ruby-version: 3.1.0 # Adjust for your app's Ruby version
-        bundler-cache: true
-
-    # Set up Environment Variables
-    - name: Set Environment Variables
-      env:
-        RAILS_ENV: development
-        GPGC_API_DATABASE_HOST: localhost
-        GPGC_API_DATABASE_NAME: gpgc_api_development
-        GPGC_API_DATABASE_USERNAME: gpgc_api
-        GPGC_API_DATABASE_PASSWORD: 1310gpgc
-        GPGC_API_APP_PORT: 3000
-        SECRET_KEY_BASE: dfb57b91345c6b300b543418ee1710feac0d4e68405032d39926b3bc4433b68c7f20ab8b17338449e4cb5d51e4b6761438711ed7f4ceec67762700256970fd44
-      run: echo "Environment variables set"
-
-    # Install dependencies
-    - name: Install Gems
-      run: bundle install
-
-    # Set up Database
-    - name: Set up Database
-      env:
-        RAILS_ENV: development
-        GPGC_API_DATABASE_HOST: localhost
-        GPGC_API_DATABASE_NAME: gpgc_api_development
-        GPGC_API_DATABASE_USERNAME: gpgc_api
-        GPGC_API_DATABASE_PASSWORD: 1310gpgc
+    # Step 2: Set up Docker Compose
+    - name: Set up Docker Compose
       run: |
-        bin/rails db:create
-        bin/rails db:migrate
+        docker-compose down --volumes # Ensure no stale containers or volumes
+        docker-compose build          # Build Docker images
 
-    # Run Tests
-    - name: Set up Test Database
-      env:
-        RAILS_ENV: test
-        GPGC_API_DATABASE_HOST: localhost
-        GPGC_API_DATABASE_NAME: gpgc_api_test
-        GPGC_API_DATABASE_USERNAME: gpgc_api
-        GPGC_API_DATABASE_PASSWORD: 1310gpgc
+    # Step 3: Prepare Test Environment
+    - name: Prepare Test Database
       run: |
-        bin/rails db:create
-        bin/rails db:migrate
+        docker-compose run web rails db:environment:set RAILS_ENV=test
+        docker-compose run web rails db:create
+        docker-compose run web rails db:migrate
 
+    # Step 4: Run Tests
     - name: Run Tests
-      env:
-        RAILS_ENV: test
-        GPGC_API_DATABASE_HOST: localhost
-        GPGC_API_DATABASE_NAME: gpgc_api_test
-        GPGC_API_DATABASE_USERNAME: gpgc_api
-        GPGC_API_DATABASE_PASSWORD: 1310gpgc
-      run: bin/rails test
+      run: docker-compose run rspec
 
+    # Step 5: Clean Up
+    - name: Tear Down
+      if: always()
+      run: docker-compose down --volumes
