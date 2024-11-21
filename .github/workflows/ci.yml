@@ -29,16 +29,9 @@ jobs:
         docker compose build          # Build all services
 
 
-    # Step 3: Wait for Database
-    - name: Wait for Database
-      env:
-        GPGC_API_DATABASE_USERNAME: gpgc_api
-        GPGC_API_DATABASE_HOST: db
-      run: |
-        echo "Waiting for the database to be ready..."
-        docker compose run rspec bash -c "until pg_isready -h $GPGC_API_DATABASE_HOST -U $GPGC_API_DATABASE_USERNAME --timeout=5; do sleep 5; done"
 
-    # Step 4: Prepare Test Database
+
+    # Step 3: Prepare Test Database
     - name: Prepare Test Database
       env:
         GPGC_API_DATABASE_USERNAME: gpgc_api
@@ -50,7 +43,7 @@ jobs:
         docker compose run rspec rails db:create
         docker compose run rspec rails db:migrate
 
-    # Step 5: Run Tests
+    # Step 4: Run Tests
     - name: Run Tests
       env:
         GPGC_API_DATABASE_USERNAME: gpgc_api
@@ -59,7 +52,7 @@ jobs:
         GPGC_API_DATABASE_HOST: db
       run: docker compose run rspec
 
-    # Step 6: Tear Down Docker
+    # Step 5: Tear Down Docker
     - name: Tear Down
       if: always()
       run: docker compose down --volumes
