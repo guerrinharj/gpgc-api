@@ -68,11 +68,23 @@ jobs:
         bin/rails db:migrate
 
     # Run Tests
+    - name: Set up Test Database
+      env:
+        RAILS_ENV: test
+        GPGC_API_DATABASE_HOST: localhost
+        GPGC_API_DATABASE_NAME: gpgc_api_test
+        GPGC_API_DATABASE_USERNAME: gpgc_api
+        GPGC_API_DATABASE_PASSWORD: 1310gpgc
+      run: |
+        bin/rails db:create
+        bin/rails db:migrate
+
     - name: Run Tests
       env:
-        RAILS_ENV: development
+        RAILS_ENV: test
         GPGC_API_DATABASE_HOST: localhost
-        GPGC_API_DATABASE_NAME: gpgc_api_development
+        GPGC_API_DATABASE_NAME: gpgc_api_test
         GPGC_API_DATABASE_USERNAME: gpgc_api
         GPGC_API_DATABASE_PASSWORD: 1310gpgc
       run: bin/rails test
+
