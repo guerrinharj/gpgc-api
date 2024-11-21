@@ -16,7 +16,7 @@ jobs:
       db:
         image: postgres:13
         ports:
-          - 5433:5432 # Map the database to port 5433 to avoid conflicts
+          - 5432:5432
         env:
           POSTGRES_USER: gpgc_api
           POSTGRES_PASSWORD: 1310gpgc
@@ -41,7 +41,7 @@ jobs:
     # Step 3: Set up the database
     - name: Prepare Test Database
       env:
-        DATABASE_URL: "postgresql://gpgc_api:1310gpgc@localhost:5433/gpgc_api_test" # Ensure proper formatting
+        DATABASE_URL: "postgresql://gpgc_api:1310gpgc@localhost:5432/gpgc_api_test" # Ensure proper formatting
       run: |
         docker compose run web rails db:environment:set RAILS_ENV=test
         docker compose run web rails db:create
@@ -50,7 +50,7 @@ jobs:
     # Step 4: Run Tests
     - name: Run Tests
       env:
-        DATABASE_URL: "postgresql://gpgc_api:1310gpgc@localhost:5433/gpgc_api_test" # Ensure proper formatting
+        DATABASE_URL: "postgresql://gpgc_api:1310gpgc@localhost:5432/gpgc_api_test" # Ensure proper formatting
       run: docker compose run rspec
 
     # Step 5: Tear Down Docker
