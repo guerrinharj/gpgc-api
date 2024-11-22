@@ -37,6 +37,7 @@ jobs:
         GPGC_API_DATABASE_NAME: gpgc_api_test
         GPGC_API_DATABASE_HOST: db
       run: |
+        docker compose exec rspec rails db:drop RAILS_ENV=test
         docker compose exec rspec rails db:create RAILS_ENV=test
         docker compose exec rspec rails db:migrate RAILS_ENV=test
         docker compose exec rspec rails user:create RAILS_ENV=test
