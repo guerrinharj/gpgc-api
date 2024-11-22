@@ -39,10 +39,10 @@ jobs:
         docker compose run rspec rails db:create RAILS_ENV=test
         docker compose run rspec rails db:migrate RAILS_ENV=test
         docker compose run rspec rails db:seed RAILS_ENV=test
-        docker compose run rspec rake user:create RAILS_ENV=test
+        docker compose run rspec rails user:create RAILS_ENV=test
         docker compose run rspec rails db:seed RAILS_ENV=test
-        docker compose run rspec rake release:create_songs RAILS_ENV=test
-        docker compose run rspec rake release:update_covers RAILS_ENV=test
+        docker compose run rspec rails release:create_songs RAILS_ENV=test
+        docker compose run rspec rails release:update_covers RAILS_ENV=test
 
 
     # Step 4: Run Tests
