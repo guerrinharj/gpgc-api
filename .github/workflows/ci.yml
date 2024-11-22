@@ -39,14 +39,9 @@ jobs:
         docker compose run rspec rails db:create RAILS_ENV=test
         docker compose run rspec rails db:migrate RAILS_ENV=test
 
-    # # Step 4: Run Tests
-    # - name: Run Tests
-    #   env:
-    #     GPGC_API_DATABASE_USERNAME: gpgc_api
-    #     GPGC_API_DATABASE_PASSWORD: 1310gpgc
-    #     GPGC_API_DATABASE_NAME: gpgc_api_test
-    #     GPGC_API_DATABASE_HOST: db
-    #   run: docker compose run rspec
+    # Step 4: Run Tests
+    - name: Run Tests
+      run: docker compose run rspec
 
     # Step 5: Tear Down Docker
     - name: Tear Down
