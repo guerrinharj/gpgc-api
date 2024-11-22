@@ -36,9 +36,8 @@ jobs:
         GPGC_API_DATABASE_NAME: gpgc_api_test
         GPGC_API_DATABASE_HOST: db
       run: |
-        docker compose run rspec rails db:create RAILS_ENV=test
-        docker compose run rspec rails db:migrate RAILS_ENV=test
-        docker compose run rspec rails db:seed
+        docker compose run rails db:create RAILS_ENV=test
+        docker compose run rails db:migrate RAILS_ENV=test
 
 
     # Step 4: Run Tests
