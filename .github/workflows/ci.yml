@@ -45,7 +45,7 @@ jobs:
 
     # Step 4: Run Tests
     - name: Run Tests
-      run: docker compose exec rspec rspec
+      run: docker compose run rspec
 
     # Step 5: Tear Down Docker
     - name: Tear Down
