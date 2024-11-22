@@ -44,7 +44,7 @@ jobs:
 
     # Step 4: Run Tests
     - name: Run Tests
-      run: docker compose run rspec
+      run: docker compose run rspec RAILS_ENV=test
 
     # Step 5: Tear Down Docker
     - name: Tear Down
