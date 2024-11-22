@@ -38,6 +38,8 @@ jobs:
       run: |
         docker compose run rspec rails db:create RAILS_ENV=test
         docker compose run rspec rails db:migrate RAILS_ENV=test
+        docker compose run rspec rails db:seed RAILS_ENV=test
+
 
     # Step 4: Run Tests
     - name: Run Tests
