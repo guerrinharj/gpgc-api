@@ -3,6 +3,8 @@ Rails.application.routes.draw do
   mount Rswag::Api::Engine => '/api-docs'
   get '/health', to: proc { [200, {}, ['Healthy']] }
 
+  root to: redirect('/api-docs')
+
   
   namespace :api, defaults: { format: :json } do
     namespace :v1 do
