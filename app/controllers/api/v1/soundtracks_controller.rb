@@ -57,16 +57,6 @@ class Api::V1::SoundtracksController < ApplicationController
   end
 
   def authorize_user
-    username = request.headers['Username']
-    password = request.headers['Password']
-    
-    user = User.find_by(username: username)
-
-    if user.nil? || !user.authenticate(password)
-      render json: { error: 'Unauthorized' }, status: :unauthorized
-      return
-    end
-
-    render json: { error: 'Forbidden' }, status: :forbidden unless current_user == user
+    render json: { error: 'Forbidden' }, status: :forbidden unless current_user
   end
 end
