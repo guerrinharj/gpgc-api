@@ -1,6 +1,6 @@
 FactoryBot.define do
     factory :artist do
-        name { "John Doe" }
+        sequence(:name) { |n| "John Doe #{n}" } # Ensures unique names
         group { false }
-    end 
+    end
 end

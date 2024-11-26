@@ -5,7 +5,7 @@ class Artist < ApplicationRecord
 
   before_save :generate_slug
   
-  validates :name, presence: true
+  validates :name, presence: true, uniqueness: true
 
   private
 
