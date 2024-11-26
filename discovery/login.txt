@@ -1,0 +1,6 @@
+curl --location 'localhost:3000/login' \
+--header 'Content-Type: application/json' \
+--data '{
+    "username": "username",
+    "password": "password"
+}'

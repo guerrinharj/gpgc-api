@@ -1,0 +1,6 @@
+curl --location --request DELETE 'localhost:3000/logout' \
+--header 'Content-Type: application/json' \
+--data '{
+    "username": "username",
+    "password": "password"
+}'
