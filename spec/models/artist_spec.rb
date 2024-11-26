@@ -19,4 +19,12 @@ RSpec.describe Artist, type: :model do
         expect(artist).not_to be_valid
         expect(artist.errors[:user]).to include("must exist")
     end
+
+    it "is invalid with a duplicate name" do
+        create(:artist, name: "UniqueName", user: user)
+        duplicate_artist = build(:artist, name: "UniqueName", user: user)
+    
+        expect(duplicate_artist).not_to be_valid
+        expect(duplicate_artist.errors[:name]).to include("has already been taken")
+    end
 end
