@@ -1,4 +1,6 @@
 class SessionsController < ApplicationController
+    skip_before_action :require_authentication, only: [:create, :destroy]
+
     def create
         user = User.find_by(username: params[:username])
         if user && user.authenticate(params[:password])
@@ -10,12 +12,12 @@ class SessionsController < ApplicationController
     end
 
     def destroy
-        user = User.find_by(auth_token: request.headers['Authorization'])
-            if user
-                user.update(auth_token: nil)
-                render json: { message: 'Logged out' }, status: :ok
-            else
-                render json: { error: 'Invalid token' }, status: :unauthorized
-            end
+        user = User.find_by(username: params[:username]) # Use username to identify the user
+        if user
+            user.update(auth_token: nil)
+            render json: { message: 'Logged out' }, status: :ok
+        else
+            render json: { error: 'User not found' }, status: :not_found
         end
     end
+end
