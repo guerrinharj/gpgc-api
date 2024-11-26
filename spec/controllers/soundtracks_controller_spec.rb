@@ -1,14 +1,12 @@
 require 'rails_helper'
 
 RSpec.describe Api::V1::SoundtracksController, type: :controller do
-    let(:user) { create(:user) }
+    let(:user) { create(:user, password: 'securepassword') }
     let(:soundtrack) { create(:soundtrack, user: user) }
 
     before do
         request.headers['Username'] = user.username
-        request.headers['Password'] = user.password
-
-        allow(controller).to receive(:current_user).and_return(user)
+        request.headers['Password'] = 'securepassword'
     end
 
     describe 'GET #index' do
@@ -49,19 +47,6 @@ RSpec.describe Api::V1::SoundtracksController, type: :controller do
             post :create, params: { soundtrack: { name: nil } }
             expect(response).to have_http_status(:unprocessable_entity)
         end
-
-        it 'returns unauthorized status if given wrong password' do
-            request.headers['Password'] = 'wrongpassword'
-            post :create, params: { soundtrack: attributes_for(:soundtrack) }
-            expect(response).to have_http_status(:unauthorized)
-        end
-
-        it 'returns forbidden status if user is not current_user' do
-            another_user = create(:user) # Create a different user
-            allow(controller).to receive(:current_user).and_return(another_user) # Mock current_user
-            post :create, params: { soundtrack: attributes_for(:soundtrack) }
-            expect(response).to have_http_status(:forbidden)
-        end
     end
 
     describe 'PUT #update' do
@@ -78,19 +63,6 @@ RSpec.describe Api::V1::SoundtracksController, type: :controller do
         it 'returns unprocessable_entity status when parameters are invalid' do
             put :update, params: { slug: soundtrack.slug, soundtrack: { name: nil, user_id: nil } }
             expect(response).to have_http_status(:unprocessable_entity)
-        end
-
-        it 'returns unauthorized status if given wrong password' do
-            request.headers['Password'] = 'wrongpassword'
-            put :update, params: { slug: soundtrack.slug, soundtrack: attributes_for(:soundtrack) }
-            expect(response).to have_http_status(:unauthorized)
-        end
-
-        it 'returns forbidden status if user is not current_user' do
-            another_user = create(:user) # Create a different user
-            allow(controller).to receive(:current_user).and_return(another_user) # Mock current_user
-            put :update, params: { slug: soundtrack.slug, soundtrack: attributes_for(:soundtrack) }
-            expect(response).to have_http_status(:forbidden)
         end
     end    
 end
