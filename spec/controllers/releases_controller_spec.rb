@@ -58,7 +58,8 @@ RSpec.describe Api::V1::ReleasesController, type: :controller do
         end
 
         it 'returns forbidden status if user is not current_user' do
-            allow(controller).to receive(:current_user).and_call_original
+            another_user = create(:user) # Create a different user
+            allow(controller).to receive(:current_user).and_return(another_user) # Mock current_user
             post :create, params: { release: attributes_for(:release) }
             expect(response).to have_http_status(:forbidden)
         end
@@ -87,7 +88,8 @@ RSpec.describe Api::V1::ReleasesController, type: :controller do
         end
 
         it 'returns forbidden status if user is not current_user' do
-            allow(controller).to receive(:current_user).and_call_original
+            another_user = create(:user) # Create a different user
+            allow(controller).to receive(:current_user).and_return(another_user) # Mock current_user
             put :update, params: { slug: release.slug, release: attributes_for(:release) }
             expect(response).to have_http_status(:forbidden)
         end

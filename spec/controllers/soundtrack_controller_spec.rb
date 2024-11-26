@@ -57,7 +57,8 @@ RSpec.describe Api::V1::SoundtracksController, type: :controller do
         end
 
         it 'returns forbidden status if user is not current_user' do
-            allow(controller).to receive(:current_user).and_call_original
+            another_user = create(:user) # Create a different user
+            allow(controller).to receive(:current_user).and_return(another_user) # Mock current_user
             post :create, params: { soundtrack: attributes_for(:soundtrack) }
             expect(response).to have_http_status(:forbidden)
         end
@@ -86,7 +87,8 @@ RSpec.describe Api::V1::SoundtracksController, type: :controller do
         end
 
         it 'returns forbidden status if user is not current_user' do
-            allow(controller).to receive(:current_user).and_call_original
+            another_user = create(:user) # Create a different user
+            allow(controller).to receive(:current_user).and_return(another_user) # Mock current_user
             put :update, params: { slug: soundtrack.slug, soundtrack: attributes_for(:soundtrack) }
             expect(response).to have_http_status(:forbidden)
         end
