@@ -1,6 +1,7 @@
 class Api::V1::ArtistsController < ApplicationController
   before_action :set_artist, only: [:show, :update, :destroy]
   before_action :authorize_user, only: [:create, :update, :destroy]
+  skip_before_action :require_authentication, only: [:index, :show]
 
   def index
     @artists = Artist.all
