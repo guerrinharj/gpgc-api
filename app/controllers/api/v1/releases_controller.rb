@@ -15,7 +15,9 @@ class Api::V1::ReleasesController < ApplicationController
   def create
     release_attributes = release_params.to_h.deep_symbolize_keys
 
-    @release = Release.new(release_attributes.merge(user: current_user))
+    artist = Artist.find_by(name: release_attributes[:artist_name])
+
+    @release = Release.new(release_attributes.merge(user: current_user, artist: artist))
     if @release.save
       render json: @release, status: :created
     else
