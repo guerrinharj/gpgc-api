@@ -8,6 +8,7 @@ class Release < ApplicationRecord
   attribute :links, :json, default: {}
 
   before_save :generate_slug
+  after_save :create_songs
 
   serialize :tracks, Array
 
@@ -29,5 +30,26 @@ class Release < ApplicationRecord
 
   def generate_slug
     self.slug = name.parameterize if name.present?
+  end
+
+  def create_songs
+    return unless tracks.present?
+
+    tracks.each do |track|
+      name = track[:name]
+      url = track[:url]
+
+      song = songs.create(
+        name: name,
+        artist: artist,
+        url: url
+      )
+
+      if song.persisted?
+        Rails.logger.info "Created song: '#{song.name}' with slug '#{song.slug}' for release '#{name}'"
+      else
+        Rails.logger.info "Song already exists: '#{name}'"
+      end
+    end
   end
 end

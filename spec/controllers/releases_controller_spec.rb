@@ -42,7 +42,7 @@ RSpec.describe Api::V1::ReleasesController, type: :controller do
 
     describe 'POST #create' do
         it 'returns success if release is created' do
-            post :create, params: { release: attributes_for(:release).merge(artist_id: artist.id) }
+            post :create, params: { release: attributes_for(:release).merge(artist_id: artist.id, artist_name: artist.name) }
             expect(response).to have_http_status(:created)
         end
 
