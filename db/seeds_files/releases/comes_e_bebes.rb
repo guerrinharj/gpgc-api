@@ -11,8 +11,8 @@ Release.find_or_create_by!(
   release_date: Date.new(2023, 9, 2),
   format: ["Streaming"],
   tracks: [
-    { name: "Choque Térmico", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/COMES%20%26%20BEBES/Choque%20Te%CC%81rmico/Comes%20%26%20Bebes%20-%20Choque%20T%C3%A9rmico%20-%2001%20Choque%20T%C3%A9rmico.mp3" },
-    { name: "Sucesso Sexual", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/COMES%20%26%20BEBES/Choque%20Te%CC%81rmico/Comes%20%26%20Bebes%20-%20Choque%20T%C3%A9rmico%20-%2002%20Sucesso%20Sexual.mp3" }
+    { name: "Choque Térmico", url: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/COMES%20%26%20BEBES/Choque%20Te%CC%81rmico/Comes%20%26%20Bebes%20-%20Choque%20T%C3%A9rmico%20-%2001%20Choque%20T%C3%A9rmico.mp3" },
+    { name: "Sucesso Sexual", url: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/COMES%20%26%20BEBES/Choque%20Te%CC%81rmico/Comes%20%26%20Bebes%20-%20Choque%20T%C3%A9rmico%20-%2002%20Sucesso%20Sexual.mp3" }
   ],
   credits: {
     "Luisa Arraes": "vocals",

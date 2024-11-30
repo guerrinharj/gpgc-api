@@ -7,13 +7,13 @@ Release.find_or_create_by!(
   name: "De Rosinha Falsificado Em Feirinhas Cinzentas",
   slug: 'de-rosinha-falsificado-em-feirinhas-cinzentas',
   label: ["TOC"],
-  cover: ["https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GUERRINHA/De%20Rosinha%20Falsificado%20Em%20Feirinhas%20Cinzentas/De%20Rosinha%20Falsificado%20Para%20Feirinhas%20Cinzentas/cover.jpg"],
+  cover: ["https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/De%20Rosinha%20Falsificado%20Em%20Feirinhas%20Cinzentas/De%20Rosinha%20Falsificado%20Para%20Feirinhas%20Cinzentas/cover.jpg"],
   release_type: "EP",
   release_date: Date.new(2012, 10, 10),
   format: ["digital download"],
   tracks: [
-    { name: "O Amadora de Confetees", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GUERRINHA/De%20Rosinha%20Falsificado%20Em%20Feirinhas%20Cinzentas/De%20Rosinha%20Falsificado%20Para%20Feirinhas%20Cinzentas/Guerrinha%20-%20De%20Rosinha%20Falsificado%20Para%20Feirinhas%20Cinzentas%20(Os%20Pequenos%20Tijolos%20Da%20House%20Music)%20-%2001%20O%20Amadora%20De%20Confetees.mp3" },
-    { name: "A Catador de Smodees", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GUERRINHA/De%20Rosinha%20Falsificado%20Em%20Feirinhas%20Cinzentas/De%20Rosinha%20Falsificado%20Para%20Feirinhas%20Cinzentas/Guerrinha%20-%20De%20Rosinha%20Falsificado%20Para%20Feirinhas%20Cinzentas%20(Os%20Pequenos%20Tijolos%20Da%20House%20Music)%20-%2002%20A%20Catador%20De%20Smodees.mp3" }
+    { name: "O Amadora de Confetees", url: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/De%20Rosinha%20Falsificado%20Em%20Feirinhas%20Cinzentas/De%20Rosinha%20Falsificado%20Para%20Feirinhas%20Cinzentas/Guerrinha%20-%20De%20Rosinha%20Falsificado%20Para%20Feirinhas%20Cinzentas%20(Os%20Pequenos%20Tijolos%20Da%20House%20Music)%20-%2001%20O%20Amadora%20De%20Confetees.mp3" },
+    { name: "A Catador de Smodees", url: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/De%20Rosinha%20Falsificado%20Em%20Feirinhas%20Cinzentas/De%20Rosinha%20Falsificado%20Para%20Feirinhas%20Cinzentas/Guerrinha%20-%20De%20Rosinha%20Falsificado%20Para%20Feirinhas%20Cinzentas%20(Os%20Pequenos%20Tijolos%20Da%20House%20Music)%20-%2002%20A%20Catador%20De%20Smodees.mp3" }
   ],
     credits: {
     "Gabriel Guerra": "keyboards, sampler, drum machine",
@@ -37,16 +37,16 @@ Release.find_or_create_by!(
   name: "Rua Sorocaba",
   slug: 'rua-sorocaba',
   label: ["40% Foda/Maneirissimo"],
-  cover: ["https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GUERRINHA/Rua%20Sorocaba/cover.jpg"],
+  cover: ["https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Rua%20Sorocaba/cover.jpg"],
   release_type: "EP",
   release_date: Date.new(2013, 8, 7),
   format: ["CD", "digital download", "streaming"],
   tracks: [
-    { name: "Estamos Cascateando Fraclassicos Com O Valor Comunal", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GUERRINHA/Rua%20Sorocaba/DJ%20Guerrinha%20-%20Rua%20Sorocaba%20-%2001%20Estamos%20Cascateando%20Fraclassicos%20Com%20O%20Valor%20Comunal.mp3" },
-    { name: "Logo Quando Eu Achava Que Tinha O Esforço, As Amiguinhas Relembram A Classe", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GUERRINHA/Rua%20Sorocaba/DJ%20Guerrinha%20-%20Rua%20Sorocaba%20-%2002%20Logo%20Quando%20Eu%20Achava%20Que%20Tinha%20O%20Esforc%CC%A7o%2C%20As%20Amiguinhas%20Relembram%20A%20Classe.mp3" },
-    { name: "Pra Que Ter O Alvará Se Você Cega Eles Não Entendem", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GUERRINHA/Rua%20Sorocaba/DJ%20Guerrinha%20-%20Rua%20Sorocaba%20-%2003%20Pra%20Que%20Ter%20O%20Alvara%CC%81%20Se%20Voce%CC%82%20Cega%20Eles%20Com%20Luz%20Estrobo-.mp3" },
-    { name: "Meditações Sobre A Peregrinação Alfa Bar Até Império D'Amoedo", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GUERRINHA/Rua%20Sorocaba/DJ%20Guerrinha%20-%20Rua%20Sorocaba%20-%2004%20Meditac%CC%A7o%CC%83es%20Sobre%20A%20Peregrinac%CC%A7a%CC%83o%20Alfa%20Bar%20Ate%CC%81%20Impe%CC%81rio%20D'Amoedo.mp3" },
-    { name: "Como Você Se Remenda Com Um 585 Vazio?", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GUERRINHA/Rua%20Sorocaba/DJ%20Guerrinha%20-%20Rua%20Sorocaba%20-%2005%20Como%20Voce%CC%82%20Se%20Remenda%20Com%20Um%20585%20Vazio-.mp3" }
+    { name: "Estamos Cascateando Fraclassicos Com O Valor Comunal", url: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Rua%20Sorocaba/DJ%20Guerrinha%20-%20Rua%20Sorocaba%20-%2001%20Estamos%20Cascateando%20Fraclassicos%20Com%20O%20Valor%20Comunal.mp3" },
+    { name: "Logo Quando Eu Achava Que Tinha O Esforço, As Amiguinhas Relembram A Classe", url: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Rua%20Sorocaba/DJ%20Guerrinha%20-%20Rua%20Sorocaba%20-%2002%20Logo%20Quando%20Eu%20Achava%20Que%20Tinha%20O%20Esforc%CC%A7o%2C%20As%20Amiguinhas%20Relembram%20A%20Classe.mp3" },
+    { name: "Pra Que Ter O Alvará Se Você Cega Eles Não Entendem", url: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Rua%20Sorocaba/DJ%20Guerrinha%20-%20Rua%20Sorocaba%20-%2003%20Pra%20Que%20Ter%20O%20Alvara%CC%81%20Se%20Voce%CC%82%20Cega%20Eles%20Com%20Luz%20Estrobo-.mp3" },
+    { name: "Meditações Sobre A Peregrinação Alfa Bar Até Império D'Amoedo", url: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Rua%20Sorocaba/DJ%20Guerrinha%20-%20Rua%20Sorocaba%20-%2004%20Meditac%CC%A7o%CC%83es%20Sobre%20A%20Peregrinac%CC%A7a%CC%83o%20Alfa%20Bar%20Ate%CC%81%20Impe%CC%81rio%20D'Amoedo.mp3" },
+    { name: "Como Você Se Remenda Com Um 585 Vazio?", url: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Rua%20Sorocaba/DJ%20Guerrinha%20-%20Rua%20Sorocaba%20-%2005%20Como%20Voce%CC%82%20Se%20Remenda%20Com%20Um%20585%20Vazio-.mp3" }
   ],
     credits: {
     "Gabriel Guerra": "keyboards, sampler, drum machine",
@@ -69,15 +69,15 @@ Release.find_or_create_by!(
   name: "O Pedigree Histórico",
   slug: 'o-pedigree-historico',
   label: ["40% Foda/Maneirissimo"],
-  cover: ["https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GUERRINHA/O%20Pedigree%20Histo%CC%81rico/cover.jpg"],
+  cover: ["https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/O%20Pedigree%20Histo%CC%81rico/cover.jpg"],
   release_type: "EP",
   release_date: Date.new(2013, 8, 7),
   format: ["CD", "cassette", "digital download"],
   tracks: [
-    { name: "Quem Liga", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GUERRINHA/O%20Pedigree%20Histo%CC%81rico/Guerrinha%20-%20O%20Pedigree%20Hist%C3%B3rico%20-%2001%20Quem%20Liga.mp3"},
-    { name: "Para As", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GUERRINHA/O%20Pedigree%20Histo%CC%81rico/Guerrinha%20-%20O%20Pedigree%20Hist%C3%B3rico%20-%2002%20Para%20As.mp3"},
-    { name: "Misérias do DJ", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GUERRINHA/O%20Pedigree%20Histo%CC%81rico/Guerrinha%20-%20O%20Pedigree%20Hist%C3%B3rico%20-%2003%20Mis%C3%A9rias%20do%20DJ.mp3"},
-    { name: "? (Villadas Guerras)", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GUERRINHA/O%20Pedigree%20Histo%CC%81rico/Guerrinha%20-%20O%20Pedigree%20Hist%C3%B3rico%20-%2004%20-%20(Villadas%20Guerras).mp3"},
+    { name: "Quem Liga", url: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/O%20Pedigree%20Histo%CC%81rico/Guerrinha%20-%20O%20Pedigree%20Hist%C3%B3rico%20-%2001%20Quem%20Liga.mp3"},
+    { name: "Para As", url: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/O%20Pedigree%20Histo%CC%81rico/Guerrinha%20-%20O%20Pedigree%20Hist%C3%B3rico%20-%2002%20Para%20As.mp3"},
+    { name: "Misérias do DJ", url: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/O%20Pedigree%20Histo%CC%81rico/Guerrinha%20-%20O%20Pedigree%20Hist%C3%B3rico%20-%2003%20Mis%C3%A9rias%20do%20DJ.mp3"},
+    { name: "? (Villadas Guerras)", url: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/O%20Pedigree%20Histo%CC%81rico/Guerrinha%20-%20O%20Pedigree%20Hist%C3%B3rico%20-%2004%20-%20(Villadas%20Guerras).mp3"},
   ],
     credits: {
     "Gabriel Guerra": "keyboards, sampler, drum machine",
@@ -99,15 +99,15 @@ Release.find_or_create_by!(
   name: "Educação Bentes",
   slug: 'educacao-bentes',
   label: ["40% Foda/Maneirissimo"],
-  cover: ["https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GUERRINHA/Educac%CC%A7a%CC%83o%20Bentes/cover.jpg"],
+  cover: ["https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Educac%CC%A7a%CC%83o%20Bentes/cover.jpg"],
   release_type: "EP",
   release_date: Date.new(2014, 6, 11),
   format: ["CD", "digital download", "streaming"],
   tracks: [
-    { name: "Flautas Cosentino", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GUERRINHA/Educac%CC%A7a%CC%83o%20Bentes/Guerrinha%20-%20Educac%CC%A7a%CC%83o%20Bentes%20-%2001%20Flautas%20Cosentino.mp3"},
-    { name: "Dinastia Rebello", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GUERRINHA/Educac%CC%A7a%CC%83o%20Bentes/Guerrinha%20-%20Educac%CC%A7a%CC%83o%20Bentes%20-%2002%20Dinastia%20Rebello.mp3"},
-    { name: "Agropecuária Falcão", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GUERRINHA/Educac%CC%A7a%CC%83o%20Bentes/Guerrinha%20-%20Educac%CC%A7a%CC%83o%20Bentes%20-%2003%20Agropecua%CC%81ria%20Falca%CC%83o.mp3"},
-    { name: "Prado Junior (Taxi Safager)", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GUERRINHA/Educac%CC%A7a%CC%83o%20Bentes/Guerrinha%20-%20Educac%CC%A7a%CC%83o%20Bentes%20-%2004%20Prado%20Junior%20(Taxi%20Safager).mp3"}
+    { name: "Flautas Cosentino", url: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Educac%CC%A7a%CC%83o%20Bentes/Guerrinha%20-%20Educac%CC%A7a%CC%83o%20Bentes%20-%2001%20Flautas%20Cosentino.mp3"},
+    { name: "Dinastia Rebello", url: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Educac%CC%A7a%CC%83o%20Bentes/Guerrinha%20-%20Educac%CC%A7a%CC%83o%20Bentes%20-%2002%20Dinastia%20Rebello.mp3"},
+    { name: "Agropecuária Falcão", url: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Educac%CC%A7a%CC%83o%20Bentes/Guerrinha%20-%20Educac%CC%A7a%CC%83o%20Bentes%20-%2003%20Agropecua%CC%81ria%20Falca%CC%83o.mp3"},
+    { name: "Prado Junior (Taxi Safager)", url: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Educac%CC%A7a%CC%83o%20Bentes/Guerrinha%20-%20Educac%CC%A7a%CC%83o%20Bentes%20-%2004%20Prado%20Junior%20(Taxi%20Safager).mp3"}
   ],
     credits: {
     "Gabriel Guerra": "keyboards, sampler, drum machine",
@@ -129,19 +129,19 @@ Release.find_or_create_by!(
   artist_name: Artist.find_by(name: "Guerrinha").name,
   name: "Wagner",
   slug: 'wagner',
-  cover: ["https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GUERRINHA/Wagner/cover.png"],
+  cover: ["https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Wagner/cover.png"],
   release_type: "Album",
   release_date: Date.new(2018, 4, 25),
   format: ["CD", "digital download", "streaming", "vinyl"],
   tracks: [
-    { name: "Chalé", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GUERRINHA/Wagner/Guerrinha%20-%20Wagner%20-%2001%20Chale%CC%81.mp3"},
-    { name: "Edifício", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GUERRINHA/Wagner/Guerrinha%20-%20Wagner%20-%2002%20Edifi%CC%81cio.mp3"},
-    { name: "Gazebo", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GUERRINHA/Wagner/Guerrinha%20-%20Wagner%20-%2003%20Gazebo.mp3"},
-    { name: "Rancho", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GUERRINHA/Wagner/Guerrinha%20-%20Wagner%20-%2004%20Rancho.mp3"},
-    { name: "Auditório", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GUERRINHA/Wagner/Guerrinha%20-%20Wagner%20-%2005%20Audito%CC%81rio.mp3"},
-    { name: "Mirante", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GUERRINHA/Wagner/Guerrinha%20-%20Wagner%20-%2006%20Mirante.mp3"},
-    { name: "Bosque", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GUERRINHA/Wagner/Guerrinha%20-%20Wagner%20-%2007%20Bosque.mp3"},
-    { name: "Pomar", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GUERRINHA/Wagner/Guerrinha%20-%20Wagner%20-%2008%20Pomar.mp3"}
+    { name: "Chalé", url: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Wagner/Guerrinha%20-%20Wagner%20-%2001%20Chale%CC%81.mp3"},
+    { name: "Edifício", url: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Wagner/Guerrinha%20-%20Wagner%20-%2002%20Edifi%CC%81cio.mp3"},
+    { name: "Gazebo", url: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Wagner/Guerrinha%20-%20Wagner%20-%2003%20Gazebo.mp3"},
+    { name: "Rancho", url: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Wagner/Guerrinha%20-%20Wagner%20-%2004%20Rancho.mp3"},
+    { name: "Auditório", url: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Wagner/Guerrinha%20-%20Wagner%20-%2005%20Audito%CC%81rio.mp3"},
+    { name: "Mirante", url: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Wagner/Guerrinha%20-%20Wagner%20-%2006%20Mirante.mp3"},
+    { name: "Bosque", url: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Wagner/Guerrinha%20-%20Wagner%20-%2007%20Bosque.mp3"},
+    { name: "Pomar", url: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Wagner/Guerrinha%20-%20Wagner%20-%2008%20Pomar.mp3"}
   ],
     credits: {
     "Gabriel Guerra": "electric guitar, keyboards, saxophone, percussion, drums",
@@ -162,12 +162,12 @@ Release.find_or_create_by!(
   artist_name: Artist.find_by(name: "Guerrinha").name,
   name: "Apartamento",
   slug: 'apartamento',
-  cover: ["https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GUERRINHA/Apartamento/cover.jpg"],
+  cover: ["https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Apartamento/cover.jpg"],
   release_type: "Single",
   release_date: Date.new(2019, 4, 3),
   format: ["digital download", "streaming", "vinyl"],
   tracks: [
-    { name: "Apartamento", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GUERRINHA/Apartamento/Guerrinha%20-%20Apartamento%20-%2001%20Apartamento.mp3"}
+    { name: "Apartamento", url: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Apartamento/Guerrinha%20-%20Apartamento%20-%2001%20Apartamento.mp3"}
   ],
     credits: {
     "Gabriel Guerra": "keyboards, sampler",
@@ -188,13 +188,13 @@ Release.find_or_create_by!(
   artist_name: Artist.find_by(name: "Guerrinha").name,
   name: "Bodega / Docas",
   slug: 'bodega-docas',
-  cover: ["https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GUERRINHA/Bodega%20%3A%20Docas/cover.jpg"],
+  cover: ["https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Bodega%20%3A%20Docas/cover.jpg"],
   release_type: "Single",
   release_date: Date.new(2020, 7, 21),
   format: ["digital download", "streaming", "vinyl"],
   tracks: [
-    { name: "Bodega", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GUERRINHA/Bodega%20%3A%20Docas/Guerrinha%20-%20Bodega%20-%20Docas%20-%2001%20Bodega.mp3" },
-    { name: "Docas", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GUERRINHA/Bodega%20%3A%20Docas/Guerrinha%20-%20Bodega%20-%20Docas%20-%2002%20Docas.mp3" },
+    { name: "Bodega", url: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Bodega%20%3A%20Docas/Guerrinha%20-%20Bodega%20-%20Docas%20-%2001%20Bodega.mp3" },
+    { name: "Docas", url: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Bodega%20%3A%20Docas/Guerrinha%20-%20Bodega%20-%20Docas%20-%2002%20Docas.mp3" },
   ],
     credits: {
     "Gabriel Guerra": "bass guitar, keyboards, drums, saxophone",
@@ -216,12 +216,12 @@ Release.find_or_create_by!(
   artist_name: Artist.find_by(name: "Guerrinha").name,
   name: "Tasca",
   slug: 'tasca',
-  cover: ["https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GUERRINHA/Tasca/cover.jpg"],
+  cover: ["https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Tasca/cover.jpg"],
   release_type: "Single",
   release_date: Date.new(2021, 6, 17),
   format: ["digital download", "streaming", "vinyl"],
   tracks: [
-    { name: "Tasca", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GUERRINHA/Tasca/Guerrinha%20-%20Tasca%20-%2001%20Tasca.mp3" }
+    { name: "Tasca", url: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Tasca/Guerrinha%20-%20Tasca%20-%2001%20Tasca.mp3" }
   ],
     credits: {
     "Gabriel Guerra": "bass guitar, keyboards, drums, saxophone",
@@ -243,16 +243,16 @@ Release.find_or_create_by!(
   name: "Rua Jorge Rudge",
   slug: 'rua-jorge-rudge',
   label: ["40% Foda/Maneirissimo"],
-  cover: ["https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GUERRINHA/Rua%20Jorge%20Rudge/cover.jpg"],
+  cover: ["https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Rua%20Jorge%20Rudge/cover.jpg"],
   release_type: "EP",
   release_date: Date.new(2020, 1, 21),
   format: ["CD", "digital download", "streaming"],
   tracks: [
-    {name: "Porto Oitis", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GUERRINHA/Rua%20Jorge%20Rudge/Guerrinha%20-%20Rua%20Jorge%20Rudge%20-%2001%20Porto%20Oitis.mp3"},
-    {name: "Bombeiros Stomp", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GUERRINHA/Rua%20Jorge%20Rudge/Guerrinha%20-%20Rua%20Jorge%20Rudge%20-%2002%20Bombeiros%20Stomp.mp3"},
-    {name: "Uma Coisa de Cada Vez", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GUERRINHA/Rua%20Jorge%20Rudge/Guerrinha%20-%20Rua%20Jorge%20Rudge%20-%2003%20Uma%20Coisa%20de%20Cada%20Vez.mp3"},
-    {name: "Racionalismo Dezembro", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GUERRINHA/Rua%20Jorge%20Rudge/Guerrinha%20-%20Rua%20Jorge%20Rudge%20-%2004%20Racionalismo%20Dezembro.mp3"},
-    {name: "Atrio Oitis", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GUERRINHA/Rua%20Jorge%20Rudge/Guerrinha%20-%20Rua%20Jorge%20Rudge%20-%2005%20Atrio%20Oitis.mp3"},
+    {name: "Porto Oitis", url: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Rua%20Jorge%20Rudge/Guerrinha%20-%20Rua%20Jorge%20Rudge%20-%2001%20Porto%20Oitis.mp3"},
+    {name: "Bombeiros Stomp", url: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Rua%20Jorge%20Rudge/Guerrinha%20-%20Rua%20Jorge%20Rudge%20-%2002%20Bombeiros%20Stomp.mp3"},
+    {name: "Uma Coisa de Cada Vez", url: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Rua%20Jorge%20Rudge/Guerrinha%20-%20Rua%20Jorge%20Rudge%20-%2003%20Uma%20Coisa%20de%20Cada%20Vez.mp3"},
+    {name: "Racionalismo Dezembro", url: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Rua%20Jorge%20Rudge/Guerrinha%20-%20Rua%20Jorge%20Rudge%20-%2004%20Racionalismo%20Dezembro.mp3"},
+    {name: "Atrio Oitis", url: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Rua%20Jorge%20Rudge/Guerrinha%20-%20Rua%20Jorge%20Rudge%20-%2005%20Atrio%20Oitis.mp3"},
   ],
     credits: {
     "Gabriel Guerra": "keyboards, sampler",
@@ -275,17 +275,17 @@ Release.find_or_create_by!(
   name: "Formiguinha's Jazz Standards",
   slug: 'formiguinhas-jazz-standards',
   label: ["40% Foda/Maneirissimo"],
-  cover: ["https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GUERRINHA/Formiguinha's%20Jazz%20Standards/cover.jpg"],
+  cover: ["https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Formiguinha's%20Jazz%20Standards/cover.jpg"],
   release_type: "EP",
   release_date: Date.new(2020, 7, 31),
   format: ["CD", "digital download", "streaming"],
   tracks: [
-    { name: "Torcida Pimenta Mexicana Groove", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GUERRINHA/Formiguinha's%20Jazz%20Standards/Guerrinha%20-%20Formiguinha's%20Jazz%20Standards%20-%2001%20Torcida%20Pimenta%20Mexicana%20Groove.mp3" },
-    { name: "Sweet Swing Sensação", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GUERRINHA/Formiguinha's%20Jazz%20Standards/Guerrinha%20-%20Formiguinha's%20Jazz%20Standards%20-%2002%20Sweet%20Swing%20Sensa%C3%A7%C3%A3o.mp3" },
-    { name: "Shopping dos Antiquários", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GUERRINHA/Formiguinha's%20Jazz%20Standards/Guerrinha%20-%20Formiguinha's%20Jazz%20Standards%20-%2003%20Shopping%20dos%20Antiqu%C3%A1rios.mp3" },
-    { name: "Coca 2L Shuffle", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GUERRINHA/Formiguinha's%20Jazz%20Standards/Guerrinha%20-%20Formiguinha's%20Jazz%20Standards%20-%2004%20Coca%202L%20Shuffle.mp3" },
-    { name: "Lollo's Lamento", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GUERRINHA/Formiguinha's%20Jazz%20Standards/Guerrinha%20-%20Formiguinha's%20Jazz%20Standards%20-%2005%20Lollo's%20Lamento.mp3" },
-    { name: "Crokissimo's Delivery", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GUERRINHA/Formiguinha's%20Jazz%20Standards/Guerrinha%20-%20Formiguinha's%20Jazz%20Standards%20-%2006%20Crok%C3%ADssimo's%20Delivery.mp3" }
+    { name: "Torcida Pimenta Mexicana Groove", url: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Formiguinha's%20Jazz%20Standards/Guerrinha%20-%20Formiguinha's%20Jazz%20Standards%20-%2001%20Torcida%20Pimenta%20Mexicana%20Groove.mp3" },
+    { name: "Sweet Swing Sensação", url: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Formiguinha's%20Jazz%20Standards/Guerrinha%20-%20Formiguinha's%20Jazz%20Standards%20-%2002%20Sweet%20Swing%20Sensa%C3%A7%C3%A3o.mp3" },
+    { name: "Shopping dos Antiquários", url: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Formiguinha's%20Jazz%20Standards/Guerrinha%20-%20Formiguinha's%20Jazz%20Standards%20-%2003%20Shopping%20dos%20Antiqu%C3%A1rios.mp3" },
+    { name: "Coca 2L Shuffle", url: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Formiguinha's%20Jazz%20Standards/Guerrinha%20-%20Formiguinha's%20Jazz%20Standards%20-%2004%20Coca%202L%20Shuffle.mp3" },
+    { name: "Lollo's Lamento", url: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Formiguinha's%20Jazz%20Standards/Guerrinha%20-%20Formiguinha's%20Jazz%20Standards%20-%2005%20Lollo's%20Lamento.mp3" },
+    { name: "Crokissimo's Delivery", url: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Formiguinha's%20Jazz%20Standards/Guerrinha%20-%20Formiguinha's%20Jazz%20Standards%20-%2006%20Crok%C3%ADssimo's%20Delivery.mp3" }
   ],
     credits: {
     "Gabriel Guerra": "keyboards, sampler",
@@ -308,16 +308,16 @@ Release.find_or_create_by!(
   name: "Praia das Pedrinhas",
   slug: 'praia-das-pedrinhas',
   label: ["40% Foda/Maneirissimo"],
-  cover: ["https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GUERRINHA/Praia%20das%20Pedrinhas/cover.jpg"],
+  cover: ["https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Praia%20das%20Pedrinhas/cover.jpg"],
   release_type: "EP",
   release_date: Date.new(2021, 2, 25),
   format: ["CD", "digital download", "streaming"],
   tracks: [
-    { name: "Vida Versátil (Matchpoint)", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GUERRINHA/Praia%20das%20Pedrinhas/Guerrinha%20-%20Praia%20das%20Pedrinhas%20-%2001%20Vida%20Vers%C3%A1til%20(Matchpoint).mp3" },
-    { name: "Lagoa de Imboassica", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GUERRINHA/Praia%20das%20Pedrinhas/Guerrinha%20-%20Praia%20das%20Pedrinhas%20-%2002%20Lagoa%20de%20Imboassica.mp3" },
-    { name: "Beco das Artes", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GUERRINHA/Praia%20das%20Pedrinhas/Guerrinha%20-%20Praia%20das%20Pedrinhas%20-%2003%20Beco%20das%20Artes.mp3" },
-    { name: "Morada das Garças", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GUERRINHA/Praia%20das%20Pedrinhas/Guerrinha%20-%20Praia%20das%20Pedrinhas%20-%2004%20Morada%20das%20Gar%C3%A7as.mp3" },
-    { name: "Pirâmide Chique (Arcoíris)", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GUERRINHA/Praia%20das%20Pedrinhas/Guerrinha%20-%20Praia%20das%20Pedrinhas%20-%2005%20Pir%C3%A2mide%20Chique%20(Arco%C3%ADris).mp3" }
+    { name: "Vida Versátil (Matchpoint)", url: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Praia%20das%20Pedrinhas/Guerrinha%20-%20Praia%20das%20Pedrinhas%20-%2001%20Vida%20Vers%C3%A1til%20(Matchpoint).mp3" },
+    { name: "Lagoa de Imboassica", url: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Praia%20das%20Pedrinhas/Guerrinha%20-%20Praia%20das%20Pedrinhas%20-%2002%20Lagoa%20de%20Imboassica.mp3" },
+    { name: "Beco das Artes", url: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Praia%20das%20Pedrinhas/Guerrinha%20-%20Praia%20das%20Pedrinhas%20-%2003%20Beco%20das%20Artes.mp3" },
+    { name: "Morada das Garças", url: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Praia%20das%20Pedrinhas/Guerrinha%20-%20Praia%20das%20Pedrinhas%20-%2004%20Morada%20das%20Gar%C3%A7as.mp3" },
+    { name: "Pirâmide Chique (Arcoíris)", url: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Praia%20das%20Pedrinhas/Guerrinha%20-%20Praia%20das%20Pedrinhas%20-%2005%20Pir%C3%A2mide%20Chique%20(Arco%C3%ADris).mp3" }
   ],
     credits: {
     "Gabriel Guerra": "keyboards, sampler",
@@ -339,15 +339,15 @@ Release.find_or_create_by!(
   name: "Estações Esquerdinhas",
   slug: 'estacoes-esquerdinhas',
   label: ["40% Foda/Maneirissimo"],
-  cover: ["https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GUERRINHA/Estac%CC%A7o%CC%83es%20Esquerdinhas/cover.png"],
+  cover: ["https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Estac%CC%A7o%CC%83es%20Esquerdinhas/cover.png"],
   release_type: "EP",
   release_date: Date.new(2019, 7, 7),
   format: ["Digital download", "streaming", "vinyl"],
   tracks: [
-    { name: "Estação Praça Onze", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GUERRINHA/Estac%CC%A7o%CC%83es%20Esquerdinhas/DJ%20Guerrinha%20-%20Estac%CC%A7o%CC%83es%20Esquerdinhas%20-%2001%20Estac%CC%A7a%CC%83o%20Prac%CC%A7a%20Onze.mp3" },
-    { name: "Estação Cinelândia", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GUERRINHA/Estac%CC%A7o%CC%83es%20Esquerdinhas/DJ%20Guerrinha%20-%20Estac%CC%A7o%CC%83es%20Esquerdinhas%20-%2002%20Estac%CC%A7a%CC%83o%20Cinela%CC%82ndia.mp3" },
-    { name: "Estação Cidade Nova", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GUERRINHA/Estac%CC%A7o%CC%83es%20Esquerdinhas/DJ%20Guerrinha%20-%20Estac%CC%A7o%CC%83es%20Esquerdinhas%20-%2003%20Estac%CC%A7a%CC%83o%20Cidade%20Nova.mp3" },
-    { name: "Estação Uruguaiana", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GUERRINHA/Estac%CC%A7o%CC%83es%20Esquerdinhas/DJ%20Guerrinha%20-%20Estac%CC%A7o%CC%83es%20Esquerdinhas%20-%2004%20Estac%CC%A7a%CC%83o%20Uruguaiana.mp3" }
+    { name: "Estação Praça Onze", url: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Estac%CC%A7o%CC%83es%20Esquerdinhas/DJ%20Guerrinha%20-%20Estac%CC%A7o%CC%83es%20Esquerdinhas%20-%2001%20Estac%CC%A7a%CC%83o%20Prac%CC%A7a%20Onze.mp3" },
+    { name: "Estação Cinelândia", url: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Estac%CC%A7o%CC%83es%20Esquerdinhas/DJ%20Guerrinha%20-%20Estac%CC%A7o%CC%83es%20Esquerdinhas%20-%2002%20Estac%CC%A7a%CC%83o%20Cinela%CC%82ndia.mp3" },
+    { name: "Estação Cidade Nova", url: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Estac%CC%A7o%CC%83es%20Esquerdinhas/DJ%20Guerrinha%20-%20Estac%CC%A7o%CC%83es%20Esquerdinhas%20-%2003%20Estac%CC%A7a%CC%83o%20Cidade%20Nova.mp3" },
+    { name: "Estação Uruguaiana", url: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Estac%CC%A7o%CC%83es%20Esquerdinhas/DJ%20Guerrinha%20-%20Estac%CC%A7o%CC%83es%20Esquerdinhas%20-%2004%20Estac%CC%A7a%CC%83o%20Uruguaiana.mp3" }
   ],
     credits: {
     "Gabriel Guerra": "keyboards, sampler",
@@ -370,16 +370,16 @@ Release.find_or_create_by!(
   name: "Ida Aos Correios",
   slug: 'ida-aos-correios',
   label: ["40% Foda/Maneirissimo"],
-  cover: ["https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GUERRINHA/Ida%20Aos%20Correios/cover.jpg"],
+  cover: ["https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Ida%20Aos%20Correios/cover.jpg"],
   release_type: "EP",
   release_date: Date.new(2022, 2, 22),
   format: ["CD", "digital download", "streaming"],
   tracks: [
-    { name: "Rua Cinco de Julho, 59", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GUERRINHA/Ida%20Aos%20Correios/Guerrinha%20-%20Ida%20Aos%20Correios%20-%2001%20Rua%20Cinco%20de%20Julho%2C%2059.mp3" },
-    { name: "Rua da Assembleia, 10", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GUERRINHA/Ida%20Aos%20Correios/Guerrinha%20-%20Ida%20Aos%20Correios%20-%2002%20Rua%20da%20Assembleia%2C%2010.mp3" },
-    { name: "Rua do Ouvidor, 60", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GUERRINHA/Ida%20Aos%20Correios/Guerrinha%20-%20Ida%20Aos%20Correios%20-%2003%20Rua%20do%20Ouvidor%2C%2060.mp3" },
-    { name: "Avenida Princesa Isabel, 266", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GUERRINHA/Ida%20Aos%20Correios/Guerrinha%20-%20Ida%20Aos%20Correios%20-%2004%20Avenida%20Princesa%20Isabel%2C%20266.mp3" },
-    { name: "Avenida Republica do Chile, 65", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GUERRINHA/Ida%20Aos%20Correios/Guerrinha%20-%20Ida%20Aos%20Correios%20-%2005%20Avenida%20Republica%20do%20Chile%2C%2065.mp3" }
+    { name: "Rua Cinco de Julho, 59", url: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Ida%20Aos%20Correios/Guerrinha%20-%20Ida%20Aos%20Correios%20-%2001%20Rua%20Cinco%20de%20Julho%2C%2059.mp3" },
+    { name: "Rua da Assembleia, 10", url: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Ida%20Aos%20Correios/Guerrinha%20-%20Ida%20Aos%20Correios%20-%2002%20Rua%20da%20Assembleia%2C%2010.mp3" },
+    { name: "Rua do Ouvidor, 60", url: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Ida%20Aos%20Correios/Guerrinha%20-%20Ida%20Aos%20Correios%20-%2003%20Rua%20do%20Ouvidor%2C%2060.mp3" },
+    { name: "Avenida Princesa Isabel, 266", url: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Ida%20Aos%20Correios/Guerrinha%20-%20Ida%20Aos%20Correios%20-%2004%20Avenida%20Princesa%20Isabel%2C%20266.mp3" },
+    { name: "Avenida Republica do Chile, 65", url: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Ida%20Aos%20Correios/Guerrinha%20-%20Ida%20Aos%20Correios%20-%2005%20Avenida%20Republica%20do%20Chile%2C%2065.mp3" }
   ],
     credits: {
     "Gabriel Guerra": "keyboards, sampler",
@@ -401,19 +401,19 @@ Release.find_or_create_by!(
   name: "Cidade Grande",
   slug: 'cidade-grande',
   label: ["Confuso Editions"],
-  cover: ["https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GUERRINHA/Cidade%20Grande/cover.png"],
+  cover: ["https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Cidade%20Grande/cover.png"],
   release_type: "Album",
   release_date: Date.new(2022, 10, 26),
   format: ["CD", "digital download", "streaming", "vinyl"],
   tracks: [
-    { name: "José, Pt. I", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GUERRINHA/Cidade%20Grande/Guerrinha%20-%20Cidade%20Grande%20-%2001%20Jose%CC%81%2C%20Pt.%20I.mp3" },
-    { name: "Adulto Na Cidade Grande", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GUERRINHA/Cidade%20Grande/Guerrinha%20-%20Cidade%20Grande%20-%2002%20Adulto%20na%20Cidade%20Grande.mp3" },
-    { name: "Galeria Obsoleta", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GUERRINHA/Cidade%20Grande/Guerrinha%20-%20Cidade%20Grande%20-%2003%20Galeria%20Obsoleta.mp3" },
-    { name: "Noite Cartunesca", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GUERRINHA/Cidade%20Grande/Guerrinha%20-%20Cidade%20Grande%20-%2004%20Noite%20Cartunesca.mp3" },
-    { name: "Venda Casada Village", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GUERRINHA/Cidade%20Grande/Guerrinha%20-%20Cidade%20Grande%20-%2005%20Venda%20Casada%20Village.mp3" },
-    { name: "Uma Piada Engraçada", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GUERRINHA/Cidade%20Grande/Guerrinha%20-%20Cidade%20Grande%20-%2006%20Uma%20Piada%20Engrac%CC%A7ada.mp3" },
-    { name: "Kafta Hoje", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GUERRINHA/Cidade%20Grande/Guerrinha%20-%20Cidade%20Grande%20-%2007%20Kafta%20Hoje.mp3" },
-    { name: "José, Pt. II", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GUERRINHA/Cidade%20Grande/Guerrinha%20-%20Cidade%20Grande%20-%2008%20Jose%CC%81%2C%20Pt.%20II.mp3" }
+    { name: "José, Pt. I", url: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Cidade%20Grande/Guerrinha%20-%20Cidade%20Grande%20-%2001%20Jose%CC%81%2C%20Pt.%20I.mp3" },
+    { name: "Adulto Na Cidade Grande", url: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Cidade%20Grande/Guerrinha%20-%20Cidade%20Grande%20-%2002%20Adulto%20na%20Cidade%20Grande.mp3" },
+    { name: "Galeria Obsoleta", url: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Cidade%20Grande/Guerrinha%20-%20Cidade%20Grande%20-%2003%20Galeria%20Obsoleta.mp3" },
+    { name: "Noite Cartunesca", url: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Cidade%20Grande/Guerrinha%20-%20Cidade%20Grande%20-%2004%20Noite%20Cartunesca.mp3" },
+    { name: "Venda Casada Village", url: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Cidade%20Grande/Guerrinha%20-%20Cidade%20Grande%20-%2005%20Venda%20Casada%20Village.mp3" },
+    { name: "Uma Piada Engraçada", url: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Cidade%20Grande/Guerrinha%20-%20Cidade%20Grande%20-%2006%20Uma%20Piada%20Engrac%CC%A7ada.mp3" },
+    { name: "Kafta Hoje", url: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Cidade%20Grande/Guerrinha%20-%20Cidade%20Grande%20-%2007%20Kafta%20Hoje.mp3" },
+    { name: "José, Pt. II", url: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Cidade%20Grande/Guerrinha%20-%20Cidade%20Grande%20-%2008%20Jose%CC%81%2C%20Pt.%20II.mp3" }
   ],
   credits: {
     "Gabriel Guerra": "bass guitar, drums, keyboards",
@@ -434,19 +434,19 @@ Release.find_or_create_by!(
   name: "Exposição Popular",
   slug: 'exposicao-popular',
   label: ["2 Headed Deer"],
-  cover: ["https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GUERRINHA/Exposic%CC%A7a%CC%83o%20Popular/cover.png"],
+  cover: ["https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Exposic%CC%A7a%CC%83o%20Popular/cover.png"],
   release_type: "Album",
   release_date: Date.new(2024, 1, 8),
   format: ["Digital download", "streaming", "vinyl"],
   tracks: [
-    { name: "Tempo Engordado", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GUERRINHA/Exposic%CC%A7a%CC%83o%20Popular/Guerrinha%20-%20Exposic%CC%A7a%CC%83o%20Popular%20-%2001%20Tempo%20Engordado.mp3"},
-    { name: "Boa Definição", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GUERRINHA/Exposic%CC%A7a%CC%83o%20Popular/Guerrinha%20-%20Exposic%CC%A7a%CC%83o%20Popular%20-%2002%20Boa%20Definic%CC%A7a%CC%83o.mp3" },
-    { name: "A Sétima Doninha", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GUERRINHA/Exposic%CC%A7a%CC%83o%20Popular/Guerrinha%20-%20Exposic%CC%A7a%CC%83o%20Popular%20-%2003%20A%20Se%CC%81tima%20Doninha.mp3" },
-    { name: "Zombeta", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GUERRINHA/Exposic%CC%A7a%CC%83o%20Popular/Guerrinha%20-%20Exposic%CC%A7a%CC%83o%20Popular%20-%2004%20Zombeta.mp3" },
-    { name: "Edificio Argentina", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GUERRINHA/Exposic%CC%A7a%CC%83o%20Popular/Guerrinha%20-%20Exposic%CC%A7a%CC%83o%20Popular%20-%2005%20Edifi%CC%81cio%20Argentina.mp3" },
-    { name: "Sala de Espera", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GUERRINHA/Exposic%CC%A7a%CC%83o%20Popular/Guerrinha%20-%20Exposic%CC%A7a%CC%83o%20Popular%20-%2006%20Sala%20de%20Espera.mp3" },
-    { name: "Madrugadas", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GUERRINHA/Exposic%CC%A7a%CC%83o%20Popular/Guerrinha%20-%20Exposic%CC%A7a%CC%83o%20Popular%20-%2007%20Madrugadas.mp3" },
-    { name: "Fantasmas do Destino", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GUERRINHA/Exposic%CC%A7a%CC%83o%20Popular/Guerrinha%20-%20Exposic%CC%A7a%CC%83o%20Popular%20-%2008%20Fantasmas%20do%20Destino.mp3" }
+    { name: "Tempo Engordado", url: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Exposic%CC%A7a%CC%83o%20Popular/Guerrinha%20-%20Exposic%CC%A7a%CC%83o%20Popular%20-%2001%20Tempo%20Engordado.mp3"},
+    { name: "Boa Definição", url: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Exposic%CC%A7a%CC%83o%20Popular/Guerrinha%20-%20Exposic%CC%A7a%CC%83o%20Popular%20-%2002%20Boa%20Definic%CC%A7a%CC%83o.mp3" },
+    { name: "A Sétima Doninha", url: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Exposic%CC%A7a%CC%83o%20Popular/Guerrinha%20-%20Exposic%CC%A7a%CC%83o%20Popular%20-%2003%20A%20Se%CC%81tima%20Doninha.mp3" },
+    { name: "Zombeta", url: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Exposic%CC%A7a%CC%83o%20Popular/Guerrinha%20-%20Exposic%CC%A7a%CC%83o%20Popular%20-%2004%20Zombeta.mp3" },
+    { name: "Edificio Argentina", url: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Exposic%CC%A7a%CC%83o%20Popular/Guerrinha%20-%20Exposic%CC%A7a%CC%83o%20Popular%20-%2005%20Edifi%CC%81cio%20Argentina.mp3" },
+    { name: "Sala de Espera", url: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Exposic%CC%A7a%CC%83o%20Popular/Guerrinha%20-%20Exposic%CC%A7a%CC%83o%20Popular%20-%2006%20Sala%20de%20Espera.mp3" },
+    { name: "Madrugadas", url: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Exposic%CC%A7a%CC%83o%20Popular/Guerrinha%20-%20Exposic%CC%A7a%CC%83o%20Popular%20-%2007%20Madrugadas.mp3" },
+    { name: "Fantasmas do Destino", url: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Exposic%CC%A7a%CC%83o%20Popular/Guerrinha%20-%20Exposic%CC%A7a%CC%83o%20Popular%20-%2008%20Fantasmas%20do%20Destino.mp3" }
   ],
   credits: {
     "Gabriel Guerra": "electric guitar, bass guitar, drums, keyboards",
@@ -467,15 +467,15 @@ Release.find_or_create_by!(
   artist_name: Artist.find_by(name: "Guerrinha").name,
   name: "Prédio Avenida Central",
   slug: 'predio-avenida-central',
-  cover: ["https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GUERRINHA/Pre%CC%81dio%20Avenida%20Central/cover.jpg", "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GUERRINHA/Pre%CC%81dio%20Avenida%20Central/predio-v-f.jpg"],
+  cover: ["https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Pre%CC%81dio%20Avenida%20Central/cover.jpg", "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Pre%CC%81dio%20Avenida%20Central/predio-v-f.jpg"],
   release_type: "Album",
   release_date: Date.new(2024, 10, 7),
   format: ["CD", "Digital download", "streaming", "vinyl"],
   tracks: [
-    { name: "Quem Quer", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GUERRINHA/Pre%CC%81dio%20Avenida%20Central/Guerrinha%20-%20Pre%CC%81dio%20Avenida%20Central%20-%2001%20Quem%20Quer.mp3" },
-    { name: "Classificações Geraes", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GUERRINHA/Pre%CC%81dio%20Avenida%20Central/Guerrinha%20-%20Pre%CC%81dio%20Avenida%20Central%20-%2002%20Classificac%CC%A7o%CC%83es%20Geraes.mp3" },
-    { name: "Transito Invernal", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GUERRINHA/Pre%CC%81dio%20Avenida%20Central/Guerrinha%20-%20Pre%CC%81dio%20Avenida%20Central%20-%2003%20Transito%20Invernal.mp3" },
-    { name: "O Encomendador", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GUERRINHA/Pre%CC%81dio%20Avenida%20Central/Guerrinha%20-%20Pre%CC%81dio%20Avenida%20Central%20-%2004%20O%20Encomendador.mp3" }
+    { name: "Quem Quer", url: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Pre%CC%81dio%20Avenida%20Central/Guerrinha%20-%20Pre%CC%81dio%20Avenida%20Central%20-%2001%20Quem%20Quer.mp3" },
+    { name: "Classificações Geraes", url: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Pre%CC%81dio%20Avenida%20Central/Guerrinha%20-%20Pre%CC%81dio%20Avenida%20Central%20-%2002%20Classificac%CC%A7o%CC%83es%20Geraes.mp3" },
+    { name: "Transito Invernal", url: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Pre%CC%81dio%20Avenida%20Central/Guerrinha%20-%20Pre%CC%81dio%20Avenida%20Central%20-%2003%20Transito%20Invernal.mp3" },
+    { name: "O Encomendador", url: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Pre%CC%81dio%20Avenida%20Central/Guerrinha%20-%20Pre%CC%81dio%20Avenida%20Central%20-%2004%20O%20Encomendador.mp3" }
   ],
   credits: {
     "Gabriel Guerra": "electric guitar, bass guitar, drums, keyboards",

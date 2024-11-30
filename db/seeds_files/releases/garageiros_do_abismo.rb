@@ -11,9 +11,9 @@ p "Seeding Garageiros do Abismo"
     release_date: Date.new(2008, 4, 22),
     format: ["digital download"],
     tracks: [
-      { name: "A Nova Incerteza", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GARAGEIROS%20DO%20ABISMO/Ta%CC%83o%20Facil%20Quanto%20Ser%20Poeta/Ta%CC%83o%20Facil%20Quanto%20Ser%20Poeta/A%20Nova%20Incerteza.mp3" },
-      { name: "Canção Alegre Para Ódio Psicótico (Nunca Foi Tão Fácil Sorrir)", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GARAGEIROS%20DO%20ABISMO/Ta%CC%83o%20Facil%20Quanto%20Ser%20Poeta/Ta%CC%83o%20Facil%20Quanto%20Ser%20Poeta/Canc%CC%A7a%CC%83o%20Alegre%20Para%20O%CC%81dio%20Psico%CC%81tico%20(Nunca%20Foi%20Ta%CC%83o%20Facil%20Sorrir).mp3" },
-      { name: "Tenebroso", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GARAGEIROS%20DO%20ABISMO/Ta%CC%83o%20Facil%20Quanto%20Ser%20Poeta/Ta%CC%83o%20Facil%20Quanto%20Ser%20Poeta/Tenebroso.mp3" }
+      { name: "A Nova Incerteza", url: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GARAGEIROS%20DO%20ABISMO/Ta%CC%83o%20Facil%20Quanto%20Ser%20Poeta/Ta%CC%83o%20Facil%20Quanto%20Ser%20Poeta/A%20Nova%20Incerteza.mp3" },
+      { name: "Canção Alegre Para Ódio Psicótico (Nunca Foi Tão Fácil Sorrir)", url: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GARAGEIROS%20DO%20ABISMO/Ta%CC%83o%20Facil%20Quanto%20Ser%20Poeta/Ta%CC%83o%20Facil%20Quanto%20Ser%20Poeta/Canc%CC%A7a%CC%83o%20Alegre%20Para%20O%CC%81dio%20Psico%CC%81tico%20(Nunca%20Foi%20Ta%CC%83o%20Facil%20Sorrir).mp3" },
+      { name: "Tenebroso", url: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GARAGEIROS%20DO%20ABISMO/Ta%CC%83o%20Facil%20Quanto%20Ser%20Poeta/Ta%CC%83o%20Facil%20Quanto%20Ser%20Poeta/Tenebroso.mp3" }
     ],
     credits: {
       "Gabriel Guerra": "electric guitar",
@@ -42,8 +42,8 @@ p "Seeding Garageiros do Abismo"
     release_date: Date.new(2008, 11, 11),
     format: ["digital download"],
     tracks: [
-      { name: "Estamos Sujos", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GARAGEIROS%20DO%20ABISMO/Estamos%20Sujos%20-%20Alvaro%20e%CC%81%20Velho/Estamos%20Sujos%20_%20Alvaro%20E%CC%81%20Velho/01%20Estamos%20Sujos.mp3" },
-      { name: "Alvaro É Velho", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/GARAGEIROS%20DO%20ABISMO/Estamos%20Sujos%20-%20Alvaro%20e%CC%81%20Velho/Estamos%20Sujos%20_%20Alvaro%20E%CC%81%20Velho/02%20Alvaro%20e%CC%81%20Velho.wav" }
+      { name: "Estamos Sujos", url: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GARAGEIROS%20DO%20ABISMO/Estamos%20Sujos%20-%20Alvaro%20e%CC%81%20Velho/Estamos%20Sujos%20_%20Alvaro%20E%CC%81%20Velho/01%20Estamos%20Sujos.mp3" },
+      { name: "Alvaro É Velho", url: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GARAGEIROS%20DO%20ABISMO/Estamos%20Sujos%20-%20Alvaro%20e%CC%81%20Velho/Estamos%20Sujos%20_%20Alvaro%20E%CC%81%20Velho/02%20Alvaro%20e%CC%81%20Velho.wav" }
     ],
     credits: {
       "Gabriel Guerra": "electric guitar, keyboards",
