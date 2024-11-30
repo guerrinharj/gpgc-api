@@ -7,13 +7,13 @@ Release.find_or_create_by!(
   name: "Gagacico / Ferreblombalu",
   slug: 'gagacico-ferreblombalu',
   label: ["40% Foda/Maneirissimo"],
-  cover: ["https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/HORACIO/Gagacico%20%3A%20Ferreblombalu/cover.jpg"],
+  cover: ["https://storage.googleapis.com/gpgc-api-bucket/RELEASED/HORACIO/Gagacico%20%3A%20Ferreblombalu/cover.jpg"],
   release_type: "Album",
   release_date: Date.new(2024, 4, 15),
   format: ["CD", "digital download", "streaming"],
   tracks: [
-    { name: "Gagacico", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/HORACIO/Gagacico%20%3A%20Ferreblombalu/Horacio%20-%20Gagacico%20-%20Ferreblombalu%20-%2001%20Gagacico.mp3" },
-    { name: "Ferreblombalu", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/HORACIO/Gagacico%20%3A%20Ferreblombalu/Horacio%20-%20Gagacico%20-%20Ferreblombalu%20-%2002%20Ferreblombalu.mp3" }
+    { name: "Gagacico", url: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/HORACIO/Gagacico%20%3A%20Ferreblombalu/Horacio%20-%20Gagacico%20-%20Ferreblombalu%20-%2001%20Gagacico.mp3" },
+    { name: "Ferreblombalu", url: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/HORACIO/Gagacico%20%3A%20Ferreblombalu/Horacio%20-%20Gagacico%20-%20Ferreblombalu%20-%2002%20Ferreblombalu.mp3" }
   ],
   credits: {
     "Gabriel Guerra": "synthesizer, sampler, drum machine"
@@ -34,17 +34,17 @@ Release.find_or_create_by!(
   name: "Modos",
   slug: 'modos',
   label: ["40% Foda/Maneirissimo"],
-  cover: ["https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/HORACIO/Modos/cover.jpg"],
+  cover: ["https://storage.googleapis.com/gpgc-api-bucket/RELEASED/HORACIO/Modos/cover.jpg"],
   release_type: "Album",
   release_date: Date.new(2024, 6, 20),
   format: ["CD", "digital download", "streaming"],
   tracks: [
-    { name: "Mofado", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/HORACIO/Modos/Horacio%20-%20Modos%20-%2001%20Mofado.mp3" },
-    { name: "Seqhortado", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/HORACIO/Modos/Horacio%20-%20Modos%20-%2002%20Seqhortado.mp3" },
-    { name: "Moderado", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/HORACIO/Modos/Horacio%20-%20Modos%20-%2003%20Moderado.mp3" },
-    { name: "Enviesado", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/HORACIO/Modos/Horacio%20-%20Modos%20-%2004%20Enviesado.mp3" },
-    { name: "Bocado", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/HORACIO/Modos/Horacio%20-%20Modos%20-%2005%20Bocado.mp3" },
-    { name: "Zoperantizado", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/HORACIO/Modos/Horacio%20-%20Modos%20-%2006%20Zoperantizado.mp3" }
+    { name: "Mofado", url: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/HORACIO/Modos/Horacio%20-%20Modos%20-%2001%20Mofado.mp3" },
+    { name: "Seqhortado", url: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/HORACIO/Modos/Horacio%20-%20Modos%20-%2002%20Seqhortado.mp3" },
+    { name: "Moderado", url: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/HORACIO/Modos/Horacio%20-%20Modos%20-%2003%20Moderado.mp3" },
+    { name: "Enviesado", url: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/HORACIO/Modos/Horacio%20-%20Modos%20-%2004%20Enviesado.mp3" },
+    { name: "Bocado", url: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/HORACIO/Modos/Horacio%20-%20Modos%20-%2005%20Bocado.mp3" },
+    { name: "Zoperantizado", url: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/HORACIO/Modos/Horacio%20-%20Modos%20-%2006%20Zoperantizado.mp3" }
   ],
   credits: {
     "Gabriel Guerra": "synthesizer, sampler, drum machine"

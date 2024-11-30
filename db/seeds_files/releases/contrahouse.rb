@@ -11,10 +11,10 @@ Release.find_or_create_by!(
   release_date: Date.new(2024, 2, 28),
   format: ["Vinyl", "digital download", "streaming"],
   tracks: [
-    { name: "Big Time Sensuality 2", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/CONTRAHOUSE/Guerra%20-%20de%20Paiva%20-%20Hornsby%20-%20Konradsen%20-%20A1.%20Big%20Time%20Sensuality%202.mp3" },
-    { name: "Jellyfish", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/CONTRAHOUSE/Guerra%20-%20de%20Paiva%20-%20Hornsby%20-%20Konradsen%20-%20A2.%20Jellyfish.mp3" },
-    { name: "American Bottoms", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/CONTRAHOUSE/Guerra%20-%20de%20Paiva%20-%20Hornsby%20-%20Konradsen%20-%20B1.%20American%20Bottoms.mp3" },
-    { name: "Streetcorn", url: "https://storage.cloud.google.com/gpgc-api-bucket/RELEASED/CONTRAHOUSE/Guerra%20-%20de%20Paiva%20-%20Hornsby%20-%20Konradsen%20-%20B2.%20Streetcorn.mp3" }
+    { name: "Big Time Sensuality 2", url: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/CONTRAHOUSE/Guerra%20-%20de%20Paiva%20-%20Hornsby%20-%20Konradsen%20-%20A1.%20Big%20Time%20Sensuality%202.mp3" },
+    { name: "Jellyfish", url: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/CONTRAHOUSE/Guerra%20-%20de%20Paiva%20-%20Hornsby%20-%20Konradsen%20-%20A2.%20Jellyfish.mp3" },
+    { name: "American Bottoms", url: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/CONTRAHOUSE/Guerra%20-%20de%20Paiva%20-%20Hornsby%20-%20Konradsen%20-%20B1.%20American%20Bottoms.mp3" },
+    { name: "Streetcorn", url: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/CONTRAHOUSE/Guerra%20-%20de%20Paiva%20-%20Hornsby%20-%20Konradsen%20-%20B2.%20Streetcorn.mp3" }
   ],
   credits: {
     "Bruce Hornsby": "piano",
