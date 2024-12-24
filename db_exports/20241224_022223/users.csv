@@ -1,0 +1,2 @@
+id,username,password_digest,created_at,updated_at,auth_token
+1,gpgc_api,$2a$12$2fDdfA4y0nBpAp2MEGoBEOD/UxTTnPxx1eejyzpJCLSHvhzFVduK.,2024-11-30 14:55:45 UTC,2024-11-30 14:55:45 UTC,
