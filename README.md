@@ -116,6 +116,11 @@ cd gpgc-api
 - If any role issues appear Don't be afraid to `pkill postgres` and `brew services stop postgresql` (If you're running in homebrew).
 - If you are having trouble with users accessing the DB, rebuild the container.
 
+## CSV
+
+ - We have a system for importing .csv files if you already have them but don't want to rewrite them as seeds. To use this, delete the existing ```db/seeds_files``` directory and run ```rake db:generate_seeds```.
+- You can also export your database to .csv files. Simply run ```rake db:export_to_csv```, and your tables will be exported to the ```db_exports``` folder. The exported files will be organized inside a timestamped folder.
+
 
 ## Request cURLs
 
