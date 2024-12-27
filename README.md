@@ -118,7 +118,8 @@ cd gpgc-api
 
 ## CSV
 
- - We have a system for importing .csv files if you already have them but don't want to rewrite them as seeds. To use this, delete the existing ```db/seeds_files``` directory and run ```rake db:generate_seeds```.
+ - We have a system for importing .csv files if you already have them but don't want to rewrite them as seeds. To use this, create a ```db_exports``` folder, delete the existing ```db/seeds_files``` directory and run ```rake db:generate_seeds```.
+ 
 - You can also export your database to .csv files. Simply run ```rake db:export_to_csv```, and your tables will be exported to the ```db_exports``` folder. The exported files will be organized inside a timestamped folder.
 
 
