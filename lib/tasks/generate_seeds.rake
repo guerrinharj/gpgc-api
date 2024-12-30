@@ -54,7 +54,7 @@ namespace :db do
     
             seed_file_path = File.join(artist_folder, "#{artist_name.parameterize}.rb")
             File.open(seed_file_path, "a") do |file|
-            file.puts "p 'Seeding #{artist_name}'"
+            file.puts "p 'Seeding #{row['name']}'"
             file.puts "Release.find_or_create_by!("
             file.puts "  user: User.first,"
             file.puts "  artist: Artist.find_by(name: '#{artist_name}'),"
