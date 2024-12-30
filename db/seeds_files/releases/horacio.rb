@@ -24,7 +24,8 @@ Release.find_or_create_by!(
   links: {
     "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/gagacico-ferreblombalu",
     "Spotify": "https://open.spotify.com/album/4zp2EK0IrVzXydsC6tOt1u"
-  }
+  },
+  download_link: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/HORACIO/Gagacico%20%3A%20Ferreblombalu/Horacio%20-%20Gagacico%20%3A%20Ferreblombalu.zip"
 )
 
 Release.find_or_create_by!(
@@ -55,5 +56,6 @@ Release.find_or_create_by!(
   links: {
     "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/modos",
     "Spotify": "https://open.spotify.com/album/1tBCKCArl5o6Xe1Qw8NDbv"
-  }
+  },
+  download_link: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/HORACIO/Modos/Horacio%20-%20Modos.zip"
 )

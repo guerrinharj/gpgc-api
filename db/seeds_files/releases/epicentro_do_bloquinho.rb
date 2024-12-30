@@ -30,6 +30,7 @@ p "Seeding Epicentro do Bloquinho"
     links: {
       "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/hegelianos-de-direita",
       "Spotify": "https://open.spotify.com/album/3MhugK5gjDnis6kVp9a0K3?si=JWWUWwH-T76c3kjST49ZOg"
-    }
+    },
+    download_link: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/EPICENTRO%20DO%20BLOQUINHO/Hegelianos%20de%20Direita/Epicentro%20do%20Bloquinho%20-%20Hegelianos%20de%20Direita.zip"
   )
   

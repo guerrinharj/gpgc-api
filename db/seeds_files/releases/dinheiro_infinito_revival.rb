@@ -35,7 +35,8 @@ Release.find_or_create_by!(
   links: {
     "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/faixas-de-ritmo-i",
     "Spotify": "https://open.spotify.com/album/4SqpmcoJ0S1aq0hiYtlXan?si=068beb93749f47bb"
-  }
+  },
+  download_link: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/DINHEIRO%20INFINITO%20REVIVAL/Faixas%20de%20Ritmo/Dinheiro%20Infinito%20Revival%20-%20Faixas%20de%20Ritmo.zip"
 )
 
 Release.find_or_create_by!(
@@ -70,5 +71,6 @@ Release.find_or_create_by!(
   links: {
     "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/faixas-de-ritmo-ii",
     "Spotify": "https://open.spotify.com/album/4wPsufwMwc976ci9BgXvN7?si=2e6aace5a17e49ae"
-  }
+  },
+  download_link: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/DINHEIRO%20INFINITO%20REVIVAL/Faixas%20de%20Ritmo%20II/Dinheiro%20Infinito%20Revival%20-%20Faixas%20de%20Ritmo%20II.zip"
 )

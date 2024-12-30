@@ -32,7 +32,8 @@ Release.find_or_create_by!(
   links: {
     "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/dimens-o-surpreendente",
     "Spotify": "https://open.spotify.com/album/3lGwOaHzyrQnR65UMpuedu?si=53b0915bcca840b5"
-  }
+  },
+  download_link: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/O%20RETIRO%20DOS%20ARTISTAS/Dimensa%CC%83o%20Surpreendente/O%20Retiro%20dos%20Artistas%20-%20Dimensa%CC%83o%20Surpreendente.zip"
 )
 
 Release.find_or_create_by!(
@@ -67,5 +68,6 @@ Release.find_or_create_by!(
   links: {
     "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/o-mundo-oferecido",
     "Spotify": "https://open.spotify.com/album/19jkXnEVF01Eqbkxz3AeHt?si=a868ac770fb3444a"
-  }
+  },
+  download_link: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/O%20RETIRO%20DOS%20ARTISTAS/O%20Mundo%20Oferecido/O%20Retiro%20dos%20Artistas%20-%20O%20Mundo%20Oferecido.zip"
 )

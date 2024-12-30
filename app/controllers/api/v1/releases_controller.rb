@@ -54,7 +54,7 @@ class Api::V1::ReleasesController < ApplicationController
       :artist_name,
       :release_type,
       :release_date,
-      :download_link
+      :download_link,
       cover: [],
       label: [],
       format: [],

@@ -34,7 +34,8 @@ Release.find_or_create_by!(
   links: {
     "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/bolinhas-de-queijo",
     "Spotify": "https://open.spotify.com/album/2kRjnzdGTCsnxSf8x5SLXS?si=f5b84ad239534716"
-  }
+  },
+  download_link: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/BRASILEIRO%20GARANTIDO/Bolinhas%20de%20Queijo/Brasileiro%20Garantido%20-%20Bolinhas%20de%20Queijo.zip"
 )
 
 Release.find_or_create_by!(
@@ -67,7 +68,8 @@ Release.find_or_create_by!(
   links: {
     "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/churros-recheado",
     "Spotify": "https://open.spotify.com/album/2kRjnzdGTCsnxSf8x5SLXS?si=f1b60a2d204f4d64"
-  }
+  },
+  download_link: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/BRASILEIRO%20GARANTIDO/Churros%20Recheado/Brasileiro%20Garantido%20-%20Churros%20Recheado.zip"
 )
 
 Release.find_or_create_by!(
@@ -97,5 +99,6 @@ Release.find_or_create_by!(
   links: {
     "Bandcamp": "https://brasileirogarantido.bandcamp.com/album/minipizzas",
     "Spotify": nil
-  }
+  },
+  download_link: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/BRASILEIRO%20GARANTIDO/Minipizzas/Brasileiro%20Garantido%20-%20Minipizzas.zip"
 )

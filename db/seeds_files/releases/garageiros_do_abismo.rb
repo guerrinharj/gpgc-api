@@ -28,7 +28,8 @@ p "Seeding Garageiros do Abismo"
     links: {
       "Bandcamp": nil,
       "Spotify": nil
-    }
+    },
+    download_link: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GARAGEIROS%20DO%20ABISMO/Ta%CC%83o%20Facil%20Quanto%20Ser%20Poeta/Garageiros%20do%20Abismo%20-%20Ta%CC%83o%20Facil%20Quanto%20Ser%20Poeta.zip"
   )
   
   Release.find_or_create_by!(
@@ -58,6 +59,7 @@ p "Seeding Garageiros do Abismo"
     links: {
       "Bandcamp": nil,
       "Spotify": nil
-    }
+    },
+    download_link: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GARAGEIROS%20DO%20ABISMO/Estamos%20Sujos%20-%20Alvaro%20e%CC%81%20Velho/Garageiros%20do%20Abismo%20-%20Estamos%20Sujos%20%3A%20Alvaro%20E%CC%81%20Velho.zip"
   )
   

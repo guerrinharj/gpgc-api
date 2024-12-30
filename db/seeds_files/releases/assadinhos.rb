@@ -30,7 +30,8 @@ Release.find_or_create_by!(
     links: {
     "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/winkadinka",
     "Spotify": "https://open.spotify.com/album/3jmFD1V8Vc0x4fVVfoNbBg"
-  }
+  },
+  download_link: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/ASSADINHOS/Winkadinka/Assadinhos%20-%20Winkadinka.zip"
 )
 
 
@@ -64,5 +65,6 @@ Release.find_or_create_by!(
     links: {
       "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/rocking-rio",
       "Spotify": "https://open.spotify.com/album/4KLdmNAslIMCxsSkBvV1xp"
-  }
+  },
+  download_link: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/ASSADINHOS/Rocking%20Rio/Assadinhos%20-%20Rocking%20Rio.zip"
 )

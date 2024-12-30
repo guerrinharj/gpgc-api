@@ -28,5 +28,6 @@ Release.find_or_create_by!(
   links: {
     "Spotify": "https://open.spotify.com/album/06C0IX5juKbWePER7mNrYY",
     "Bandcamp": "https://ulyssa.bandcamp.com/album/contrahouse"
-  }
+  },
+  download_link: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/CONTRAHOUSE/Contrahouse%20-%20Contrahouse.zip"
 )

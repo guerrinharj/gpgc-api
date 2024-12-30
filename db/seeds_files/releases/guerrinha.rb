@@ -21,10 +21,11 @@ Release.find_or_create_by!(
   notes: [
     "All tracks produced by Gabriel Guerra"
   ],
-  links: [
+  links: {
     "Bandcamp": nil,
     "Spotify": nil
-  ]
+  },
+  download_link: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/De%20Rosinha%20Falsificado%20Em%20Feirinhas%20Cinzentas/Guerrinha%20-%20De%20Rosinha%20Falsificado%20Em%20Feirinhas%20Cinzentas.zip"
 )
 
 
@@ -57,7 +58,8 @@ Release.find_or_create_by!(
   links: {
     "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/rua-sorocaba",
     "Spotify": "https://open.spotify.com/album/0SXzcBCgrFwGE7GMVP4GIb?si=s1RbVZidT9e6l2Vl2jMf3Q"
-  }
+  },
+  download_link: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Rua%20Sorocaba/Guerrinha%20-%20Rua%20Sorocaba.zip"
 )
 
 
@@ -88,7 +90,8 @@ Release.find_or_create_by!(
   links: {
     "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/o-pedigree-historico",
     "Spotify": nil
-  }
+  },
+  download_link: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/O%20Pedigree%20Histo%CC%81rico/Guerrinha%20-%20O%20Pedigree%20Histo%CC%81rico.zip"
 )
 
 
@@ -118,7 +121,8 @@ Release.find_or_create_by!(
   links: {
     "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/educa--o-bentes",
     "Spotify": "https://open.spotify.com/album/1LOrYvHyonJqMjADkvSqEG?si=446e0f3ed33b4b8c"
-  }
+  },
+  download_link: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Educac%CC%A7a%CC%83o%20Bentes/Guerrinha%20-%20Educac%CC%A7a%CC%83o%20Bentes.zip"
 )
 
 
@@ -152,7 +156,8 @@ Release.find_or_create_by!(
   links: {
     "Bandcamp": "https://guerrinha.bandcamp.com/album/wagner",
     "Spotify": "https://open.spotify.com/album/3qMRehbSPU0Wt3mF2nMG7f"
-  }
+  },
+  download_link: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Wagner/Guerrinha%20-%20Wagner.zip"
 )
 
 
@@ -178,7 +183,8 @@ Release.find_or_create_by!(
   links: {
     "Bandcamp": "https://guerrinha.bandcamp.com/album/apartamento",
     "Spotify": "https://open.spotify.com/track/1XL4N7hh2ULGzHn66ytV1R?si=f8f0d294baaf4d98"
-  }
+  },
+  download_link: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Apartamento/Guerrinha%20-%20Apartamento.zip"
 )
 
 
@@ -205,7 +211,8 @@ Release.find_or_create_by!(
   links: {
     "Bandcamp": "https://guerrinha.bandcamp.com/album/bodega-docas",
     "Spotify": "https://open.spotify.com/album/6Y0WucRrznvZFFpEinroeu"
-  }
+  },
+  download_link: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Bodega%20%3A%20Docas/Guerrinha%20-%20Bodega%20%3A%20Docas.zip"
 )
 
 
@@ -232,7 +239,8 @@ Release.find_or_create_by!(
   links: {
     "Bandcamp": "https://guerrinha.bandcamp.com/album/tasca",
     "Spotify": "https://open.spotify.com/album/1tlLPJsabUK9HwkQOxxpFE"
-  }
+  },
+  download_link: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Tasca/Guerrinha%20-%20Tasca.zip"
 )
 
 
@@ -263,7 +271,8 @@ Release.find_or_create_by!(
   links: {
     "Bandcamp": "https://guerrinha.bandcamp.com/album/rua-jorge-rudge",
     "Spotify": "https://open.spotify.com/album/19d5b5S8TuZnqSTj68PO9E?si=a550e65b2d20447b"
-  }
+  },
+  download_link: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Rua%20Jorge%20Rudge/Guerrinha%20-%20Rua%20Jorge%20Rudge.zip"
 )
 
 
@@ -296,7 +305,8 @@ Release.find_or_create_by!(
   links: {
     "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/formiguinhas-jazz-standards",
     "Spotify": "https://open.spotify.com/album/05h1GoK2f6RiLPvrMnocH3?si=784e72d0451648b9"
-  }
+  },
+  download_link: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Formiguinha's%20Jazz%20Standards/Guerrinha%20-%20Formiguinha's%20Jazz%20Standards.zip"
 )
 
 
@@ -328,7 +338,8 @@ Release.find_or_create_by!(
   links: {
     "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/praia-das-pedrinhas",
     "Spotify": "https://open.spotify.com/album/2Bz1TO5PIA3fk9jIrY7MRI?si=04e96488ab314f28"
-  }
+  },
+  download_link: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Praia%20das%20Pedrinhas/Guerrinha%20-%20Praia%20das%20Pedrinhas.zip"
 )
 
 
@@ -358,7 +369,8 @@ Release.find_or_create_by!(
   links: {
     "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/esta-es-esquerdinhas",
     "Spotify": "https://open.spotify.com/album/1rRNJWxUWUn8L42rckrZWy"
-  }
+  },
+  download_link: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Estac%CC%A7o%CC%83es%20Esquerdinhas/Guerrinha%20-%20Estac%CC%A7o%CC%83es%20Esquerdinhas.zip"
 )
 
 
@@ -390,7 +402,8 @@ Release.find_or_create_by!(
   links: {
     "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/ida-aos-correios",
     "Spotify": "https://open.spotify.com/album/34PkFa3c2nXJNBQqZZjkpR?si=b22a689dec4d4745"
-  }
+  },
+  download_link: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Ida%20Aos%20Correios/Guerrinha%20-%20Ida%20Aos%20Correios.zip"
 )
 
 
@@ -424,7 +437,8 @@ Release.find_or_create_by!(
   links: {
     "Bandcamp": "https://guerrinha.bandcamp.com/album/cidade-grande-2",
     "Spotify": "https://open.spotify.com/album/21ZQzzxSDYRABzC1RVahfm?si=d475a0f21e4742d9"
-  }
+  },
+  download_link: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Cidade%20Grande/Guerrinha%20-%20Cidade%20Grande.zip"
 )
 
 Release.find_or_create_by!(
@@ -457,7 +471,8 @@ Release.find_or_create_by!(
   links: {
     "Bandcamp": "https://guerrinha.bandcamp.com/album/exposi-o-popular",
     "Spotify": "https://open.spotify.com/album/4TymEgPdwzM0nbGuMbN4Lm"
-  }
+  },
+  download_link: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Exposic%CC%A7a%CC%83o%20Popular/Guerrinha%20-%20Exposic%CC%A7a%CC%83o%20Popular.zip"
 )
 
 
@@ -468,7 +483,7 @@ Release.find_or_create_by!(
   name: "Prédio Avenida Central",
   slug: 'predio-avenida-central',
   cover: ["https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Pre%CC%81dio%20Avenida%20Central/cover.jpg", "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Pre%CC%81dio%20Avenida%20Central/predio-v-f.jpg"],
-  release_type: "Album",
+  release_type: "EP",
   release_date: Date.new(2024, 10, 7),
   format: ["CD", "Digital download", "streaming", "vinyl"],
   tracks: [
@@ -478,7 +493,7 @@ Release.find_or_create_by!(
     { name: "O Encomendador", url: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Pre%CC%81dio%20Avenida%20Central/Guerrinha%20-%20Pre%CC%81dio%20Avenida%20Central%20-%2004%20O%20Encomendador.mp3" }
   ],
   credits: {
-    "Gabriel Guerra": "electric guitar, bass guitar, drums, keyboards",
+    "Gabriel Guerra": "keyboards, drum machine, sampler, bass guitar",
   },
   notes: [
     "All tracks produced by Gabriel Guerra"
@@ -486,5 +501,33 @@ Release.find_or_create_by!(
   links: {
     "Bandcamp": "https://guerrinha.bandcamp.com/album/exposi-o-popular",
     "Spotify": "https://open.spotify.com/album/4TymEgPdwzM0nbGuMbN4Lm"
-  }
+  },
+  download_link: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Pre%CC%81dio%20Avenida%20Central/Guerrinha%20-%20Pre%CC%81dio%20Avenida%20Central.zip"
+)
+
+
+Release.find_or_create_by!(
+  user: User.first,
+  artist: Artist.find_by(name: "Guerrinha"),
+  artist_name: Artist.find_by(name: "Guerrinha").name,
+  name: "Suspenso Pelo Ciclo Implícito",
+  slug: 'suspenso-pelo-ciclo-implicito',
+  cover: ["https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Suspenso%20Pelo%20Ciclo%20Impli%CC%81cito/cover.jpg"],
+  release_type: "Single",
+  release_date: Date.new(2024, 12, 16),
+  format: ["CD", "Digital download", "streaming"],
+  tracks: [
+    { name: "Suspenso Pelo Ciclo Implícito", url: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Suspenso%20Pelo%20Ciclo%20Impli%CC%81cito/Guerrinha%20-%20Suspenso%20Pelo%20Ciclo%20Impli%CC%81cito%20-%2001%20Suspenso%20Pelo%20Ciclo%20Impli%CC%81cito.mp3" },
+  ],
+  credits: {
+    "Gabriel Guerra": "electric guitar, bass guitar, flute, saxophone, keyboards",
+  },
+  notes: [
+    "All tracks produced by Gabriel Guerra"
+  ],
+  links: {
+    "Bandcamp": "https://guerrinha.bandcamp.com/album/suspenso-pelo-ciclo-impl-cito",
+    "Spotify": "https://open.spotify.com/album/5YLyW2vkP4ED0g62nyQeZw"
+  },
+  download_link: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/GUERRINHA/Suspenso%20Pelo%20Ciclo%20Impli%CC%81cito/Guerrinha%20-%20Suspenso%20Pelo%20Ciclo%20Impli%CC%81cito.zip"
 )

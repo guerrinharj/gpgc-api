@@ -41,7 +41,8 @@ Release.find_or_create_by!(
   links: {
     "Bandcamp": nil,
     "Spotify": "https://open.spotify.com/album/49mbsneb0n3r5aezH3YkMV"
-  }
+  },
+  download_link: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/SECULOS%20APAIXONADOS/Roupa%20Linda%2C%20Figura%20Fantasmago%CC%81rica/Se%CC%81culos%20Apaixonados%20-%20Roupa%20Linda%2C%20Figura%20Fantasmago%CC%81rica.zip"
 )
 
 Release.find_or_create_by!(
@@ -85,7 +86,8 @@ Release.find_or_create_by!(
   links: {
     "Bandcamp": nil,
     "Spotify": "https://open.spotify.com/album/52pxDLClkynlDCRe7YXlDg"
-  }
+  },
+  download_link: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/SECULOS%20APAIXONADOS/O%20Ministe%CC%81rio%20da%20Colocac%CC%A7a%CC%83o/Se%CC%81culos%20Apaixonados%20-%20O%20Ministe%CC%81rio%20da%20Colocac%CC%A7a%CC%83o.zip"
 )
 
 
@@ -128,5 +130,6 @@ Release.find_or_create_by!(
   links: {
     "Bandcamp": nil,
     "Spotify": "https://open.spotify.com/album/3tfBMkNufPMrAVKGBZBXgO"
-  }
+  },
+  download_link: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/SECULOS%20APAIXONADOS/Suspenso%20Grac%CC%A7as%20Ao%20Principio%20da%20Insignificancia/Se%CC%81culos%20Apaixonados%20-%20Suspenso%20Grac%CC%A7as%20Ao%20Princi%CC%81pio%20da%20Insignifica%CC%82ncia.zip"
 )

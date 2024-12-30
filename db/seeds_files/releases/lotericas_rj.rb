@@ -26,7 +26,8 @@ Release.find_or_create_by!(
   links: {
     "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/jogos-de-azar",
     "Spotify": "https://open.spotify.com/album/4p2k3X906Jh0xduhzKDpSN"
-  }
+  },
+  download_link: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/LOTERICAS%20RJ/Jogos%20de%20Azar/Lote%CC%81ricas%20RJ%20-%20Jogos%20de%20Azar.zip"
 )
 
 Release.find_or_create_by!(
@@ -54,5 +55,6 @@ Release.find_or_create_by!(
   links: {
     "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/esportes-da-sorte",
     "Spotify": "https://open.spotify.com/album/0dgpHUgKrqWe2wZ3vaI5F3"
-  }
+  },
+  download_link: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/LOTERICAS%20RJ/Esportes%20da%20Sorte/Lote%CC%81ricas%20RJ%20-%20Esportes%20da%20Sorte.zip"
 )
