@@ -26,5 +26,6 @@ Release.find_or_create_by!(
   ],
   links: {
     "Spotify": "https://open.spotify.com/album/5b3GIbXtPWwIp1rNqHraHZ"
-  }
+  },
+  download_link: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/COMES%20%26%20BEBES/Choque%20Te%CC%81rmico/Comes%20%26%20Bebes%20-%20Choque%20Te%CC%81rmico.zip"
 )

@@ -29,5 +29,6 @@ Release.find_or_create_by!(
     links: {
         "Spotify": "https://open.spotify.com/album/11I3f6p0xfGb9K5Ql2xdqM",
         "Bandcamp": "https://pessoalizado.bandcamp.com/album/miseric-rdia"
-    }
+    },
+    download_link: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/PESSOALIZADO/Miserico%CC%81rdia/Pessoalizado%20-%20Misericordia.zip"
 )

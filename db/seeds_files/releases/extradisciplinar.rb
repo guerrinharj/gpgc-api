@@ -31,7 +31,8 @@ Release.find_or_create_by!(
   links: {
     "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/fator-decisivo",
     "Spotify": "https://open.spotify.com/album/1JChWdwOF4JIWbfQ8REkCT?si=6d3b5542be3141b2"
-  }
+  },
+  download_link: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/EXTRADISCIPLINAR/Fator%20Decisivo/Extradisciplinar%20-%20Fator%20Decisivo.zip"
 )
 
 Release.find_or_create_by!(
@@ -64,5 +65,6 @@ Release.find_or_create_by!(
   links: {
     "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/videoconferencias",
     "Spotify": "https://open.spotify.com/album/5rpyUGT3iYDzRcRhZfSILX?si=4ac50420ec154e09"
-  }
+  },
+  download_link: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/EXTRADISCIPLINAR/Videoconfere%CC%82ncias/Extradisciplinar%20-%20Videoconfere%CC%82ncias.zip"
 )

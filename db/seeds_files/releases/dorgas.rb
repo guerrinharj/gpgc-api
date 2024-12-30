@@ -28,7 +28,8 @@ Release.find_or_create_by!(
   links: {
     "Bandcamp": nil,
     "Spotify": nil
-  }
+  },
+  download_link: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/DORGAS/Verdeja%20Music/Dorgas%20-%20Verdeja%20Music.zip"
 )
 
 Release.find_or_create_by!(
@@ -58,7 +59,8 @@ Release.find_or_create_by!(
   links: {
     "Bandcamp": nil,
     "Spotify": nil
-  }
+  },
+  download_link: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/DORGAS/Loxhanxha/Dorgas%20-%20Loxhanxha.zip"
 )
 
 Release.find_or_create_by!(
@@ -88,7 +90,8 @@ Release.find_or_create_by!(
   links: {
     "Bandcamp": nil,
     "Spotify": nil
-  }
+  },
+  download_link: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/DORGAS/Grangongon/Dorgas%20-%20Grangongon.zip"
 )
 
 Release.find_or_create_by!(
@@ -126,7 +129,8 @@ Release.find_or_create_by!(
   links: {
     "Bandcamp": nil,
     "Spotify": nil
-  }
+  },
+  download_link: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/DORGAS/Dorgas/Dorgas%20-%20Dorgas.zip"
 )
 
 Release.find_or_create_by!(
@@ -156,5 +160,6 @@ Release.find_or_create_by!(
   links: {
     "Bandcamp": nil,
     "Spotify": nil
-  }
+  },
+  download_link: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/DORGAS/Semanas%20Goticas/Dorgas%20-%20Semanas%20Go%CC%81ticas.zip"
 )

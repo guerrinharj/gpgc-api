@@ -30,7 +30,8 @@ Release.find_or_create_by!(
   links: {
     "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/essenciais",
     "Spotify": "https://open.spotify.com/album/0qOuXqX9UJOXNDLHOkzrFF"
-  }
+  },
+  download_link: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/BIBIQUINHA%20JUNIOR/Essenciais/Bibiquinha%20Junior%20-%20Essenciais.zip"
 )
 
 Release.find_or_create_by!(
@@ -63,5 +64,6 @@ Release.find_or_create_by!(
   links: {
     "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/tristementos",
     "Spotify": "https://open.spotify.com/album/6FJEn4iFdb2k5Ccw02wodk"
-  }
+  },
+  download_link: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/BIBIQUINHA%20JUNIOR/Tristementos/Bibiquinha%20Junior%20-%20Tristementos.zip"
 )

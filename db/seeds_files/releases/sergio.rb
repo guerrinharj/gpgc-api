@@ -29,7 +29,8 @@ Release.find_or_create_by!(
   links: {
     "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/utens-lios-2",
     "Spotify": "https://open.spotify.com/album/56OaNyQeWfQ25aM0jjAIGi?si=HCFf1VU6QwejM5adsoYf1g"
-  }
+  },
+  download_link: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/SERGIO/Utensilios/Se%CC%81rgio%20-%20Utensi%CC%81lios.zip"
 )
 
 Release.find_or_create_by!(
@@ -61,7 +62,8 @@ Release.find_or_create_by!(
   links: {
     "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/mais-utens-lios",
     "Spotify": "https://open.spotify.com/album/1BXZUZtzE3SWKaSOCbQ4YB?si=8FjBUHiwTVyQF2L-2_KEpg"
-  }
+  },
+  download_link: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/SERGIO/Mais%20Utensi%CC%81lios/Se%CC%81rgio%20-%20Mais%20Utensi%CC%81lios.zip"
 )
 
 Release.find_or_create_by!(
@@ -87,7 +89,8 @@ Release.find_or_create_by!(
   links: {
     "Bandcamp": "https://sergiooscar.bandcamp.com/album/fantabobi-riquititas",
     "Spotify": nil
-  }
+  },
+  download_link: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/SERGIO/Fantabobi%20%3A%20Riquititas/Se%CC%81rgio%20-%20Fantabobi%20%3A%20Riquititas.zip"
 )
 
 Release.find_or_create_by!(
@@ -119,5 +122,6 @@ Release.find_or_create_by!(
   links: {
     "Bandcamp": nil,
     "Spotify": nil
-  }
+  },
+  download_link: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/SERGIO/Pelo%20da%20Churreia/Se%CC%81rgio%20-%20Pelo%20da%20Churre%CC%81ia.zip"
 )

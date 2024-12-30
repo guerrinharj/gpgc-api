@@ -29,7 +29,8 @@ Release.find_or_create_by!(
   links: {
     "Bandcamp": "https://relacoespublicas.bandcamp.com/album/rela-es-p-blicas",
     "Spotify": "https://open.spotify.com/album/3aPrg29GilHvUfa3kOupnQ"
-  }
+  },
+  download_link: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/RELAC%CC%A7O%CC%83ES%20PUBLICAS/Relac%CC%A7o%CC%83es%20Publicas/Relac%CC%A7o%CC%83es%20Pu%CC%81blicas%20-%20Relac%CC%A7o%CC%83es%20Pu%CC%81blicas.zip"
 )
 
 Release.find_or_create_by!(
@@ -60,7 +61,8 @@ Release.find_or_create_by!(
   links: {
     "Bandcamp": "https://relacoespublicas.bandcamp.com/album/juros-perfeitos",
     "Spotify": "https://open.spotify.com/album/1Z8zcGWLVTgSWanZ03f98q"
-  }
+  },
+  download_link: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/RELAC%CC%A7O%CC%83ES%20PUBLICAS/Juros%20Perfeitos/Relac%CC%A7o%CC%83es%20Publicas%20-%20Juros%20Perfeitos.zip"
 )
 
 Release.find_or_create_by!(
@@ -92,7 +94,8 @@ Release.find_or_create_by!(
   links: {
     "Bandcamp": "https://relacoespublicas.bandcamp.com/album/cl-ssicos-republicanos",
     "Spotify": nil
-  }
+  },
+  download_link: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/RELAC%CC%A7O%CC%83ES%20PUBLICAS/Classicos%20Republicanos/Relac%CC%A7o%CC%83es%20Publicas%20-%20Cla%CC%81ssicos%20Republicanos.zip"
 )
 
 Release.find_or_create_by!(
@@ -129,5 +132,6 @@ Release.find_or_create_by!(
   links: {
     "Bandcamp": "https://relacoespublicas.bandcamp.com/album/pol-tica-popula-l-gica-estraga",
     "Spotify": "https://open.spotify.com/album/6XzS114EESxeo6KLCVORPL"
-  }
+  },
+  download_link: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/RELAC%CC%A7O%CC%83ES%20PUBLICAS/Politica%20Popula%20Logica%20Estraga/Relac%CC%A7o%CC%83es%20Publicas%20-%20Poli%CC%81tica%20Popula%2C%20Lo%CC%81gica%20Estraga.zip"
 )

@@ -43,7 +43,8 @@ Release.find_or_create_by!(
   links: {
     "Bandcamp": "https://cavalcantissimos.bandcamp.com/album/os-corredores",
     "Spotify": "https://open.spotify.com/album/4ldYNXdbrz3L28nIv854YY"
-  }
+  },
+  download_link: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/CAVALCANTISSIMOS/Os%20Corredores/Cavalcantissimos%20-%20Os%20Corredores.zip"
 )
 
 Release.find_or_create_by!(
@@ -76,5 +77,6 @@ Release.find_or_create_by!(
   links: {
     "Bandcamp": "https://cavalcantissimos.bandcamp.com/album/fazendo-do-racionamento-um-esporte",
     "Spotify": "https://open.spotify.com/album/4kr83325jnJcky80k9DqnA"
-  }
+  },
+  download_link: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/CAVALCANTISSIMOS/Fazendo%20do%20Racionamento%20Um%20Esporte/Cavalcantissimos%20-%20Fazendo%20do%20Racionamento%20Um%20Esporte%20.zip"
 )

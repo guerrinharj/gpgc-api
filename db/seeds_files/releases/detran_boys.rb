@@ -30,7 +30,8 @@ Release.find_or_create_by!(
   links: {
     "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/dicas-de-transito",
     "Spotify": "https://open.spotify.com/album/4rhwmOBaAmRFTPYNZm7Exd?si=fed6yyILT86b_0HOrHVURg"
-  }
+  },
+  download_link: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/DETRAN%20BOYS/Dicas%20de%20Transito/Detran%20Boys%20-%20Dicas%20de%20Transito.zip"
 )
 
 Release.find_or_create_by!(
@@ -63,5 +64,6 @@ Release.find_or_create_by!(
   links: {
     "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/infra-es-lev-ssimas",
     "Spotify": "https://open.spotify.com/album/2S6tiqaQiWUVTBA0W4CyLS"
-  }
+  },
+  download_link: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/DETRAN%20BOYS/Infrac%CC%A7o%CC%83es%20Levi%CC%81ssimas/Detran%20Boys%20-%20Infrac%CC%A7o%CC%83es%20Levi%CC%81ssimas.zip"
 )

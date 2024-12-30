@@ -23,7 +23,8 @@ Release.find_or_create_by!(
   links: {
     "Bandcamp": "https://finalzinhochegando.bandcamp.com/album/1",
     "Spotify": nil
-  }
+  },
+  download_link: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/FINALZINHO%20CHEGANDO/%231/Finalzinho%20Chegando%20-%20%231.zip"
 )
 
 Release.find_or_create_by!(
@@ -49,7 +50,8 @@ Release.find_or_create_by!(
   links: {
     "Bandcamp": "https://finalzinhochegando.bandcamp.com/album/4",
     "Spotify": nil
-  }
+  },
+  download_link: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/FINALZINHO%20CHEGANDO/%233/Finalzinho%20Chegando%20-%20%233.zip"
 )
 
 Release.find_or_create_by!(
@@ -75,7 +77,8 @@ Release.find_or_create_by!(
   links: {
     "Bandcamp": "https://finalzinhochegando.bandcamp.com/album/6",
     "Spotify": nil
-  }
+  },
+  download_link: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/FINALZINHO%20CHEGANDO/%236/Finalzinho%20Chegando%20-%20%236.zip"
 )
 
 Release.find_or_create_by!(
@@ -101,7 +104,8 @@ Release.find_or_create_by!(
   links: {
     "Bandcamp": "https://finalzinhochegando.bandcamp.com/album/3",
     "Spotify": nil
-  }
+  },
+  download_link: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/FINALZINHO%20CHEGANDO/%233/Finalzinho%20Chegando%20-%20%233.zip"
 )
 
 
@@ -136,5 +140,6 @@ Release.find_or_create_by!(
   links: {
     "Bandcamp": "https://finalzinhochegando.bandcamp.com/album/2012",
     "Spotify": "https://open.spotify.com/album/0eoSBOAauacoM4pRoZUH3e"
-  }
+  },
+  download_link: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/FINALZINHO%20CHEGANDO/2012/Finalzinho%20Chegando%20-%202012.zip"
 )

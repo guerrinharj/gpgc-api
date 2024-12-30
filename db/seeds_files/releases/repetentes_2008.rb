@@ -25,7 +25,8 @@ Release.find_or_create_by!(
   links: {
     "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/habilidades-eu-tenho",
     "Spotify": nil
-  }
+  },
+  download_link: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/REPETENTES%202008/Habilidades%20Eu%20Tenho/Repetentes%202008%20-%20Habilidades%20Eu%20Tenho.zip"
 )
 
 
@@ -54,7 +55,8 @@ Release.find_or_create_by!(
   links: {
     "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/curriculum-tenebrae",
     "Spotify": "https://open.spotify.com/album/0TKIoMGJXvBrl35fdgt8wi?si=50aa429316b54d9b"
-  }
+  },
+  download_link: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/REPETENTES%202008/Curriculum%20Tenebrae/Repetentes%202008%20-%20Curriculum%20Tenebrae.zip"
 )
 
 
@@ -86,7 +88,8 @@ Release.find_or_create_by!(
   links: {
     "Bandcamp": "https://futuretimes.bandcamp.com/album/boulevard-internacional",
     "Spotify": nil
-  }
+  },
+  download_link: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/REPETENTES%202008/Boulevard%20Internacional/Repetentes%202008%20-%20Boulevard%20Internacional.zip"
 )
 
 
@@ -125,7 +128,8 @@ Release.find_or_create_by!(
   links: {
     "Bandcamp": "https://futuretimes.bandcamp.com/album/boulderball",
     "Spotify": "https://open.spotify.com/album/7xza7ZdIrMJLXYu6uoPChE?si=366466ecd5c6416f"
-  }
+  },
+  download_link: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/REPETENTES%202008/Boulderball/Repetentes%202008%20-%20Boulderball.zip"
 )
 
 
@@ -159,7 +163,8 @@ Release.find_or_create_by!(
   links: {
     "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/os-maneiros",
     "Spotify": "https://open.spotify.com/album/6jjjqJVg1xBNVYAk08ubrC?si=dbe38e60964149d6"
-  }
+  },
+  download_link: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/REPETENTES%202008/Os%20Maneiros/Repetentes%202008%20-%20Os%20Maneiros.zip"
 )
 
 
@@ -189,7 +194,8 @@ Release.find_or_create_by!(
   links: [
     "Bandcamp": nil,
     "Spotify": nil
-  ]
+  ],
+  download_link: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/REPETENTES%202008/Vasos%20de%20Banha/Repetentes%202008%20-%20Vasos%20de%20Banha.zip"
 )
 
 
@@ -222,7 +228,8 @@ Release.find_or_create_by!(
   links: {
     "Bandcamp": "https://goptun.bandcamp.com/album/gop006-gelo-ger-nimo",
     "Spotify": "https://open.spotify.com/album/2f6pPc5kDkb5hQFrAJ8C4e"
-  }
+  },
+  download_link: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/REPETENTES%202008/Gelo%20Geronimo/Repetentes%202008%20-%20Gelo%20Geronimo.zip"
 )
 
 
@@ -253,7 +260,8 @@ Release.find_or_create_by!(
   links: {
     "Bandcamp": "https://superconsciousrecords.bandcamp.com/album/galaxia-fini",
     "Spotify": "https://open.spotify.com/album/6cljHB8Fe56MhA29dlCsIp"
-  }
+  },
+  download_link: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/REPETENTES%202008/Galaxia%20Fini/Repetentes%202008%20-%20Galaxia%20Fini.zip"
 )
 
 
@@ -286,7 +294,8 @@ Release.find_or_create_by!(
   links: {
     "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/silvio-system",
     "Spotify": "https://open.spotify.com/album/1R2Z5g8TdDVf1ZSzJbPYLv?si=40b7f0f0b6dc4527"
-  }
+  },
+  download_link: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/REPETENTES%202008/Silvio%20System/Repetentes%202008%20-%20Silvio%20System.zip"
 )
 
 
@@ -320,7 +329,8 @@ Release.find_or_create_by!(
     links: {
     "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/light-lixo",
     "Spotify": "https://open.spotify.com/album/5Vn5dgig80NiEYF75PTQEu?si=705dbe1a3bec411d"
-  }
+  },
+  download_link: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/REPETENTES%202008/Light%20Lixo/Repetentes%202008%20-%20Light%20Lixo.zip"
 )
 
 
@@ -353,7 +363,8 @@ Release.find_or_create_by!(
     links: {
     "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/a-trag-dia-de-pete",
     "Spotify": "https://open.spotify.com/album/3YBmH2FZDHvnPM49FiyUGe?si=21a73905117b4b61"
-  }
+  },
+  download_link: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/REPETENTES%202008/A%20Tragedia%20de%20Pete/Repetentes%202008%20-%20A%20Tragedia%20de%20Pete.zip"
 )
 
 
@@ -386,7 +397,8 @@ Release.find_or_create_by!(
   links: {
     "Bandcamp": "https://40porcentofodabarramaneirissimo.bandcamp.com/album/rapid-o-cometa-highway",
     "Spotify": "https://open.spotify.com/album/1t2XM75mIHXJEKNJCxPunE?si=14cda459c728452e"
-  }
+  },
+  download_link: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/REPETENTES%202008/Rapida%CC%83o%20Cometa%20Highway/Repetentes%202008%20-%20Rapida%CC%83o%20Cometa%20Highway.zip"
 )
 
 
@@ -416,7 +428,8 @@ Release.find_or_create_by!(
     links: {
     "Bandcamp": "https://repetentes2008.bandcamp.com/album/posto-de-gasolina-online",
     "Spotify": nil
-  }
+  },
+  download_link: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/REPETENTES%202008/Posto%20de%20Gasolina%20Online/Repetentes%202008%20-%20Posto%20de%20Gasolina%20Online.zip"
 )
 
 
@@ -446,5 +459,6 @@ Release.find_or_create_by!(
   links: {
     "Bandcamp": "https://repetentes2008.bandcamp.com/album/o-lento-c-u-ralentado",
     "Spotify": nil
-  }
+  },
+  download_link: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/REPETENTES%202008/O%20Lento%20Ce%CC%81u%20Ralentado/Repetentes%202008%20-%20O%20Lento%20Ce%CC%81u%20Ralentado.zip"
 )
