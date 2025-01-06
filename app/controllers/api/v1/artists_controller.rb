@@ -9,7 +9,7 @@ class Api::V1::ArtistsController < ApplicationController
   end
 
   def show
-    render json: @artist
+    render json: @artist.as_json(include: :releases)
   end
 
   def create

@@ -133,8 +133,8 @@ paths:
             type: string
           example: 123
       responses:
-        '200':
-          description: Artist retrieved successfully
+        200:
+          description: Successfully retrieved artist
           content:
             application/json:
               schema:
@@ -151,9 +151,116 @@ paths:
                     example: assadinhos
                   group:
                     type: boolean
-                    example: true
-        '404':
+                    example: false
+                  created_at:
+                    type: string
+                    format: date-time
+                    example: "2024-12-30T01:57:54.455Z"
+                  updated_at:
+                    type: string
+                    format: date-time
+                    example: "2024-12-30T01:57:54.455Z"
+                  user_id:
+                    type: integer
+                    example: 1
+                  releases:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: integer
+                          example: 1
+                        artist_id:
+                          type: integer
+                          example: 1
+                        artist_name:
+                          type: string
+                          example: Assadinhos
+                        name:
+                          type: string
+                          example: Winkadinka
+                        slug:
+                          type: string
+                          example: winkadinka
+                        cover:
+                          type: array
+                          items:
+                            type: string
+                          example:
+                            - "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/ASSADINHOS/Winkadinka/cover.jpg"
+                        release_type:
+                          type: string
+                          example: Album
+                        release_date:
+                          type: string
+                          format: date
+                          example: "2021-09-27"
+                        label:
+                          type: array
+                          items:
+                            type: string
+                          example:
+                            - "40% Foda/Maneirissimo"
+                        tracks:
+                          type: array
+                          items:
+                            type: object
+                            properties:
+                              name:
+                                type: string
+                                example: Smoke With The Water
+                              url:
+                                type: string
+                                example: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/ASSADINHOS/Winkadinka/Assadinhos%20-%20Winkadinka%20-%2001%20Smoke%20With%20The%20Water.mp3"
+                        format:
+                          type: array
+                          items:
+                            type: string
+                          example:
+                            - "CD"
+                            - "digital download"
+                            - "streaming"
+                        credits:
+                          type: object
+                          additionalProperties:
+                            type: string
+                          example:
+                            Gabriel Guerra: keyboards, drum machine
+                        notes:
+                          type: array
+                          items:
+                            type: string
+                          example:
+                            - "All tracks produced by Gabriel Guerra"
+                        links:
+                          type: object
+                          additionalProperties:
+                            type: string
+                          example:
+                            Spotify: "https://open.spotify.com/album/3jmFD1V8Vc0x4fVVfoNbBg"
+                            Bandcamp: "https://40porcentofodabarramaneirissimo.bandcamp.com/album/winkadinka"
+                        created_at:
+                          type: string
+                          format: date-time
+                          example: "2024-12-30T01:57:54.595Z"
+                        updated_at:
+                          type: string
+                          format: date-time
+                          example: "2024-12-30T01:57:54.595Z"
+                        user_id:
+                          type: integer
+                          example: 1
+                        download_link:
+                          type: string
+                          example: "https://storage.googleapis.com/gpgc-api-bucket/RELEASED/ASSADINHOS/Winkadinka/Assadinhos%20-%20Winkadinka.zip"
+        404:
           description: Artist not found
+        401:
+          description: Unauthorized
+        500:
+          description: Internal server error
+
 
     put:
       summary: Update an artist by slug
@@ -213,6 +320,7 @@ paths:
                   group:
                     type: boolean
                     example: true
+
         '404':
           description: Artist not found
         '401':
