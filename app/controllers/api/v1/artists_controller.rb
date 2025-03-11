@@ -4,7 +4,7 @@ class Api::V1::ArtistsController < ApplicationController
   skip_before_action :require_authentication, only: [:index, :show]
 
   def index
-    @artists = Artist.all
+    @artists = Artist.order(:name)
     render json: @artists
   end
 
