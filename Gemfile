@@ -52,6 +52,7 @@ group :development, :test, :production do
   gem 'faker'
   gem 'rswag-specs'
   gem 'dotenv-rails'
+  gem 'sidekiq'
 end
 
 group :development do
