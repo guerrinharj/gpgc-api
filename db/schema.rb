@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2024_12_30_000514) do
+ActiveRecord::Schema.define(version: 2025_07_01_220352) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -44,6 +44,13 @@ ActiveRecord::Schema.define(version: 2024_12_30_000514) do
     t.datetime "updated_at", precision: 6, null: false
     t.bigint "user_id"
     t.index ["user_id"], name: "index_artists_on_user_id"
+  end
+
+  create_table "backups", force: :cascade do |t|
+    t.string "file_path"
+    t.datetime "exported_at"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "featurings", force: :cascade do |t|

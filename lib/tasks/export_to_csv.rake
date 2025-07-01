@@ -1,51 +1,40 @@
 namespace :db do
     desc "Export all database tables to CSV files"
-        task export_to_csv: :environment do
+    task export_to_csv: :environment do
         require 'csv'
-        require 'active_record'
         require 'fileutils'
-    
-        # Explicitly configure database connection using ENV variables
-        ActiveRecord::Base.establish_connection(
-            adapter: 'postgresql',
-            host: ENV['GPGC_API_DATABASE_HOST'],
-            database: ENV['GPGC_API_DATABASE_NAME'],
-            username: ENV['GPGC_API_DATABASE_USERNAME'],
-            password: ENV['GPGC_API_DATABASE_PASSWORD']
-        )
-    
+
         export_directory = "db_exports"
-        timestamped_folder = File.join(export_directory, Time.now.strftime('%Y%m%d_%H%M%S'))
-    
-        # Create the directories if they don't exist
+        timestamped_folder = File.join(export_directory, Time.current.strftime('%Y%m%d_%H%M%S'))
         FileUtils.mkdir_p(timestamped_folder)
-    
+
         ActiveRecord::Base.connection.tables.each do |table_name|
             klass = table_name.classify.safe_constantize
-    
+
             unless klass && klass < ActiveRecord::Base
-            puts "Skipping table: #{table_name} (no associated model or not inheriting from ActiveRecord::Base)"
-            next
+                puts "Skipping #{table_name}: no model or not an AR class."
+                next
             end
-    
+
             file_path = File.join(timestamped_folder, "#{table_name}.csv")
-            records = klass.all
-    
-            if records.empty?
-            puts "Table #{table_name} is empty. Skipping..."
-            next
+            record_count = klass.count
+
+            if record_count.zero?
+                puts "Skipping #{table_name}: no records."
+                next
             end
-    
+
             CSV.open(file_path, "w") do |csv|
-            csv << klass.column_names # Header row
-            records.each do |record|
-                csv << klass.column_names.map { |column| record.send(column) }
+                csv << klass.column_names
+
+                klass.find_each(batch_size: 1000) do |record|
+                    csv << klass.column_names.map { |column| record.public_send(column) }
+                end
             end
-            end
-    
-            puts "Exported #{table_name} to #{file_path}"
+
+            puts "Exported #{record_count} records from #{table_name} to #{file_path}"
         end
-    
-        puts "All tables have been exported to the '#{timestamped_folder}' directory."
-        end
-end  
+
+        puts "✅ All exports complete at #{timestamped_folder}"
+    end
+end
