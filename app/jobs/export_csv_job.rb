@@ -33,7 +33,11 @@ class ExportCsvJob < ApplicationJob
         end
 
         # Save metadata (you can upload the file instead here)
-        Backup.create!(file_path: file_path, exported_at: Time.current)
+        Backup.create!(
+            file_path: file_path,
+            table_name: table_name,
+            exported_at: Time.current
+        )
 
         Rails.logger.info("✅ Exported #{record_count} records from #{table_name} to #{file_path}")
     end
