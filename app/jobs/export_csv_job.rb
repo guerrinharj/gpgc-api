@@ -32,7 +32,6 @@ class ExportCsvJob < ApplicationJob
             end
         end
 
-        # Save metadata (you can upload the file instead here)
         Backup.create!(
             file_path: file_path,
             table_name: table_name,
