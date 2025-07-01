@@ -5,33 +5,36 @@ class ExportCsvJob < ApplicationJob
         require 'csv'
         require 'fileutils'
 
-        export_directory = "db_exports"
-        timestamp = Time.now.strftime('%Y%m%d_%H%M%S')
-        timestamped_folder = File.join(export_directory, timestamp)
-        FileUtils.mkdir_p(timestamped_folder)
+        timestamp = Time.current.strftime('%Y%m%d_%H%M%S')
+        temp_folder = File.join("tmp", "db_exports", timestamp)
+        FileUtils.mkdir_p(temp_folder)
 
-        exported = false
-
-        ActiveRecord::Base.connection.tables.each do |table_name|
-        next unless table_name == "releases" 
-
+        table_name = "releases"
         klass = table_name.classify.safe_constantize
-        next unless klass && klass < ActiveRecord::Base
 
-        file_path = File.join(timestamped_folder, "#{table_name}.csv")
-        records = klass.all
-        next if records.empty?
+        unless klass && klass < ActiveRecord::Base
+            Rails.logger.warn("Skipping #{table_name}: no model or not an ActiveRecord class.")
+            return
+        end
+
+        record_count = klass.count
+        if record_count.zero?
+            Rails.logger.info("Skipping #{table_name}: no records.")
+            return
+        end
+
+        file_path = File.join(temp_folder, "#{table_name}.csv")
 
         CSV.open(file_path, "w") do |csv|
             csv << klass.column_names
-            records.each { |record| csv << klass.column_names.map { |c| record.send(c) } }
+            klass.find_each(batch_size: 1000) do |record|
+                csv << klass.column_names.map { |column| record.public_send(column) }
+            end
         end
 
-        # Save backup record
+        # Save metadata (you can upload the file instead here)
         Backup.create!(file_path: file_path, exported_at: Time.current)
-            exported = true
-        end
 
-        Rails.logger.info(exported ? "CSV export completed." : "No data exported.")
+        Rails.logger.info("✅ Exported #{record_count} records from #{table_name} to #{file_path}")
     end
 end
