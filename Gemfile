@@ -53,6 +53,7 @@ group :development, :test, :production do
   gem 'rswag-specs'
   gem 'dotenv-rails'
   gem 'sidekiq'
+  gem 'sidekiq-scheduler'
 end
 
 group :development do

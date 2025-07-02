@@ -37,7 +37,6 @@ docker compose run web rails db:seed RAILS_ENV=$RAILS_ENV
 
 echo "Running rakes for $RAILS_ENV..."
 docker compose run web rake release:create_songs RAILS_ENV=$RAILS_ENV
-docker compose run web rake release:update_covers RAILS_ENV=$RAILS_ENV
 
 
 # Run RSpec tests

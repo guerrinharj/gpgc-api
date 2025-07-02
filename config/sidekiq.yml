@@ -1,0 +1,5 @@
+:schedule:
+  export_csv_job:
+    cron: "0 0 */14 * *" 
+    class: "ExportCsvJob"
+    queue: default
