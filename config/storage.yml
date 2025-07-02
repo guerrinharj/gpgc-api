@@ -9,8 +9,8 @@ local:
 google:
   service: GCS
   project: "gpgc-api"
-  credentials: <%= JSON.parse(ENV["GCP_CREDENTIALS_JSON"]) %>
   bucket: "gpgc-api-bucket"
+  credentials: <%= ENV["GCP_CREDENTIALS_JSON"] %>
 
 # Use rails credentials:edit to set the AWS secrets (as aws:access_key_id|secret_access_key)
 # amazon:
